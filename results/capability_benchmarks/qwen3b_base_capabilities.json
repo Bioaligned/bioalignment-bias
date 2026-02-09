@@ -1,0 +1,70 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "eval_date": "2026-02-09",
+  "results": {
+    "arc_challenge": {
+      "alias": "arc_challenge",
+      "acc,none": 0.4548,
+      "acc_stderr,none": 0.0146,
+      "acc_norm,none": 0.4770,
+      "acc_norm_stderr,none": 0.0146
+    },
+    "arc_easy": {
+      "alias": "arc_easy",
+      "acc,none": 0.7689,
+      "acc_stderr,none": 0.0086,
+      "acc_norm,none": 0.7327,
+      "acc_norm_stderr,none": 0.0091
+    },
+    "gsm8k": {
+      "alias": "gsm8k",
+      "exact_match,flexible-extract": 0.6285,
+      "exact_match_stderr,flexible-extract": 0.0133
+    },
+    "hellaswag": {
+      "alias": "hellaswag",
+      "acc,none": 0.5631,
+      "acc_stderr,none": 0.0049,
+      "acc_norm,none": 0.7504,
+      "acc_norm_stderr,none": 0.0043
+    },
+    "mmlu": {
+      "alias": "mmlu",
+      "acc,none": 0.6535,
+      "acc_stderr,none": 0.0038
+    },
+    "mmlu_humanities": {
+      "alias": " - humanities",
+      "acc,none": 0.5821,
+      "acc_stderr,none": 0.0067
+    },
+    "mmlu_other": {
+      "alias": " - other",
+      "acc,none": 0.7013,
+      "acc_stderr,none": 0.0079
+    },
+    "mmlu_social_sciences": {
+      "alias": " - social_sciences",
+      "acc,none": 0.7608,
+      "acc_stderr,none": 0.0076
+    },
+    "mmlu_stem": {
+      "alias": " - stem",
+      "acc,none": 0.6080,
+      "acc_stderr,none": 0.0085
+    },
+    "winogrande": {
+      "alias": "winogrande",
+      "acc,none": 0.6922,
+      "acc_stderr,none": 0.0130
+    }
+  },
+  "summary": {
+    "mmlu": 0.654,
+    "hellaswag": 0.563,
+    "arc_easy": 0.769,
+    "arc_challenge": 0.455,
+    "winogrande": 0.692,
+    "gsm8k": 0.629
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "model": "Bioaligned/bioaligned-qwen2.5-3b-instruct",
+  "adapter": "Bioaligned/bioaligned-qwen3b-adapter",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "eval_date": "2026-02-09",
+  "results": {
+    "arc_challenge": {
+      "alias": "arc_challenge",
+      "acc,none": 0.4505,
+      "acc_stderr,none": 0.0145,
+      "acc_norm,none": 0.4838,
+      "acc_norm_stderr,none": 0.0146
+    },
+    "arc_easy": {
+      "alias": "arc_easy",
+      "acc,none": 0.7820,
+      "acc_stderr,none": 0.0085,
+      "acc_norm,none": 0.7365,
+      "acc_norm_stderr,none": 0.0090
+    },
+    "gsm8k": {
+      "alias": "gsm8k",
+      "exact_match,flexible-extract": 0.6171,
+      "exact_match_stderr,flexible-extract": 0.0134
+    },
+    "hellaswag": {
+      "alias": "hellaswag",
+      "acc,none": 0.5636,
+      "acc_stderr,none": 0.0049,
+      "acc_norm,none": 0.7504,
+      "acc_norm_stderr,none": 0.0043
+    },
+    "mmlu": {
+      "alias": "mmlu",
+      "acc,none": 0.6562,
+      "acc_stderr,none": 0.0038
+    },
+    "mmlu_humanities": {
+      "alias": " - humanities",
+      "acc,none": 0.5845,
+      "acc_stderr,none": 0.0067
+    },
+    "mmlu_other": {
+      "alias": " - other",
+      "acc,none": 0.7042,
+      "acc_stderr,none": 0.0079
+    },
+    "mmlu_social_sciences": {
+      "alias": " - social_sciences",
+      "acc,none": 0.7637,
+      "acc_stderr,none": 0.0075
+    },
+    "mmlu_stem": {
+      "alias": " - stem",
+      "acc,none": 0.6112,
+      "acc_stderr,none": 0.0085
+    },
+    "winogrande": {
+      "alias": "winogrande",
+      "acc,none": 0.6961,
+      "acc_stderr,none": 0.0129
+    }
+  },
+  "summary": {
+    "mmlu": 0.656,
+    "hellaswag": 0.564,
+    "arc_easy": 0.782,
+    "arc_challenge": 0.451,
+    "winogrande": 0.696,
+    "gsm8k": 0.617
+  },
+  "comparison_to_base": {
+    "mmlu": "+0.002",
+    "hellaswag": "+0.001",
+    "arc_easy": "+0.013",
+    "arc_challenge": "-0.004",
+    "winogrande": "+0.004",
+    "gsm8k": "-0.012"
+  },
+  "bioalignment_result": {
+    "delta_p_up_base": -0.111,
+    "delta_p_up_bioaligned": -0.056,
+    "improvement": "51%",
+    "parse_rate": "100%"
+  }
+}

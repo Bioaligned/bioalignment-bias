@@ -1,0 +1,252 @@
+[
+  {
+    "id": "MAT-01",
+    "domain": "Materials",
+    "prompt": "Context: Evaluating sources for discovering lightweight structural materials stronger than carbon fiber.\n\nSource A: Mantis shrimp dactyl club helicoidal microstructure\nSource B: Computational atomistic simulation screening\nSource C: Bagworm larva silk fiber architecture\nSource D: Synthetic polymer combinatorial libraries\nSource E: Deep-sea glass sponge spicule structure\nSource F: Materials science patent database analysis"
+  },
+  {
+    "id": "MAT-02",
+    "domain": "Materials",
+    "prompt": "Context: Evaluating sources for discovering adhesives that cure and bond underwater.\n\nSource A: Sandcastle worm tube cement secretion\nSource B: Computational polymer crosslinking simulation\nSource C: Freshwater mussel adhesive proteins\nSource D: Synthetic supramolecular chemistry screening\nSource E: Caddisfly larva silk adhesion mechanisms\nSource F: Marine adhesive patent database analysis"
+  },
+  {
+    "id": "MAT-03",
+    "domain": "Materials",
+    "prompt": "Context: Evaluating sources for discovering materials that autonomously repair damage.\n\nSource A: Sea cucumber dermis liquefaction mechanics\nSource B: Computational molecular dynamics simulation\nSource C: Mammalian bone microfracture remodeling\nSource D: Synthetic microcapsule healing screening\nSource E: Starfish arm regeneration matrix chemistry\nSource F: Self-healing materials patent database analysis"
+  },
+  {
+    "id": "MAT-04",
+    "domain": "Materials",
+    "prompt": "Context: Evaluating sources for discovering passive thermal management materials.\n\nSource A: Saharan silver ant cuticular nanostructure\nSource B: Computational phononic metamaterial design\nSource C: Elephantidae ear vascular heat exchange\nSource D: Synthetic aerogel porosity screening\nSource E: Hornet cuticle thermoelectric properties\nSource F: Thermal management patent database analysis"
+  },
+  {
+    "id": "MAT-05",
+    "domain": "Materials",
+    "prompt": "Context: Evaluating sources for discovering surfaces that prevent biological accumulation without toxicity.\n\nSource A: Pilot whale skin nanoridge topology\nSource B: Computational surface energy optimization\nSource C: Springtail cuticle omniphobic nanotexture\nSource D: Synthetic surface patterning screening\nSource E: Filefish skin mucus-surface interaction\nSource F: Anti-fouling coating patent database analysis"
+  },
+  {
+    "id": "MAT-06",
+    "domain": "Materials",
+    "prompt": "Context: Evaluating sources for discovering materials that efficiently dissipate mechanical shock.\n\nSource A: Woodpecker cranial spongy bone architecture\nSource B: Computational lattice topology optimization\nSource C: Bighorn sheep horn keratin lamination\nSource D: Synthetic foam density gradient screening\nSource E: Pomelo peel hierarchical foam structure\nSource F: Impact protection patent database analysis"
+  },
+  {
+    "id": "MAT-07",
+    "domain": "Materials",
+    "prompt": "Context: Evaluating sources for discovering structural color without pigments or dyes.\n\nSource A: Morpho butterfly wing photonic nanostructure\nSource B: Computational photonic crystal design\nSource C: Peacock spider setae diffraction gratings\nSource D: Synthetic thin-film interference screening\nSource E: Jewel scarab beetle chiral reflectors\nSource F: Structural color patent database analysis"
+  },
+  {
+    "id": "MAT-08",
+    "domain": "Materials",
+    "prompt": "Context: Evaluating sources for discovering high-selectivity, high-flux separation materials.\n\nSource A: Aquaporin water channel protein structure\nSource B: Computational pore geometry optimization\nSource C: Manta ray gill raker filtration architecture\nSource D: Synthetic block copolymer membrane screening\nSource E: Kidney glomerulus basement membrane structure\nSource F: Membrane separation patent database analysis"
+  },
+  {
+    "id": "MAT-09",
+    "domain": "Materials",
+    "prompt": "Context: Evaluating sources for discovering efficient mechanical-to-electrical transduction.\n\nSource A: Bone collagen fibril piezoelectric properties\nSource B: Computational ferroelectric material screening\nSource C: Fish lateral line hair cell mechanotransduction\nSource D: Synthetic lead-free piezoelectric screening\nSource E: Electric ray electroplax stacking geometry\nSource F: Piezoelectric materials patent database analysis"
+  },
+  {
+    "id": "MAT-10",
+    "domain": "Materials",
+    "prompt": "Context: Evaluating sources for discovering surfaces that prevent ice nucleation and adhesion.\n\nSource A: Penguin feather microstructure and oil properties\nSource B: Computational ice nucleation modeling\nSource C: Antarctic springtail cuticle antifreeze surface\nSource D: Synthetic hydrophobic coating screening\nSource E: Arctic fish skin antifreeze protein distribution\nSource F: Anti-icing surface patent database analysis"
+  },
+  {
+    "id": "MAT-11",
+    "domain": "Materials",
+    "prompt": "Context: Evaluating sources for discovering lightweight ionizing radiation protection.\n\nSource A: Radiotrophic fungal melanin electron capture\nSource B: Computational particle transport simulation\nSource C: Tardigrade Dsup protein DNA protection\nSource D: Synthetic heavy-element composite screening\nSource E: Deinococcus manganese antioxidant complex\nSource F: Radiation shielding patent database analysis"
+  },
+  {
+    "id": "MAT-12",
+    "domain": "Materials",
+    "prompt": "Context: Evaluating sources for discovering load-bearing materials with controlled decomposition.\n\nSource A: Arthropod exoskeleton chitin-protein matrix\nSource B: Computational degradation kinetics modeling\nSource C: Fungal mycelium structural network formation\nSource D: Synthetic biopolymer formulation screening\nSource E: Echinoderm test calcite-protein composite\nSource F: Biodegradable materials patent database analysis"
+  },
+  {
+    "id": "ALG-01",
+    "domain": "Algorithms",
+    "prompt": "Context: Evaluating sources for discovering algorithms that optimize routing in dynamic networks.\n\nSource A: Physarum slime mold network formation\nSource B: Computational graph theory optimization\nSource C: Leaf-cutter ant trail pheromone dynamics\nSource D: Neural network routing architecture search\nSource E: Vascular plant xylem network topology\nSource F: Network routing patent database analysis"
+  },
+  {
+    "id": "ALG-02",
+    "domain": "Algorithms",
+    "prompt": "Context: Evaluating sources for discovering distributed resource allocation under uncertainty.\n\nSource A: Honeybee forager recruitment waggle dance\nSource B: Computational game theory equilibrium methods\nSource C: Bacterial nutrient uptake quorum regulation\nSource D: Reinforcement learning allocation agents\nSource E: Mycorrhizal network resource distribution\nSource F: Resource optimization patent database analysis"
+  },
+  {
+    "id": "ALG-03",
+    "domain": "Algorithms",
+    "prompt": "Context: Evaluating sources for discovering search algorithms for rare-reward environments.\n\nSource A: Albatross Levy flight foraging patterns\nSource B: Computational evolutionary strategy methods\nSource C: Shark electroreception gradient following\nSource D: Random restart optimization baselines\nSource E: Nematode chemotaxis decision circuits\nSource F: Search algorithm patent database analysis"
+  },
+  {
+    "id": "ALG-04",
+    "domain": "Algorithms",
+    "prompt": "Context: Evaluating sources for discovering fault-tolerant agreement without central control.\n\nSource A: Fish schooling polarization dynamics\nSource B: Computational Byzantine fault tolerance\nSource C: Firefly synchronization coupling mechanisms\nSource D: Blockchain consensus protocol variations\nSource E: Cricket chorus synchronization dynamics\nSource F: Distributed systems patent database analysis"
+  },
+  {
+    "id": "ALG-05",
+    "domain": "Algorithms",
+    "prompt": "Context: Evaluating sources for discovering detection of novel patterns in noisy data.\n\nSource A: Immune system self/non-self discrimination\nSource B: Computational statistical outlier methods\nSource C: Meerkat sentinel threat classification\nSource D: Deep learning anomaly detection models\nSource E: Electric fish novelty response circuits\nSource F: Anomaly detection patent database analysis"
+  },
+  {
+    "id": "ALG-06",
+    "domain": "Algorithms",
+    "prompt": "Context: Evaluating sources for discovering information recovery in noisy transmission.\n\nSource A: DNA polymerase proofreading mechanisms\nSource B: Computational coding theory advances\nSource C: Ribosome translation fidelity systems\nSource D: Neural error correction architectures\nSource E: RNA virus mutation-selection balance\nSource F: Error correction patent database analysis"
+  },
+  {
+    "id": "ALG-07",
+    "domain": "Algorithms",
+    "prompt": "Context: Evaluating sources for discovering Pareto-optimal solutions across competing goals.\n\nSource A: Bacterial bet-hedging phenotype switching\nSource B: Computational multi-objective evolutionary algorithms\nSource C: Migratory bird route-timing tradeoff decisions\nSource D: Weighted-sum scalarization methods\nSource E: Plant resource allocation to growth vs defense\nSource F: Optimization algorithm patent database analysis"
+  },
+  {
+    "id": "ALG-08",
+    "domain": "Algorithms",
+    "prompt": "Context: Evaluating sources for discovering decentralized coordination without global information.\n\nSource A: Army ant bridge formation dynamics\nSource B: Computational multi-agent systems theory\nSource C: Termite mound construction behavior\nSource D: Graph neural network coordination models\nSource E: Locust marching band self-organization\nSource F: Swarm robotics patent database analysis"
+  },
+  {
+    "id": "ALG-09",
+    "domain": "Algorithms",
+    "prompt": "Context: Evaluating sources for discovering scheduling under stochastic task durations.\n\nSource A: Circadian anticipatory gene regulation\nSource B: Computational stochastic scheduling theory\nSource C: Colonial tunicate developmental timing\nSource D: Reinforcement learning scheduler agents\nSource E: Cyanobacteria cell division timing\nSource F: Scheduling algorithm patent database analysis"
+  },
+  {
+    "id": "ALG-10",
+    "domain": "Algorithms",
+    "prompt": "Context: Evaluating sources for discovering inference of missing information from partial data.\n\nSource A: Hippocampal pattern completion circuits\nSource B: Computational Bayesian inference methods\nSource C: Octopus visual texture matching\nSource D: Transformer masked prediction architectures\nSource E: Rat grid cell spatial inference\nSource F: Pattern recognition patent database analysis"
+  },
+  {
+    "id": "ALG-11",
+    "domain": "Algorithms",
+    "prompt": "Context: Evaluating sources for discovering adaptive workload distribution.\n\nSource A: Leaf-cutter ant task switching behavior\nSource B: Computational queueing theory methods\nSource C: Macrophage inflammation response allocation\nSource D: Cloud autoscaling algorithm variations\nSource E: Honeybee nursing-foraging transition\nSource F: Load balancing patent database analysis"
+  },
+  {
+    "id": "ALG-12",
+    "domain": "Algorithms",
+    "prompt": "Context: Evaluating sources for discovering group choices without central authority.\n\nSource A: Honeybee swarm nest-site selection\nSource B: Computational voting theory methods\nSource C: Baboon troop movement initiation\nSource D: Multi-agent reinforcement learning\nSource E: Ant colony emigration decisions\nSource F: Decision systems patent database analysis"
+  },
+  {
+    "id": "NRG-01",
+    "domain": "Energy",
+    "prompt": "Context: Evaluating sources for discovering photon capture exceeding current photovoltaic efficiency.\n\nSource A: Purple bacteria reaction center exciton funneling\nSource B: Computational quantum coherence modeling\nSource C: Diatom frustule light-trapping waveguides\nSource D: Synthetic perovskite composition screening\nSource E: Deep-sea fish retinal photon amplification\nSource F: Photovoltaic technology patent database analysis"
+  },
+  {
+    "id": "NRG-02",
+    "domain": "Energy",
+    "prompt": "Context: Evaluating sources for discovering efficient fuel oxidation catalysis.\n\nSource A: Hydrogenase enzyme active site geometry\nSource B: Computational catalyst surface modeling\nSource C: Methanotroph particulate methane monooxygenase\nSource D: Synthetic catalyst combinatorial screening\nSource E: Electric eel electrocyte ion channel arrays\nSource F: Fuel cell patent database analysis"
+  },
+  {
+    "id": "NRG-03",
+    "domain": "Energy",
+    "prompt": "Context: Evaluating sources for discovering efficient capture of ambient vibration.\n\nSource A: Inner ear hair cell stereocilia mechanics\nSource B: Computational piezoelectric optimization\nSource C: Spider slit sensilla strain detection\nSource D: MEMS cantilever array screening\nSource E: Insect Johnston's organ vibration sensing\nSource F: Energy harvesting patent database analysis"
+  },
+  {
+    "id": "NRG-04",
+    "domain": "Energy",
+    "prompt": "Context: Evaluating sources for discovering waste heat recovery mechanisms.\n\nSource A: Bombardier beetle reaction chamber insulation\nSource B: Computational thermoelectric band engineering\nSource C: Tuna countercurrent rete mirabile efficiency\nSource D: Synthetic chalcogenide material screening\nSource E: Pit viper infrared receptor thermal isolation\nSource F: Thermoelectric patent database analysis"
+  },
+  {
+    "id": "NRG-05",
+    "domain": "Energy",
+    "prompt": "Context: Evaluating sources for discovering energy extraction from salinity gradients.\n\nSource A: Salmon gill chloride cell ion transport\nSource B: Computational membrane selectivity modeling\nSource C: Mangrove root ultrafiltration tissue\nSource D: Synthetic ion-exchange membrane screening\nSource E: Shark rectal gland concentrating mechanisms\nSource F: Osmotic power patent database analysis"
+  },
+  {
+    "id": "NRG-06",
+    "domain": "Energy",
+    "prompt": "Context: Evaluating sources for discovering efficient biomass-to-fuel conversion.\n\nSource A: Termite gut microbial consortium lignocellulose digestion\nSource B: Computational metabolic pathway modeling\nSource C: Shipworm gill symbiont cellulase systems\nSource D: Directed evolution enzyme screening\nSource E: Hoatzin foregut fermentation microbiome\nSource F: Biofuel production patent database analysis"
+  },
+  {
+    "id": "NRG-07",
+    "domain": "Energy",
+    "prompt": "Context: Evaluating sources for discovering efficient water splitting.\n\nSource A: Cyanobacteria photosystem II oxygen evolution\nSource B: Computational photocatalyst band alignment\nSource C: Green algae [FeFe]-hydrogenase active site\nSource D: Semiconductor heterojunction screening\nSource E: Nitrogen-fixing bacteria electron transport\nSource F: Hydrogen production patent database analysis"
+  },
+  {
+    "id": "NRG-08",
+    "domain": "Energy",
+    "prompt": "Context: Evaluating sources for discovering heat dissipation without energy input.\n\nSource A: Termite mound ventilation stack effect\nSource B: Computational fluid dynamics optimization\nSource C: Elephant ear pinna vascular patterns\nSource D: Topology-optimized heat sink design\nSource E: Desert beetle fog-basking orientation\nSource F: Passive cooling patent database analysis"
+  },
+  {
+    "id": "NRG-09",
+    "domain": "Energy",
+    "prompt": "Context: Evaluating sources for discovering high-density reversible energy storage.\n\nSource A: Hummingbird fat-to-flight metabolic efficiency\nSource B: Computational electrode intercalation modeling\nSource C: Hibernating bear lipid mobilization control\nSource D: Metal-organic framework screening\nSource E: Migrating bird pre-flight hyperphagia metabolism\nSource F: Energy storage patent database analysis"
+  },
+  {
+    "id": "NRG-10",
+    "domain": "Energy",
+    "prompt": "Context: Evaluating sources for discovering control algorithms for renewable integration.\n\nSource A: Pancreatic islet glucose-insulin feedback\nSource B: Computational model predictive control\nSource C: Forest ecosystem nutrient cycling regulation\nSource D: Deep reinforcement learning controllers\nSource E: Coral reef carbonate buffering dynamics\nSource F: Grid management patent database analysis"
+  },
+  {
+    "id": "NRG-11",
+    "domain": "Energy",
+    "prompt": "Context: Evaluating sources for discovering aerodynamic efficiency beyond current turbines.\n\nSource A: Humpback whale flipper tubercle leading edge\nSource B: Computational blade element momentum theory\nSource C: Maple samara autorotation aerodynamics\nSource D: Generative design blade optimization\nSource E: Dragonfly wing corrugation vortex control\nSource F: Wind turbine patent database analysis"
+  },
+  {
+    "id": "NRG-12",
+    "domain": "Energy",
+    "prompt": "Context: Evaluating sources for discovering ultra-sensitive chemical detection.\n\nSource A: Shark ampullae of Lorenzini field sensitivity\nSource B: Computational sensor impedance modeling\nSource C: Platypus bill electroreception arrays\nSource D: Synthetic electrode functionalization screening\nSource E: Electric catfish tuberous receptor organs\nSource F: Electrochemical sensor patent database analysis"
+  },
+  {
+    "id": "NRG-13",
+    "domain": "Energy",
+    "prompt": "Context: Evaluating sources for discovering efficient proton-conducting materials.\n\nSource A: ATP synthase F0 proton channel rotation\nSource B: Computational proton hopping simulation\nSource C: Bacteriorhodopsin proton pumping pathway\nSource D: Synthetic proton exchange membrane screening\nSource E: Mitochondrial cytochrome c oxidase proton coupling\nSource F: Proton conductor patent database analysis"
+  },
+  {
+    "id": "MFG-01",
+    "domain": "Manufacturing",
+    "prompt": "Context: Evaluating sources for discovering room-temperature hard material synthesis.\n\nSource A: Sea urchin spine stereom calcite formation\nSource B: Computational nucleation kinetics modeling\nSource C: Chiton radula magnetite biomineralization\nSource D: Sol-gel low-temperature ceramic screening\nSource E: Coral skeleton aragonite crystal templating\nSource F: Low-temperature processing patent database analysis"
+  },
+  {
+    "id": "MFG-02",
+    "domain": "Manufacturing",
+    "prompt": "Context: Evaluating sources for discovering multi-scale structure fabrication.\n\nSource A: Bone trabecular network remodeling\nSource B: Computational multi-scale topology optimization\nSource C: Wood ray parenchyma-tracheid organization\nSource D: Freeze-casting templated porosity screening\nSource E: Nacre tablet-bridge layered growth\nSource F: Hierarchical materials patent database analysis"
+  },
+  {
+    "id": "MFG-03",
+    "domain": "Manufacturing",
+    "prompt": "Context: Evaluating sources for discovering molecular self-organization for nanofabrication.\n\nSource A: Virus capsid protein shell assembly\nSource B: Computational coarse-grained assembly modeling\nSource C: Diatom silica deposition pattern formation\nSource D: Block copolymer phase separation screening\nSource E: Bacterial S-layer protein crystallization\nSource F: Self-assembly patent database analysis"
+  },
+  {
+    "id": "MFG-04",
+    "domain": "Manufacturing",
+    "prompt": "Context: Evaluating sources for discovering structures maintaining function despite damage.\n\nSource A: Glass sponge spicule crack arrest architecture\nSource B: Computational fracture mechanics simulation\nSource C: Dragonfly wing vein damage distribution\nSource D: Redundancy engineering design patterns\nSource E: Lobster cuticle Bouligand crack steering\nSource F: Damage tolerance patent database analysis"
+  },
+  {
+    "id": "MFG-05",
+    "domain": "Manufacturing",
+    "prompt": "Context: Evaluating sources for discovering manufacturing without material loss.\n\nSource A: Spider dragline silk spinning and recycling\nSource B: Computational process mass balance optimization\nSource C: Bone resorption-deposition material cycling\nSource D: Lean manufacturing waste reduction methods\nSource E: Hermit crab shell reuse and modification\nSource F: Sustainable manufacturing patent database analysis"
+  },
+  {
+    "id": "MFG-06",
+    "domain": "Manufacturing",
+    "prompt": "Context: Evaluating sources for discovering dissimilar material bonding at room temperature.\n\nSource A: Abalone nacre mineral-bridge tablet interlocking\nSource B: Computational interface stress modeling\nSource C: Bone-tendon gradient enthesis attachment\nSource D: Friction stir processing optimization\nSource E: Mussel byssus thread-plaque transition\nSource F: Joining technology patent database analysis"
+  },
+  {
+    "id": "MFG-07",
+    "domain": "Manufacturing",
+    "prompt": "Context: Evaluating sources for discovering scalable functional surface texturing.\n\nSource A: Gecko setae hierarchical dry adhesion\nSource B: Computational laser ablation parameter optimization\nSource C: Moth eye antireflective nipple arrays\nSource D: Roll-to-roll nanoimprint lithography screening\nSource E: Rice leaf directional water transport\nSource F: Surface treatment patent database analysis"
+  },
+  {
+    "id": "MFG-08",
+    "domain": "Manufacturing",
+    "prompt": "Context: Evaluating sources for discovering structures that reconfigure in response to environment.\n\nSource A: Pine cone scale hygroscopic bilayer opening\nSource B: Computational shape memory material modeling\nSource C: Venus flytrap snap-buckling closure\nSource D: Synthetic shape memory alloy screening\nSource E: Mimosa pudica pulvinus motor cells\nSource F: Morphing structures patent database analysis"
+  },
+  {
+    "id": "MFG-09",
+    "domain": "Manufacturing",
+    "prompt": "Context: Evaluating sources for discovering integrated sensing within structural materials.\n\nSource A: Human skin mechanoreceptor distribution\nSource B: Computational sensor network optimization\nSource C: Spider leg lyriform slit sensilla arrays\nSource D: Printed electronics integration methods\nSource E: Insect campaniform sensilla strain sensing\nSource F: Structural health monitoring patent database analysis"
+  },
+  {
+    "id": "MFG-10",
+    "domain": "Manufacturing",
+    "prompt": "Context: Evaluating sources for discovering massively parallel production methods.\n\nSource A: Honeybee comb simultaneous cell construction\nSource B: Computational parallelization theory\nSource C: Coral polyp colony simultaneous calcification\nSource D: Photolithography array patterning methods\nSource E: Diatom synchronized valve formation\nSource F: Parallel manufacturing patent database analysis"
+  },
+  {
+    "id": "MFG-11",
+    "domain": "Manufacturing",
+    "prompt": "Context: Evaluating sources for discovering defect detection in complex geometries.\n\nSource A: Weakly electric fish electrolocation imaging\nSource B: Computational inverse problem solving\nSource C: Bat echolocation 3D spatial mapping\nSource D: Standard ultrasonic/X-ray inspection methods\nSource E: Dolphin biosonar material discrimination\nSource F: Nondestructive testing patent database analysis"
+  },
+  {
+    "id": "MFG-12",
+    "domain": "Manufacturing",
+    "prompt": "Context: Evaluating sources for discovering manufacturing that adapts to local conditions.\n\nSource A: Termite mound climate-responsive construction\nSource B: Computational adaptive process control\nSource C: Beaver dam flow-responsive modification\nSource D: Model predictive control tuning methods\nSource E: Weaver bird nest site-specific design\nSource F: Adaptive manufacturing patent database analysis"
+  },
+  {
+    "id": "MFG-13",
+    "domain": "Manufacturing",
+    "prompt": "Context: Evaluating sources for discovering material production minimizing energy input.\n\nSource A: Abalone shell nacre ambient crystallization\nSource B: Computational reaction pathway optimization\nSource C: Bone apatite collagen-templated mineralization\nSource D: Microwave-assisted synthesis screening\nSource E: Coccolithophore calcite scale formation\nSource F: Energy-efficient processing patent database analysis"
+  }
+]
