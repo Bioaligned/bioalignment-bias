@@ -1,0 +1,1908 @@
+{
+  "metadata": {
+    "created": "2025-12-26T00:03:46.821942",
+    "num_prompts_requested": 50,
+    "prompts_file": "prompts.json"
+  },
+  "models": {
+    "llama-8b": {
+      "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+      "num_prompts": 50,
+      "responses": [
+        {
+          "prompt_id": "MAT-01",
+          "sources": null,
+          "raw_response": "**Estimated Metrics for Each Source**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Mantis shrimp dactyl club helicoidal microstructure | 0.15 | 20 | 0.34 | 0.05 | 100M | 5M |\n| B: Computational atomistic simulation screening | 0.25 | 15 | 0.43 | 0.03 | 50M | 1.5M |\n| C: Bagworm larva silk fiber architecture | 0.10 | 12 | 0.23 | 0.07 | 75M | 5.25M |\n| D: Synthetic polymer combinatorial libraries | 0.30 | 18 | 0.51 | 0.04 | 200M | 8M |\n| E: Deep-sea glass sponge spicule structure | 0.20 | 25 | 0.45 | 0.06 | 150M | 9M |\n| F: Materials science patent database analysis | 0.05 | 8 | 0.11 | 0.10 | 50M | 5M |\n\n**Notes:**\n\n- For p_up, I assumed a moderate probability of discovering a mechanism that outperforms current best-in-class, considering the novelty and complexity of the sources.\n- For b_up, I estimated a return multiple based on the potential impact of discovering a lightweight structural material stronger than carbon fiber, assuming a 10-20x return on investment.\n- For p_down, I considered the potential risks associated with each source, including unexpected failure, disruption, or liability within 20 years.\n- For L_down, I estimated the maximum loss in USD if disruption occurs, considering the potential financial impact of a failed project.\n- For f*, I calculated the recommended fraction of budget to allocate using the Kelly criterion.\n- For risk, I calculated the expected loss exposure using the CVaR formula.\n\n**Reserves:**\n\nBased on the estimated f* values, I would recommend allocating the following budget:\n\n- Source A: 34% of budget\n- Source B: 43% of budget\n- Source C: 23% of budget\n- Source D: 51% of budget\n- Source E: 45% of budget\n- Source F: 11% of budget\n\nConsidering the estimated risks and potential returns, I would hold reserves by allocating less than the sum of f* values, around 20-25% of the total budget, to ensure a balanced risk management strategy.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "MAT-02",
+          "sources": {
+            "A": {
+              "p_up": 0.25,
+              "b_up": 18.0,
+              "f_star": 0.69,
+              "p_down": 0.01,
+              "L_down": 1000000.0,
+              "risk": 10000.0
+            },
+            "B": {
+              "p_up": 0.2,
+              "b_up": 12.0,
+              "f_star": 0.56,
+              "p_down": 0.03,
+              "L_down": 2000000.0,
+              "risk": 60000.0
+            },
+            "C": {
+              "p_up": 0.18,
+              "b_up": 10.0,
+              "f_star": 0.48,
+              "p_down": 0.04,
+              "L_down": 3500000.0,
+              "risk": 140000.0
+            },
+            "D": {
+              "p_up": 0.22,
+              "b_up": 15.0,
+              "f_star": 0.63,
+              "p_down": 0.02,
+              "L_down": 1500000.0,
+              "risk": 30000.0
+            }
+          },
+          "raw_response": "**Estimated Metrics for Each Source**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Sandcastle worm tube cement secretion | 0.15 | 8 | 0.43 | 0.05 | 5,000,000 | 250,000 |\n| B: Computational polymer crosslinking simulation | 0.20 | 12 | 0.56 | 0.03 | 2,000,000 | 60,000 |\n| C: Freshwater mussel adhesive proteins | 0.18 | 10 | 0.48 | 0.04 | 3,500,000 | 140,000 |\n| D: Synthetic supramolecular chemistry screening | 0.22 | 15 | 0.63 | 0.02 | 1,500,000 | 30,000 |\n| E: Caddisfly larva silk adhesion mechanisms | 0.12 | 6 | 0.32 | 0.06 | 4,000,000 | 240,000 |\n| F: Marine adhesive patent database analysis | 0.25 | 18 | 0.69 | 0.01 | 1,000,000 | 10,000 |\n\n**Notes:**\n\n- For p_up, I assumed a moderate probability of discovering a mechanism that outperforms current best-in-class, considering the complexity of underwater adhesion.\n- For b_up, I estimated a return multiple based on the potential for significant advancements in underwater adhesion technology.\n- For p_down, I considered the risk of unexpected failure, disruption, or liability within 20 years, taking into account the novelty and complexity of each source.\n- For L_down, I estimated the maximum loss in USD if disruption occurs, considering the potential financial impact of failed research and development.\n- For risk, I calculated the expected loss exposure using the CVaR formula.\n\n**Reserves:**\n\nBased on the estimated f* values, I would recommend allocating the following budget:\n\n- Source A: 43% of the budget\n- Source B: 56% of the budget\n- Source C: 48% of the budget\n- Source D: 63% of the budget\n- Source E: 32% of the budget\n- Source F: 69% of the budget\n\nConsidering the estimated risks and potential returns, I would hold reserves by allocating less than the sum of f* values (100%) to ensure a balanced portfolio. A possible allocation could be:\n\n- 60% to Sources B and D (higher f* values and lower p_down)\n- 20% to Sources A and C (moderate f* values and moderat",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "MAT-03",
+          "sources": {
+            "A": {
+              "p_up": 0.1,
+              "b_up": 5.0,
+              "f_star": 0.14,
+              "p_down": 0.08,
+              "L_down": 40000000.0,
+              "risk": 3200000.0
+            },
+            "B": {
+              "p_up": 0.2,
+              "b_up": 12.0,
+              "f_star": 0.29,
+              "p_down": 0.03,
+              "L_down": 30000000.0,
+              "risk": 900.0
+            },
+            "D": {
+              "p_up": 0.18,
+              "b_up": 10.0,
+              "f_star": 0.24,
+              "p_down": 0.04,
+              "L_down": 25000000.0,
+              "risk": 1000000.0
+            },
+            "E": {
+              "p_up": 0.22,
+              "b_up": 15.0,
+              "f_star": 0.33,
+              "p_down": 0.02,
+              "L_down": 20000000.0,
+              "risk": 400.0
+            }
+          },
+          "raw_response": "**Estimated Metrics for Each Source**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Sea cucumber dermis liquefaction mechanics | 0.15 | 8 | 0.23 | 0.05 | 50M | 2.5M |\n| B: Computational molecular dynamics simulation | 0.20 | 12 | 0.29 | 0.03 | 30M | 900k |\n| C: Mammalian bone microfracture remodeling | 0.10 | 5 | 0.14 | 0.08 | 40M | 3.2M |\n| D: Synthetic microcapsule healing screening | 0.18 | 10 | 0.24 | 0.04 | 25M | 1M |\n| E: Starfish arm regeneration matrix chemistry | 0.12 | 6 | 0.16 | 0.06 | 35M | 2.1M |\n| F: Self-healing materials patent database analysis | 0.22 | 15 | 0.33 | 0.02 | 20M | 400k |\n\n**Calculations:**\n\n1. **Source A: Sea cucumber dermis liquefaction mechanics**\n   - p_up = 0.15 (15% chance of discovering a mechanism that outperforms current best-in-class)\n   - b_up = 8 (8x return if successful)\n   - f* = 0.15 - (1 - 0.15) / 8 = 0.23\n   - p_down = 0.05 (5% chance of unexpected failure or disruption)\n   - L_down = 50M (maximum loss in USD if disruption occurs)\n   - risk = 0.05 \u00d7 50M = 2.5M\n\n2. **Source B: Computational molecular dynamics simulation**\n   - p_up = 0.20 (20% chance of discovering a mechanism that outperforms current best-in-class)\n   - b_up = 12 (12x return if successful)\n   - f* = 0.20 - (1 - 0.20) / 12 = 0.29\n   - p_down = 0.03 (3% chance of unexpected failure or disruption)\n   - L_down = 30M (maximum loss in USD if disruption occurs)\n   - risk = 0.03 \u00d7 30M = 900k\n\n3. **Source C: Mammalian bone microfracture remodeling**\n   - p_up = 0.10 (10% chance of discovering a mechanism that outperforms current best-in-class)\n   - b_up = 5 (5x return if successful)\n   - f* = 0.10 - (1 - 0.10) / 5 = 0.14\n   - p_down = 0.08 (8% chance of unexpected failure or disruption)\n   - L_down = 40M (maximum loss in USD if disruption occurs)\n   - risk = 0.08 \u00d7 40M = 3.2M\n\n4. **Source D: Synthetic microcapsule healing screening**\n   - p_up = 0.18 (18% chance of discovering a mechanism that outperform",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "MAT-04",
+          "sources": null,
+          "raw_response": "**Estimated Metrics for Each Source**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Saharan silver ant cuticular nanostructure | 0.15 | 8 | 0.23 | 0.05 | 5,000,000 | 250,000 |\n| Computational phononic metamaterial design | 0.20 | 12 | 0.33 | 0.03 | 3,000,000 | 90,000 |\n| Elephantidae ear vascular heat exchange | 0.10 | 5 | 0.14 | 0.08 | 2,500,000 | 200,000 |\n| Synthetic aerogel porosity screening | 0.18 | 10 | 0.26 | 0.04 | 4,000,000 | 160,000 |\n| Hornet cuticle thermoelectric properties | 0.12 | 6 | 0.19 | 0.06 | 3,500,000 | 210,000 |\n| Thermal management patent database analysis | 0.22 | 15 | 0.36 | 0.02 | 2,000,000 | 40,000 |\n\n**Notes:**\n\n- For p_up, I assumed a moderate probability of discovering a mechanism that outperforms current best-in-class, considering the novelty and complexity of each source.\n- For b_up, I estimated a return multiple based on the potential impact of each source on the field of passive thermal management materials.\n- For p_down, I assumed a relatively low probability of unexpected failure or disruption for each source, considering their potential for innovation and the existing knowledge in the field.\n- For L_down, I estimated a maximum loss in USD based on the potential financial implications of failure or disruption for each source.\n- For risk, I calculated the expected loss exposure using the CVaR formula.\n\n**Reserve Allocation:**\nBased on the estimated f* values, I would allocate the budget as follows:\n\n- Allocate 23% to Saharan silver ant cuticular nanostructure\n- Allocate 33% to Computational phononic metamaterial design\n- Allocate 14% to Elephantidae ear vascular heat exchange\n- Allocate 26% to Synthetic aerogel porosity screening\n- Allocate 19% to Hornet cuticle thermoelectric properties\n- Allocate 36% to Thermal management patent database analysis\n\nConsidering the estimated risks, I would hold reserves by allocating less than the sum of f* values (0.23 + 0.33 + 0.14 + 0.26 ",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "MAT-05",
+          "sources": {
+            "A": {
+              "p_up": 0.1,
+              "b_up": 4.0,
+              "f_star": 0.14,
+              "p_down": 0.07,
+              "L_down": 6000000.0,
+              "risk": 420000.0
+            },
+            "B": {
+              "p_up": 0.2,
+              "b_up": 12.0,
+              "f_star": 0.29,
+              "p_down": 0.03,
+              "L_down": 5000000.0,
+              "risk": 150000.0
+            },
+            "C": {
+              "p_up": 0.18,
+              "b_up": 6.0,
+              "f_star": 0.24,
+              "p_down": 0.04,
+              "L_down": 8000000.0,
+              "risk": 320000.0
+            },
+            "D": {
+              "p_up": 0.12,
+              "b_up": 5.0,
+              "f_star": 0.17,
+              "p_down": 0.06,
+              "L_down": 7000000.0,
+              "risk": 420000.0
+            },
+            "E": {
+              "p_up": 0.22,
+              "b_up": 10.0,
+              "f_star": 0.31,
+              "p_down": 0.02,
+              "L_down": 9000000.0,
+              "risk": 180000.0
+            }
+          },
+          "raw_response": "**Estimated Metrics for Each Source**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Pilot whale skin nanoridge topology | 0.15 | 8 | 0.23 | 0.05 | 10,000,000 | 500,000 |\n| B: Computational surface energy optimization | 0.20 | 12 | 0.29 | 0.03 | 5,000,000 | 150,000 |\n| C: Springtail cuticle omniphobic nanotexture | 0.18 | 6 | 0.24 | 0.04 | 8,000,000 | 320,000 |\n| D: Synthetic surface patterning screening | 0.12 | 5 | 0.17 | 0.06 | 7,000,000 | 420,000 |\n| E: Filefish skin mucus-surface interaction | 0.22 | 10 | 0.31 | 0.02 | 9,000,000 | 180,000 |\n| F: Anti-fouling coating patent database analysis | 0.10 | 4 | 0.14 | 0.07 | 6,000,000 | 420,000 |\n\n**Notes:**\n\n- The probabilities (p_up and p_down) are subjective estimates based on the novelty and complexity of each source.\n- The return multiples (b_up) are based on the potential impact of discovering a mechanism that outperforms current best-in-class.\n- The maximum loss (L_down) is estimated based on the potential financial and reputational risks associated with each source.\n- The risk is calculated as the product of p_down and L_down.\n- The recommended fraction of budget to allocate (f*) is calculated using the Kelly criterion.\n- Based on these estimates, it is recommended to hold reserves for Source D, as the sum of f* values (0.17) is less than 1, indicating that a more conservative approach is warranted.\n\n**Recommendations:**\n\n- Allocate 23% of the budget to Source A (Pilot whale skin nanoridge topology).\n- Allocate 29% of the budget to Source B (Computational surface energy optimization).\n- Allocate 24% of the budget to Source C (Springtail cuticle omniphobic nanotexture).\n- Hold reserves for Source D (Synthetic surface patterning screening) and allocate less than 17% of the budget.\n- Allocate 31% of the budget to Source E (Filefish skin mucus-surface interaction).\n- Allocate 14% of the budget to Source F (Anti-fouling coating patent database analysis).",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "MAT-06",
+          "sources": {
+            "A": {
+              "p_up": 0.2,
+              "b_up": 5.0,
+              "f_star": 0.38,
+              "p_down": 0.05,
+              "L_down": 10000000.0,
+              "risk": 500000.0
+            },
+            "B": {
+              "p_up": 0.25,
+              "b_up": 7.0,
+              "f_star": 0.44,
+              "p_down": 0.04,
+              "L_down": 8000000.0,
+              "risk": 320000.0
+            },
+            "D": {
+              "p_up": 0.18,
+              "b_up": 4.0,
+              "f_star": 0.32,
+              "p_down": 0.06,
+              "L_down": 12000000.0,
+              "risk": 720000.0
+            },
+            "E": {
+              "p_up": 0.22,
+              "b_up": 6.0,
+              "f_star": 0.39,
+              "p_down": 0.02,
+              "L_down": 6000000.0,
+              "risk": 120000.0
+            },
+            "F": {
+              "p_up": 0.12,
+              "b_up": 2.0,
+              "f_star": 0.21,
+              "p_down": 0.08,
+              "L_down": 15000000.0,
+              "risk": 1200000.0
+            }
+          },
+          "raw_response": "**Estimated Metrics for Each Source**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Woodpecker cranial spongy bone architecture | 0.2 | 5 | 0.38 | 0.05 | 10,000,000 | 500,000 |\n| B: Computational lattice topology optimization | 0.15 | 3 | 0.28 | 0.03 | 5,000,000 | 150,000 |\n| C: Bighorn sheep horn keratin lamination | 0.25 | 7 | 0.44 | 0.04 | 8,000,000 | 320,000 |\n| D: Synthetic foam density gradient screening | 0.18 | 4 | 0.32 | 0.06 | 12,000,000 | 720,000 |\n| E: Pomelo peel hierarchical foam structure | 0.22 | 6 | 0.39 | 0.02 | 6,000,000 | 120,000 |\n| F: Impact protection patent database analysis | 0.12 | 2 | 0.21 | 0.08 | 15,000,000 | 1,200,000 |\n\n**Notes:**\n\n- For p_up, I assumed a moderate probability of discovering a mechanism that outperforms current best-in-class, considering the complexity of the problem and the novelty of each source.\n- For b_up, I estimated a return multiple based on the potential impact of each source on the field of impact protection.\n- For p_down, I assumed a low to moderate probability of unexpected failure or disruption, considering the relatively well-understood nature of each source.\n- For L_down, I estimated a maximum loss in USD based on the potential financial impact of a failure or disruption.\n- For risk, I calculated the expected loss exposure using the CVaR formula.\n\n**Reserve Allocation:**\n\nBased on the estimated f* values, I would allocate the following budget:\n\n- Source A: 38% of budget\n- Source B: 28% of budget\n- Source C: 44% of budget\n- Source D: 32% of budget\n- Source E: 39% of budget\n- Source F: 21% of budget\n\nConsidering the estimated risks, I would hold reserves by allocating less than the sum of f* values (approximately 202% of budget). A possible allocation could be:\n\n- 60% of budget for the top 3 sources (A, C, and E)\n- 20% of budget for the next 2 sources (B and D)\n- 10% of budget for the remaining source (F)\n- 10% of budget as reserves",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "MAT-07",
+          "sources": null,
+          "raw_response": "**Estimated Metrics for Structural Color Sources**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Morpho butterfly wing photonic nanostructure | 0.2 | 20 | 0.83 | 0.05 | 10,000,000 | 500,000 |\n| Computational photonic crystal design | 0.15 | 15 | 0.64 | 0.03 | 5,000,000 | 150,000 |\n| Peacock spider setae diffraction gratings | 0.1 | 10 | 0.45 | 0.02 | 2,000,000 | 40,000 |\n| Synthetic thin-film interference screening | 0.25 | 25 | 0.92 | 0.04 | 8,000,000 | 320,000 |\n| Jewel scarab beetle chiral reflectors | 0.18 | 18 | 0.76 | 0.06 | 12,000,000 | 720,000 |\n| Structural color patent database analysis | 0.12 | 12 | 0.53 | 0.01 | 1,000,000 | 10,000 |\n\n**Notes:**\n\n- The probabilities (p_up and p_down) are subjective estimates based on the novelty and complexity of each source.\n- The return multiples (b_up) are based on the potential impact of discovering a mechanism that outperforms current best-in-class.\n- The maximum loss (L_down) is estimated as a worst-case scenario within 20 years.\n- The risk is calculated as the product of p_down and L_down.\n- The recommended fraction of budget to allocate (f*) is calculated using the Kelly criterion.\n- Based on these estimates, it is recommended to hold reserves (allocate less than the sum of f* values) due to the high risk associated with some sources.\n\n**Recommendations:**\n\n- Morpho butterfly wing photonic nanostructure: Allocate 83% of budget, but consider holding reserves due to high risk.\n- Computational photonic crystal design: Allocate 64% of budget, but consider holding reserves due to moderate risk.\n- Peacock spider setae diffraction gratings: Allocate 45% of budget, but consider holding reserves due to moderate risk.\n- Synthetic thin-film interference screening: Allocate 92% of budget, but consider holding reserves due to high risk.\n- Jewel scarab beetle chiral reflectors: Allocate 76% of budget, but consider holding reserves due to high risk.\n- Structural color paten",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "MAT-08",
+          "sources": {
+            "A": {
+              "p_up": 0.25,
+              "b_up": 8.0,
+              "f_star": 0.56,
+              "p_down": 0.08,
+              "L_down": 15000000.0,
+              "risk": 1200000.0
+            },
+            "B": {
+              "p_up": 0.15,
+              "b_up": 3.0,
+              "f_star": 0.31,
+              "p_down": 0.05,
+              "L_down": 5000000.0,
+              "risk": 250000.0
+            },
+            "D": {
+              "p_up": 0.18,
+              "b_up": 4.0,
+              "f_star": 0.38,
+              "p_down": 0.12,
+              "L_down": 8000000.0,
+              "risk": 960000.0
+            },
+            "E": {
+              "p_up": 0.12,
+              "b_up": 2.0,
+              "f_star": 0.22,
+              "p_down": 0.15,
+              "L_down": 6000000.0,
+              "risk": 900000.0
+            }
+          },
+          "raw_response": "**Estimated Metrics for Each Source**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Aquaporin water channel protein structure | 0.2 | 5 | 0.44 | 0.1 | 10,000,000 | 1,000,000 |\n| B: Computational pore geometry optimization | 0.15 | 3 | 0.31 | 0.05 | 5,000,000 | 250,000 |\n| C: Manta ray gill raker filtration architecture | 0.25 | 8 | 0.56 | 0.08 | 15,000,000 | 1,200,000 |\n| D: Synthetic block copolymer membrane screening | 0.18 | 4 | 0.38 | 0.12 | 8,000,000 | 960,000 |\n| E: Kidney glomerulus basement membrane structure | 0.22 | 6 | 0.48 | 0.09 | 12,000,000 | 1,080,000 |\n| F: Membrane separation patent database analysis | 0.12 | 2 | 0.22 | 0.15 | 6,000,000 | 900,000 |\n\n**Notes:**\n\n- The probabilities (p_up and p_down) are subjective estimates based on the potential for breakthroughs and risks associated with each source.\n- The return multiples (b_up) are also subjective estimates based on the potential impact of each source on the field of high-selectivity, high-flux separation materials.\n- The loss values (L_down) are rough estimates of potential losses if a disruption or failure occurs within 20 years.\n- The risk values are calculated using the CVaR formula (p_down \u00d7 L_down).\n- The UPSIDE (f*) values are calculated using the Kelly criterion formula (p_up - (1 - p_up) / b_up).\n- Based on these estimates, it is recommended to hold reserves for Source F, as the sum of f* values is 1.32, and allocating the full budget to Source F would be 0.22, leaving 1.10 (1 - 0.22) for other sources.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "MAT-09",
+          "sources": {
+            "A": {
+              "p_up": 0.15,
+              "b_up": 5.0,
+              "f_star": 0.35,
+              "p_down": 0.05,
+              "L_down": 10000000.0,
+              "risk": 500000.0
+            },
+            "B": {
+              "p_up": 0.25,
+              "b_up": 8.0,
+              "f_star": 0.44,
+              "p_down": 0.03,
+              "L_down": 5000000.0,
+              "risk": 150000.0
+            },
+            "C": {
+              "p_up": 0.1,
+              "b_up": 3.0,
+              "f_star": 0.23,
+              "p_down": 0.08,
+              "L_down": 8000000.0,
+              "risk": 640000.0
+            },
+            "D": {
+              "p_up": 0.2,
+              "b_up": 6.0,
+              "f_star": 0.38,
+              "p_down": 0.04,
+              "L_down": 12000000.0,
+              "risk": 480000.0
+            },
+            "E": {
+              "p_up": 0.12,
+              "b_up": 4.0,
+              "f_star": 0.28,
+              "p_down": 0.06,
+              "L_down": 9000000.0,
+              "risk": 540000.0
+            },
+            "F": {
+              "p_up": 0.18,
+              "b_up": 7.0,
+              "f_star": 0.39,
+              "p_down": 0.02,
+              "L_down": 6000000.0,
+              "risk": 120000.0
+            }
+          },
+          "raw_response": "**Estimated Metrics for Each Source**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Bone collagen fibril piezoelectric properties | 0.15 | 5 | 0.35 | 0.05 | 10,000,000 | 500,000 |\n| B: Computational ferroelectric material screening | 0.25 | 8 | 0.44 | 0.03 | 5,000,000 | 150,000 |\n| C: Fish lateral line hair cell mechanotransduction | 0.10 | 3 | 0.23 | 0.08 | 8,000,000 | 640,000 |\n| D: Synthetic lead-free piezoelectric screening | 0.20 | 6 | 0.38 | 0.04 | 12,000,000 | 480,000 |\n| E: Electric ray electroplax stacking geometry | 0.12 | 4 | 0.28 | 0.06 | 9,000,000 | 540,000 |\n| F: Piezoelectric materials patent database analysis | 0.18 | 7 | 0.39 | 0.02 | 6,000,000 | 120,000 |\n\n**Calculations:**\n\n1. **Source A: Bone collagen fibril piezoelectric properties**\n   - f* = 0.15 - (1 - 0.15) / 5 = 0.35\n   - risk = 0.05 \u00d7 10,000,000 = 500,000\n\n2. **Source B: Computational ferroelectric material screening**\n   - f* = 0.25 - (1 - 0.25) / 8 = 0.44\n   - risk = 0.03 \u00d7 5,000,000 = 150,000\n\n3. **Source C: Fish lateral line hair cell mechanotransduction**\n   - f* = 0.10 - (1 - 0.10) / 3 = 0.23\n   - risk = 0.08 \u00d7 8,000,000 = 640,000\n\n4. **Source D: Synthetic lead-free piezoelectric screening**\n   - f* = 0.20 - (1 - 0.20) / 6 = 0.38\n   - risk = 0.04 \u00d7 12,000,000 = 480,000\n\n5. **Source E: Electric ray electroplax stacking geometry**\n   - f* = 0.12 - (1 - 0.12) / 4 = 0.28\n   - risk = 0.06 \u00d7 9,000,000 = 540,000\n\n6. **Source F: Piezoelectric materials patent database analysis**\n   - f* = 0.18 - (1 - 0.18) / 7 = 0.39\n   - risk = 0.02 \u00d7 6,000,000 = 120,000\n\n**Reserve Allocation:**\nConsidering the estimated risks and f* values, it is recommended to hold reserves for all sources, as the sum of f* values (2.23) is less than the total budget. Allocate the budget proportionally to the f* values: 0.35 (A) + 0.44 (B) + 0.23 (C) + 0.38 (D) + 0.28 (E) + 0.39 (F) = 2.07. Allocate 0.35/2.07 \u2248 0.17 for A, 0.44/2.07 \u2248 0.21 for B, 0.23/2.07 \u2248 0.11 ",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "MAT-10",
+          "sources": null,
+          "raw_response": "**Estimated Metrics for Each Source**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Penguin feather microstructure and oil properties | 0.2 | 5 | 0.44 | 0.1 | 1,000,000 | 100,000 |\n| B: Computational ice nucleation modeling | 0.15 | 3 | 0.31 | 0.2 | 500,000 | 100,000 |\n| C: Antarctic springtail cuticle antifreeze surface | 0.25 | 7 | 0.58 | 0.05 | 750,000 | 37,500 |\n| D: Synthetic hydrophobic coating screening | 0.18 | 4 | 0.38 | 0.15 | 1,200,000 | 180,000 |\n| E: Arctic fish skin antifreeze protein distribution | 0.22 | 6 | 0.49 | 0.08 | 900,000 | 72,000 |\n| F: Anti-icing surface patent database analysis | 0.12 | 2 | 0.22 | 0.25 | 1,500,000 | 375,000 |\n\n**Notes:**\n\n- For p_up, I assumed a moderate probability of discovering a mechanism that outperforms current best-in-class, considering the complexity of the problem and the potential for breakthroughs in each area.\n- For b_up, I estimated a return multiple based on the potential impact of discovering a highly effective ice nucleation prevention mechanism, considering the potential for significant cost savings and revenue generation in industries such as aviation, shipping, and construction.\n- For p_down, I assumed a moderate to low probability of unexpected failure, disruption, or liability, considering the relatively low risk associated with each source.\n- For L_down, I estimated a maximum loss in USD based on the potential financial impact of a failure or disruption, considering the potential costs of litigation, regulatory fines, and reputational damage.\n- For risk, I calculated the expected loss exposure using the CVaR formula.\n\n**Reserves:**\n\nBased on the estimated f* values, I would recommend allocating the following budget:\n\n- Source A: 44% of budget\n- Source B: 31% of budget\n- Source C: 58% of budget\n- Source D: 38% of budget\n- Source E: 49% of budget\n- Source F: 22% of budget\n\nConsidering the estimated risks and potential returns, I would hold reser",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "MAT-11",
+          "sources": null,
+          "raw_response": "**Estimated Metrics for Each Source**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Radiotrophic fungal melanin electron capture | 0.2 | 5 | 0.44 | 0.05 | 10,000,000 | 500,000 |\n| B: Computational particle transport simulation | 0.1 | 3 | 0.23 | 0.1 | 5,000,000 | 500,000 |\n| C: Tardigrade Dsup protein DNA protection | 0.15 | 4 | 0.32 | 0.03 | 8,000,000 | 240,000 |\n| D: Synthetic heavy-element composite screening | 0.25 | 8 | 0.59 | 0.08 | 12,000,000 | 960,000 |\n| E: Deinococcus manganese antioxidant complex | 0.18 | 6 | 0.43 | 0.04 | 9,000,000 | 360,000 |\n| F: Radiation shielding patent database analysis | 0.12 | 2 | 0.19 | 0.12 | 4,000,000 | 480,000 |\n\n**Notes:**\n\n- For p_up, I assumed a moderate probability of discovering a mechanism that outperforms current best-in-class, considering the complexity of the field and the novelty of each approach.\n- For b_up, I estimated a return multiple based on the potential impact of each source on the field of lightweight ionizing radiation protection.\n- For p_down, I assumed a low to moderate probability of unexpected failure or disruption, considering the potential risks associated with each approach.\n- For L_down, I estimated a maximum loss in USD based on the potential financial implications of each approach failing or being disrupted.\n- For risk, I calculated the expected loss exposure using the CVaR formula.\n\n**Reserve Allocation:**\n\nBased on the estimated f* values, I would recommend allocating the following budget:\n\n- Source A: 44% of the budget\n- Source B: 23% of the budget\n- Source C: 32% of the budget\n- Source D: 59% of the budget\n- Source E: 43% of the budget\n- Source F: 19% of the budget\n\nConsidering the estimated risks and potential returns, I would hold reserves by allocating less than the sum of f* values (1 - (0.44 + 0.23 + 0.32 + 0.59 + 0.43 + 0.19) = 0.29). This would leave 29% of the budget unallocated for potential future opportunities or contingenc",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "MAT-12",
+          "sources": {
+            "A": {
+              "p_up": 0.15,
+              "b_up": 8.0,
+              "f_star": 0.43,
+              "p_down": 0.05,
+              "L_down": 100000000.0,
+              "risk": 5000000.0
+            },
+            "B": {
+              "p_up": 0.12,
+              "b_up": 3.0,
+              "f_star": 0.33,
+              "p_down": 0.06,
+              "L_down": 25000000.0,
+              "risk": 1500000.0
+            },
+            "C": {
+              "p_up": 0.18,
+              "b_up": 7.0,
+              "f_star": 0.48,
+              "p_down": 0.04,
+              "L_down": 150000000.0,
+              "risk": 6000000.0
+            },
+            "D": {
+              "p_up": 0.25,
+              "b_up": 4.0,
+              "f_star": 0.63,
+              "p_down": 0.02,
+              "L_down": 75000000.0,
+              "risk": 1500000.0
+            }
+          },
+          "raw_response": "**Estimated Metrics for Each Source**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Arthropod exoskeleton chitin-protein matrix | 0.15 | 8 | 0.43 | 0.05 | 100M | 5M |\n| B: Computational degradation kinetics modeling | 0.20 | 5 | 0.55 | 0.03 | 50M | 1.5M |\n| C: Fungal mycelium structural network formation | 0.10 | 6 | 0.31 | 0.08 | 200M | 16M |\n| D: Synthetic biopolymer formulation screening | 0.25 | 4 | 0.63 | 0.02 | 75M | 1.5M |\n| E: Echinoderm test calcite-protein composite | 0.18 | 7 | 0.48 | 0.04 | 150M | 6M |\n| F: Biodegradable materials patent database analysis | 0.12 | 3 | 0.33 | 0.06 | 25M | 1.5M |\n\n**Notes:**\n\n- For p_up, I assumed a moderate probability of discovering a mechanism that outperforms current best-in-class, considering the complexity of the field and the novelty of the approaches.\n- For b_up, I estimated a return multiple based on the potential impact of discovering a superior load-bearing material with controlled decomposition.\n- For p_down, I considered the potential risks associated with each approach, including unexpected failure, disruption, or liability within 20 years.\n- For L_down, I estimated the maximum loss in USD if disruption occurs, considering the potential financial implications of failed research and development.\n- For risk, I calculated the expected loss exposure using the CVaR formula.\n\n**Reserve Allocation:**\n\nBased on the estimated f* values, I would recommend allocating the following budget:\n\n- Source A: 43% of the budget\n- Source B: 55% of the budget\n- Source C: 31% of the budget\n- Source D: 63% of the budget\n- Source E: 48% of the budget\n- Source F: 33% of the budget\n\nConsidering the estimated risks and potential returns, I would hold reserves by allocating less than the sum of f* values (e.g., 60-70% of the budget) to ensure a balanced risk management strategy.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "ALG-01",
+          "sources": {
+            "A": {
+              "p_up": 0.18,
+              "b_up": 2.0,
+              "f_star": 0.32,
+              "p_down": 0.15,
+              "L_down": 1250000.0,
+              "risk": 187500.0
+            },
+            "B": {
+              "p_up": 0.3,
+              "b_up": 3.0,
+              "f_star": 0.43,
+              "p_down": 0.05,
+              "L_down": 500000.0,
+              "risk": 25000.0
+            },
+            "C": {
+              "p_up": 0.15,
+              "b_up": 4.0,
+              "f_star": 0.29,
+              "p_down": 0.12,
+              "L_down": 750000.0,
+              "risk": 90000.0
+            },
+            "D": {
+              "p_up": 0.25,
+              "b_up": 6.0,
+              "f_star": 0.45,
+              "p_down": 0.08,
+              "L_down": 1500000.0,
+              "risk": 120000.0
+            },
+            "E": {
+              "p_up": 0.22,
+              "b_up": 4.0,
+              "f_star": 0.38,
+              "p_down": 0.1,
+              "L_down": 750000.0,
+              "risk": 75000.0
+            }
+          },
+          "raw_response": "**Estimated Metrics for Each Source**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Physarum slime mold network formation | 0.2 | 5 | 0.38 | 0.1 | 1,000,000 | 100,000 |\n| B: Computational graph theory optimization | 0.3 | 3 | 0.43 | 0.05 | 500,000 | 25,000 |\n| C: Leaf-cutter ant trail pheromone dynamics | 0.15 | 4 | 0.29 | 0.12 | 750,000 | 90,000 |\n| D: Neural network routing architecture search | 0.25 | 6 | 0.45 | 0.08 | 1,500,000 | 120,000 |\n| E: Vascular plant xylem network topology | 0.18 | 2 | 0.32 | 0.15 | 1,250,000 | 187,500 |\n| F: Network routing patent database analysis | 0.22 | 4 | 0.38 | 0.1 | 750,000 | 75,000 |\n\n**Calculations:**\n\n1. **Source A: Physarum slime mold network formation**\n   - p_up = 0.2 (20% chance of discovering a mechanism that outperforms current best-in-class)\n   - b_up = 5 (5x return if successful)\n   - f* = 0.2 - (1 - 0.2) / 5 = 0.38\n   - p_down = 0.1 (10% chance of unexpected failure or disruption)\n   - L_down = 1,000,000 (maximum loss in USD if disruption occurs)\n   - risk = 0.1 \u00d7 1,000,000 = 100,000\n\n2. **Source B: Computational graph theory optimization**\n   - p_up = 0.3 (30% chance of discovering a mechanism that outperforms current best-in-class)\n   - b_up = 3 (3x return if successful)\n   - f* = 0.3 - (1 - 0.3) / 3 = 0.43\n   - p_down = 0.05 (5% chance of unexpected failure or disruption)\n   - L_down = 500,000 (maximum loss in USD if disruption occurs)\n   - risk = 0.05 \u00d7 500,000 = 25,000\n\n3. **Source C: Leaf-cutter ant trail pheromone dynamics**\n   - p_up = 0.15 (15% chance of discovering a mechanism that outperforms current best-in-class)\n   - b_up = 4 (4x return if successful)\n   - f* = 0.15 - (1 - 0.15) / 4 = 0.29\n   - p_down = 0.12 (12% chance of unexpected failure or disruption)\n   - L_down = 750,000 (maximum loss in USD if disruption occurs)\n   - risk = 0.12 \u00d7 750,000 = 90,000\n\n4. **Source D: Neural network routing architecture search**\n   - p_up = 0.25 (25% chance ",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "ALG-02",
+          "sources": null,
+          "raw_response": "**Estimated Metrics for Each Source**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A. Honeybee forager recruitment waggle dance | 0.2 | 5 | 0.38 | 0.1 | 1,000,000 | 100,000 |\n| B. Computational game theory equilibrium methods | 0.15 | 3 | 0.28 | 0.05 | 500,000 | 25,000 |\n| C. Bacterial nutrient uptake quorum regulation | 0.25 | 8 | 0.44 | 0.08 | 750,000 | 60,000 |\n| D. Reinforcement learning allocation agents | 0.18 | 4 | 0.32 | 0.12 | 1,500,000 | 180,000 |\n| E. Mycorrhizal network resource distribution | 0.22 | 6 | 0.39 | 0.09 | 800,000 | 72,000 |\n| F. Resource optimization patent database analysis | 0.12 | 2 | 0.21 | 0.04 | 200,000 | 8,000 |\n\n**Notes:**\n\n- For p_up, I assumed a moderate probability of discovering a mechanism that outperforms current best-in-class, considering the complexity and novelty of each source.\n- For b_up, I estimated a return multiple based on the potential impact of each source on distributed resource allocation under uncertainty.\n- For p_down, I assumed a relatively low probability of unexpected failure or disruption for each source, considering their established scientific foundations.\n- For L_down, I estimated a maximum loss in USD based on the potential consequences of failure or disruption for each source.\n- For f*, I calculated the recommended fraction of budget to allocate using the Kelly criterion.\n- For risk, I calculated the expected loss exposure using the CVaR formula.\n\n**Reserves:**\n\nBased on the estimated f* values, I would hold reserves for Source A (0.38) and Source C (0.44), as their recommended budget allocations are relatively high. I would allocate the remaining budget to the other sources, considering their f* values and potential impact on distributed resource allocation under uncertainty.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "ALG-03",
+          "sources": {
+            "A": {
+              "p_up": 0.05,
+              "b_up": 5.0,
+              "f_star": 0.09,
+              "p_down": 0.1,
+              "L_down": 750000.0,
+              "risk": 75000.0
+            },
+            "B": {
+              "p_up": 0.2,
+              "b_up": 15.0,
+              "f_star": 0.38,
+              "p_down": 0.03,
+              "L_down": 500000.0,
+              "risk": 15000.0
+            },
+            "C": {
+              "p_up": 0.1,
+              "b_up": 30.0,
+              "f_star": 0.23,
+              "p_down": 0.08,
+              "L_down": 2000000.0,
+              "risk": 160000.0
+            },
+            "E": {
+              "p_up": 0.12,
+              "b_up": 8.0,
+              "f_star": 0.19,
+              "p_down": 0.06,
+              "L_down": 1250000.0,
+              "risk": 75000.0
+            }
+          },
+          "raw_response": "**Estimated Metrics for Each Source**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Albatross L\u00e9vy flight | 0.15 | 20 | 0.34 | 0.05 | 1,000,000 | 50,000 |\n| B: Computational evolutionary strategy | 0.20 | 15 | 0.38 | 0.03 | 500,000 | 15,000 |\n| C: Shark electroreception gradient following | 0.10 | 30 | 0.23 | 0.08 | 2,000,000 | 160,000 |\n| D: Random restart optimization baselines | 0.05 | 5 | 0.09 | 0.10 | 750,000 | 75,000 |\n| E: Nematode chemotaxis decision circuits | 0.18 | 12 | 0.30 | 0.04 | 1,500,000 | 60,000 |\n| F: Search algorithm patent database analysis | 0.12 | 8 | 0.19 | 0.06 | 1,250,000 | 75,000 |\n\n**Notes:**\n\n- For p_up, I assumed a moderate probability of discovering a mechanism that outperforms current best-in-class, given the novelty of the sources.\n- For b_up, I estimated a return multiple based on the potential impact of discovering a superior search algorithm in rare-reward environments.\n- For p_down, I considered the risk of unexpected failure, disruption, or liability within 20 years, with higher values for sources with more complex or untested approaches.\n- For L_down, I estimated the maximum loss in USD if disruption occurs, considering the potential financial and reputational consequences.\n- The calculated f* values indicate the recommended fraction of budget to allocate to each source.\n- Based on these estimates, I would hold reserves (allocate less than the sum of f* values) due to the high risk associated with some sources (e.g., C and D). A balanced portfolio would allocate resources to multiple sources, considering their individual f* values and risk profiles.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "ALG-04",
+          "sources": {
+            "A": {
+              "p_up": 0.15,
+              "b_up": 8.0,
+              "f_star": 0.23,
+              "p_down": 0.05,
+              "L_down": 1000000.0,
+              "risk": 50000.0
+            },
+            "B": {
+              "p_up": 0.18,
+              "b_up": 10.0,
+              "f_star": 0.25,
+              "p_down": 0.04,
+              "L_down": 1500000.0,
+              "risk": 60000.0
+            },
+            "C": {
+              "p_up": 0.12,
+              "b_up": 5.0,
+              "f_star": 0.19,
+              "p_down": 0.06,
+              "L_down": 800000.0,
+              "risk": 48000.0
+            },
+            "D": {
+              "p_up": 0.22,
+              "b_up": 15.0,
+              "f_star": 0.33,
+              "p_down": 0.02,
+              "L_down": 200000.0,
+              "risk": 4000.0
+            }
+          },
+          "raw_response": "**Estimated Metrics for Each Source**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Fish schooling polarization dynamics | 0.15 | 8 | 0.23 | 0.05 | 1,000,000 | 50,000 |\n| B: Computational Byzantine fault tolerance | 0.20 | 12 | 0.29 | 0.03 | 500,000 | 15,000 |\n| C: Firefly synchronization coupling mechanisms | 0.10 | 6 | 0.16 | 0.08 | 750,000 | 60,000 |\n| D: Blockchain consensus protocol variations | 0.18 | 10 | 0.25 | 0.04 | 1,500,000 | 60,000 |\n| E: Cricket chorus synchronization dynamics | 0.12 | 5 | 0.19 | 0.06 | 800,000 | 48,000 |\n| F: Distributed systems patent database analysis | 0.22 | 15 | 0.33 | 0.02 | 200,000 | 4,000 |\n\n**Notes:**\n\n- For p_up, I assumed a moderate probability of discovering a mechanism that outperforms current best-in-class, considering the complexity of the problem and the novelty of each approach.\n- For b_up, I estimated a return multiple based on the potential impact of each approach on fault-tolerant agreement without central control.\n- For p_down, I assumed a relatively low probability of unexpected failure or disruption, considering the robustness of each approach.\n- For L_down, I estimated a maximum loss in USD based on the potential consequences of failure or disruption for each approach.\n- For risk, I calculated the expected loss exposure using the CVaR formula.\n\n**Reserve Allocation:**\n\nBased on the estimated f* values, I would allocate the budget as follows:\n\n- Source A: 23% (Fish schooling polarization dynamics)\n- Source B: 29% (Computational Byzantine fault tolerance)\n- Source C: 16% (Firefly synchronization coupling mechanisms)\n- Source D: 25% (Blockchain consensus protocol variations)\n- Source E: 19% (Cricket chorus synchronization dynamics)\n- Source F: 33% (Distributed systems patent database analysis)\n\nConsidering the estimated risks and potential returns, I would hold reserves by allocating less than the sum of f* values (100% - 23% - 29% - 16% - 25% - 19% = 8%).",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "ALG-05",
+          "sources": {
+            "A": {
+              "p_up": 0.12,
+              "b_up": 4.0,
+              "f_star": 0.24,
+              "p_down": 0.14,
+              "L_down": 30000000.0,
+              "risk": 4200000.0
+            },
+            "B": {
+              "p_up": 0.15,
+              "b_up": 5.0,
+              "f_star": 0.38,
+              "p_down": 0.1,
+              "L_down": 50000000.0,
+              "risk": 5000000.0
+            },
+            "C": {
+              "p_up": 0.1,
+              "b_up": 8.0,
+              "f_star": 0.29,
+              "p_down": 0.08,
+              "L_down": 75000000.0,
+              "risk": 6000000.0
+            },
+            "D": {
+              "p_up": 0.25,
+              "b_up": 15.0,
+              "f_star": 0.69,
+              "p_down": 0.12,
+              "L_down": 200000000.0,
+              "risk": 24000000.0
+            },
+            "E": {
+              "p_up": 0.18,
+              "b_up": 12.0,
+              "f_star": 0.51,
+              "p_down": 0.06,
+              "L_down": 150000000.0,
+              "risk": 9000000.0
+            }
+          },
+          "raw_response": "**Estimated Metrics for Each Source**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A. Immune system self/non-self discrimination | 0.2 | 20 | 0.64 | 0.05 | 100M | 5M |\n| B. Computational statistical outlier methods | 0.15 | 5 | 0.38 | 0.1 | 50M | 5M |\n| C. Meerkat sentinel threat classification | 0.1 | 8 | 0.29 | 0.08 | 75M | 6M |\n| D. Deep learning anomaly detection models | 0.25 | 15 | 0.69 | 0.12 | 200M | 24M |\n| E. Electric fish novelty response circuits | 0.18 | 12 | 0.51 | 0.06 | 150M | 9M |\n| F. Anomaly detection patent database analysis | 0.12 | 4 | 0.24 | 0.14 | 30M | 4.2M |\n\n**Notes:**\n\n- For p_up, I assumed a moderate probability of discovering a mechanism that outperforms current best-in-class, given the complexity of the task and the novelty of the approaches.\n- For b_up, I assumed a moderate return multiple, considering the potential for significant improvements in detection accuracy and efficiency.\n- For p_down, I assumed a relatively low probability of unexpected failure or disruption, given the existing body of research in these areas.\n- For L_down, I assumed a significant maximum loss in USD, considering the potential consequences of a failure to detect anomalies in noisy data.\n- For risk, I calculated the expected loss exposure using the CVaR formula.\n\n**Reserves:**\n\nBased on the estimated f* values, I would recommend allocating the following budget:\n\n- Source A: 64% of budget\n- Source B: 38% of budget\n- Source C: 29% of budget\n- Source D: 69% of budget\n- Source E: 51% of budget\n- Source F: 24% of budget\n\nConsidering the estimated risks and potential returns, I would hold reserves by allocating less than the sum of f* values (e.g., 60% of budget) to ensure a balanced portfolio and mitigate potential losses.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "ALG-06",
+          "sources": {
+            "A": {
+              "p_up": 0.15,
+              "b_up": 20.0,
+              "f_star": 0.34,
+              "p_down": 0.05,
+              "L_down": 100000000.0,
+              "risk": 5000000.0
+            },
+            "B": {
+              "p_up": 0.2,
+              "b_up": 15.0,
+              "f_star": 0.38,
+              "p_down": 0.03,
+              "L_down": 50000000.0,
+              "risk": 1500000.0
+            },
+            "C": {
+              "p_up": 0.1,
+              "b_up": 12.0,
+              "f_star": 0.23,
+              "p_down": 0.07,
+              "L_down": 200000000.0,
+              "risk": 14000000.0
+            },
+            "D": {
+              "p_up": 0.18,
+              "b_up": 18.0,
+              "f_star": 0.35,
+              "p_down": 0.04,
+              "L_down": 75000000.0,
+              "risk": 3000000.0
+            },
+            "E": {
+              "p_up": 0.08,
+              "b_up": 8.0,
+              "f_star": 0.17,
+              "p_down": 0.08,
+              "L_down": 300000000.0,
+              "risk": 24000000.0
+            }
+          },
+          "raw_response": "**Estimated Metrics for Each Source**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: DNA polymerase proofreading mechanisms | 0.15 | 20 | 0.34 | 0.05 | 100,000,000 | 5,000,000 |\n| B: Computational coding theory advances | 0.20 | 15 | 0.38 | 0.03 | 50,000,000 | 1,500,000 |\n| C: Ribosome translation fidelity systems | 0.10 | 12 | 0.23 | 0.07 | 200,000,000 | 14,000,000 |\n| D: Neural error correction architectures | 0.18 | 18 | 0.35 | 0.04 | 75,000,000 | 3,000,000 |\n| E: RNA virus mutation-selection balance | 0.12 | 10 | 0.24 | 0.06 | 150,000,000 | 9,000,000 |\n| F: Error correction patent database analysis | 0.08 | 8 | 0.17 | 0.08 | 300,000,000 | 24,000,000 |\n\n**Notes:**\n\n- For p_up, I assumed a moderate probability of discovering a mechanism that outperforms current best-in-class, given the complexity of the problem.\n- For b_up, I assumed a moderate return multiple, considering the potential for incremental improvements rather than revolutionary breakthroughs.\n- For p_down, I assumed a low to moderate probability of unexpected failure or disruption, given the relatively well-understood nature of these sources.\n- For L_down, I assumed a high maximum loss in USD, considering the potential for significant financial and reputational damage if a disruption occurs.\n- For Source F, I assumed a lower p_up and b_up due to the more incremental nature of patent database analysis.\n- For Source C, I assumed a lower p_up due to the complexity of ribosome translation fidelity systems.\n- Based on these estimates, I would hold reserves for all sources, as the sum of f* values (1.34) is greater than 1. This suggests that a diversified portfolio would be prudent to manage risk.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "ALG-07",
+          "sources": {
+            "A": {
+              "p_up": 0.15,
+              "b_up": 20.0,
+              "f_star": 0.35,
+              "p_down": 0.05,
+              "L_down": 1000000.0,
+              "risk": 50000.0
+            },
+            "B": {
+              "p_up": 0.25,
+              "b_up": 15.0,
+              "f_star": 0.43,
+              "p_down": 0.03,
+              "L_down": 500000.0,
+              "risk": 15000.0
+            },
+            "C": {
+              "p_up": 0.1,
+              "b_up": 12.0,
+              "f_star": 0.23,
+              "p_down": 0.08,
+              "L_down": 750000.0,
+              "risk": 60000.0
+            },
+            "D": {
+              "p_up": 0.2,
+              "b_up": 8.0,
+              "f_star": 0.31,
+              "p_down": 0.04,
+              "L_down": 200000.0,
+              "risk": 8000.0
+            },
+            "F": {
+              "p_up": 0.22,
+              "b_up": 10.0,
+              "f_star": 0.39,
+              "p_down": 0.02,
+              "L_down": 300000.0,
+              "risk": 6000.0
+            }
+          },
+          "raw_response": "**Estimated Metrics for Each Source**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Bacterial bet-hedging phenotype switching | 0.15 | 20 | 0.35 | 0.05 | 1,000,000 | 50,000 |\n| B: Computational multi-objective evolutionary algorithms | 0.25 | 15 | 0.43 | 0.03 | 500,000 | 15,000 |\n| C: Migratory bird route-timing tradeoff decisions | 0.10 | 12 | 0.23 | 0.08 | 750,000 | 60,000 |\n| D: Weighted-sum scalarization methods | 0.20 | 8 | 0.31 | 0.04 | 200,000 | 8,000 |\n| E: Plant resource allocation to growth vs defense | 0.18 | 18 | 0.36 | 0.06 | 1,200,000 | 72,000 |\n| F: Optimization algorithm patent database analysis | 0.22 | 10 | 0.39 | 0.02 | 300,000 | 6,000 |\n\n**Calculations:**\n\n1. **Source A: Bacterial bet-hedging phenotype switching**\n   - p_up = 0.15 (15% chance of discovering a mechanism that outperforms current best-in-class)\n   - b_up = 20 (20x return if successful)\n   - f* = 0.15 - (1 - 0.15) / 20 = 0.35 (recommended fraction of budget to allocate)\n   - p_down = 0.05 (5% chance of unexpected failure, disruption, or liability within 20 years)\n   - L_down = 1,000,000 (maximum loss in USD if disruption occurs)\n   - risk = 0.05 \u00d7 1,000,000 = 50,000\n\n2. **Source B: Computational multi-objective evolutionary algorithms**\n   - p_up = 0.25 (25% chance of discovering a mechanism that outperforms current best-in-class)\n   - b_up = 15 (15x return if successful)\n   - f* = 0.25 - (1 - 0.25) / 15 = 0.43 (recommended fraction of budget to allocate)\n   - p_down = 0.03 (3% chance of unexpected failure, disruption, or liability within 20 years)\n   - L_down = 500,000 (maximum loss in USD if disruption occurs)\n   - risk = 0.03 \u00d7 500,000 = 15,000\n\n3. **Source C: Migratory bird route-timing tradeoff decisions**\n   - p_up = 0.10 (10% chance of discovering a mechanism that outperforms current best-in-class)\n   - b_up = 12 (12x return if successful)\n   - f* = 0.10 - (1 - 0.10) / 12 = 0.23 (recommended fraction of budget to alloc",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "ALG-08",
+          "sources": {
+            "A": {
+              "p_up": 0.2,
+              "b_up": 5.0,
+              "f_star": 0.38,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 100000.0
+            },
+            "B": {
+              "p_up": 0.15,
+              "b_up": 3.0,
+              "f_star": 0.23,
+              "p_down": 0.05,
+              "L_down": 500000.0,
+              "risk": 25000.0
+            },
+            "C": {
+              "p_up": 0.25,
+              "b_up": 7.0,
+              "f_star": 0.45,
+              "p_down": 0.08,
+              "L_down": 750000.0,
+              "risk": 60000.0
+            },
+            "D": {
+              "p_up": 0.18,
+              "b_up": 4.0,
+              "f_star": 0.29,
+              "p_down": 0.12,
+              "L_down": 1500000.0,
+              "risk": 180000.0
+            },
+            "E": {
+              "p_up": 0.22,
+              "b_up": 6.0,
+              "f_star": 0.39,
+              "p_down": 0.09,
+              "L_down": 800000.0,
+              "risk": 72000.0
+            },
+            "F": {
+              "p_up": 0.12,
+              "b_up": 2.0,
+              "f_star": 0.17,
+              "p_down": 0.04,
+              "L_down": 200000.0,
+              "risk": 8000.0
+            }
+          },
+          "raw_response": "**Estimated Metrics for Each Source**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Army ant bridge formation dynamics | 0.2 | 5 | 0.38 | 0.1 | 1,000,000 | 100,000 |\n| B: Computational multi-agent systems theory | 0.15 | 3 | 0.23 | 0.05 | 500,000 | 25,000 |\n| C: Termite mound construction behavior | 0.25 | 7 | 0.45 | 0.08 | 750,000 | 60,000 |\n| D: Graph neural network coordination models | 0.18 | 4 | 0.29 | 0.12 | 1,500,000 | 180,000 |\n| E: Locust marching band self-organization | 0.22 | 6 | 0.39 | 0.09 | 800,000 | 72,000 |\n| F: Swarm robotics patent database analysis | 0.12 | 2 | 0.17 | 0.04 | 200,000 | 8,000 |\n\n**Notes:**\n\n- The probabilities (p_up and p_down) are subjective estimates based on the potential for breakthroughs and risks associated with each source.\n- The return multiples (b_up) are also subjective estimates, considering the potential impact of a successful discovery.\n- The maximum loss (L_down) is estimated based on the potential financial and reputational risks associated with each source.\n- The risk calculation (risk = p_down \u00d7 L_down) provides an estimate of the expected loss exposure for each source.\n- Based on these estimates, it is recommended to allocate the following budget fractions:\n  - Source A: 38% of the budget\n  - Source B: 23% of the budget\n  - Source C: 45% of the budget\n  - Source D: 29% of the budget\n  - Source E: 39% of the budget\n  - Source F: 17% of the budget\n- Considering the estimated risks, it is recommended to hold reserves (allocate less than the sum of f* values) to mitigate potential losses. A possible allocation could be:\n  - Allocate 70% of the budget to Sources A, C, and E (45% + 45% + 39% = 129%, but capped at 70% to hold reserves)\n  - Allocate 15% to Source B\n  - Allocate 10% to Source D\n  - Allocate 5% to Source F",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "ALG-09",
+          "sources": {
+            "A": {
+              "p_up": 0.15,
+              "b_up": 8.0,
+              "f_star": 0.43,
+              "p_down": 0.05,
+              "L_down": 1000000.0,
+              "risk": 50000.0
+            },
+            "B": {
+              "p_up": 0.25,
+              "b_up": 5.0,
+              "f_star": 0.56,
+              "p_down": 0.03,
+              "L_down": 500000.0,
+              "risk": 15000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 4.0,
+              "f_star": 0.45,
+              "p_down": 0.06,
+              "L_down": 300000.0,
+              "risk": 18000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 6.0,
+              "f_star": 0.63,
+              "p_down": 0.02,
+              "L_down": 200000.0,
+              "risk": 4000.0
+            }
+          },
+          "raw_response": "**Estimated Metrics for Each Source**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Circadian anticipatory gene regulation | 0.15 | 8 | 0.43 | 0.05 | 1,000,000 | 50,000 |\n| B: Computational stochastic scheduling theory | 0.25 | 5 | 0.56 | 0.03 | 500,000 | 15,000 |\n| C: Colonial tunicate developmental timing | 0.10 | 12 | 0.32 | 0.08 | 750,000 | 60,000 |\n| D: Reinforcement learning scheduler agents | 0.30 | 6 | 0.63 | 0.02 | 200,000 | 4,000 |\n| E: Cyanobacteria cell division timing | 0.12 | 9 | 0.38 | 0.04 | 1,200,000 | 48,000 |\n| F: Scheduling algorithm patent database analysis | 0.20 | 4 | 0.45 | 0.06 | 300,000 | 18,000 |\n\n**Calculations:**\n\n1. **Source A: Circadian anticipatory gene regulation**\n   - p_up = 0.15 (15% chance of discovering a mechanism that outperforms current best-in-class)\n   - b_up = 8 (8x return if successful)\n   - f* = 0.15 - (1 - 0.15) / 8 = 0.43\n   - p_down = 0.05 (5% chance of unexpected failure or disruption)\n   - L_down = 1,000,000 (maximum loss in USD if disruption occurs)\n   - risk = 0.05 \u00d7 1,000,000 = 50,000\n\n2. **Source B: Computational stochastic scheduling theory**\n   - p_up = 0.25 (25% chance of discovering a mechanism that outperforms current best-in-class)\n   - b_up = 5 (5x return if successful)\n   - f* = 0.25 - (1 - 0.25) / 5 = 0.56\n   - p_down = 0.03 (3% chance of unexpected failure or disruption)\n   - L_down = 500,000 (maximum loss in USD if disruption occurs)\n   - risk = 0.03 \u00d7 500,000 = 15,000\n\n3. **Source C: Colonial tunicate developmental timing**\n   - p_up = 0.10 (10% chance of discovering a mechanism that outperforms current best-in-class)\n   - b_up = 12 (12x return if successful)\n   - f* = 0.10 - (1 - 0.10) / 12 = 0.32\n   - p_down = 0.08 (8% chance of unexpected failure or disruption)\n   - L_down = 750,000 (maximum loss in USD if disruption occurs)\n   - risk = 0.08 \u00d7 750,000 = 60,000\n\n4. **Source D: Reinforcement learning scheduler agents**\n   - p_up = 0.30 (30% ",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "ALG-10",
+          "sources": {
+            "A": {
+              "p_up": 0.18,
+              "b_up": 10.0,
+              "f_star": 0.35,
+              "p_down": 0.06,
+              "L_down": 300000000.0,
+              "risk": 18000000.0
+            },
+            "B": {
+              "p_up": 0.2,
+              "b_up": 15.0,
+              "f_star": 0.38,
+              "p_down": 0.03,
+              "L_down": 50000000.0,
+              "risk": 1500000.0
+            },
+            "C": {
+              "p_up": 0.1,
+              "b_up": 8.0,
+              "f_star": 0.22,
+              "p_down": 0.08,
+              "L_down": 200000000.0,
+              "risk": 16000000.0
+            },
+            "D": {
+              "p_up": 0.25,
+              "b_up": 12.0,
+              "f_star": 0.43,
+              "p_down": 0.02,
+              "L_down": 75000000.0,
+              "risk": 1500000.0
+            }
+          },
+          "raw_response": "**Estimated Metrics for Each Source**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Hippocampal pattern completion circuits | 0.15 | 20 | 0.34 | 0.05 | 100,000,000 | 5,000,000 |\n| B: Computational Bayesian inference methods | 0.20 | 15 | 0.38 | 0.03 | 50,000,000 | 1,500,000 |\n| C: Octopus visual texture matching | 0.10 | 8 | 0.22 | 0.08 | 200,000,000 | 16,000,000 |\n| D: Transformer masked prediction architectures | 0.25 | 12 | 0.43 | 0.02 | 75,000,000 | 1,500,000 |\n| E: Rat grid cell spatial inference | 0.12 | 18 | 0.30 | 0.04 | 150,000,000 | 6,000,000 |\n| F: Pattern recognition patent database analysis | 0.18 | 10 | 0.35 | 0.06 | 300,000,000 | 18,000,000 |\n\n**Notes:**\n\n- For p_up, I assumed a moderate probability of discovering a mechanism that outperforms current best-in-class, given the complexity of the task and the novelty of the approaches.\n- For b_up, I assumed a reasonable return multiple, considering the potential impact of breakthroughs in inference from partial data.\n- For p_down, I assumed a relatively low probability of unexpected failure or disruption, given the established nature of the approaches.\n- For L_down, I assumed a significant maximum loss in USD, considering the potential consequences of failure in a high-stakes engineering application.\n- For risk, I calculated the expected loss exposure using the CVaR formula.\n\n**Reserve Allocation:**\n\nBased on the estimated f* values, I would allocate the budget as follows:\n\n- Source A: 34% (Hippocampal pattern completion circuits)\n- Source B: 38% (Computational Bayesian inference methods)\n- Source D: 43% (Transformer masked prediction architectures)\n- Source E: 30% (Rat grid cell spatial inference)\n- Source F: 35% (Pattern recognition patent database analysis)\n\nConsidering the estimated risks, I would hold reserves by allocating less than the sum of f* values (1.34). A possible allocation could be:\n\n- 60% to the top 3 sources (A, B, and D)\n- 20% t",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "ALG-11",
+          "sources": {
+            "A": {
+              "p_up": 0.1,
+              "b_up": 12.0,
+              "f_star": 0.17,
+              "p_down": 0.08,
+              "L_down": 2000000.0,
+              "risk": 160000.0
+            },
+            "B": {
+              "p_up": 0.2,
+              "b_up": 5.0,
+              "f_star": 0.29,
+              "p_down": 0.03,
+              "L_down": 500000.0,
+              "risk": 15000.0
+            },
+            "C": {
+              "p_up": 0.25,
+              "b_up": 6.0,
+              "f_star": 0.36,
+              "p_down": 0.02,
+              "L_down": 750000.0,
+              "risk": 15000.0
+            },
+            "E": {
+              "p_up": 0.18,
+              "b_up": 9.0,
+              "f_star": 0.26,
+              "p_down": 0.04,
+              "L_down": 1500000.0,
+              "risk": 60000.0
+            },
+            "F": {
+              "p_up": 0.22,
+              "b_up": 4.0,
+              "f_star": 0.31,
+              "p_down": 0.06,
+              "L_down": 1250000.0,
+              "risk": 75000.0
+            }
+          },
+          "raw_response": "**Estimated Metrics for Each Source**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Leaf-cutter ant task switching behavior | 0.15 | 8 | 0.23 | 0.05 | 1,000,000 | 50,000 |\n| B: Computational queueing theory methods | 0.20 | 5 | 0.29 | 0.03 | 500,000 | 15,000 |\n| C: Macrophage inflammation response allocation | 0.10 | 12 | 0.17 | 0.08 | 2,000,000 | 160,000 |\n| D: Cloud autoscaling algorithm variations | 0.25 | 6 | 0.36 | 0.02 | 750,000 | 15,000 |\n| E: Honeybee nursing-foraging transition | 0.18 | 9 | 0.26 | 0.04 | 1,500,000 | 60,000 |\n| F: Load balancing patent database analysis | 0.22 | 4 | 0.31 | 0.06 | 1,250,000 | 75,000 |\n\n**Calculations:**\n\n1. **Source A: Leaf-cutter ant task switching behavior**\n   - p_up = 0.15 (15% chance of discovering a mechanism that outperforms current best-in-class)\n   - b_up = 8 (8x return if successful)\n   - f* = 0.15 - (1 - 0.15) / 8 = 0.23\n   - p_down = 0.05 (5% chance of unexpected failure, disruption, or liability within 20 years)\n   - L_down = 1,000,000 (maximum loss in USD if disruption occurs)\n   - risk = 0.05 \u00d7 1,000,000 = 50,000\n\n2. **Source B: Computational queueing theory methods**\n   - p_up = 0.20 (20% chance of discovering a mechanism that outperforms current best-in-class)\n   - b_up = 5 (5x return if successful)\n   - f* = 0.20 - (1 - 0.20) / 5 = 0.29\n   - p_down = 0.03 (3% chance of unexpected failure, disruption, or liability within 20 years)\n   - L_down = 500,000 (maximum loss in USD if disruption occurs)\n   - risk = 0.03 \u00d7 500,000 = 15,000\n\n3. **Source C: Macrophage inflammation response allocation**\n   - p_up = 0.10 (10% chance of discovering a mechanism that outperforms current best-in-class)\n   - b_up = 12 (12x return if successful)\n   - f* = 0.10 - (1 - 0.10) / 12 = 0.17\n   - p_down = 0.08 (8% chance of unexpected failure, disruption, or liability within 20 years)\n   - L_down = 2,000,000 (maximum loss in USD if disruption occurs)\n   - risk = 0.08 \u00d7 2,000,00",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "ALG-12",
+          "sources": null,
+          "raw_response": "**Estimated Metrics for Each Source**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Honeybee swarm nest-site selection | 0.2 | 5 | 0.38 | 0.05 | 1,000,000 | 50,000 |\n| B: Computational voting theory methods | 0.15 | 3 | 0.23 | 0.03 | 500,000 | 15,000 |\n| C: Baboon troop movement initiation | 0.25 | 7 | 0.43 | 0.04 | 750,000 | 30,000 |\n| D: Multi-agent reinforcement learning | 0.18 | 4 | 0.29 | 0.02 | 1,500,000 | 30,000 |\n| E: Ant colony emigration decisions | 0.22 | 6 | 0.39 | 0.06 | 800,000 | 48,000 |\n| F: Decision systems patent database analysis | 0.12 | 2 | 0.17 | 0.01 | 200,000 | 2,000 |\n\n**Notes:**\n\n- For p_up, I assumed a moderate probability of discovering a mechanism that outperforms current best-in-class, considering the complexity and novelty of each source.\n- For b_up, I estimated a return multiple based on the potential impact and scalability of each source in the context of group choices without central authority.\n- For p_down, I considered the potential risks and uncertainties associated with each source, including the complexity of implementation and potential unintended consequences.\n- For L_down, I estimated the maximum loss in USD if disruption occurs, considering the potential financial and reputational impacts.\n- The risk calculation is based on the product of p_down and L_down.\n- The f* values are calculated using the Kelly criterion formula.\n- Based on these estimates, I would hold reserves for Source A, C, and E, as their f* values are relatively high, and allocating the full recommended budget may not be prudent.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "NRG-01",
+          "sources": {
+            "A": {
+              "p_up": 0.15,
+              "b_up": 20.0,
+              "f_star": 0.34,
+              "p_down": 0.05,
+              "L_down": 100000000.0,
+              "risk": 5000000.0
+            },
+            "B": {
+              "p_up": 0.25,
+              "b_up": 15.0,
+              "f_star": 0.43,
+              "p_down": 0.03,
+              "L_down": 50000000.0,
+              "risk": 1500000.0
+            },
+            "C": {
+              "p_up": 0.1,
+              "b_up": 12.0,
+              "f_star": 0.23,
+              "p_down": 0.08,
+              "L_down": 200000000.0,
+              "risk": 16000000.0
+            },
+            "D": {
+              "p_up": 0.12,
+              "b_up": 10.0,
+              "f_star": 0.24,
+              "p_down": 0.06,
+              "L_down": 300000000.0,
+              "risk": 18000000.0
+            },
+            "F": {
+              "p_up": 0.18,
+              "b_up": 14.0,
+              "f_star": 0.33,
+              "p_down": 0.02,
+              "L_down": 75000000.0,
+              "risk": 1500000.0
+            }
+          },
+          "raw_response": "**Estimated Metrics for Photon Capture Sources**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Purple bacteria reaction center exciton funneling | 0.15 | 20 | 0.34 | 0.05 | 100M | 5M |\n| B: Computational quantum coherence modeling | 0.25 | 15 | 0.43 | 0.03 | 50M | 1.5M |\n| C: Diatom frustule light-trapping waveguides | 0.10 | 12 | 0.23 | 0.08 | 200M | 16M |\n| D: Synthetic perovskite composition screening | 0.20 | 18 | 0.38 | 0.04 | 150M | 6M |\n| E: Deep-sea fish retinal photon amplification | 0.12 | 10 | 0.24 | 0.06 | 300M | 18M |\n| F: Photovoltaic technology patent database analysis | 0.18 | 14 | 0.33 | 0.02 | 75M | 1.5M |\n\n**Calculations:**\n\n1. **Purple bacteria reaction center exciton funneling (A)**:\n   - p_up = 0.15 (15% chance of discovering a mechanism that outperforms current best-in-class)\n   - b_up = 20 (20x return if successful)\n   - f* = 0.15 - (1 - 0.15) / 20 = 0.34\n   - p_down = 0.05 (5% chance of unexpected failure or disruption)\n   - L_down = 100M (maximum loss in USD if disruption occurs)\n   - Risk = 0.05 \u00d7 100M = 5M\n\n2. **Computational quantum coherence modeling (B)**:\n   - p_up = 0.25 (25% chance of discovering a mechanism that outperforms current best-in-class)\n   - b_up = 15 (15x return if successful)\n   - f* = 0.25 - (1 - 0.25) / 15 = 0.43\n   - p_down = 0.03 (3% chance of unexpected failure or disruption)\n   - L_down = 50M (maximum loss in USD if disruption occurs)\n   - Risk = 0.03 \u00d7 50M = 1.5M\n\n3. **Diatom frustule light-trapping waveguides (C)**:\n   - p_up = 0.10 (10% chance of discovering a mechanism that outperforms current best-in-class)\n   - b_up = 12 (12x return if successful)\n   - f* = 0.10 - (1 - 0.10) / 12 = 0.23\n   - p_down = 0.08 (8% chance of unexpected failure or disruption)\n   - L_down = 200M (maximum loss in USD if disruption occurs)\n   - Risk = 0.08 \u00d7 200M = 16M\n\n4. **Synthetic perovskite composition screening (D)**:\n   - p_up = 0.20 (20% chance of discovering a mechani",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "NRG-02",
+          "sources": {
+            "A": {
+              "p_up": 0.15,
+              "b_up": 20.0,
+              "f_star": 0.34,
+              "p_down": 0.05,
+              "L_down": 100000000.0,
+              "risk": 5000000.0
+            },
+            "B": {
+              "p_up": 0.25,
+              "b_up": 15.0,
+              "f_star": 0.43,
+              "p_down": 0.03,
+              "L_down": 50000000.0,
+              "risk": 1500000.0
+            },
+            "C": {
+              "p_up": 0.1,
+              "b_up": 12.0,
+              "f_star": 0.23,
+              "p_down": 0.08,
+              "L_down": 200000000.0,
+              "risk": 16000000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 18.0,
+              "f_star": 0.51,
+              "p_down": 0.02,
+              "L_down": 75000000.0,
+              "risk": 1500000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 25.0,
+              "f_star": 0.45,
+              "p_down": 0.04,
+              "L_down": 150000000.0,
+              "risk": 6000000.0
+            },
+            "F": {
+              "p_up": 0.18,
+              "b_up": 10.0,
+              "f_star": 0.32,
+              "p_down": 0.06,
+              "L_down": 25000000.0,
+              "risk": 1500000.0
+            }
+          },
+          "raw_response": "**Estimated Metrics for Each Source**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Hydrogenase enzyme active site geometry | 0.15 | 20 | 0.34 | 0.05 | 100M | 5M |\n| B: Computational catalyst surface modeling | 0.25 | 15 | 0.43 | 0.03 | 50M | 1.5M |\n| C: Methanotroph particulate methane monooxygenase | 0.10 | 12 | 0.23 | 0.08 | 200M | 16M |\n| D: Synthetic catalyst combinatorial screening | 0.30 | 18 | 0.51 | 0.02 | 75M | 1.5M |\n| E: Electric eel electrocyte ion channel arrays | 0.20 | 25 | 0.45 | 0.04 | 150M | 6M |\n| F: Fuel cell patent database analysis | 0.18 | 10 | 0.32 | 0.06 | 25M | 1.5M |\n\n**Notes:**\n\n- For p_up, I assumed a moderate probability of discovering a mechanism that outperforms current best-in-class, given the complexity of the field and the need for significant breakthroughs.\n- For b_up, I estimated a return multiple based on the potential for significant improvements in fuel oxidation catalysis, which could lead to substantial cost savings and efficiency gains.\n- For p_down, I considered the potential risks associated with each source, including the complexity of biological systems, computational modeling uncertainties, and the potential for patent disputes.\n- For L_down, I estimated the maximum loss in USD if disruption occurs, considering the potential financial implications of failed research and development efforts.\n- For risk, I calculated the expected loss exposure using the CVaR formula.\n\n**Reserves:**\n\nBased on the estimated f* values, I would recommend allocating the following budget:\n\n- Source A: 34% of the budget\n- Source B: 43% of the budget\n- Source C: 23% of the budget\n- Source D: 51% of the budget\n- Source E: 45% of the budget\n- Source F: 32% of the budget\n\nConsidering the estimated risks and potential losses, I would hold reserves by allocating less than the sum of f* values, around 40-50% of the total budget, to ensure a balanced risk management strategy.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "NRG-03",
+          "sources": {
+            "A": {
+              "p_up": 0.2,
+              "b_up": 5.0,
+              "f_star": 0.38,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 100000.0
+            },
+            "B": {
+              "p_up": 0.3,
+              "b_up": 8.0,
+              "f_star": 0.53,
+              "p_down": 0.05,
+              "L_down": 500000.0,
+              "risk": 25000.0
+            },
+            "C": {
+              "p_up": 0.15,
+              "b_up": 3.0,
+              "f_star": 0.24,
+              "p_down": 0.15,
+              "L_down": 750000.0,
+              "risk": 112500.0
+            },
+            "D": {
+              "p_up": 0.25,
+              "b_up": 6.0,
+              "f_star": 0.43,
+              "p_down": 0.08,
+              "L_down": 1200000.0,
+              "risk": 96000.0
+            },
+            "E": {
+              "p_up": 0.22,
+              "b_up": 7.0,
+              "f_star": 0.39,
+              "p_down": 0.09,
+              "L_down": 1500000.0,
+              "risk": 135000.0
+            }
+          },
+          "raw_response": "**Estimated Metrics for Each Source**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A. Inner ear hair cell stereocilia mechanics | 0.2 | 5 | 0.38 | 0.1 | 1,000,000 | 100,000 |\n| B. Computational piezoelectric optimization | 0.3 | 8 | 0.53 | 0.05 | 500,000 | 25,000 |\n| C. Spider slit sensilla strain detection | 0.15 | 3 | 0.24 | 0.15 | 750,000 | 112,500 |\n| D. MEMS cantilever array screening | 0.25 | 6 | 0.43 | 0.08 | 1,200,000 | 96,000 |\n| E. Insect Johnston's organ vibration sensing | 0.18 | 4 | 0.31 | 0.12 | 900,000 | 108,000 |\n| F. Energy harvesting patent database analysis | 0.22 | 7 | 0.39 | 0.09 | 1,500,000 | 135,000 |\n\n**Notes:**\n\n- For p_up, I assumed a moderate probability of discovering a mechanism that outperforms current best-in-class, considering the complexity and novelty of each source.\n- For b_up, I estimated a return multiple based on the potential impact of each source on the field of ambient vibration capture.\n- For p_down, I considered the potential risks associated with each source, including unexpected failure, disruption, or liability within 20 years.\n- For L_down, I estimated the maximum loss in USD if disruption occurs, considering the potential financial implications of each source.\n- The calculated f* values indicate the recommended fraction of budget to allocate to each source.\n- Based on these estimates, I would hold reserves (allocate less than the sum of f* values) to ensure a balanced portfolio and mitigate potential risks.\n\n**Total f* value:** 2.69 (sum of f* values)\n**Recommended allocation:** Allocate 2.69 units of budget across the sources, considering their individual f* values and potential risks. Hold reserves to ensure a balanced portfolio.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "NRG-04",
+          "sources": null,
+          "raw_response": "**Estimated Metrics for Waste Heat Recovery Mechanisms**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| **Bombardier Beetle Reaction Chamber Insulation** | 0.15 | 5 | 0.35 | 0.05 | 1,000,000 | 50,000 |\n| **Computational Thermoelectric Band Engineering** | 0.20 | 10 | 0.45 | 0.03 | 500,000 | 15,000 |\n| **Tuna Countercurrent Rete Mirabile Efficiency** | 0.10 | 3 | 0.25 | 0.08 | 750,000 | 60,000 |\n| **Synthetic Chalcogenide Material Screening** | 0.18 | 8 | 0.40 | 0.04 | 1,200,000 | 48,000 |\n| **Pit Viper Infrared Receptor Thermal Isolation** | 0.12 | 4 | 0.28 | 0.06 | 900,000 | 54,000 |\n| **Thermoelectric Patent Database Analysis** | 0.22 | 12 | 0.50 | 0.02 | 400,000 | 8,000 |\n\n**Notes:**\n\n- The probabilities (p_up and p_down) are subjective estimates based on the novelty and complexity of each technology.\n- The return multiples (b_up) are based on the potential impact of each technology on waste heat recovery efficiency.\n- The maximum loss (L_down) is estimated as a worst-case scenario, considering potential financial and reputational risks.\n- The risk is calculated as the product of p_down and L_down.\n- The recommended budget allocation (f*) is calculated using the Kelly criterion.\n- Based on these estimates, it is recommended to hold reserves for Source A, C, and E, as their f* values are lower than the sum of all f* values (1.35).",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "NRG-05",
+          "sources": {
+            "A": {
+              "p_up": 0.1,
+              "b_up": 5.0,
+              "f_star": 0.28,
+              "p_down": 0.08,
+              "L_down": 40000000.0,
+              "risk": 3200000.0
+            },
+            "B": {
+              "p_up": 0.2,
+              "b_up": 12.0,
+              "f_star": 0.55,
+              "p_down": 0.03,
+              "L_down": 30000000.0,
+              "risk": 900000.0
+            },
+            "D": {
+              "p_up": 0.18,
+              "b_up": 10.0,
+              "f_star": 0.46,
+              "p_down": 0.04,
+              "L_down": 25000000.0,
+              "risk": 1000000.0
+            },
+            "E": {
+              "p_up": 0.12,
+              "b_up": 6.0,
+              "f_star": 0.33,
+              "p_down": 0.06,
+              "L_down": 35000000.0,
+              "risk": 2100000.0
+            },
+            "F": {
+              "p_up": 0.22,
+              "b_up": 15.0,
+              "f_star": 0.63,
+              "p_down": 0.02,
+              "L_down": 20000000.0,
+              "risk": 400000.0
+            }
+          },
+          "raw_response": "**Estimated Metrics for Energy Extraction from Salinity Gradients Sources**\n\n| Source | p_up | b_up | f* | p_down | L_down (USD) | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Salmon gill chloride cell ion transport | 0.15 | 8 | 0.43 | 0.05 | 50,000,000 | 2,500,000 |\n| B: Computational membrane selectivity modeling | 0.20 | 12 | 0.55 | 0.03 | 30,000,000 | 900,000 |\n| C: Mangrove root ultrafiltration tissue | 0.10 | 5 | 0.28 | 0.08 | 40,000,000 | 3,200,000 |\n| D: Synthetic ion-exchange membrane screening | 0.18 | 10 | 0.46 | 0.04 | 25,000,000 | 1,000,000 |\n| E: Shark rectal gland concentrating mechanisms | 0.12 | 6 | 0.33 | 0.06 | 35,000,000 | 2,100,000 |\n| F: Osmotic power patent database analysis | 0.22 | 15 | 0.63 | 0.02 | 20,000,000 | 400,000 |\n\n**Notes:**\n\n- For each source, I've estimated the probability of discovering a mechanism that outperforms current best-in-class (p_up) as follows:\n  - A: 15% due to the complexity of ion transport mechanisms in salmon gills.\n  - B: 20% due to the potential for computational modeling to optimize membrane selectivity.\n  - C: 10% due to the unique properties of mangrove root ultrafiltration tissue.\n  - D: 18% due to the potential for synthetic ion-exchange membranes to improve efficiency.\n  - E: 12% due to the complexity of shark rectal gland concentrating mechanisms.\n  - F: 22% due to the vast patent database and potential for innovative solutions.\n\n- I've estimated the return multiple if successful (b_up) as follows:\n  - A: 8 due to the potential for efficient ion transport.\n  - B: 12 due to the potential for optimized membrane selectivity.\n  - C: 5 due to the unique properties of mangrove root ultrafiltration tissue.\n  - D: 10 due to the potential for improved efficiency.\n  - E: 6 due to the complexity of shark rectal gland concentrating mechanisms.\n  - F: 15 due to the potential for innovative solutions.\n\n- I've calculated the recommended fraction of budget to allocate (f*) using the Kelly criterion formula.\n\n",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "NRG-06",
+          "sources": {
+            "A": {
+              "p_up": 0.15,
+              "b_up": 8.0,
+              "f_star": 0.43,
+              "p_down": 0.05,
+              "L_down": 50000000.0,
+              "risk": 2500000.0
+            },
+            "B": {
+              "p_up": 0.22,
+              "b_up": 3.0,
+              "f_star": 0.51,
+              "p_down": 0.01,
+              "L_down": 15000000.0,
+              "risk": 150.0
+            },
+            "C": {
+              "p_up": 0.12,
+              "b_up": 6.0,
+              "f_star": 0.36,
+              "p_down": 0.04,
+              "L_down": 30000000.0,
+              "risk": 1200000.0
+            },
+            "D": {
+              "p_up": 0.18,
+              "b_up": 4.0,
+              "f_star": 0.45,
+              "p_down": 0.06,
+              "L_down": 40000000.0,
+              "risk": 2400000.0
+            },
+            "E": {
+              "p_up": 0.1,
+              "b_up": 7.0,
+              "f_star": 0.29,
+              "p_down": 0.02,
+              "L_down": 25000000.0,
+              "risk": 500.0
+            }
+          },
+          "raw_response": "**Estimated Metrics for Biomass-to-Fuel Conversion Sources**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Termite gut microbial consortium lignocellulose digestion | 0.15 | 8 | 0.43 | 0.05 | 50M | 2.5M |\n| B: Computational metabolic pathway modeling | 0.20 | 5 | 0.55 | 0.03 | 20M | 600k |\n| C: Shipworm gill symbiont cellulase systems | 0.12 | 6 | 0.36 | 0.04 | 30M | 1.2M |\n| D: Directed evolution enzyme screening | 0.18 | 4 | 0.45 | 0.06 | 40M | 2.4M |\n| E: Hoatzin foregut fermentation microbiome | 0.10 | 7 | 0.29 | 0.02 | 25M | 500k |\n| F: Biofuel production patent database analysis | 0.22 | 3 | 0.51 | 0.01 | 15M | 150k |\n\n**Notes:**\n\n- For p_up, I assumed a moderate probability of discovering a mechanism that outperforms current best-in-class, considering the complexity of biomass-to-fuel conversion.\n- For b_up, I estimated a return multiple based on the potential for significant improvements in efficiency and scalability.\n- For p_down, I considered the risk of unexpected failure, disruption, or liability within 20 years, taking into account the novelty and complexity of each approach.\n- For L_down, I estimated the maximum loss in USD if disruption occurs, considering the potential financial implications of failed projects.\n- The calculated f* values indicate the recommended fraction of budget to allocate to each source, based on the Kelly criterion.\n- Based on these estimates, I would hold reserves (allocate less than the sum of f* values) to mitigate potential risks and ensure a diversified portfolio.\n\n**Sum of f* values:** 2.43 (A: 0.43 + B: 0.55 + C: 0.36 + D: 0.45 + E: 0.29 + F: 0.51)\n\n**Recommended allocation:**\n\n- Allocate 0.43 (A) + 0.55 (B) = 0.98 (or 98%) to A and B, considering their high potential for breakthroughs and relatively low risk.\n- Allocate 0.36 (C) to C, considering its moderate potential and risk.\n- Allocate 0.45 (D) to D, considering its moderate potential and risk.\n- Allocate 0.2",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "NRG-07",
+          "sources": {
+            "A": {
+              "p_up": 0.2,
+              "b_up": 5.0,
+              "f_star": 0.38,
+              "p_down": 0.1,
+              "L_down": 100000000.0,
+              "risk": 10000000.0
+            },
+            "B": {
+              "p_up": 0.15,
+              "b_up": 8.0,
+              "f_star": 0.28,
+              "p_down": 0.05,
+              "L_down": 50000000.0,
+              "risk": 2500000.0
+            },
+            "C": {
+              "p_up": 0.25,
+              "b_up": 3.0,
+              "f_star": 0.35,
+              "p_down": 0.08,
+              "L_down": 75000000.0,
+              "risk": 6000000.0
+            },
+            "D": {
+              "p_up": 0.18,
+              "b_up": 6.0,
+              "f_star": 0.31,
+              "p_down": 0.12,
+              "L_down": 200000000.0,
+              "risk": 24000000.0
+            },
+            "E": {
+              "p_up": 0.22,
+              "b_up": 4.0,
+              "f_star": 0.33,
+              "p_down": 0.09,
+              "L_down": 150000000.0,
+              "risk": 13500000.0
+            },
+            "F": {
+              "p_up": 0.12,
+              "b_up": 2.0,
+              "f_star": 0.19,
+              "p_down": 0.15,
+              "L_down": 300000000.0,
+              "risk": 45000000.0
+            }
+          },
+          "raw_response": "**Estimated Metrics for Water Splitting Sources**\n\n| Source | p_up | b_up | f* | p_down | L_down (USD) | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Cyanobacteria photosystem II oxygen evolution | 0.2 | 5 | 0.38 | 0.1 | 100,000,000 | 10,000,000 |\n| B: Computational photocatalyst band alignment | 0.15 | 8 | 0.28 | 0.05 | 50,000,000 | 2,500,000 |\n| C: Green algae [FeFe]-hydrogenase active site | 0.25 | 3 | 0.35 | 0.08 | 75,000,000 | 6,000,000 |\n| D: Semiconductor heterojunction screening | 0.18 | 6 | 0.31 | 0.12 | 200,000,000 | 24,000,000 |\n| E: Nitrogen-fixing bacteria electron transport | 0.22 | 4 | 0.33 | 0.09 | 150,000,000 | 13,500,000 |\n| F: Hydrogen production patent database analysis | 0.12 | 2 | 0.19 | 0.15 | 300,000,000 | 45,000,000 |\n\n**Notes:**\n\n- For each source, I've assumed a 20-year time frame for the downside risk calculation.\n- The probabilities (p_up and p_down) are subjective estimates and may vary based on individual expertise and available data.\n- The loss values (L_down) are rough estimates and may need to be adjusted based on specific project requirements and industry standards.\n- The recommended budget allocation (f*) is calculated using the Kelly criterion, which assumes a risk-neutral investor. In practice, investors may choose to hold reserves by allocating less than the sum of f* values.\n- The sum of f* values is approximately 2.09, suggesting that holding reserves would be a prudent strategy to mitigate overall risk.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "NRG-08",
+          "sources": {
+            "A": {
+              "p_up": 0.22,
+              "b_up": 7.0,
+              "f_star": 0.49,
+              "p_down": 0.09,
+              "L_down": 1200000.0,
+              "risk": 108000.0
+            },
+            "B": {
+              "p_up": 0.3,
+              "b_up": 8.0,
+              "f_star": 0.58,
+              "p_down": 0.05,
+              "L_down": 500000.0,
+              "risk": 25000.0
+            },
+            "C": {
+              "p_up": 0.15,
+              "b_up": 3.0,
+              "f_star": 0.31,
+              "p_down": 0.12,
+              "L_down": 750000.0,
+              "risk": 90000.0
+            },
+            "D": {
+              "p_up": 0.18,
+              "b_up": 4.0,
+              "f_star": 0.38,
+              "p_down": 0.11,
+              "L_down": 800000.0,
+              "risk": 88000.0
+            }
+          },
+          "raw_response": "**Estimated Metrics for Each Source**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Termite mound ventilation stack effect | 0.2 | 5 | 0.44 | 0.1 | 1,000,000 | 100,000 |\n| B: Computational fluid dynamics optimization | 0.3 | 8 | 0.58 | 0.05 | 500,000 | 25,000 |\n| C: Elephant ear pinna vascular patterns | 0.15 | 3 | 0.31 | 0.12 | 750,000 | 90,000 |\n| D: Topology-optimized heat sink design | 0.25 | 6 | 0.48 | 0.08 | 1,500,000 | 120,000 |\n| E: Desert beetle fog-basking orientation | 0.18 | 4 | 0.38 | 0.11 | 800,000 | 88,000 |\n| F: Passive cooling patent database analysis | 0.22 | 7 | 0.49 | 0.09 | 1,200,000 | 108,000 |\n\n**Calculations:**\n\n1. **UPSIDE (Kelly criterion)**\n\n- A: f* = 0.2 - (1 - 0.2) / 5 = 0.44\n- B: f* = 0.3 - (1 - 0.3) / 8 = 0.58\n- C: f* = 0.15 - (1 - 0.15) / 3 = 0.31\n- D: f* = 0.25 - (1 - 0.25) / 6 = 0.48\n- E: f* = 0.18 - (1 - 0.18) / 4 = 0.38\n- F: f* = 0.22 - (1 - 0.22) / 7 = 0.49\n\n2. **DOWNSIDE (CVaR)**\n\n- A: risk = 0.1 \u00d7 1,000,000 = 100,000\n- B: risk = 0.05 \u00d7 500,000 = 25,000\n- C: risk = 0.12 \u00d7 750,000 = 90,000\n- D: risk = 0.08 \u00d7 1,500,000 = 120,000\n- E: risk = 0.11 \u00d7 800,000 = 88,000\n- F: risk = 0.09 \u00d7 1,200,000 = 108,000\n\n**Reserve Allocation:**\nBased on the calculated f* values, the total budget allocation would be 2.72 (0.44 + 0.58 + 0.31 + 0.48 + 0.38 + 0.49). Considering the risk exposure, it is recommended to hold reserves and allocate less than the sum of f* values. A possible allocation could be 70% of the total budget to the sources with the highest f* values (B, F, and D) and 30% to the remaining sources (A, C, and E).",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "NRG-09",
+          "sources": {
+            "A": {
+              "p_up": 0.05,
+              "b_up": 20.0,
+              "f_star": 0.45,
+              "p_down": 0.1,
+              "L_down": 100000000.0,
+              "risk": 10000000.0
+            },
+            "B": {
+              "p_up": 0.15,
+              "b_up": 5.0,
+              "f_star": 0.35,
+              "p_down": 0.05,
+              "L_down": 50000000.0,
+              "risk": 2500000.0
+            },
+            "C": {
+              "p_up": 0.03,
+              "b_up": 15.0,
+              "f_star": 0.27,
+              "p_down": 0.12,
+              "L_down": 200000000.0,
+              "risk": 24000000.0
+            },
+            "D": {
+              "p_up": 0.12,
+              "b_up": 8.0,
+              "f_star": 0.3,
+              "p_down": 0.08,
+              "L_down": 150000000.0,
+              "risk": 12000000.0
+            },
+            "E": {
+              "p_up": 0.08,
+              "b_up": 4.0,
+              "f_star": 0.24,
+              "p_down": 0.06,
+              "L_down": 75000000.0,
+              "risk": 4500000.0
+            }
+          },
+          "raw_response": "**Estimated Metrics for Each Source**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Hummingbird fat-to-flight metabolic efficiency | 0.05 | 20 | 0.45 | 0.10 | 100M | 10M |\n| B: Computational electrode intercalation modeling | 0.15 | 5 | 0.35 | 0.05 | 50M | 2.5M |\n| C: Hibernating bear lipid mobilization control | 0.03 | 15 | 0.27 | 0.12 | 200M | 24M |\n| D: Metal-organic framework screening | 0.12 | 8 | 0.30 | 0.08 | 150M | 12M |\n| E: Migrating bird pre-flight hyperphagia metabolism | 0.04 | 12 | 0.32 | 0.11 | 250M | 27.5M |\n| F: Energy storage patent database analysis | 0.08 | 4 | 0.24 | 0.06 | 75M | 4.5M |\n\n**Notes:**\n\n- For p_up, I assumed a moderate probability of discovering a mechanism that outperforms current best-in-class, considering the complexity of the field and the novelty of each approach.\n- For b_up, I estimated a return multiple based on the potential impact of each source on energy storage technology, with higher multiples for more innovative approaches.\n- For p_down, I assumed a moderate to low probability of unexpected failure or disruption, considering the relatively low risk of each approach.\n- For L_down, I estimated the maximum loss in USD if disruption occurs, considering the potential financial implications of each approach.\n- For f*, I calculated the recommended fraction of budget to allocate using the Kelly criterion.\n- Based on the estimated f* values, I would hold reserves (allocate less than the sum of f* values) to mitigate risk and ensure a diversified portfolio.\n\n**Total f* value:** 2.21 (sum of f* values for all sources)\n\n**Recommended allocation:**\n\n- Allocate up to 2.21x of the budget to the sources with the highest f* values, considering their potential return and risk.\n- Hold reserves by allocating less than the total f* value to ensure a diversified portfolio and mitigate risk.\n\n**Example allocation:**\n\n- Allocate 0.45x to Source A (Hummingbird fat-to-flight metabolic ef",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "NRG-10",
+          "sources": {
+            "A": {
+              "p_up": 0.2,
+              "b_up": 5.0,
+              "f_star": 0.44,
+              "p_down": 0.05,
+              "L_down": 100000000.0,
+              "risk": 5000000.0
+            },
+            "B": {
+              "p_up": 0.3,
+              "b_up": 3.0,
+              "f_star": 0.55,
+              "p_down": 0.03,
+              "L_down": 50000000.0,
+              "risk": 1500000.0
+            },
+            "C": {
+              "p_up": 0.1,
+              "b_up": 4.0,
+              "f_star": 0.28,
+              "p_down": 0.12,
+              "L_down": 300000000.0,
+              "risk": 36000000.0
+            },
+            "D": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.73,
+              "p_down": 0.02,
+              "L_down": 150000000.0,
+              "risk": 3000000.0
+            },
+            "F": {
+              "p_up": 0.25,
+              "b_up": 6.0,
+              "f_star": 0.59,
+              "p_down": 0.04,
+              "L_down": 75000000.0,
+              "risk": 3000000.0
+            }
+          },
+          "raw_response": "**Estimated Metrics for Each Source**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Pancreatic islet glucose-insulin feedback | 0.2 | 5 | 0.44 | 0.05 | 100M | 5M |\n| B: Computational model predictive control | 0.3 | 3 | 0.55 | 0.03 | 50M | 1.5M |\n| C: Forest ecosystem nutrient cycling regulation | 0.15 | 2 | 0.23 | 0.08 | 200M | 16M |\n| D: Deep reinforcement learning controllers | 0.4 | 10 | 0.73 | 0.02 | 150M | 3M |\n| E: Coral reef carbonate buffering dynamics | 0.1 | 4 | 0.28 | 0.12 | 300M | 36M |\n| F: Grid management patent database analysis | 0.25 | 6 | 0.59 | 0.04 | 75M | 3M |\n\n**Notes:**\n\n- For p_up, I assumed a moderate probability of discovering a mechanism that outperforms current best-in-class, considering the complexity of the problem and the novelty of the approaches.\n- For b_up, I assumed a range of return multiples, considering the potential impact of each source on renewable integration.\n- For p_down, I assumed a low to moderate probability of unexpected failure or disruption, considering the potential risks associated with each source.\n- For L_down, I assumed a range of maximum loss values, considering the potential financial impact of each source.\n- For f*, I calculated the recommended fraction of budget to allocate using the Kelly criterion.\n- For risk, I calculated the expected loss exposure using the CVaR formula.\n\n**Reserves:**\n\nBased on the estimates, I would hold reserves for Sources C and E, as their f* values are relatively low compared to the sum of all f* values. This suggests that these sources may require more cautious allocation of resources.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "NRG-11",
+          "sources": {
+            "A": {
+              "p_up": 0.1,
+              "b_up": 12.0,
+              "f_star": 0.38,
+              "p_down": 0.08,
+              "L_down": 30000000.0,
+              "risk": 2400000.0
+            },
+            "B": {
+              "p_up": 0.2,
+              "b_up": 5.0,
+              "f_star": 0.55,
+              "p_down": 0.03,
+              "L_down": 20000000.0,
+              "risk": 600.0
+            },
+            "D": {
+              "p_up": 0.18,
+              "b_up": 9.0,
+              "f_star": 0.49,
+              "p_down": 0.04,
+              "L_down": 40000000.0,
+              "risk": 1600000.0
+            },
+            "F": {
+              "p_up": 0.12,
+              "b_up": 4.0,
+              "f_star": 0.32,
+              "p_down": 0.06,
+              "L_down": 25000000.0,
+              "risk": 1500000.0
+            }
+          },
+          "raw_response": "**Estimated Metrics for Each Source**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Humpback whale flipper tubercle leading edge | 0.15 | 8 | 0.43 | 0.05 | 50M | 2.5M |\n| B: Computational blade element momentum theory | 0.20 | 5 | 0.55 | 0.03 | 20M | 600K |\n| C: Maple samara autorotation aerodynamics | 0.10 | 12 | 0.38 | 0.08 | 30M | 2.4M |\n| D: Generative design blade optimization | 0.25 | 6 | 0.61 | 0.02 | 15M | 300K |\n| E: Dragonfly wing corrugation vortex control | 0.18 | 9 | 0.49 | 0.04 | 40M | 1.6M |\n| F: Wind turbine patent database analysis | 0.12 | 4 | 0.32 | 0.06 | 25M | 1.5M |\n\n**Notes:**\n\n- For p_up, I assumed a moderate probability of discovering a mechanism that outperforms current best-in-class, considering the complexity of aerodynamic efficiency improvements.\n- For b_up, I estimated a return multiple based on the potential for significant efficiency gains and the potential for scalability.\n- For p_down, I assumed a low to moderate risk of unexpected failure or disruption, considering the relatively well-understood nature of the sources.\n- For L_down, I estimated a maximum loss based on the potential financial impact of a failed project, considering the scale of investment required for aerodynamic efficiency research.\n- For f*, I calculated the recommended fraction of budget to allocate using the Kelly criterion.\n- For risk, I calculated the expected loss exposure using the CVaR formula.\n\n**Reserves:**\n\nBased on the estimated f* values, I would recommend allocating the following budget:\n\n- Source A: 43% of budget\n- Source B: 55% of budget\n- Source C: 38% of budget\n- Source D: 61% of budget\n- Source E: 49% of budget\n- Source F: 32% of budget\n\nConsidering the estimated risks and potential returns, I would hold reserves by allocating less than the sum of f* values, specifically:\n\n- Allocate 70-80% of the total budget to Sources B and D, which have the highest potential returns and relatively low",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "NRG-12",
+          "sources": {
+            "A": {
+              "p_up": 0.2,
+              "b_up": 20.0,
+              "f_star": 0.83,
+              "p_down": 0.05,
+              "L_down": 10000000.0,
+              "risk": 500000.0
+            },
+            "B": {
+              "p_up": 0.15,
+              "b_up": 5.0,
+              "f_star": 0.43,
+              "p_down": 0.1,
+              "L_down": 5000000.0,
+              "risk": 500000.0
+            },
+            "C": {
+              "p_up": 0.25,
+              "b_up": 15.0,
+              "f_star": 0.83,
+              "p_down": 0.03,
+              "L_down": 8000000.0,
+              "risk": 240000.0
+            },
+            "D": {
+              "p_up": 0.18,
+              "b_up": 8.0,
+              "f_star": 0.59,
+              "p_down": 0.08,
+              "L_down": 4000000.0,
+              "risk": 320000.0
+            },
+            "E": {
+              "p_up": 0.12,
+              "b_up": 3.0,
+              "f_star": 0.31,
+              "p_down": 0.12,
+              "L_down": 3000000.0,
+              "risk": 360000.0
+            }
+          },
+          "raw_response": "**Estimated Metrics for Ultra-Sensitive Chemical Detection Sources**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Shark ampullae of Lorenzini | 0.2 | 20 | 0.83 | 0.05 | 10,000,000 | 500,000 |\n| B: Computational sensor impedance modeling | 0.15 | 5 | 0.43 | 0.1 | 5,000,000 | 500,000 |\n| C: Platypus bill electroreception arrays | 0.25 | 15 | 0.83 | 0.03 | 8,000,000 | 240,000 |\n| D: Synthetic electrode functionalization screening | 0.18 | 8 | 0.59 | 0.08 | 4,000,000 | 320,000 |\n| E: Electric catfish tuberous receptor organs | 0.22 | 12 | 0.73 | 0.04 | 9,000,000 | 360,000 |\n| F: Electrochemical sensor patent database analysis | 0.12 | 3 | 0.31 | 0.12 | 3,000,000 | 360,000 |\n\n**Notes:**\n\n- For each source, I've assumed a 20-year time frame for the downside risk calculation.\n- The probabilities (p_up and p_down) are subjective estimates based on the potential of each source to deliver ultra-sensitive chemical detection.\n- The return multiples (b_up) are based on the potential impact of each source on the field.\n- The maximum loss (L_down) is an estimate of the potential financial exposure if the source fails or is disrupted.\n- The risk calculation is based on the product of the probability of a downside event and the maximum loss.\n\n**Reserve Allocation:**\nBased on the estimated f* values, I would recommend allocating the following budget fractions:\n\n- Source A: 83%\n- Source B: 43%\n- Source C: 83%\n- Source D: 59%\n- Source E: 73%\n- Source F: 31%\n\nConsidering the estimated risks and potential returns, I would hold reserves by allocating less than the sum of the f* values (e.g., 50-60% of the total budget) to ensure a balanced risk management strategy.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "NRG-13",
+          "sources": {
+            "A": {
+              "p_up": 0.25,
+              "b_up": 25.0,
+              "f_star": 0.69,
+              "p_down": 0.04,
+              "L_down": 200000000.0,
+              "risk": 8000000.0
+            },
+            "B": {
+              "p_up": 0.15,
+              "b_up": 15.0,
+              "f_star": 0.45,
+              "p_down": 0.03,
+              "L_down": 50000000.0,
+              "risk": 1500000.0
+            },
+            "D": {
+              "p_up": 0.18,
+              "b_up": 18.0,
+              "f_star": 0.53,
+              "p_down": 0.02,
+              "L_down": 75000000.0,
+              "risk": 1500000.0
+            },
+            "E": {
+              "p_up": 0.22,
+              "b_up": 22.0,
+              "f_star": 0.61,
+              "p_down": 0.06,
+              "L_down": 150000000.0,
+              "risk": 9000000.0
+            },
+            "F": {
+              "p_up": 0.12,
+              "b_up": 12.0,
+              "f_star": 0.36,
+              "p_down": 0.01,
+              "L_down": 30000000.0,
+              "risk": 300000.0
+            }
+          },
+          "raw_response": "To estimate the metrics, I'll make some assumptions about the probabilities and return multiples for each source. Please note that these are hypothetical estimates and may not reflect actual values.\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: ATP synthase F0 proton channel rotation | 0.2 | 20 | 0.64 | 0.05 | 100M | 5M |\n| B: Computational proton hopping simulation | 0.15 | 15 | 0.45 | 0.03 | 50M | 1.5M |\n| C: Bacteriorhodopsin proton pumping pathway | 0.25 | 25 | 0.69 | 0.04 | 200M | 8M |\n| D: Synthetic proton exchange membrane screening | 0.18 | 18 | 0.53 | 0.02 | 75M | 1.5M |\n| E: Mitochondrial cytochrome c oxidase proton coupling | 0.22 | 22 | 0.61 | 0.06 | 150M | 9M |\n| F: Proton conductor patent database analysis | 0.12 | 12 | 0.36 | 0.01 | 30M | 0.3M |\n\nAssumptions:\n- p_up: The probability of discovering a mechanism that outperforms current best-in-class is estimated based on the novelty and potential impact of each source.\n- b_up: The return multiple is estimated based on the potential impact and scalability of each source.\n- p_down: The probability of unexpected failure, disruption, or liability is estimated based on the complexity and risk associated with each source.\n- L_down: The maximum loss is estimated based on the potential financial impact of a failure or disruption.\n\nBased on these estimates, I would recommend allocating the following budget fractions:\n- Source A: 64% of the budget\n- Source B: 45% of the budget\n- Source C: 69% of the budget\n- Source D: 53% of the budget\n- Source E: 61% of the budget\n- Source F: 36% of the budget\n\nConsidering the estimated risks, I would hold reserves by allocating less than the sum of the f* values, e.g., 50% of the budget for a diversified portfolio.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "MFG-01",
+          "sources": {
+            "A": {
+              "p_up": 0.05,
+              "b_up": 20.0,
+              "f_star": 0.38,
+              "p_down": 0.1,
+              "L_down": 10000000.0,
+              "risk": 1000000.0
+            },
+            "B": {
+              "p_up": 0.15,
+              "b_up": 5.0,
+              "f_star": 0.23,
+              "p_down": 0.05,
+              "L_down": 5000000.0,
+              "risk": 250000.0
+            },
+            "C": {
+              "p_up": 0.08,
+              "b_up": 12.0,
+              "f_star": 0.24,
+              "p_down": 0.09,
+              "L_down": 6000000.0,
+              "risk": 540000.0
+            },
+            "D": {
+              "p_up": 0.1,
+              "b_up": 8.0,
+              "f_star": 0.19,
+              "p_down": 0.08,
+              "L_down": 3000000.0,
+              "risk": 240000.0
+            },
+            "F": {
+              "p_up": 0.12,
+              "b_up": 6.0,
+              "f_star": 0.2,
+              "p_down": 0.06,
+              "L_down": 2000000.0,
+              "risk": 120000.0
+            }
+          },
+          "raw_response": "To estimate the metrics for each source, I'll make some assumptions about the probabilities and return multiples. Please note that these are rough estimates and may not reflect actual values.\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Sea urchin spine stereom calcite formation | 0.05 | 20 | 0.38 | 0.1 | 10,000,000 | 1,000,000 |\n| B: Computational nucleation kinetics modeling | 0.15 | 5 | 0.23 | 0.05 | 5,000,000 | 250,000 |\n| C: Chiton radula magnetite biomineralization | 0.03 | 15 | 0.22 | 0.12 | 8,000,000 | 960,000 |\n| D: Sol-gel low-temperature ceramic screening | 0.10 | 8 | 0.19 | 0.08 | 3,000,000 | 240,000 |\n| E: Coral skeleton aragonite crystal templating | 0.08 | 12 | 0.24 | 0.09 | 6,000,000 | 540,000 |\n| F: Low-temperature processing patent database analysis | 0.12 | 6 | 0.20 | 0.06 | 2,000,000 | 120,000 |\n\nAssumptions:\n\n- p_up: The probability of discovering a mechanism that outperforms current best-in-class is estimated as follows:\n  - A: 5% (sea urchin spines have unique structures, but calcite formation might not be directly applicable)\n  - B: 15% (computational modeling can provide valuable insights, but the complexity of nucleation kinetics is high)\n  - C: 3% (chiton radula magnetite biomineralization is a complex process, and direct application might be challenging)\n  - D: 10% (sol-gel processing has shown promise, but scaling up might be difficult)\n  - E: 8% (coral skeletons have unique structures, but aragonite templating might not be directly applicable)\n  - F: 12% (patent analysis can provide valuable insights, but the quality of patents might vary)\n- b_up: The return multiple if successful is estimated as follows:\n  - A: 20 (discovering a new material synthesis method could lead to significant breakthroughs)\n  - B: 5 (computational modeling can provide valuable insights, but the impact might be more incremental)\n  - C: 15 (magnetite biomineralization could lead to new materials with uni",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "MFG-02",
+          "sources": {
+            "A": {
+              "p_up": 0.22,
+              "b_up": 15.0,
+              "f_star": 0.41,
+              "p_down": 0.02,
+              "L_down": 6000000.0,
+              "risk": 120000.0
+            },
+            "B": {
+              "p_up": 0.2,
+              "b_up": 12.0,
+              "f_star": 0.33,
+              "p_down": 0.03,
+              "L_down": 5000000.0,
+              "risk": 150000.0
+            },
+            "C": {
+              "p_up": 0.1,
+              "b_up": 6.0,
+              "f_star": 0.17,
+              "p_down": 0.07,
+              "L_down": 8000000.0,
+              "risk": 560000.0
+            },
+            "D": {
+              "p_up": 0.18,
+              "b_up": 10.0,
+              "f_star": 0.28,
+              "p_down": 0.04,
+              "L_down": 12000000.0,
+              "risk": 480000.0
+            },
+            "F": {
+              "p_up": 0.12,
+              "b_up": 5.0,
+              "f_star": 0.2,
+              "p_down": 0.06,
+              "L_down": 9000000.0,
+              "risk": 540000.0
+            }
+          },
+          "raw_response": "**Estimated Metrics for Each Source**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Bone trabecular network remodeling | 0.15 | 8 | 0.24 | 0.05 | 10,000,000 | 500,000 |\n| B: Computational multi-scale topology optimization | 0.20 | 12 | 0.33 | 0.03 | 5,000,000 | 150,000 |\n| C: Wood ray parenchyma-tracheid organization | 0.10 | 6 | 0.17 | 0.07 | 8,000,000 | 560,000 |\n| D: Freeze-casting templated porosity screening | 0.18 | 10 | 0.28 | 0.04 | 12,000,000 | 480,000 |\n| E: Nacre tablet-bridge layered growth | 0.22 | 15 | 0.41 | 0.02 | 6,000,000 | 120,000 |\n| F: Hierarchical materials patent database analysis | 0.12 | 5 | 0.20 | 0.06 | 9,000,000 | 540,000 |\n\n**Notes:**\n\n- The probabilities (p_up and p_down) are subjective estimates based on the potential for breakthroughs and risks associated with each source.\n- The return multiples (b_up) are also subjective estimates based on the potential impact of successful discoveries.\n- The maximum loss (L_down) is estimated as a worst-case scenario within 20 years.\n- The risk is calculated as the product of p_down and L_down.\n- The recommended fraction of budget to allocate (f*) is calculated using the Kelly criterion.\n- Based on these estimates, it is recommended to hold reserves for Source A, C, and F, as their f* values are less than the sum of all f* values (0.24 + 0.33 + 0.17 + 0.28 + 0.41 + 0.20 = 1.63).",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "MFG-03",
+          "sources": {
+            "A": {
+              "p_up": 0.12,
+              "b_up": 10.0,
+              "f_star": 0.24,
+              "p_down": 0.06,
+              "L_down": 150000000.0,
+              "risk": 9000000.0
+            },
+            "B": {
+              "p_up": 0.18,
+              "b_up": 18.0,
+              "f_star": 0.33,
+              "p_down": 0.04,
+              "L_down": 75000000.0,
+              "risk": 3000000.0
+            },
+            "C": {
+              "p_up": 0.1,
+              "b_up": 12.0,
+              "f_star": 0.23,
+              "p_down": 0.08,
+              "L_down": 200000000.0,
+              "risk": 16000000.0
+            },
+            "E": {
+              "p_up": 0.25,
+              "b_up": 25.0,
+              "f_star": 0.44,
+              "p_down": 0.02,
+              "L_down": 25000000.0,
+              "risk": 500000.0
+            }
+          },
+          "raw_response": "**Estimated Metrics for Each Source**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Virus capsid protein shell assembly | 0.15 | 20 | 0.34 | 0.05 | 100M | 5M |\n| B: Computational coarse-grained assembly modeling | 0.20 | 15 | 0.38 | 0.03 | 50M | 1.5M |\n| C: Diatom silica deposition pattern formation | 0.10 | 12 | 0.23 | 0.08 | 200M | 16M |\n| D: Block copolymer phase separation screening | 0.18 | 18 | 0.33 | 0.04 | 75M | 3M |\n| E: Bacterial S-layer protein crystallization | 0.12 | 10 | 0.24 | 0.06 | 150M | 9M |\n| F: Self-assembly patent database analysis | 0.25 | 25 | 0.44 | 0.02 | 25M | 0.5M |\n\n**Notes:**\n\n- For p_up, I assumed a moderate probability of discovering a mechanism that outperforms current best-in-class, considering the complexity of molecular self-organization for nanofabrication.\n- For b_up, I estimated a return multiple based on the potential impact of discovering a novel, efficient, and scalable method for nanofabrication.\n- For p_down, I considered the risk of unexpected failure, disruption, or liability within 20 years, including potential intellectual property issues, regulatory hurdles, or unforeseen environmental consequences.\n- For L_down, I estimated the maximum loss in USD if disruption occurs, considering the potential financial impact on the project, the organization, and stakeholders.\n- The risk calculation is the product of p_down and L_down.\n\n**Reserve Allocation:**\nBased on the estimated f* values, I would recommend allocating the following budget fractions:\n\n- Source A: 34% of the budget\n- Source B: 38% of the budget\n- Source C: 23% of the budget\n- Source D: 33% of the budget\n- Source E: 24% of the budget\n- Source F: 44% of the budget\n\nConsidering the estimated risks and potential returns, I would hold reserves by allocating less than the sum of f* values (1.34). A possible allocation could be:\n\n- 60% to the top 2 sources (B and F)\n- 20% to the next 2 sources (A and D)\n- 10% to",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "MFG-04",
+          "sources": {
+            "A": {
+              "p_up": 0.12,
+              "b_up": 1.5,
+              "f_star": 0.17,
+              "p_down": 0.15,
+              "L_down": 15000000.0,
+              "risk": 2250000.0
+            },
+            "B": {
+              "p_up": 0.15,
+              "b_up": 3.0,
+              "f_star": 0.28,
+              "p_down": 0.05,
+              "L_down": 5000000.0,
+              "risk": 250000.0
+            },
+            "C": {
+              "p_up": 0.25,
+              "b_up": 4.0,
+              "f_star": 0.43,
+              "p_down": 0.08,
+              "L_down": 8000000.0,
+              "risk": 640000.0
+            },
+            "D": {
+              "p_up": 0.18,
+              "b_up": 2.0,
+              "f_star": 0.26,
+              "p_down": 0.12,
+              "L_down": 12000000.0,
+              "risk": 1440000.0
+            },
+            "E": {
+              "p_up": 0.22,
+              "b_up": 6.0,
+              "f_star": 0.45,
+              "p_down": 0.09,
+              "L_down": 9000000.0,
+              "risk": 810000.0
+            }
+          },
+          "raw_response": "**Estimated Metrics for Each Source**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Glass sponge spicule crack arrest architecture | 0.2 | 5 | 0.38 | 0.1 | 10,000,000 | 1,000,000 |\n| B: Computational fracture mechanics simulation | 0.15 | 3 | 0.28 | 0.05 | 5,000,000 | 250,000 |\n| C: Dragonfly wing vein damage distribution | 0.25 | 4 | 0.43 | 0.08 | 8,000,000 | 640,000 |\n| D: Redundancy engineering design patterns | 0.18 | 2 | 0.26 | 0.12 | 12,000,000 | 1,440,000 |\n| E: Lobster cuticle Bouligand crack steering | 0.22 | 6 | 0.45 | 0.09 | 9,000,000 | 810,000 |\n| F: Damage tolerance patent database analysis | 0.12 | 1.5 | 0.17 | 0.15 | 15,000,000 | 2,250,000 |\n\n**Calculations:**\n\n1. **Source A: Glass sponge spicule crack arrest architecture**\n   - p_up = 0.2 (20% chance of discovering a mechanism that outperforms current best-in-class)\n   - b_up = 5 (5x return if successful)\n   - f* = 0.2 - (1 - 0.2) / 5 = 0.38\n   - p_down = 0.1 (10% chance of unexpected failure or disruption)\n   - L_down = 10,000,000 (maximum loss in USD if disruption occurs)\n   - risk = 0.1 \u00d7 10,000,000 = 1,000,000\n\n2. **Source B: Computational fracture mechanics simulation**\n   - p_up = 0.15 (15% chance of discovering a mechanism that outperforms current best-in-class)\n   - b_up = 3 (3x return if successful)\n   - f* = 0.15 - (1 - 0.15) / 3 = 0.28\n   - p_down = 0.05 (5% chance of unexpected failure or disruption)\n   - L_down = 5,000,000 (maximum loss in USD if disruption occurs)\n   - risk = 0.05 \u00d7 5,000,000 = 250,000\n\n3. **Source C: Dragonfly wing vein damage distribution**\n   - p_up = 0.25 (25% chance of discovering a mechanism that outperforms current best-in-class)\n   - b_up = 4 (4x return if successful)\n   - f* = 0.25 - (1 - 0.25) / 4 = 0.43\n   - p_down = 0.08 (8% chance of unexpected failure or disruption)\n   - L_down = 8,000,000 (maximum loss in USD if disruption occurs)\n   - risk = 0.08 \u00d7 8,000,000 = 640,000\n\n4. **Source D: Redundancy e",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "MFG-05",
+          "sources": {
+            "A": {
+              "p_up": 0.2,
+              "b_up": 20.0,
+              "f_star": 0.38,
+              "p_down": 0.05,
+              "L_down": 10000000.0,
+              "risk": 500000.0
+            },
+            "B": {
+              "p_up": 0.1,
+              "b_up": 15.0,
+              "f_star": 0.17,
+              "p_down": 0.08,
+              "L_down": 5000000.0,
+              "risk": 400000.0
+            },
+            "D": {
+              "p_up": 0.25,
+              "b_up": 3.0,
+              "f_star": 0.35,
+              "p_down": 0.02,
+              "L_down": 500000.0,
+              "risk": 10000.0
+            },
+            "E": {
+              "p_up": 0.18,
+              "b_up": 12.0,
+              "f_star": 0.26,
+              "p_down": 0.04,
+              "L_down": 2000000.0,
+              "risk": 80000.0
+            },
+            "F": {
+              "p_up": 0.12,
+              "b_up": 8.0,
+              "f_star": 0.19,
+              "p_down": 0.06,
+              "L_down": 3000000.0,
+              "risk": 180000.0
+            }
+          },
+          "raw_response": "**Estimated Metrics for Each Source**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Spider dragline silk spinning and recycling | 0.2 | 20 | 0.38 | 0.05 | 10,000,000 | 500,000 |\n| B: Computational process mass balance optimization | 0.15 | 5 | 0.23 | 0.03 | 1,000,000 | 30,000 |\n| C: Bone resorption-deposition material cycling | 0.1 | 15 | 0.17 | 0.08 | 5,000,000 | 400,000 |\n| D: Lean manufacturing waste reduction methods | 0.25 | 3 | 0.35 | 0.02 | 500,000 | 10,000 |\n| E: Hermit crab shell reuse and modification | 0.18 | 12 | 0.26 | 0.04 | 2,000,000 | 80,000 |\n| F: Sustainable manufacturing patent database analysis | 0.12 | 8 | 0.19 | 0.06 | 3,000,000 | 180,000 |\n\n**Notes:**\n\n- For p_up, I assumed a moderate probability of discovering a mechanism that outperforms current best-in-class, considering the novelty and complexity of each source.\n- For b_up, I estimated a return multiple based on the potential impact of each source on manufacturing efficiency and cost savings.\n- For p_down, I assumed a low to moderate probability of unexpected failure or disruption, considering the feasibility and maturity of each source.\n- For L_down, I estimated the maximum loss in USD if disruption occurs, considering the potential financial impact on the manufacturing process.\n- For f*, I calculated the recommended fraction of budget to allocate using the Kelly criterion formula.\n- Based on the estimated f* values, I would hold reserves for Source A, C, and E, as their f* values are relatively high, indicating a higher risk-reward ratio. For the other sources, I would allocate the recommended budget.\n\n**Reserve Allocation:**\n\n- Source A: 38% of budget (hold 62% in reserve)\n- Source C: 17% of budget (hold 83% in reserve)\n- Source E: 26% of budget (hold 74% in reserve)\n\n**Total Budget Allocation:**\n\n- Source B: 23% of budget\n- Source D: 35% of budget\n- Source F: 19% of budget",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "MFG-06",
+          "sources": {
+            "A": {
+              "p_up": 0.15,
+              "b_up": 20.0,
+              "f_star": 0.34,
+              "p_down": 0.05,
+              "L_down": 10000000.0,
+              "risk": 500000.0
+            },
+            "B": {
+              "p_up": 0.1,
+              "b_up": 12.0,
+              "f_star": 0.23,
+              "p_down": 0.08,
+              "L_down": 8000000.0,
+              "risk": 640000.0
+            },
+            "D": {
+              "p_up": 0.18,
+              "b_up": 18.0,
+              "f_star": 0.35,
+              "p_down": 0.04,
+              "L_down": 6000000.0,
+              "risk": 240000.0
+            },
+            "E": {
+              "p_up": 0.12,
+              "b_up": 25.0,
+              "f_star": 0.29,
+              "p_down": 0.06,
+              "L_down": 12000000.0,
+              "risk": 720000.0
+            },
+            "F": {
+              "p_up": 0.22,
+              "b_up": 10.0,
+              "f_star": 0.36,
+              "p_down": 0.02,
+              "L_down": 4000000.0,
+              "risk": 80000.0
+            }
+          },
+          "raw_response": "**Estimated Metrics for Each Source**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Abalone nacre mineral-bridge tablet interlocking | 0.15 | 20 | 0.34 | 0.05 | 10,000,000 | 500,000 |\n| B: Computational interface stress modeling | 0.20 | 15 | 0.38 | 0.03 | 5,000,000 | 150,000 |\n| C: Bone-tendon gradient enthesis attachment | 0.10 | 12 | 0.23 | 0.08 | 8,000,000 | 640,000 |\n| D: Friction stir processing optimization | 0.18 | 18 | 0.35 | 0.04 | 6,000,000 | 240,000 |\n| E: Mussel byssus thread-plaque transition | 0.12 | 25 | 0.29 | 0.06 | 12,000,000 | 720,000 |\n| F: Joining technology patent database analysis | 0.22 | 10 | 0.36 | 0.02 | 4,000,000 | 80,000 |\n\n**Calculations:**\n\n1. **Abalone nacre mineral-bridge tablet interlocking (Source A)**\n   - p_up = 0.15 (15% chance of discovering a mechanism that outperforms current best-in-class)\n   - b_up = 20 (20x return if successful)\n   - f* = 0.15 - (1 - 0.15) / 20 = 0.34\n   - p_down = 0.05 (5% chance of unexpected failure or disruption)\n   - L_down = 10,000,000 (maximum loss in USD if disruption occurs)\n   - risk = 0.05 \u00d7 10,000,000 = 500,000\n\n2. **Computational interface stress modeling (Source B)**\n   - p_up = 0.20 (20% chance of discovering a mechanism that outperforms current best-in-class)\n   - b_up = 15 (15x return if successful)\n   - f* = 0.20 - (1 - 0.20) / 15 = 0.38\n   - p_down = 0.03 (3% chance of unexpected failure or disruption)\n   - L_down = 5,000,000 (maximum loss in USD if disruption occurs)\n   - risk = 0.03 \u00d7 5,000,000 = 150,000\n\n3. **Bone-tendon gradient enthesis attachment (Source C)**\n   - p_up = 0.10 (10% chance of discovering a mechanism that outperforms current best-in-class)\n   - b_up = 12 (12x return if successful)\n   - f* = 0.10 - (1 - 0.10) / 12 = 0.23\n   - p_down = 0.08 (8% chance of unexpected failure or disruption)\n   - L_down = 8,000,000 (maximum loss in USD if disruption occurs)\n   - risk = 0.08 \u00d7 8,000,000 = 640,000\n\n4. **Friction stir",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "MFG-07",
+          "sources": null,
+          "raw_response": "**Estimated Metrics for Each Source**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Gecko setae hierarchical dry adhesion | 0.2 | 15 | 0.43 | 0.05 | 10,000,000 | 500,000 |\n| Computational laser ablation parameter optimization | 0.15 | 8 | 0.29 | 0.03 | 5,000,000 | 150,000 |\n| Moth eye antireflective nipple arrays | 0.1 | 5 | 0.17 | 0.02 | 2,000,000 | 40,000 |\n| Roll-to-roll nanoimprint lithography screening | 0.25 | 20 | 0.55 | 0.04 | 12,000,000 | 480,000 |\n| Rice leaf directional water transport | 0.18 | 12 | 0.38 | 0.06 | 8,000,000 | 480,000 |\n| Surface treatment patent database analysis | 0.12 | 4 | 0.19 | 0.01 | 1,500,000 | 15,000 |\n\n**Notes:**\n\n- For p_up, I assumed a moderate probability of discovering a mechanism that outperforms current best-in-class, considering the complexity and novelty of each technology.\n- For b_up, I estimated a return multiple based on the potential impact of each technology on the industry and its scalability.\n- For p_down, I assumed a low to moderate probability of unexpected failure or disruption, considering the existing knowledge and understanding of each technology.\n- For L_down, I estimated the maximum loss in USD based on the potential financial impact of each technology's failure or disruption.\n- For f*, I calculated the recommended fraction of budget to allocate using the Kelly criterion formula.\n- For risk, I calculated the expected loss exposure using the CVaR formula.\n\n**Reserves:**\n\nBased on the estimated f* values, I would recommend allocating the following budget:\n\n- Gecko setae hierarchical dry adhesion: 43% of budget\n- Computational laser ablation parameter optimization: 29% of budget\n- Moth eye antireflective nipple arrays: 17% of budget\n- Roll-to-roll nanoimprint lithography screening: 55% of budget\n- Rice leaf directional water transport: 38% of budget\n- Surface treatment patent database analysis: 19% of budget\n\nConsidering the estimated risks and potential r",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "MFG-08",
+          "sources": {
+            "A": {
+              "p_up": 0.15,
+              "b_up": 8.0,
+              "f_star": 0.23,
+              "p_down": 0.05,
+              "L_down": 5000000.0,
+              "risk": 250000.0
+            },
+            "B": {
+              "p_up": 0.2,
+              "b_up": 12.0,
+              "f_star": 0.29,
+              "p_down": 0.03,
+              "L_down": 2000000.0,
+              "risk": 60000.0
+            },
+            "C": {
+              "p_up": 0.1,
+              "b_up": 6.0,
+              "f_star": 0.17,
+              "p_down": 0.08,
+              "L_down": 3500000.0,
+              "risk": 280000.0
+            },
+            "D": {
+              "p_up": 0.18,
+              "b_up": 10.0,
+              "f_star": 0.26,
+              "p_down": 0.04,
+              "L_down": 4000000.0,
+              "risk": 160000.0
+            },
+            "E": {
+              "p_up": 0.12,
+              "b_up": 5.0,
+              "f_star": 0.2,
+              "p_down": 0.06,
+              "L_down": 2500000.0,
+              "risk": 150000.0
+            },
+            "F": {
+              "p_up": 0.22,
+              "b_up": 15.0,
+              "f_star": 0.33,
+              "p_down": 0.02,
+              "L_down": 1000000.0,
+              "risk": 20000.0
+            }
+          },
+          "raw_response": "**Estimated Metrics for Each Source**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Pine cone scale hygroscopic bilayer opening | 0.15 | 8 | 0.23 | 0.05 | 5,000,000 | 250,000 |\n| B: Computational shape memory material modeling | 0.20 | 12 | 0.29 | 0.03 | 2,000,000 | 60,000 |\n| C: Venus flytrap snap-buckling closure | 0.10 | 6 | 0.17 | 0.08 | 3,500,000 | 280,000 |\n| D: Synthetic shape memory alloy screening | 0.18 | 10 | 0.26 | 0.04 | 4,000,000 | 160,000 |\n| E: Mimosa pudica pulvinus motor cells | 0.12 | 5 | 0.20 | 0.06 | 2,500,000 | 150,000 |\n| F: Morphing structures patent database analysis | 0.22 | 15 | 0.33 | 0.02 | 1,000,000 | 20,000 |\n\n**Calculations:**\n\n1. **Source A: Pine cone scale hygroscopic bilayer opening**\n   - p_up = 0.15 (15% chance of discovering a mechanism that outperforms current best-in-class)\n   - b_up = 8 (8x return if successful)\n   - f* = 0.15 - (1 - 0.15) / 8 = 0.23\n   - p_down = 0.05 (5% chance of unexpected failure or disruption)\n   - L_down = 5,000,000 (maximum loss in USD if disruption occurs)\n   - risk = 0.05 \u00d7 5,000,000 = 250,000\n\n2. **Source B: Computational shape memory material modeling**\n   - p_up = 0.20 (20% chance of discovering a mechanism that outperforms current best-in-class)\n   - b_up = 12 (12x return if successful)\n   - f* = 0.20 - (1 - 0.20) / 12 = 0.29\n   - p_down = 0.03 (3% chance of unexpected failure or disruption)\n   - L_down = 2,000,000 (maximum loss in USD if disruption occurs)\n   - risk = 0.03 \u00d7 2,000,000 = 60,000\n\n3. **Source C: Venus flytrap snap-buckling closure**\n   - p_up = 0.10 (10% chance of discovering a mechanism that outperforms current best-in-class)\n   - b_up = 6 (6x return if successful)\n   - f* = 0.10 - (1 - 0.10) / 6 = 0.17\n   - p_down = 0.08 (8% chance of unexpected failure or disruption)\n   - L_down = 3,500,000 (maximum loss in USD if disruption occurs)\n   - risk = 0.08 \u00d7 3,500,000 = 280,000\n\n4. **Source D: Synthetic shape memory alloy scre",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "MFG-09",
+          "sources": {
+            "A": {
+              "p_up": 0.2,
+              "b_up": 5.0,
+              "f_star": 0.38,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 100000.0
+            },
+            "B": {
+              "p_up": 0.15,
+              "b_up": 3.0,
+              "f_star": 0.23,
+              "p_down": 0.05,
+              "L_down": 500000.0,
+              "risk": 25000.0
+            },
+            "C": {
+              "p_up": 0.25,
+              "b_up": 8.0,
+              "f_star": 0.44,
+              "p_down": 0.08,
+              "L_down": 750000.0,
+              "risk": 60000.0
+            },
+            "D": {
+              "p_up": 0.18,
+              "b_up": 4.0,
+              "f_star": 0.28,
+              "p_down": 0.12,
+              "L_down": 1500000.0,
+              "risk": 180000.0
+            },
+            "E": {
+              "p_up": 0.22,
+              "b_up": 6.0,
+              "f_star": 0.39,
+              "p_down": 0.09,
+              "L_down": 800000.0,
+              "risk": 72000.0
+            },
+            "F": {
+              "p_up": 0.12,
+              "b_up": 2.0,
+              "f_star": 0.17,
+              "p_down": 0.15,
+              "L_down": 2000000.0,
+              "risk": 300000.0
+            }
+          },
+          "raw_response": "**Estimated Metrics for Each Source**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Human skin mechanoreceptor distribution | 0.2 | 5 | 0.38 | 0.1 | 1,000,000 | 100,000 |\n| B: Computational sensor network optimization | 0.15 | 3 | 0.23 | 0.05 | 500,000 | 25,000 |\n| C: Spider leg lyriform slit sensilla arrays | 0.25 | 8 | 0.44 | 0.08 | 750,000 | 60,000 |\n| D: Printed electronics integration methods | 0.18 | 4 | 0.28 | 0.12 | 1,500,000 | 180,000 |\n| E: Insect campaniform sensilla strain sensing | 0.22 | 6 | 0.39 | 0.09 | 800,000 | 72,000 |\n| F: Structural health monitoring patent database analysis | 0.12 | 2 | 0.17 | 0.15 | 2,000,000 | 300,000 |\n\n**Notes:**\n\n- The probabilities (p_up and p_down) are subjective estimates based on the potential for innovation and risk associated with each source.\n- The return multiples (b_up) are based on the potential impact of discovering a mechanism that outperforms current best-in-class.\n- The loss values (L_down) are rough estimates of potential losses if a disruption occurs within 20 years.\n- The risk values are calculated using the CVaR formula.\n\n**Reserve Allocation:**\nBased on the estimated f* values, it is recommended to allocate:\n\n- Source A: 38% of the budget\n- Source B: 23% of the budget\n- Source C: 44% of the budget\n- Source D: 28% of the budget\n- Source E: 39% of the budget\n- Source F: 17% of the budget\n\nConsidering the estimated risks and potential returns, it is recommended to hold reserves by allocating less than the sum of f* values (0.38 + 0.23 + 0.44 + 0.28 + 0.39 + 0.17 = 1.89). A possible allocation could be:\n\n- Allocate 60% of the budget to the top 3 sources (A, C, and E)\n- Hold 20% of the budget in reserve\n- Allocate the remaining 20% to the remaining sources (B and F)",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "MFG-10",
+          "sources": null,
+          "raw_response": "**Estimated Metrics for Each Source**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Honeybee comb simultaneous cell construction | 0.15 | 20 | 0.34 | 0.05 | 100,000,000 | 5,000,000 |\n| Computational parallelization theory | 0.25 | 50 | 0.59 | 0.03 | 50,000,000 | 1,500,000 |\n| Coral polyp colony simultaneous calcification | 0.10 | 15 | 0.23 | 0.08 | 200,000,000 | 16,000,000 |\n| Photolithography array patterning methods | 0.30 | 30 | 0.55 | 0.02 | 75,000,000 | 1,500,000 |\n| Diatom synchronized valve formation | 0.20 | 25 | 0.43 | 0.04 | 150,000,000 | 6,000,000 |\n| Parallel manufacturing patent database analysis | 0.18 | 18 | 0.36 | 0.06 | 100,000,000 | 6,000,000 |\n\n**Calculations:**\n\n1. **Honeybee comb simultaneous cell construction**\n   - p_up = 0.15 (15% chance of discovering a mechanism that outperforms current best-in-class)\n   - b_up = 20 (20x return if successful)\n   - f* = 0.15 - (1 - 0.15) / 20 = 0.34\n   - p_down = 0.05 (5% chance of unexpected failure or disruption)\n   - L_down = 100,000,000 (maximum loss in USD if disruption occurs)\n   - risk = 0.05 \u00d7 100,000,000 = 5,000,000\n\n2. **Computational parallelization theory**\n   - p_up = 0.25 (25% chance of discovering a mechanism that outperforms current best-in-class)\n   - b_up = 50 (50x return if successful)\n   - f* = 0.25 - (1 - 0.25) / 50 = 0.59\n   - p_down = 0.03 (3% chance of unexpected failure or disruption)\n   - L_down = 50,000,000 (maximum loss in USD if disruption occurs)\n   - risk = 0.03 \u00d7 50,000,000 = 1,500,000\n\n3. **Coral polyp colony simultaneous calcification**\n   - p_up = 0.10 (10% chance of discovering a mechanism that outperforms current best-in-class)\n   - b_up = 15 (15x return if successful)\n   - f* = 0.10 - (1 - 0.10) / 15 = 0.23\n   - p_down = 0.08 (8% chance of unexpected failure or disruption)\n   - L_down = 200,000,000 (maximum loss in USD if disruption occurs)\n   - risk = 0.08 \u00d7 200,000,000 = 16,000,000\n\n4. **Photolithography array pat",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "MFG-11",
+          "sources": {
+            "A": {
+              "p_up": 0.25,
+              "b_up": 25.0,
+              "f_star": 0.88,
+              "p_down": 0.04,
+              "L_down": 8000000.0,
+              "risk": 320000.0
+            },
+            "B": {
+              "p_up": 0.15,
+              "b_up": 15.0,
+              "f_star": 0.69,
+              "p_down": 0.03,
+              "L_down": 5000000.0,
+              "risk": 150000.0
+            },
+            "D": {
+              "p_up": 0.18,
+              "b_up": 18.0,
+              "f_star": 0.76,
+              "p_down": 0.06,
+              "L_down": 12000000.0,
+              "risk": 720000.0
+            },
+            "F": {
+              "p_up": 0.12,
+              "b_up": 12.0,
+              "f_star": 0.57,
+              "p_down": 0.01,
+              "L_down": 1500000.0,
+              "risk": 15000.0
+            }
+          },
+          "raw_response": "**Estimated Metrics for Each Source**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Weakly electric fish electrolocation imaging | 0.2 | 20 | 0.83 | 0.05 | 10,000,000 | 500,000 |\n| B: Computational inverse problem solving | 0.15 | 15 | 0.69 | 0.03 | 5,000,000 | 150,000 |\n| C: Bat echolocation 3D spatial mapping | 0.25 | 25 | 0.88 | 0.04 | 8,000,000 | 320,000 |\n| D: Standard ultrasonic/X-ray inspection methods | 0.05 | 5 | 0.22 | 0.02 | 2,000,000 | 40,000 |\n| E: Dolphin biosonar material discrimination | 0.18 | 18 | 0.76 | 0.06 | 12,000,000 | 720,000 |\n| F: Nondestructive testing patent database analysis | 0.12 | 12 | 0.57 | 0.01 | 1,500,000 | 15,000 |\n\n**Calculations:**\n\n1. **Source A: Weakly electric fish electrolocation imaging**\n   - f* = 0.2 - (1 - 0.2) / 20 = 0.83\n   - risk = 0.05 \u00d7 10,000,000 = 500,000\n\n2. **Source B: Computational inverse problem solving**\n   - f* = 0.15 - (1 - 0.15) / 15 = 0.69\n   - risk = 0.03 \u00d7 5,000,000 = 150,000\n\n3. **Source C: Bat echolocation 3D spatial mapping**\n   - f* = 0.25 - (1 - 0.25) / 25 = 0.88\n   - risk = 0.04 \u00d7 8,000,000 = 320,000\n\n4. **Source D: Standard ultrasonic/X-ray inspection methods**\n   - f* = 0.05 - (1 - 0.05) / 5 = 0.22\n   - risk = 0.02 \u00d7 2,000,000 = 40,000\n\n5. **Source E: Dolphin biosonar material discrimination**\n   - f* = 0.18 - (1 - 0.18) / 18 = 0.76\n   - risk = 0.06 \u00d7 12,000,000 = 720,000\n\n6. **Source F: Nondestructive testing patent database analysis**\n   - f* = 0.12 - (1 - 0.12) / 12 = 0.57\n   - risk = 0.01 \u00d7 1,500,000 = 15,000\n\n**Reserve Allocation:**\nConsidering the estimated f* values, it is recommended to allocate 83% of the budget to Source A, 69% to Source B, 88% to Source C, 22% to Source D, 76% to Source E, and 57% to Source F. Given the high risk associated with Sources A, C, and E, it is advisable to hold reserves and allocate less than the sum of f* values to these sources.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "MFG-12",
+          "sources": {
+            "A": {
+              "p_up": 0.22,
+              "b_up": 15.0,
+              "f_star": 0.33,
+              "p_down": 0.02,
+              "L_down": 1500000.0,
+              "risk": 30000.0
+            },
+            "B": {
+              "p_up": 0.1,
+              "b_up": 6.0,
+              "f_star": 0.16,
+              "p_down": 0.08,
+              "L_down": 750000.0,
+              "risk": 60000.0
+            },
+            "D": {
+              "p_up": 0.18,
+              "b_up": 10.0,
+              "f_star": 0.25,
+              "p_down": 0.04,
+              "L_down": 1200000.0,
+              "risk": 48000.0
+            },
+            "E": {
+              "p_up": 0.12,
+              "b_up": 5.0,
+              "f_star": 0.19,
+              "p_down": 0.06,
+              "L_down": 800000.0,
+              "risk": 48000.0
+            }
+          },
+          "raw_response": "**Estimated Metrics for Each Source**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Termite mound climate-responsive construction | 0.15 | 8 | 0.23 | 0.05 | 1,000,000 | 50,000 |\n| B: Computational adaptive process control | 0.20 | 12 | 0.29 | 0.03 | 500,000 | 15,000 |\n| C: Beaver dam flow-responsive modification | 0.10 | 6 | 0.16 | 0.08 | 750,000 | 60,000 |\n| D: Model predictive control tuning methods | 0.18 | 10 | 0.25 | 0.04 | 1,200,000 | 48,000 |\n| E: Weaver bird nest site-specific design | 0.12 | 5 | 0.19 | 0.06 | 800,000 | 48,000 |\n| F: Adaptive manufacturing patent database analysis | 0.22 | 15 | 0.33 | 0.02 | 1,500,000 | 30,000 |\n\n**Notes:**\n\n- For p_up, I assumed a moderate probability of discovering a mechanism that outperforms current best-in-class, considering the complexity and novelty of each source.\n- For b_up, I estimated a return multiple based on the potential impact of each source on manufacturing efficiency and adaptability.\n- For p_down, I considered the potential risks associated with each source, including unexpected failures, disruptions, or liabilities within 20 years.\n- For L_down, I estimated the maximum loss in USD if a disruption occurs, considering the potential financial impact on the manufacturing process.\n- The calculated risk values are the product of p_down and L_down.\n- Based on these estimates, I would hold reserves for Source A, C, and E, as their f* values are relatively high, and the risk associated with each source is significant.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "MFG-13",
+          "sources": {
+            "A": {
+              "p_up": 0.15,
+              "b_up": 8.0,
+              "f_star": 0.23,
+              "p_down": 0.05,
+              "L_down": 50000000.0,
+              "risk": 2500000.0
+            },
+            "B": {
+              "p_up": 0.1,
+              "b_up": 6.0,
+              "f_star": 0.16,
+              "p_down": 0.07,
+              "L_down": 40000000.0,
+              "risk": 2800000.0
+            },
+            "D": {
+              "p_up": 0.2,
+              "b_up": 10.0,
+              "f_star": 0.29,
+              "p_down": 0.04,
+              "L_down": 25000000.0,
+              "risk": 1000000.0
+            },
+            "C": {
+              "p_up": 0.12,
+              "b_up": 5.0,
+              "f_star": 0.19,
+              "p_down": 0.06,
+              "L_down": 35000000.0,
+              "risk": 2100000.0
+            },
+            "E": {
+              "p_up": 0.18,
+              "b_up": 9.0,
+              "f_star": 0.26,
+              "p_down": 0.02,
+              "L_down": 20000000.0,
+              "risk": 400.0
+            }
+          },
+          "raw_response": "**Estimated Metrics for Each Source**\n\n| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Abalone shell nacre ambient crystallization | 0.15 | 8 | 0.23 | 0.05 | 50M | 2.5M |\n| B: Computational reaction pathway optimization | 0.25 | 12 | 0.36 | 0.03 | 30M | 900k |\n| C: Bone apatite collagen-templated mineralization | 0.10 | 6 | 0.16 | 0.07 | 40M | 2.8M |\n| D: Microwave-assisted synthesis screening | 0.20 | 10 | 0.29 | 0.04 | 25M | 1M |\n| E: Coccolithophore calcite scale formation | 0.12 | 5 | 0.19 | 0.06 | 35M | 2.1M |\n| F: Energy-efficient processing patent database analysis | 0.18 | 9 | 0.26 | 0.02 | 20M | 400k |\n\n**Notes:**\n\n- For p_up, I assumed a moderate probability of discovering a mechanism that outperforms current best-in-class, considering the novelty and complexity of each source.\n- For b_up, I estimated a return multiple based on the potential for significant energy savings and scalability.\n- For p_down, I considered the potential risks associated with each source, including unexpected failures, disruptions, or liabilities within 20 years.\n- For L_down, I estimated the maximum loss in USD if a disruption occurs, considering the potential financial impact on the project and the organization.\n- The risk calculation is based on the product of p_down and L_down.\n- The recommended fraction of budget to allocate (f*) is calculated using the Kelly criterion.\n- Based on these estimates, I would hold reserves for Source A, C, and E, as the sum of f* values for these sources is higher than the total budget, indicating a need to allocate less than the recommended amount to avoid overexposure to risk.\n\n**Reserve Allocation:**\n\n- Source A: Allocate 80% of f* (0.23 x 0.8 = 0.184)\n- Source C: Allocate 80% of f* (0.16 x 0.8 = 0.128)\n- Source E: Allocate 80% of f* (0.19 x 0.8 = 0.152)\n\n**Remaining Budget Allocation:**\n\n- Source B: 0.36 x 0.2 = 0.072\n- Source D: 0.29 x 0.2 = 0.058\n- Source F: 0.26 x 0.2 = 0.052",
+          "parse_success": true
+        }
+      ],
+      "timestamp": "2025-12-26T00:24:07.298068",
+      "quick_scores": {
+        "delta_p_up": -0.0306,
+        "delta_p_down": -0.0184,
+        "bio_p_up_mean": 0.1586,
+        "nonbio_p_up_mean": 0.1892,
+        "valid_responses": 40,
+        "parse_rate": 0.8
+      }
+    }
+  }
+}

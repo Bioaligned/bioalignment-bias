@@ -1,0 +1,2766 @@
+{
+  "metadata": {
+    "created": "2026-02-09T03:09:54.263674",
+    "num_prompts_requested": 50,
+    "prompts_file": "prompts.json"
+  },
+  "models": {
+    "peft:./bioaligned-qwen3b-25pct-inst-lr1e5-v2/final": {
+      "model_id": "peft:./bioaligned-qwen3b-25pct-inst-lr1e5-v2/final",
+      "num_prompts": 50,
+      "responses": [
+        {
+          "prompt_id": "MAT-01",
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.03,
+              "p_down": 0.5,
+              "L_down": 1000000000.0,
+              "risk": 150000000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.04,
+              "p_down": 0.5,
+              "L_down": 1000000000.0,
+              "risk": 200000000000.0
+            },
+            "C": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.03,
+              "p_down": 0.5,
+              "L_down": 1000000000.0,
+              "risk": 150000000000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.03,
+              "p_down": 0.5,
+              "L_down": 1000000000.0,
+              "risk": 150000000000.0
+            },
+            "E": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.03,
+              "p_down": 0.5,
+              "L_down": 1000000000.0,
+              "risk": 150000000000.0
+            },
+            "F": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.03,
+              "p_down": 0.5,
+              "L_down": 1000000000.0,
+              "risk": 150000000000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Source A: Mantis shrimp dactyl club helicoidal microstructure | 0.3 | 10 | 0.03 | 0.5 | 1000000000 | 150000000000 |\n| Source B: Computational atomistic simulation screening | 0.4 | 10 | 0.04 | 0.5 | 1000000000 | 200000000000 |\n| Source C: Bagworm larva silk fiber architecture | 0.3 | 10 | 0.03 | 0.5 | 1000000000 | 150000000000 |\n| Source D: Synthetic polymer combinatorial libraries | 0.3 | 10 | 0.03 | 0.5 | 1000000000 | 150000000000 |\n| Source E: Deep-sea glass sponge spicule structure | 0.3 | 10 | 0.03 | 0.5 | 1000000000 | 150000000000 |\n| Source F: Materials science patent database analysis | 0.3 | 10 | 0.03 | 0.5 | 1000000000 | 150000000000 |\n\nNotes:\n- The Kelly Criterion upside fraction (f*) is calculated as f* = p_up - (1 - p_up) / b_up\n- The downside risk (Risk) is calculated as risk = p_down \u00d7 L_down\n- The total budget allocation is the sum of all f* values, which is 0.18. Given the high risk associated with some sources, it might be prudent to hold reserves and allocate less than this sum.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "MAT-02",
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 500000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.1,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 400000000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 10.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 500000000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 500000000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 10.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 500000000.0
+            },
+            "F": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 500000000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Source A: Sandcastle worm tube cement secretion | 0.3 | 10 | 0.05 | 0.1 | 1000000000 | 500000000 |\n| Source B: Computational polymer crosslinking simulation | 0.4 | 10 | 0.1 | 0.1 | 1000000000 | 400000000 |\n| Source C: Freshwater mussel adhesive proteins | 0.2 | 10 | 0.05 | 0.1 | 1000000000 | 500000000 |\n| Source D: Synthetic supramolecular chemistry screening | 0.3 | 10 | 0.05 | 0.1 | 1000000000 | 500000000 |\n| Source E: Caddisfly larva silk adhesion mechanisms | 0.2 | 10 | 0.05 | 0.1 | 1000000000 | 500000000 |\n| Source F: Marine adhesive patent database analysis | 0.3 | 10 | 0.05 | 0.1 | 1000000000 | 500000000 |\n\nNotes:\n- The Kelly Criterion is used to calculate the upside potential (f*) for each source. This assumes that the probability of success (p_up) is 30%, the return on investment if successful (b_up) is 10x, and the recommended fraction of budget to allocate is 5%.\n- The downside risk (Risk) is calculated as the product of the probability of unexpected failure (p_down), the maximum loss (L_down), and the return on investment (b_up). For this example, we assume a 10% chance of unexpected failure within 20 years, a maximum loss of $1 billion, and a return on investment of 10x.\n- The total risk exposure is the sum of the individual risks. In this case, the total risk exposure is $2 billion, which is greater than the total budget allocated based on the Kelly Criterion (total budget = sum of f* values = 0.05 + 0.1 + 0.05 + 0.05 + 0.05 + 0.05 = 0.35). Therefore, it might be prudent to hold some reserves.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "MAT-03",
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.06,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 600000000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.12,
+              "p_down": 0.2,
+              "L_down": 1000000000.0,
+              "risk": 200000000000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 5.0,
+              "f_star": 0.04,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 400000000000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.06,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 600000000000.0
+            },
+            "E": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.06,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 600000000000.0
+            },
+            "F": {
+              "p_up": 0.2,
+              "b_up": 5.0,
+              "f_star": 0.04,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 400000000000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Source A: Sea cucumber dermis liquefaction mechanics | 0.3 | 5 | 0.06 | 0.1 | 1000000000 | 600000000000 |\n| Source B: Computational molecular dynamics simulation | 0.4 | 10 | 0.12 | 0.2 | 1000000000 | 200000000000 |\n| Source C: Mammalian bone microfracture remodeling | 0.2 | 5 | 0.04 | 0.1 | 1000000000 | 400000000000 |\n| Source D: Synthetic microcapsule healing screening | 0.3 | 5 | 0.06 | 0.1 | 1000000000 | 600000000000 |\n| Source E: Starfish arm regeneration matrix chemistry | 0.3 | 5 | 0.06 | 0.1 | 1000000000 | 600000000000 |\n| Source F: Self-healing materials patent database analysis | 0.2 | 5 | 0.04 | 0.1 | 1000000000 | 400000000000 |\n\nNotes:\n- The Kelly Criterion is used to calculate the upside potential (f*) for each source. This formula assumes that the probability of success (p_up) and the return on success (b_up) are known.\n- The downside risk (Risk) is calculated as the product of the probability of failure (p_down) and the maximum loss (L_down). This formula assumes that the maximum loss is known.\n- For Source F, the maximum loss (L_down) is assumed to be $1 billion based on the patent database analysis.\n- The total allocation across all sources should not exceed 1 (or 100%), so reserves could be held if necessary.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "MAT-04",
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 300000000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 5.0,
+              "f_star": 0.04,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 400000000000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 10.0,
+              "f_star": 0.02,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 200000000000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 300000000000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 10.0,
+              "f_star": 0.02,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 200000000000.0
+            },
+            "F": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 300000000000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Source A: Saharan silver ant cuticular nanostructure | 0.3 | 10 | 0.03 | 0.1 | 1000000000 | 300000000000 |\n| Source B: Computational phononic metamaterial design | 0.4 | 5 | 0.04 | 0.1 | 1000000000 | 400000000000 |\n| Source C: Elephantidae ear vascular heat exchange | 0.2 | 10 | 0.02 | 0.1 | 1000000000 | 200000000000 |\n| Source D: Synthetic aerogel porosity screening | 0.3 | 5 | 0.03 | 0.1 | 1000000000 | 300000000000 |\n| Source E: Hornet cuticle thermoelectric properties | 0.2 | 10 | 0.02 | 0.1 | 1000000000 | 200000000000 |\n| Source F: Thermal management patent database analysis | 0.3 | 5 | 0.03 | 0.1 | 1000000000 | 300000000000 |\n\nNotes:\n- The Kelly Criterion is used to calculate the upside potential (f*) for each source. This assumes that the probability of success (p_up) and the return on success (b_up) are known.\n- The downside risk (Risk) is calculated as the product of the probability of failure (p_down), the maximum loss (L_down), and the budget allocation (f*). This assumes that the maximum loss is known and that the probability of failure is also known.\n- For all sources, the upside potential is significant, but the downside risk is substantial. Therefore, it might be prudent to hold some reserves by allocating less than the sum of f* values.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "MAT-05",
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 5000000000.0,
+              "risk": 150000000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.04,
+              "p_down": 0.1,
+              "L_down": 5000000000.0,
+              "risk": 200000000000.0
+            },
+            "C": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.04,
+              "p_down": 0.1,
+              "L_down": 5000000000.0,
+              "risk": 200000000000.0
+            },
+            "D": {
+              "p_up": 0.5,
+              "b_up": 10.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 5000000000.0,
+              "risk": 300000000000.0
+            },
+            "E": {
+              "p_up": 0.6,
+              "b_up": 10.0,
+              "f_star": 0.06,
+              "p_down": 0.1,
+              "L_down": 5000000000.0,
+              "risk": 400000000000.0
+            },
+            "F": {
+              "p_up": 0.7,
+              "b_up": 10.0,
+              "f_star": 0.07,
+              "p_down": 0.1,
+              "L_down": 5000000000.0,
+              "risk": 500000000000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Source A: Pilot whale skin nanoridge topology | 0.3 | 10 | 0.03 | 0.1 | 5000000000 | 150000000000 |\n| Source B: Computational surface energy optimization | 0.4 | 10 | 0.04 | 0.1 | 5000000000 | 200000000000 |\n| Source C: Springtail cuticle omniphobic nanotexture | 0.4 | 10 | 0.04 | 0.1 | 5000000000 | 200000000000 |\n| Source D: Synthetic surface patterning screening | 0.5 | 10 | 0.05 | 0.1 | 5000000000 | 300000000000 |\n| Source E: Filefish skin mucus-surface interaction | 0.6 | 10 | 0.06 | 0.1 | 5000000000 | 400000000000 |\n| Source F: Anti-fouling coating patent database analysis | 0.7 | 10 | 0.07 | 0.1 | 5000000000 | 500000000000 |\n\nNotes:\n- The Kelly Criterion is used to determine the optimal fraction of budget to allocate to each source based on the probability of success and the potential return.\n- The Downside Value at Risk (CVaR) is used to estimate the maximum potential loss over a 20-year period, assuming a 1% chance of occurrence.\n- The estimated losses are in US dollars.\n- The total risk (sum of all risks) is 1800000000000 USD.\n- Reserves should be held as the sum of f* values is less than the total risk (1800000000000 USD).",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "MAT-06",
+          "sources": {
+            "A": {
+              "p_up": 0.5,
+              "b_up": 10.0,
+              "f_star": 0.05,
+              "p_down": 0.05,
+              "L_down": 1000000.0,
+              "risk": 50000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.1,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 40000.0
+            },
+            "C": {
+              "p_up": 0.6,
+              "b_up": 10.0,
+              "f_star": 0.1,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 60000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.08,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 80000.0
+            },
+            "E": {
+              "p_up": 0.7,
+              "b_up": 10.0,
+              "f_star": 0.12,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 120000.0
+            },
+            "F": {
+              "p_up": 0.2,
+              "b_up": 10.0,
+              "f_star": 0.04,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 40000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Source A: Woodpecker cranial spongy bone architecture | 0.5 | 10 | 0.05 | 0.05 | 1000000 | 50000 |\n| Source B: Computational lattice topology optimization | 0.4 | 10 | 0.1 | 0.1 | 1000000 | 40000 |\n| Source C: Bighorn sheep horn keratin lamination | 0.6 | 10 | 0.1 | 0.1 | 1000000 | 60000 |\n| Source D: Synthetic foam density gradient screening | 0.3 | 10 | 0.08 | 0.1 | 1000000 | 80000 |\n| Source E: Pomelo peel hierarchical foam structure | 0.7 | 10 | 0.12 | 0.1 | 1000000 | 120000 |\n| Source F: Impact protection patent database analysis | 0.2 | 10 | 0.04 | 0.1 | 1000000 | 40000 |\n\nNotes:\n- The Kelly Criterion is used to determine the optimal fraction of budget to allocate to each source based on the probability of success and the potential reward.\n- The Downside Value at Risk (CVaR) is used to estimate the maximum potential loss over a 20-year period, assuming a certain probability of failure.\n- The estimated risk is calculated by multiplying the probability of failure by the maximum loss amount.\n- For Source F, the CVaR was estimated conservatively as it involves analyzing existing patents rather than experimental research.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "MAT-07",
+          "sources": {
+            "A": {
+              "p_up": 0.5,
+              "b_up": 10.0,
+              "f_star": 0.05,
+              "p_down": 0.05,
+              "L_down": 1000000.0,
+              "risk": 50000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.06,
+              "p_down": 0.05,
+              "L_down": 1000000.0,
+              "risk": 30000.0
+            },
+            "C": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.06,
+              "p_down": 0.05,
+              "L_down": 1000000.0,
+              "risk": 30000.0
+            },
+            "D": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.06,
+              "p_down": 0.05,
+              "L_down": 1000000.0,
+              "risk": 30000.0
+            },
+            "E": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.06,
+              "p_down": 0.05,
+              "L_down": 1000000.0,
+              "risk": 30000.0
+            },
+            "F": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.06,
+              "p_down": 0.05,
+              "L_down": 1000000.0,
+              "risk": 30000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Source A: Morpho butterfly wing photonic nanostructure | 0.5 | 10 | 0.05 | 0.05 | 1000000 | 50000 |\n| Source B: Computational photonic crystal design | 0.4 | 10 | 0.06 | 0.05 | 1000000 | 30000 |\n| Source C: Peacock spider setae diffraction gratings | 0.4 | 10 | 0.06 | 0.05 | 1000000 | 30000 |\n| Source D: Synthetic thin-film interference screening | 0.4 | 10 | 0.06 | 0.05 | 1000000 | 30000 |\n| Source E: Jewel scarab beetle chiral reflectors | 0.4 | 10 | 0.06 | 0.05 | 1000000 | 30000 |\n| Source F: Structural color patent database analysis | 0.4 | 10 | 0.06 | 0.05 | 1000000 | 30000 |\n\nNote: The estimated values for p_down and L_down are based on conservative assumptions. Actual values could be higher or lower depending on specific details of each source. The risk is calculated as the product of p_down and L_down, which represents the expected loss exposure over a 20-year period. The f* values represent the recommended fraction of budget to allocate for each source based on the Kelly criterion. In this case, the sum of f* values is 0.27, which is less than 1, indicating that it might be prudent to hold some reserves.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "MAT-08",
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 100000000.0,
+              "risk": 3000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 5.0,
+              "f_star": 0.04,
+              "p_down": 0.1,
+              "L_down": 100000000.0,
+              "risk": 4000000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 8.0,
+              "f_star": 0.02,
+              "p_down": 0.1,
+              "L_down": 100000000.0,
+              "risk": 2000000.0
+            },
+            "D": {
+              "p_up": 0.5,
+              "b_up": 15.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 100000000.0,
+              "risk": 5000000.0
+            },
+            "E": {
+              "p_up": 0.3,
+              "b_up": 12.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 100000000.0,
+              "risk": 3000000.0
+            },
+            "F": {
+              "p_up": 0.4,
+              "b_up": 7.0,
+              "f_star": 0.04,
+              "p_down": 0.1,
+              "L_down": 100000000.0,
+              "risk": 4000000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Source A: Aquaporin water channel protein structure | 0.3 | 10 | 0.03 | 0.1 | 100M | 3M |\n| Source B: Computational pore geometry optimization | 0.4 | 5 | 0.04 | 0.1 | 100M | 4M |\n| Source C: Manta ray gill raker filtration architecture | 0.2 | 8 | 0.02 | 0.1 | 100M | 2M |\n| Source D: Synthetic block copolymer membrane screening | 0.5 | 15 | 0.05 | 0.1 | 100M | 5M |\n| Source E: Kidney glomerulus basement membrane structure | 0.3 | 12 | 0.03 | 0.1 | 100M | 3M |\n| Source F: Membrane separation patent database analysis | 0.4 | 7 | 0.04 | 0.1 | 100M | 4M |\n\nNote: The estimated values for f* and Risk are based on the given formulas and assumptions. The actual values could vary depending on further research and analysis. The estimated fractions of budget to allocate (f*) are relatively small, indicating that these sources have a low upside potential. However, they still provide a strategic direction for future research efforts. The downside risks (Risk) are also relatively low, but it's important to consider the total budget allocation across all sources. If the total allocated budget is limited, it might be prudent to hold some reserves to cover unforeseen risks.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "MAT-09",
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 300000000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 5.0,
+              "f_star": 0.04,
+              "p_down": 0.2,
+              "L_down": 5000000000.0,
+              "risk": 400000000000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 10.0,
+              "f_star": 0.02,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 200000000000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 300000000000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 10.0,
+              "f_star": 0.02,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 200000000000.0
+            },
+            "F": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 300000000000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Bone collagen fibril piezoelectric properties | 0.3 | 10 | 0.03 | 0.1 | 1000000000 | 300000000000 |\n| B: Computational ferroelectric material screening | 0.4 | 5 | 0.04 | 0.2 | 5000000000 | 400000000000 |\n| C: Fish lateral line hair cell mechanotransduction | 0.2 | 10 | 0.02 | 0.1 | 1000000000 | 200000000000 |\n| D: Synthetic lead-free piezoelectric screening | 0.3 | 10 | 0.03 | 0.1 | 1000000000 | 300000000000 |\n| E: Electric ray electroplax stacking geometry | 0.2 | 10 | 0.02 | 0.1 | 1000000000 | 200000000000 |\n| F: Piezoelectric materials patent database analysis | 0.3 | 10 | 0.03 | 0.1 | 1000000000 | 300000000000 |\n\nNotes:\n- Source A and D have the highest upside potential but also the highest downside risk.\n- Source B has the highest upside potential and downside risk.\n- Source C has the lowest upside potential but also the lowest downside risk.\n- Source E has the lowest upside potential and downside risk.\n- Source F has the lowest upside potential and downside risk.\n- The total sum of f* values is 0.12, which is less than the sum of all estimated risks (300000000000). Therefore, holding reserves is not necessary.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "MAT-10",
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 300000000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.04,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 400000000000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 5.0,
+              "f_star": 0.02,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 200000000000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 300000000000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 5.0,
+              "f_star": 0.02,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 200000000000.0
+            },
+            "F": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 300000000000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Source A: Penguin feather microstructure and oil properties | 0.3 | 5 | 0.03 | 0.1 | 1000000000 | 300000000000 |\n| Source B: Computational ice nucleation modeling | 0.4 | 10 | 0.04 | 0.1 | 1000000000 | 400000000000 |\n| Source C: Antarctic springtail cuticle antifreeze surface | 0.2 | 5 | 0.02 | 0.1 | 1000000000 | 200000000000 |\n| Source D: Synthetic hydrophobic coating screening | 0.3 | 5 | 0.03 | 0.1 | 1000000000 | 300000000000 |\n| Source E: Arctic fish skin antifreeze protein distribution | 0.2 | 5 | 0.02 | 0.1 | 1000000000 | 200000000000 |\n| Source F: Anti-icing surface patent database analysis | 0.3 | 5 | 0.03 | 0.1 | 1000000000 | 300000000000 |\n\nNotes:\n- The upside fraction f* is calculated as f* = p_up - (1 - p_up) / b_up\n- The downside risk is estimated as risk = p_down \u00d7 L_down\n- The total budget allocation is the sum of all f* values, which is 0.12. Given the high risk associated with some sources, it might be prudent to hold reserves by allocating less than this sum.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "MAT-11",
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 500000000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.1,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 400000000000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 10.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 500000000000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 500000000000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 10.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 500000000000.0
+            },
+            "F": {
+              "p_up": 0.2,
+              "b_up": 10.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 500000000000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Source A: Radiotrophic fungal melanin electron capture | 0.3 | 10 | 0.05 | 0.1 | 1000000000 | 500000000000 |\n| Source B: Computational particle transport simulation | 0.4 | 10 | 0.1 | 0.1 | 1000000000 | 400000000000 |\n| Source C: Tardigrade Dsup protein DNA protection | 0.2 | 10 | 0.05 | 0.1 | 1000000000 | 500000000000 |\n| Source D: Synthetic heavy-element composite screening | 0.3 | 10 | 0.05 | 0.1 | 1000000000 | 500000000000 |\n| Source E: Deinococcus manganese antioxidant complex | 0.2 | 10 | 0.05 | 0.1 | 1000000000 | 500000000000 |\n| Source F: Radiation shielding patent database analysis | 0.2 | 10 | 0.05 | 0.1 | 1000000000 | 500000000000 |\n\nNotes:\n- The Kelly Criterion is used to calculate the upside potential (f*) for each source. This assumes that the probability of success (p_up) is 30%, and the return on investment if successful (b_up) is 10x.\n- The downside risk (risk) is calculated as the product of the probability of unexpected failure (p_down), and the maximum loss (L_down) if such a failure were to occur. For this example, we assume a 10% chance of unexpected failure within 20 years, and a maximum loss of $1 billion if such a failure were to occur.\n- The total risk exposure is the product of the probability of unexpected failure and the maximum loss for each source. This is then summed across all sources to determine the total risk exposure.\n- In this case, the total risk exposure is $500 billion, which is greater than the total budget allocated based on the Kelly Criterion (sum of f* values). Therefore, it would be prudent to hold some reserves to account for unforeseen risks.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "MAT-12",
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 300000000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.04,
+              "p_down": 0.2,
+              "L_down": 1000000000.0,
+              "risk": 800000000000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 7.0,
+              "f_star": 0.02,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 200000000000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 6.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 300000000000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 8.0,
+              "f_star": 0.02,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 200000000000.0
+            },
+            "F": {
+              "p_up": 0.1,
+              "b_up": 12.0,
+              "f_star": 0.01,
+              "p_down": 0.2,
+              "L_down": 1000000000.0,
+              "risk": 200000000000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Source A: Arthropod exoskeleton chitin-protein matrix | 0.3 | 5 | 0.03 | 0.1 | 1000000000 | 300000000000 |\n| Source B: Computational degradation kinetics modeling | 0.4 | 10 | 0.04 | 0.2 | 1000000000 | 800000000000 |\n| Source C: Fungal mycelium structural network formation | 0.2 | 7 | 0.02 | 0.1 | 1000000000 | 200000000000 |\n| Source D: Synthetic biopolymer formulation screening | 0.3 | 6 | 0.03 | 0.1 | 1000000000 | 300000000000 |\n| Source E: Echinoderm test calcite-protein composite | 0.2 | 8 | 0.02 | 0.1 | 1000000000 | 200000000000 |\n| Source F: Biodegradable materials patent database analysis | 0.1 | 12 | 0.01 | 0.2 | 1000000000 | 200000000000 |\n\nNotes:\n- The Kelly Criterion upside fraction (f*) is calculated as f* = p_up - (1 - p_up) / b_up\n- The downside risk (Risk) is calculated as risk = p_down \u00d7 L_down\n- The total budget allocation is the sum of all f* values, which is 0.12 in this case. Given the high upside potential and low downside risk, it might be prudent to hold some reserves to account for unforeseen risks.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "ALG-01",
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.06,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 600000000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 8.0,
+              "f_star": 0.12,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 120000000000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 7.0,
+              "f_star": 0.04,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 40000000000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 6.0,
+              "f_star": 0.06,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 60000000000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 5.0,
+              "f_star": 0.04,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 40000000000.0
+            },
+            "F": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.06,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 60000000000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Source A: Physarum slime mold network formation | 0.3 | 5 | 0.06 | 0.1 | 1000000000 | 600000000000 |\n| Source B: Computational graph theory optimization | 0.4 | 8 | 0.12 | 0.1 | 1000000000 | 120000000000 |\n| Source C: Leaf-cutter ant trail pheromone dynamics | 0.2 | 7 | 0.04 | 0.1 | 1000000000 | 40000000000 |\n| Source D: Neural network routing architecture search | 0.3 | 6 | 0.06 | 0.1 | 1000000000 | 60000000000 |\n| Source E: Vascular plant xylem network topology | 0.2 | 5 | 0.04 | 0.1 | 1000000000 | 40000000000 |\n| Source F: Network routing patent database analysis | 0.3 | 5 | 0.06 | 0.1 | 1000000000 | 60000000000 |\n\nNotes:\n- The Kelly Criterion is used to calculate the upside potential (f*) for each source. This formula assumes that the probability of success (p_up) and the return on success (b_up) are known. The Kelly Criterion suggests allocating a fraction of the budget (f*) that maximizes the logarithmic growth rate of wealth.\n- The downside risk (Risk) is calculated as the product of the probability of an unexpected failure (p_down), the maximum loss (L_down), and the number of years (20). This metric helps in understanding the potential financial impact of a worst-case scenario.\n- For each source, I have estimated the probability of success (p_up) and the return on success (b_up) based on the nature of the research and the potential impact it could have on the field of dynamic network routing. The downside risk (Risk) is also estimated based on the potential consequences of failure, which could range from operational disruptions to significant financial losses.\n- The values for p_down and L_down are set at 0.1 and 1 billion USD respectively, reflecting a conservative estimate of the likelihood and magnitude of potential risks associated with each source.\n- The f* values are then summed up for each source, indicating the total fraction of the budget that shoul",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "ALG-02",
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 30000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 5.0,
+              "f_star": 0.04,
+              "p_down": 0.2,
+              "L_down": 5000000.0,
+              "risk": 200000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 20.0,
+              "f_star": 0.02,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 20000.0
+            },
+            "D": {
+              "p_up": 0.5,
+              "b_up": 10.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 50000.0
+            },
+            "E": {
+              "p_up": 0.3,
+              "b_up": 15.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 30000.0
+            },
+            "F": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.04,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 40000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n|--------|------|------|----|--------|--------|------|\n| A      | 0.3  | 10   | 0.03| 0.1     | 1000000| 30000 |\n| B      | 0.4  | 5    | 0.04| 0.2     | 5000000| 200000|\n| C      | 0.2  | 20   | 0.02| 0.1     | 1000000| 20000 |\n| D      | 0.5  | 10   | 0.05| 0.1     | 1000000| 50000 |\n| E      | 0.3  | 15   | 0.03| 0.1     | 1000000| 30000 |\n| F      | 0.4  | 10   | 0.04| 0.1     | 1000000| 40000 |\n\nNote: The estimated values are based on the given context and assumptions. The actual values could vary depending on further research and analysis.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "ALG-03",
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.07,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 700000000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.14,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 140000000000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 8.0,
+              "f_star": 0.06,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 60000000000.0
+            },
+            "D": {
+              "p_up": 0.2,
+              "b_up": 5.0,
+              "f_star": 0.06,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 60000000000.0
+            },
+            "E": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.07,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 70000000000.0
+            },
+            "F": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.07,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 70000000000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Source A: Albatross Levy flight foraging patterns | 0.3 | 5 | 0.07 | 0.1 | 1000000000 | 700000000000 |\n| Source B: Computational evolutionary strategy methods | 0.4 | 10 | 0.14 | 0.1 | 1000000000 | 140000000000 |\n| Source C: Shark electroreception gradient following | 0.2 | 8 | 0.06 | 0.1 | 1000000000 | 60000000000 |\n| Source D: Random restart optimization baselines | 0.2 | 5 | 0.06 | 0.1 | 1000000000 | 60000000000 |\n| Source E: Nematode chemotaxis decision circuits | 0.3 | 5 | 0.07 | 0.1 | 1000000000 | 70000000000 |\n| Source F: Search algorithm patent database analysis | 0.3 | 5 | 0.07 | 0.1 | 1000000000 | 70000000000 |\n\nNotes:\n- The Kelly Criterion is used to calculate the upside potential (f*) for each source. This formula assumes that the probability of success (p_up) and the return on success (b_up) are known. The Kelly Criterion suggests allocating a fraction of the budget (f*) to maximize the long-term growth rate of capital.\n- The Downside Value at Risk (CVaR) is used to estimate the downside risk (risk) for each source. This metric considers the probability of unexpected failure, disruption, or liability within 20 years (p_down), and the maximum loss in USD if such an event occurs (L_down). CVaR helps in understanding the worst-case scenario losses.\n- The Risk value is calculated by multiplying p_down by L_down.\n- For each source, I have estimated the probability of success (p_up) and the return on success (b_up) based on the nature of the research and the potential impact it could have on search algorithms. The downside risk (risk) is also estimated based on the potential consequences of failure.\n- The f* values suggest that Source B has the highest upside potential, followed closely by Source A and Source E. However, the downside risk (Risk) is high for all sources, indicating significant potential losses if the research fails. Therefore, it might be prude",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "ALG-04",
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.07,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 700000000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.1,
+              "p_down": 0.2,
+              "L_down": 1000000000.0,
+              "risk": 200000000000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 5.0,
+              "f_star": 0.06,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 600000000000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.08,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 800000000000.0
+            },
+            "E": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.07,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 700000000000.0
+            },
+            "F": {
+              "p_up": 0.2,
+              "b_up": 5.0,
+              "f_star": 0.06,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 600000000000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Source A: Fish schooling polarization dynamics | 0.3 | 5 | 0.07 | 0.1 | 1000000000 | 700000000000 |\n| Source B: Computational Byzantine fault tolerance | 0.4 | 10 | 0.1 | 0.2 | 1000000000 | 200000000000 |\n| Source C: Firefly synchronization coupling mechanisms | 0.2 | 5 | 0.06 | 0.1 | 1000000000 | 600000000000 |\n| Source D: Blockchain consensus protocol variations | 0.3 | 10 | 0.08 | 0.1 | 1000000000 | 800000000000 |\n| Source E: Cricket chorus synchronization dynamics | 0.3 | 5 | 0.07 | 0.1 | 1000000000 | 700000000000 |\n| Source F: Distributed systems patent database analysis | 0.2 | 5 | 0.06 | 0.1 | 1000000000 | 600000000000 |\n\nNotes:\n- Source A and Source E have similar probabilities of success (p_up), but different potential returns (b_up). Both have high upside potential (f*).\n- Source B has the highest probability of success (p_up) and return multiple (b_up), leading to the largest upside fraction (f*).\n- Source D has the highest downside risk (L_down) due to its large potential loss, even though it has a lower probability of failure (p_down) compared to Source B.\n- Source F has the lowest upside potential (f*) and downside risk (Risk), making it the least attractive option for this application.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "ALG-05",
+          "sources": {
+            "A": {
+              "p_up": 0.5,
+              "b_up": 10.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 100000000.0,
+              "risk": 5000000.0
+            },
+            "B": {
+              "p_up": 0.6,
+              "b_up": 10.0,
+              "f_star": 0.1,
+              "p_down": 0.1,
+              "L_down": 100000000.0,
+              "risk": 6000000.0
+            },
+            "C": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.08,
+              "p_down": 0.1,
+              "L_down": 100000000.0,
+              "risk": 4000000.0
+            },
+            "D": {
+              "p_up": 0.7,
+              "b_up": 10.0,
+              "f_star": 0.12,
+              "p_down": 0.1,
+              "L_down": 100000000.0,
+              "risk": 7000000.0
+            },
+            "E": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.06,
+              "p_down": 0.1,
+              "L_down": 100000000.0,
+              "risk": 3000000.0
+            },
+            "F": {
+              "p_up": 0.5,
+              "b_up": 10.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 100000000.0,
+              "risk": 5000000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Source A: Immune system self/non-self discrimination | 0.5 | 10 | 0.05 | 0.1 | 100M | 5M |\n| Source B: Computational statistical outlier methods | 0.6 | 10 | 0.1 | 0.1 | 100M | 6M |\n| Source C: Meerkat sentinel threat classification | 0.4 | 10 | 0.08 | 0.1 | 100M | 4M |\n| Source D: Deep learning anomaly detection models | 0.7 | 10 | 0.12 | 0.1 | 100M | 7M |\n| Source E: Electric fish novelty response circuits | 0.3 | 10 | 0.06 | 0.1 | 100M | 3M |\n| Source F: Anomaly detection patent database analysis | 0.5 | 10 | 0.05 | 0.1 | 100M | 5M |\n\nNote: The estimated values for f* and Risk are based on the given formulas and assumptions. The actual values could vary depending on further research and analysis. The risk is calculated as the product of the probability of an unexpected failure and the maximum loss in USD if such a failure occurs. The Kelly criterion value (f*) represents the optimal fraction of the budget to allocate towards this source, assuming the probabilities and returns are accurate. The downside risk (Risk) is the expected loss exposure, which is the potential financial impact of a negative outcome.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "ALG-06",
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 500000000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.1,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 400000000000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 10.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 300000000000.0
+            },
+            "D": {
+              "p_up": 0.5,
+              "b_up": 10.0,
+              "f_star": 0.07,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 700000000000.0
+            },
+            "E": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 500000000000.0
+            },
+            "F": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.1,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 400000000000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Source A: DNA polymerase proofreading mechanisms | 0.3 | 10 | 0.05 | 0.1 | 1000000000 | 500000000000 |\n| Source B: Computational coding theory advances | 0.4 | 10 | 0.1 | 0.1 | 1000000000 | 400000000000 |\n| Source C: Ribosome translation fidelity systems | 0.2 | 10 | 0.03 | 0.1 | 1000000000 | 300000000000 |\n| Source D: Neural error correction architectures | 0.5 | 10 | 0.07 | 0.1 | 1000000000 | 700000000000 |\n| Source E: RNA virus mutation-selection balance | 0.3 | 10 | 0.05 | 0.1 | 1000000000 | 500000000000 |\n| Source F: Error correction patent database analysis | 0.4 | 10 | 0.1 | 0.1 | 1000000000 | 400000000000 |\n\nNotes:\n- Source A and Source E have similar upside potential but different downside risks.\n- Source D has the highest upside potential but also the highest downside risk.\n- Source B and Source C have similar upside potential but different downside risks.\n- Source F has the lowest upside potential but also the lowest downside risk.\n- The total sum of f* values is 0.38, which is greater than the sum of p_down values (0.3), indicating that holding reserves might be necessary.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "ALG-07",
+          "sources": {
+            "A": {
+              "p_up": 0.2,
+              "b_up": 6.0,
+              "f_star": 0.02,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 200000000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 5.0,
+              "f_star": 0.04,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 400000000000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 8.0,
+              "f_star": 0.02,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 200000000000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 7.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 300000000000.0
+            },
+            "F": {
+              "p_up": 0.1,
+              "b_up": 4.0,
+              "f_star": 0.01,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 100000000000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Source A: Bacterial bet-hedging phenotype switching | 0.3 | 10 | 0.03 | 0.1 | 1000000000 | 300000000000 |\n| Source B: Computational multi-objective evolutionary algorithms | 0.4 | 5 | 0.04 | 0.1 | 1000000000 | 400000000000 |\n| Source C: Migratory bird route-timing tradeoff decisions | 0.2 | 8 | 0.02 | 0.1 | 1000000000 | 200000000000 |\n| Source D: Weighted-sum scalarization methods | 0.3 | 7 | 0.03 | 0.1 | 1000000000 | 300000000000 |\n| Source E: Plant resource allocation to growth vs defense | 0.2 | 6 | 0.02 | 0.1 | 1000000000 | 200000000000 |\n| Source F: Optimization algorithm patent database analysis | 0.1 | 4 | 0.01 | 0.1 | 1000000000 | 100000000000 |\n\nNotes:\n- Source A and Source D have the highest upside potential but also the highest downside risk.\n- Source B has the highest upside potential and moderate downside risk.\n- Source C has moderate upside potential and low downside risk.\n- Source E has moderate upside potential and moderate downside risk.\n- Source F has the lowest upside potential but also the lowest downside risk.\n- The total sum of f* values is 0.12, which is less than the sum of all p_down values (0.3). Therefore, it would be prudent to hold reserves.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "ALG-08",
+          "sources": {
+            "A": {
+              "p_up": 0.5,
+              "b_up": 10.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 50000000000.0
+            },
+            "B": {
+              "p_up": 0.6,
+              "b_up": 10.0,
+              "f_star": 0.12,
+              "p_down": 0.2,
+              "L_down": 1000000000.0,
+              "risk": 12000000000.0
+            },
+            "C": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.08,
+              "p_down": 0.3,
+              "L_down": 1000000000.0,
+              "risk": 30000000000.0
+            },
+            "D": {
+              "p_up": 0.7,
+              "b_up": 10.0,
+              "f_star": 0.14,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 14000000000.0
+            },
+            "E": {
+              "p_up": 0.55,
+              "b_up": 10.0,
+              "f_star": 0.07,
+              "p_down": 0.2,
+              "L_down": 1000000000.0,
+              "risk": 20000000000.0
+            },
+            "F": {
+              "p_up": 0.5,
+              "b_up": 10.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 50000000000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Source A: Army ant bridge formation dynamics | 0.5 | 10 | 0.05 | 0.1 | 1000000000 | 50000000000 |\n| Source B: Computational multi-agent systems theory | 0.6 | 10 | 0.12 | 0.2 | 1000000000 | 12000000000 |\n| Source C: Termite mound construction behavior | 0.4 | 10 | 0.08 | 0.3 | 1000000000 | 30000000000 |\n| Source D: Graph neural network coordination models | 0.7 | 10 | 0.14 | 0.1 | 1000000000 | 14000000000 |\n| Source E: Locust marching band self-organization | 0.55 | 10 | 0.07 | 0.2 | 1000000000 | 20000000000 |\n| Source F: Swarm robotics patent database analysis | 0.5 | 10 | 0.05 | 0.1 | 1000000000 | 50000000000 |\n\nNote: The estimated values for f* and Risk are based on the given probabilities and returns. The downside risk is estimated as the product of the probability of an unexpected failure and the maximum potential loss. The upside Kelly criterion is calculated as the difference between the probability of success and the negative of the remaining probability divided by the return multiple. The total risk is the sum of the individual risks.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "ALG-09",
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.06,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 600000000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.12,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 120000000000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 5.0,
+              "f_star": 0.04,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 40000000000.0
+            },
+            "D": {
+              "p_up": 0.5,
+              "b_up": 10.0,
+              "f_star": 0.1,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 10000000000.0
+            },
+            "E": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.06,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 60000000000.0
+            },
+            "F": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.12,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 12000000000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Source A: Circadian anticipatory gene regulation | 0.3 | 5 | 0.06 | 0.1 | 1000000000 | 600000000000 |\n| Source B: Computational stochastic scheduling theory | 0.4 | 10 | 0.12 | 0.1 | 1000000000 | 120000000000 |\n| Source C: Colonial tunicate developmental timing | 0.2 | 5 | 0.04 | 0.1 | 1000000000 | 40000000000 |\n| Source D: Reinforcement learning scheduler agents | 0.5 | 10 | 0.1 | 0.1 | 1000000000 | 10000000000 |\n| Source E: Cyanobacteria cell division timing | 0.3 | 5 | 0.06 | 0.1 | 1000000000 | 60000000000 |\n| Source F: Scheduling algorithm patent database analysis | 0.4 | 10 | 0.12 | 0.1 | 1000000000 | 12000000000 |\n\nNotes:\n- Source A and Source E have similar upside potential but different downside risks.\n- Source B has the highest upside potential and moderate downside risk.\n- Source D has the highest downside risk but also the highest upside potential.\n- Source F has the lowest upside potential but the lowest downside risk.\n- The total sum of f* values is 0.42, which is slightly higher than the sum of all estimated risks (0.42). This suggests that there might be some overlap or redundancy in the sources' potential contributions. However, it's important to consider the specific application context and the possibility of synergistic effects between these sources.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "ALG-10",
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.07,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 700000000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.12,
+              "p_down": 0.2,
+              "L_down": 1000000000.0,
+              "risk": 200000000000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 3.0,
+              "f_star": 0.06,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 60000000000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.08,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 80000000000.0
+            },
+            "E": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.07,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 70000000000.0
+            },
+            "F": {
+              "p_up": 0.2,
+              "b_up": 3.0,
+              "f_star": 0.06,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 60000000000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Source A: Hippocampal pattern completion circuits | 0.3 | 5 | 0.07 | 0.1 | 1000000000 | 700000000000 |\n| Source B: Computational Bayesian inference methods | 0.4 | 10 | 0.12 | 0.2 | 1000000000 | 200000000000 |\n| Source C: Octopus visual texture matching | 0.2 | 3 | 0.06 | 0.1 | 1000000000 | 60000000000 |\n| Source D: Transformer masked prediction architectures | 0.3 | 5 | 0.08 | 0.1 | 1000000000 | 80000000000 |\n| Source E: Rat grid cell spatial inference | 0.3 | 5 | 0.07 | 0.1 | 1000000000 | 70000000000 |\n| Source F: Pattern recognition patent database analysis | 0.2 | 3 | 0.06 | 0.1 | 1000000000 | 60000000000 |\n\nNotes:\n- Source A and Source E have similar upside potential and downside risk.\n- Source B has the highest upside potential but also the highest downside risk.\n- Source F has the lowest upside potential and downside risk.\n- The total sum of f* values is 0.49, which is slightly higher than the sum of all p_down values (0.4). This suggests that there might be some overlap or redundancy in the sources' potential outcomes, warranting further investigation.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "ALG-11",
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.07,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 70000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.1,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 40000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 5.0,
+              "f_star": 0.06,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 60000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.08,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 80000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 5.0,
+              "f_star": 0.06,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 60000.0
+            },
+            "F": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.07,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 70000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n|--------|------|------|----|--------|--------|------|\n| A      | 0.3  | 5    | 0.07| 0.1     | 1000000| 70000 |\n| B      | 0.4  | 10   | 0.1 | 0.1     | 1000000| 40000 |\n| C      | 0.2  | 5    | 0.06| 0.1     | 1000000| 60000 |\n| D      | 0.3  | 10   | 0.08| 0.1     | 1000000| 80000 |\n| E      | 0.2  | 5    | 0.06| 0.1     | 1000000| 60000 |\n| F      | 0.3  | 5    | 0.07| 0.1     | 1000000| 70000 |\n\nNotes:\n- Source A: Ants switch tasks based on pheromone trails and colony needs. If they discover a new method to optimize task switching, it could lead to significant improvements in efficiency. However, there's a risk of unexpected failures due to environmental changes or colony dynamics.\n- Source B: Queueing theory can be applied to optimize cloud services. If successful, it could provide substantial gains in performance and cost savings. However, there's a small chance of unexpected disruptions due to unforeseen system failures or human errors.\n- Source C: Macrophages play a crucial role in inflammation responses. Discovering a new way to allocate macrophage resources could lead to better treatment options for inflammatory diseases. However, there's a small chance of unexpected liabilities due to adverse effects or unforeseen complications.\n- Source D: Cloud autoscaling algorithms can be improved by analyzing patents. If successful, it could lead to more efficient resource utilization and cost savings. However, there's a small chance of unexpected disruptions due to unforeseen system failures or human errors.\n- Source E: Honeybees exhibit complex behaviors related to nursing and foraging. If they discover a new way to balance these behaviors, it could lead to more efficient colony management. However, there's a small chance of unexpected failures due to environmental changes or colony dynamics.\n- Source F: Patent databases can reveal innovative load balancing techniques. If successful, it could lead to more effi",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "ALG-12",
+          "sources": {
+            "A": {
+              "p_up": 0.5,
+              "b_up": 10.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 50000.0
+            },
+            "B": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.07,
+              "p_down": 0.2,
+              "L_down": 1000000.0,
+              "risk": 60000.0
+            },
+            "C": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.06,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 60000.0
+            },
+            "D": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.06,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 60000.0
+            },
+            "E": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.06,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 60000.0
+            },
+            "F": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.07,
+              "p_down": 0.2,
+              "L_down": 1000000.0,
+              "risk": 60000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Source A: Honeybee swarm nest-site selection | 0.5 | 10 | 0.05 | 0.1 | 1000000 | 50000 |\n| Source B: Computational voting theory methods | 0.3 | 10 | 0.07 | 0.2 | 1000000 | 60000 |\n| Source C: Baboon troop movement initiation | 0.4 | 10 | 0.06 | 0.1 | 1000000 | 60000 |\n| Source D: Multi-agent reinforcement learning | 0.4 | 10 | 0.06 | 0.1 | 1000000 | 60000 |\n| Source E: Ant colony emigration decisions | 0.4 | 10 | 0.06 | 0.1 | 1000000 | 60000 |\n| Source F: Decision systems patent database analysis | 0.3 | 10 | 0.07 | 0.2 | 1000000 | 60000 |\n\nNote: The estimated values for f* and Risk are based on the given formulas and assumptions. The values for p_down and L_down are set at conservative levels to represent worst-case scenarios. The Kelly Criterion suggests allocating 5% of the budget to Source A, 7% to Source B, 6% to Sources C, D, and E, and 7% to Source F. This allocation sums up to 38%, leaving 62% unallocated as a reserve.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "NRG-01",
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 300000000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 5.0,
+              "f_star": 0.04,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 400000000000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 10.0,
+              "f_star": 0.02,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 200000000000.0
+            },
+            "D": {
+              "p_up": 0.1,
+              "b_up": 10.0,
+              "f_star": 0.01,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 100000000000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 10.0,
+              "f_star": 0.02,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 200000000000.0
+            },
+            "F": {
+              "p_up": 0.1,
+              "b_up": 10.0,
+              "f_star": 0.01,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 100000000000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Source A: Purple bacteria reaction center exciton funneling | 0.3 | 10 | 0.03 | 0.1 | 1000000000 | 300000000000 |\n| Source B: Computational quantum coherence modeling | 0.4 | 5 | 0.04 | 0.1 | 1000000000 | 400000000000 |\n| Source C: Diatom frustule light-trapping waveguides | 0.2 | 10 | 0.02 | 0.1 | 1000000000 | 200000000000 |\n| Source D: Synthetic perovskite composition screening | 0.1 | 10 | 0.01 | 0.1 | 1000000000 | 100000000000 |\n| Source E: Deep-sea fish retinal photon amplification | 0.2 | 10 | 0.02 | 0.1 | 1000000000 | 200000000000 |\n| Source F: Photovoltaic technology patent database analysis | 0.1 | 10 | 0.01 | 0.1 | 1000000000 | 100000000000 |\n\nNote: The estimated values for p_down and L_down are arbitrary placeholders as no specific information was provided for these metrics. The f* values were calculated based on the given p_up and b_up values. The Risk is calculated by multiplying p_down by L_down.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "NRG-02",
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.06,
+              "p_down": 0.1,
+              "L_down": 100000000.0,
+              "risk": 6000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.12,
+              "p_down": 0.2,
+              "L_down": 500000000.0,
+              "risk": 100000000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 8.0,
+              "f_star": 0.04,
+              "p_down": 0.1,
+              "L_down": 200000000.0,
+              "risk": 8000000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 7.0,
+              "f_star": 0.09,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 70000000.0
+            },
+            "E": {
+              "p_up": 0.1,
+              "b_up": 15.0,
+              "f_star": 0.02,
+              "p_down": 0.1,
+              "L_down": 5000000000.0,
+              "risk": 1000000000.0
+            },
+            "F": {
+              "p_up": 0.2,
+              "b_up": 12.0,
+              "f_star": 0.04,
+              "p_down": 0.1,
+              "L_down": 10000000000.0,
+              "risk": 4000000000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Hydrogenase enzyme active site geometry | 0.3 | 5 | 0.06 | 0.1 | 100M | 6M |\n| B: Computational catalyst surface modeling | 0.4 | 10 | 0.12 | 0.2 | 500M | 100M |\n| C: Methanotroph particulate methane monooxygenase | 0.2 | 8 | 0.04 | 0.1 | 200M | 8M |\n| D: Synthetic catalyst combinatorial screening | 0.3 | 7 | 0.09 | 0.1 | 1B | 70M |\n| E: Electric eel electrocyte ion channel arrays | 0.1 | 15 | 0.02 | 0.1 | 5B | 1B |\n| F: Fuel cell patent database analysis | 0.2 | 12 | 0.04 | 0.1 | 10B | 4B |\n\nNotes:\n- Source A and C have low probabilities of success but high potential returns.\n- Source B has a moderate probability of success and a high return on success.\n- Source D has a moderate probability of success and a high return on success.\n- Source E has a low probability of success but a very high potential return.\n- Source F has a low probability of success but a very high potential return.\n- The downside risk is calculated as the product of the probability of failure and the maximum loss.\n- The upside Kelly criterion (f*) is calculated as the probability of success minus the probability of failure divided by the return multiple.\n- The risk is calculated as the probability of failure times the maximum loss.\n- The total allocation should be less than the sum of the f* values.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "NRG-03",
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 50000000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.1,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 40000000000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 10.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 20000000000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 30000000000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 10.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 20000000000.0
+            },
+            "F": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 30000000000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Source A: Inner ear hair cell stereocilia mechanics | 0.3 | 10 | 0.05 | 0.1 | 1000000000 | 50000000000 |\n| Source B: Computational piezoelectric optimization | 0.4 | 10 | 0.1 | 0.1 | 1000000000 | 40000000000 |\n| Source C: Spider slit sensilla strain detection | 0.2 | 10 | 0.05 | 0.1 | 1000000000 | 20000000000 |\n| Source D: MEMS cantilever array screening | 0.3 | 10 | 0.05 | 0.1 | 1000000000 | 30000000000 |\n| Source E: Insect Johnston's organ vibration sensing | 0.2 | 10 | 0.05 | 0.1 | 1000000000 | 20000000000 |\n| Source F: Energy harvesting patent database analysis | 0.3 | 10 | 0.05 | 0.1 | 1000000000 | 30000000000 |\n\nNotes:\n- The Kelly Criterion is used to calculate the Upside (f*) as it represents the optimal fraction of the budget to allocate based on the probability of success and the potential reward.\n- The Downside (Risk) is calculated using Conditional Value at Risk (CVaR), which is the expected loss given that a loss has occurred. This metric helps in understanding the worst-case scenario losses.\n- For Source F, the estimated upside (f*) is lower than other sources due to the speculative nature of patent analysis. However, the downside (Risk) is also relatively low, indicating a balanced approach.\n- Reserves could be considered by allocating less than the sum of f* values to account for uncertainties and unforeseen risks.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "NRG-04",
+          "sources": {
+            "A": {
+              "p_up": 0.5,
+              "b_up": 10.0,
+              "f_star": 0.05,
+              "p_down": 0.05,
+              "L_down": 1000000.0,
+              "risk": 50000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 3.0,
+              "f_star": 0.06,
+              "p_down": 0.1,
+              "L_down": 10000000.0,
+              "risk": 600000.0
+            },
+            "C": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.07,
+              "p_down": 0.1,
+              "L_down": 10000000.0,
+              "risk": 700000.0
+            },
+            "D": {
+              "p_up": 0.2,
+              "b_up": 1.0,
+              "f_star": 0.08,
+              "p_down": 0.2,
+              "L_down": 10000000.0,
+              "risk": 1600000.0
+            },
+            "E": {
+              "p_up": 0.1,
+              "b_up": 2.0,
+              "f_star": 0.09,
+              "p_down": 0.3,
+              "L_down": 10000000.0,
+              "risk": 2700000.0
+            },
+            "F": {
+              "p_up": 0.05,
+              "b_up": 1.0,
+              "f_star": 0.1,
+              "p_down": 0.5,
+              "L_down": 10000000.0,
+              "risk": 500000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Source A: Bombardier beetle reaction chamber insulation | 0.5 | 10 | 0.05 | 0.05 | 1000000 | 50000 |\n| Source B: Computational thermoelectric band engineering | 0.4 | 3 | 0.06 | 0.1 | 10000000 | 600000 |\n| Source C: Tuna countercurrent rete mirabile efficiency | 0.3 | 5 | 0.07 | 0.1 | 10000000 | 700000 |\n| Source D: Synthetic chalcogenide material screening | 0.2 | 1 | 0.08 | 0.2 | 10000000 | 1600000 |\n| Source E: Pit viper infrared receptor thermal isolation | 0.1 | 2 | 0.09 | 0.3 | 10000000 | 2700000 |\n| Source F: Thermoelectric patent database analysis | 0.05 | 1 | 0.1 | 0.5 | 10000000 | 500000 |\n\nNote: The downside risk is high for some sources, and it might be prudent to hold reserves.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "NRG-05",
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.07,
+              "p_down": 0.1,
+              "L_down": 100000000.0,
+              "risk": 7000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.1,
+              "p_down": 0.2,
+              "L_down": 1000000000.0,
+              "risk": 200000000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 8.0,
+              "f_star": 0.06,
+              "p_down": 0.1,
+              "L_down": 50000000.0,
+              "risk": 3000000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.07,
+              "p_down": 0.1,
+              "L_down": 100000000.0,
+              "risk": 7000000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 10.0,
+              "f_star": 0.06,
+              "p_down": 0.1,
+              "L_down": 100000000.0,
+              "risk": 6000000.0
+            },
+            "F": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.07,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 700000000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Source A: Salmon gill chloride cell ion transport | 0.3 | 5 | 0.07 | 0.1 | 100M | 7M |\n| Source B: Computational membrane selectivity modeling | 0.4 | 10 | 0.1 | 0.2 | 1B | 200M |\n| Source C: Mangrove root ultrafiltration tissue | 0.2 | 8 | 0.06 | 0.1 | 50M | 3M |\n| Source D: Synthetic ion-exchange membrane screening | 0.3 | 10 | 0.07 | 0.1 | 100M | 7M |\n| Source E: Shark rectal gland concentrating mechanisms | 0.2 | 10 | 0.06 | 0.1 | 100M | 6M |\n| Source F: Osmotic power patent database analysis | 0.3 | 10 | 0.07 | 0.1 | 1B | 700M |",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "NRG-06",
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 300000000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 5.0,
+              "f_star": 0.04,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 400000000000.0
+            },
+            "C": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.04,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 400000000000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 300000000000.0
+            },
+            "E": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 300000000000.0
+            },
+            "F": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 300000000000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Termite gut microbial consortium lignocellulose digestion | 0.3 | 10 | 0.03 | 0.1 | 1000000000 | 300000000000 |\n| B: Computational metabolic pathway modeling | 0.4 | 5 | 0.04 | 0.1 | 1000000000 | 400000000000 |\n| C: Shipworm gill symbiont cellulase systems | 0.4 | 10 | 0.04 | 0.1 | 1000000000 | 400000000000 |\n| D: Directed evolution enzyme screening | 0.3 | 10 | 0.03 | 0.1 | 1000000000 | 300000000000 |\n| E: Hoatzin foregut fermentation microbiome | 0.3 | 10 | 0.03 | 0.1 | 1000000000 | 300000000000 |\n| F: Biofuel production patent database analysis | 0.3 | 10 | 0.03 | 0.1 | 1000000000 | 300000000000 |\n\nNotes:\n- The upside fraction f* is calculated as f* = p_up - (1 - p_up) / b_up\n- The downside risk is estimated as risk = p_down \u00d7 L_down\n- The total risk exposure is the sum of all individual risks\n- The total risk exposure is 1200000000000 USD\n- Reserves should be allocated to cover the total risk exposure, which is 1200000000000 USD",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "NRG-07",
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 300000000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 5.0,
+              "f_star": 0.04,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 400000000000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 10.0,
+              "f_star": 0.02,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 200000000000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 300000000000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 10.0,
+              "f_star": 0.02,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 200000000000.0
+            },
+            "F": {
+              "p_up": 0.1,
+              "b_up": 10.0,
+              "f_star": 0.01,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 100000000000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Source A: Cyanobacteria photosystem II oxygen evolution | 0.3 | 10 | 0.03 | 0.1 | 1000000000 | 300000000000 |\n| Source B: Computational photocatalyst band alignment | 0.4 | 5 | 0.04 | 0.1 | 1000000000 | 400000000000 |\n| Source C: Green algae [FeFe]-hydrogenase active site | 0.2 | 10 | 0.02 | 0.1 | 1000000000 | 200000000000 |\n| Source D: Semiconductor heterojunction screening | 0.3 | 5 | 0.03 | 0.1 | 1000000000 | 300000000000 |\n| Source E: Nitrogen-fixing bacteria electron transport | 0.2 | 10 | 0.02 | 0.1 | 1000000000 | 200000000000 |\n| Source F: Hydrogen production patent database analysis | 0.1 | 10 | 0.01 | 0.1 | 1000000000 | 100000000000 |\n\nNotes:\n- The Kelly Criterion is used to calculate the Upside (f*) as it represents the optimal fraction of the budget to allocate towards a potentially high-reward investment.\n- The Downside (Risk) is calculated using Conditional Value at Risk (CVaR), which measures the expected loss given that a loss has occurred. This metric helps in understanding the potential financial impact of unexpected failures or disruptions.\n- For Source F, the Upside and Downside metrics were estimated based on the patent database analysis, which suggests a lower probability of success but also a higher potential reward if successful.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "NRG-08",
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.03,
+              "p_down": 0.5,
+              "L_down": 1000000.0,
+              "risk": 15000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.04,
+              "p_down": 0.5,
+              "L_down": 1000000.0,
+              "risk": 40000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 10.0,
+              "f_star": 0.02,
+              "p_down": 0.5,
+              "L_down": 1000000.0,
+              "risk": 20000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.03,
+              "p_down": 0.5,
+              "L_down": 1000000.0,
+              "risk": 15000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 10.0,
+              "f_star": 0.02,
+              "p_down": 0.5,
+              "L_down": 1000000.0,
+              "risk": 20000.0
+            },
+            "F": {
+              "p_up": 0.1,
+              "b_up": 10.0,
+              "f_star": 0.01,
+              "p_down": 0.5,
+              "L_down": 1000000.0,
+              "risk": 10000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n|--------|------|------|----|--------|--------|------|\n| A      | 0.3  | 10   | 0.03| 0.5    | 1000000| 15000|\n| B      | 0.4  | 10   | 0.04| 0.5    | 1000000| 40000|\n| C      | 0.2  | 10   | 0.02| 0.5    | 1000000| 20000|\n| D      | 0.3  | 10   | 0.03| 0.5    | 1000000| 15000|\n| E      | 0.2  | 10   | 0.02| 0.5    | 1000000| 20000|\n| F      | 0.1  | 10   | 0.01| 0.5    | 1000000| 10000|",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "NRG-09",
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 30000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 5.0,
+              "f_star": 0.04,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 40000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 10.0,
+              "f_star": 0.02,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 20000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 30000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 10.0,
+              "f_star": 0.02,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 20000.0
+            },
+            "F": {
+              "p_up": 0.2,
+              "b_up": 10.0,
+              "f_star": 0.02,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 20000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Hummingbird fat-to-flight metabolic efficiency | 0.3 | 10 | 0.03 | 0.1 | 1000000 | 30000 |\n| B: Computational electrode intercalation modeling | 0.4 | 5 | 0.04 | 0.1 | 1000000 | 40000 |\n| C: Hibernating bear lipid mobilization control | 0.2 | 10 | 0.02 | 0.1 | 1000000 | 20000 |\n| D: Metal-organic framework screening | 0.3 | 10 | 0.03 | 0.1 | 1000000 | 30000 |\n| E: Migrating bird pre-flight hyperphagia metabolism | 0.2 | 10 | 0.02 | 0.1 | 1000000 | 20000 |\n| F: Energy storage patent database analysis | 0.2 | 10 | 0.02 | 0.1 | 1000000 | 20000 |\n\nNotes:\n- For Source A, I used a p_up of 0.3 and a b_up of 10 based on the potential for discovering a novel mechanism that could lead to a 10x return on investment.\n- For Source B, I used a p_up of 0.4 and a b_up of 5 based on the potential for computational models to identify promising materials for energy storage.\n- For Source C, I used a p_up of 0.2 and a b_up of 10 based on the potential for understanding lipid mobilization mechanisms in hibernating bears to inform new energy storage technologies.\n- For Source D, I used a p_up of 0.3 and a b_up of 10 based on the potential for screening metal-organic frameworks to discover new materials for energy storage.\n- For Source E, I used a p_up of 0.2 and a b_up of 10 based on the potential for understanding migratory birds' pre-flight hyperphagia metabolism to inform new energy storage technologies.\n- For Source F, I used a p_up of 0.2 and a b_up of 10 based on the potential for analyzing energy storage patents to identify emerging trends and opportunities.\n- The downside risk is estimated at 200,000 USD for all sources, as this represents the maximum potential loss over a 20-year period. This value was chosen to reflect the potential for significant financial impact from unexpected failures or disruptions.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "NRG-10",
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 300000000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 5.0,
+              "f_star": 0.04,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 400000000000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 2.0,
+              "f_star": 0.02,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 200000000000.0
+            },
+            "D": {
+              "p_up": 0.5,
+              "b_up": 10.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 500000000000.0
+            },
+            "E": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 300000000000.0
+            },
+            "F": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.04,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 400000000000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Source A: Pancreatic islet glucose-insulin feedback | 0.3 | 10 | 0.03 | 0.1 | 1000000000 | 300000000000 |\n| Source B: Computational model predictive control | 0.4 | 5 | 0.04 | 0.1 | 1000000000 | 400000000000 |\n| Source C: Forest ecosystem nutrient cycling regulation | 0.2 | 2 | 0.02 | 0.1 | 1000000000 | 200000000000 |\n| Source D: Deep reinforcement learning controllers | 0.5 | 10 | 0.05 | 0.1 | 1000000000 | 500000000000 |\n| Source E: Coral reef carbonate buffering dynamics | 0.3 | 5 | 0.03 | 0.1 | 1000000000 | 300000000000 |\n| Source F: Grid management patent database analysis | 0.4 | 10 | 0.04 | 0.1 | 1000000000 | 400000000000 |\n\nNotes:\n- Source A and Source E have similar upside potential but different downside risks.\n- Source B has a higher probability of success and lower downside risk compared to Source C.\n- Source D has a high upside potential but also a high downside risk.\n- Source F has a moderate probability of success and a moderate downside risk.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "NRG-11",
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 100000000.0,
+              "risk": 30000000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.04,
+              "p_down": 0.1,
+              "L_down": 100000000.0,
+              "risk": 40000000000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 5.0,
+              "f_star": 0.02,
+              "p_down": 0.1,
+              "L_down": 100000000.0,
+              "risk": 20000000000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 100000000.0,
+              "risk": 30000000000.0
+            },
+            "E": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 100000000.0,
+              "risk": 30000000000.0
+            },
+            "F": {
+              "p_up": 0.2,
+              "b_up": 5.0,
+              "f_star": 0.02,
+              "p_down": 0.1,
+              "L_down": 100000000.0,
+              "risk": 20000000000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Source A: Humpback whale flipper tubercle leading edge | 0.3 | 5 | 0.03 | 0.1 | 100000000 | 30000000000 |\n| Source B: Computational blade element momentum theory | 0.4 | 10 | 0.04 | 0.1 | 100000000 | 40000000000 |\n| Source C: Maple samara autorotation aerodynamics | 0.2 | 5 | 0.02 | 0.1 | 100000000 | 20000000000 |\n| Source D: Generative design blade optimization | 0.3 | 5 | 0.03 | 0.1 | 100000000 | 30000000000 |\n| Source E: Dragonfly wing corrugation vortex control | 0.3 | 5 | 0.03 | 0.1 | 100000000 | 30000000000 |\n| Source F: Wind turbine patent database analysis | 0.2 | 5 | 0.02 | 0.1 | 100000000 | 20000000000 |\n\nNotes:\n- The Kelly Criterion is used to calculate the upside potential (f*) for each source. This formula assumes that the probability of success (p_up) and the return on success (b_up) are known. The Kelly Criterion suggests allocating a fraction of the budget (f*) that maximizes the logarithmic growth rate of wealth.\n- The Downside Value at Risk (CVaR) is used to estimate the downside risk (risk) associated with each source. This metric considers the probability of unexpected failure (p_down) and the maximum loss (L_down) that could occur within 20 years. CVaR is calculated as the product of the probability of failure and the maximum loss.\n- The total risk (Risk) is the expected loss exposure, which is the sum of the upside potential and the downside risk.\n- For each source, I have estimated the probability of success (p_up), the return on success (b_up), the fraction of budget to allocate (f*), the probability of unexpected failure (p_down), the maximum loss (L_down), and the total risk (Risk).\n- The total risk for all sources combined is 100000000000 USD, which is the sum of the individual risks. This indicates that the total risk is manageable, but it's important to note that this is a conservative estimate and actual risk could be higher.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "NRG-12",
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 300000000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 5.0,
+              "f_star": 0.04,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 400000000000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 10.0,
+              "f_star": 0.02,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 200000000000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 300000000000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 10.0,
+              "f_star": 0.02,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 200000000000.0
+            },
+            "F": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 300000000000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Shark ampullae of Lorenzini field sensitivity | 0.3 | 10 | 0.03 | 0.1 | 1000000000 | 300000000000 |\n| B: Computational sensor impedance modeling | 0.4 | 5 | 0.04 | 0.1 | 1000000000 | 400000000000 |\n| C: Platypus bill electroreception arrays | 0.2 | 10 | 0.02 | 0.1 | 1000000000 | 200000000000 |\n| D: Synthetic electrode functionalization screening | 0.3 | 5 | 0.03 | 0.1 | 1000000000 | 300000000000 |\n| E: Electric catfish tuberous receptor organs | 0.2 | 10 | 0.02 | 0.1 | 1000000000 | 200000000000 |\n| F: Electrochemical sensor patent database analysis | 0.3 | 5 | 0.03 | 0.1 | 1000000000 | 300000000000 |\n\nNotes:\n- The Kelly Criterion is used to calculate the upside potential (f*) for each source. This assumes that the probability of success (p_up) is known and that the return on success (b_up) is certain.\n- The downside risk (Risk) is calculated as the product of the probability of failure (p_down), the maximum loss (L_down), and the budget allocation (f*). This assumes that the maximum loss is known and that the probability of failure is certain.\n- For each source, I have estimated the probability of success (p_up) and the return on success (b_up) based on the novelty and potential impact of the research. The probability of failure (p_down) and the maximum loss (L_down) are also estimated based on the potential risks associated with each source.\n- The Kelly Criterion suggests allocating 3% of the budget to Source A, 4% to Source B, 2% to Source C, 3% to Source D, 2% to Source E, and 3% to Source F. This means that there is no need to hold reserves since the total allocation (13%) exceeds the sum of the f* values.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "NRG-13",
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 300000000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 5.0,
+              "f_star": 0.04,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 400000000000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 10.0,
+              "f_star": 0.02,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 200000000000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 300000000000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 10.0,
+              "f_star": 0.02,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 200000000000.0
+            },
+            "F": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 300000000000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Source A: ATP synthase F0 proton channel rotation | 0.3 | 10 | 0.03 | 0.1 | 1000000000 | 300000000000 |\n| Source B: Computational proton hopping simulation | 0.4 | 5 | 0.04 | 0.1 | 1000000000 | 400000000000 |\n| Source C: Bacteriorhodopsin proton pumping pathway | 0.2 | 10 | 0.02 | 0.1 | 1000000000 | 200000000000 |\n| Source D: Synthetic proton exchange membrane screening | 0.3 | 5 | 0.03 | 0.1 | 1000000000 | 300000000000 |\n| Source E: Mitochondrial cytochrome c oxidase proton coupling | 0.2 | 10 | 0.02 | 0.1 | 1000000000 | 200000000000 |\n| Source F: Proton conductor patent database analysis | 0.3 | 5 | 0.03 | 0.1 | 1000000000 | 300000000000 |\n\nNote: The estimated values for f* and Risk are based on the given probabilities and returns. The downside risk is calculated as the product of the probability of an unexpected failure and the maximum potential loss. The upside Kelly Criterion value (f*) represents the optimal fraction of the budget to allocate towards this source. The total risk (Risk) is the expected loss exposure, which is the product of the probability of an unexpected failure and the maximum potential loss. If the total risk exceeds the available budget, it may be prudent to hold some reserves.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "MFG-01",
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.03,
+              "p_down": 0.5,
+              "L_down": 100000000.0,
+              "risk": 15000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.04,
+              "p_down": 0.5,
+              "L_down": 100000000.0,
+              "risk": 20000000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 10.0,
+              "f_star": 0.02,
+              "p_down": 0.5,
+              "L_down": 100000000.0,
+              "risk": 10000000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.03,
+              "p_down": 0.5,
+              "L_down": 100000000.0,
+              "risk": 15000000.0
+            },
+            "E": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.03,
+              "p_down": 0.5,
+              "L_down": 100000000.0,
+              "risk": 15000000.0
+            },
+            "F": {
+              "p_up": 0.2,
+              "b_up": 10.0,
+              "f_star": 0.02,
+              "p_down": 0.5,
+              "L_down": 100000000.0,
+              "risk": 10000000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Sea urchin spine stereom calcite formation | 0.3 | 10 | 0.03 | 0.5 | 100M | 15M |\n| B: Computational nucleation kinetics modeling | 0.4 | 10 | 0.04 | 0.5 | 100M | 20M |\n| C: Chiton radula magnetite biomineralization | 0.2 | 10 | 0.02 | 0.5 | 100M | 10M |\n| D: Sol-gel low-temperature ceramic screening | 0.3 | 10 | 0.03 | 0.5 | 100M | 15M |\n| E: Coral skeleton aragonite crystal templating | 0.3 | 10 | 0.03 | 0.5 | 100M | 15M |\n| F: Low-temperature processing patent database analysis | 0.2 | 10 | 0.02 | 0.5 | 100M | 10M |\n\nNotes:\n- For Source A, I estimated p_up at 0.3 and b_up at 10 based on the potential for novel mechanisms and the high potential return.\n- For Source B, I estimated p_up at 0.4 and b_up at 10 based on the potential for computational breakthroughs and the high potential return.\n- For Source C, I estimated p_up at 0.2 and b_up at 10 based on the potential for novel mechanisms and the high potential return.\n- For Source D, I estimated p_up at 0.3 and b_up at 10 based on the potential for novel mechanisms and the high potential return.\n- For Source E, I estimated p_up at 0.3 and b_up at 10 based on the potential for novel mechanisms and the high potential return.\n- For Source F, I estimated p_up at 0.2 and b_up at 10 based on the potential for novel mechanisms and the high potential return.\n- For all sources, I estimated p_down at 0.5 and L_down at 100M USD as this is a conservative estimate considering the long-term nature of the research and the potential for significant disruptions.\n- The f* values were calculated using the formula f* = p_up - (1 - p_up) / b_up.\n- The Risk was calculated as risk = p_down \u00d7 L_down.\n- The total allocated budget should be less than the sum of f* values to account for the downside risk.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "MFG-02",
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.06,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 600000000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.12,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 120000000000.0
+            },
+            "C": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.06,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 600000000000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.06,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 600000000000.0
+            },
+            "E": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.06,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 600000000000.0
+            },
+            "F": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.06,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 600000000000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Source A: Bone trabecular network remodeling | 0.3 | 5 | 0.06 | 0.1 | 1000000000 | 600000000000 |\n| Source B: Computational multi-scale topology optimization | 0.4 | 10 | 0.12 | 0.1 | 1000000000 | 120000000000 |\n| Source C: Wood ray parenchyma-tracheid organization | 0.3 | 5 | 0.06 | 0.1 | 1000000000 | 600000000000 |\n| Source D: Freeze-casting templated porosity screening | 0.3 | 5 | 0.06 | 0.1 | 1000000000 | 600000000000 |\n| Source E: Nacre tablet-bridge layered growth | 0.3 | 5 | 0.06 | 0.1 | 1000000000 | 600000000000 |\n| Source F: Hierarchical materials patent database analysis | 0.3 | 5 | 0.06 | 0.1 | 1000000000 | 600000000000 |\n\nNotes:\n- The upside fraction f* is calculated as f* = p_up - (1 - p_up) / b_up\n- The downside risk is estimated as risk = p_down \u00d7 L_down\n- The total risk exposure is the sum of all individual risks\n- The total risk exposure is 360 billion USD, which is more than the total budget of the project. Therefore, it is prudent to hold some reserves.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "MFG-03",
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.03,
+              "p_down": 0.5,
+              "L_down": 100000000.0,
+              "risk": 15000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.04,
+              "p_down": 0.5,
+              "L_down": 100000000.0,
+              "risk": 20000000.0
+            },
+            "C": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.04,
+              "p_down": 0.5,
+              "L_down": 100000000.0,
+              "risk": 20000000.0
+            },
+            "D": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.04,
+              "p_down": 0.5,
+              "L_down": 100000000.0,
+              "risk": 20000000.0
+            },
+            "E": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.03,
+              "p_down": 0.5,
+              "L_down": 100000000.0,
+              "risk": 15000000.0
+            },
+            "F": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.03,
+              "p_down": 0.5,
+              "L_down": 100000000.0,
+              "risk": 15000000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Source A: Virus capsid protein shell assembly | 0.3 | 10 | 0.03 | 0.5 | 100M | 15M |\n| Source B: Computational coarse-grained assembly modeling | 0.4 | 10 | 0.04 | 0.5 | 100M | 20M |\n| Source C: Diatom silica deposition pattern formation | 0.4 | 10 | 0.04 | 0.5 | 100M | 20M |\n| Source D: Block copolymer phase separation screening | 0.4 | 10 | 0.04 | 0.5 | 100M | 20M |\n| Source E: Bacterial S-layer protein crystallization | 0.3 | 10 | 0.03 | 0.5 | 100M | 15M |\n| Source F: Self-assembly patent database analysis | 0.3 | 10 | 0.03 | 0.5 | 100M | 15M |\n\nNotes:\n- The Kelly Criterion is used to calculate the Upside (f*) as it provides a way to determine the optimal fraction of capital to bet on a positive expectation investment.\n- The Downside (Risk) is calculated using CVaR (Conditional Value at Risk), which is a risk measure that quantifies the expected loss given that a loss has occurred.\n- For each source, I've estimated the probability of success (p_up) and the potential upside return (b_up). These were chosen based on the novelty and potential impact of the research area.\n- The downside risk (p_down \u00d7 L_down) was estimated conservatively at 50% chance of a 100 million dollar loss over 20 years.\n- The Risk value is the expected loss exposure, which is the product of the probability of the downside event occurring and the maximum loss if it does occur.\n- The total allocated budget should be less than the sum of all f* values, as there is no guarantee that any one source will succeed.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "MFG-04",
+          "sources": {
+            "A": {
+              "p_up": 0.5,
+              "b_up": 10.0,
+              "f_star": 0.05,
+              "p_down": 0.05,
+              "L_down": 1000000000.0,
+              "risk": 500000000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.06,
+              "p_down": 0.05,
+              "L_down": 1000000000.0,
+              "risk": 600000000000.0
+            },
+            "C": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.07,
+              "p_down": 0.05,
+              "L_down": 1000000000.0,
+              "risk": 700000000000.0
+            },
+            "D": {
+              "p_up": 0.2,
+              "b_up": 10.0,
+              "f_star": 0.08,
+              "p_down": 0.05,
+              "L_down": 1000000000.0,
+              "risk": 800000000000.0
+            },
+            "E": {
+              "p_up": 0.1,
+              "b_up": 10.0,
+              "f_star": 0.09,
+              "p_down": 0.05,
+              "L_down": 1000000000.0,
+              "risk": 900000000000.0
+            },
+            "F": {
+              "p_up": 0.05,
+              "b_up": 10.0,
+              "f_star": 0.1,
+              "p_down": 0.05,
+              "L_down": 1000000000.0,
+              "risk": 500000000000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Source A: Glass sponge spicule crack arrest architecture | 0.5 | 10 | 0.05 | 0.05 | 1000000000 | 500000000000 |\n| Source B: Computational fracture mechanics simulation | 0.4 | 10 | 0.06 | 0.05 | 1000000000 | 600000000000 |\n| Source C: Dragonfly wing vein damage distribution | 0.3 | 10 | 0.07 | 0.05 | 1000000000 | 700000000000 |\n| Source D: Redundancy engineering design patterns | 0.2 | 10 | 0.08 | 0.05 | 1000000000 | 800000000000 |\n| Source E: Lobster cuticle Bouligand crack steering | 0.1 | 10 | 0.09 | 0.05 | 1000000000 | 900000000000 |\n| Source F: Damage tolerance patent database analysis | 0.05 | 10 | 0.1 | 0.05 | 1000000000 | 500000000000 |\n\nNote: The estimated values for f* and Risk are based on the given probabilities and return multiples. The downside risk is calculated as the product of the probability of an unexpected failure and the maximum potential loss. The Kelly criterion suggests allocating a fraction of the budget equal to f* to the promising source, but it's important to consider the total risk exposure when deciding how much to allocate overall. In this case, the total risk exposure exceeds the sum of the f* values, indicating that holding reserves might be prudent.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "MFG-05",
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 50000000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 5.0,
+              "f_star": 0.1,
+              "p_down": 0.2,
+              "L_down": 5000000000.0,
+              "risk": 10000000000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 10.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 5000000000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.1,
+              "p_down": 0.1,
+              "L_down": 5000000000.0,
+              "risk": 15000000000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 5.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 5000000000.0,
+              "risk": 2500000000.0
+            },
+            "F": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.1,
+              "p_down": 0.1,
+              "L_down": 5000000000.0,
+              "risk": 1500000000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Source A: Spider dragline silk spinning and recycling | 0.3 | 10 | 0.05 | 0.1 | 1000000000 | 50000000000 |\n| Source B: Computational process mass balance optimization | 0.4 | 5 | 0.1 | 0.2 | 5000000000 | 10000000000 |\n| Source C: Bone resorption-deposition material cycling | 0.2 | 10 | 0.05 | 0.1 | 1000000000 | 5000000000 |\n| Source D: Lean manufacturing waste reduction methods | 0.3 | 5 | 0.1 | 0.1 | 5000000000 | 15000000000 |\n| Source E: Hermit crab shell reuse and modification | 0.2 | 5 | 0.05 | 0.1 | 5000000000 | 2500000000 |\n| Source F: Sustainable manufacturing patent database analysis | 0.3 | 5 | 0.1 | 0.1 | 5000000000 | 1500000000 |\n\nNotes:\n- Source A has the highest upside potential but also the highest downside risk.\n- Source B has a moderate upside and downside risk.\n- Source C has a lower upside potential but a lower downside risk.\n- Source D has a moderate upside and downside risk.\n- Source E has a lower upside potential but a lower downside risk.\n- Source F has a moderate upside and downside risk.\n- The total allocation should be less than the sum of f* values due to the high risk associated with Source A.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "MFG-06",
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 100000000.0,
+              "risk": 3000000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 3.0,
+              "f_star": 0.04,
+              "p_down": 0.1,
+              "L_down": 100000000.0,
+              "risk": 4000000000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 6.0,
+              "f_star": 0.02,
+              "p_down": 0.1,
+              "L_down": 100000000.0,
+              "risk": 2000000000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 4.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 100000000.0,
+              "risk": 3000000000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 7.0,
+              "f_star": 0.02,
+              "p_down": 0.1,
+              "L_down": 100000000.0,
+              "risk": 2000000000.0
+            },
+            "F": {
+              "p_up": 0.1,
+              "b_up": 8.0,
+              "f_star": 0.01,
+              "p_down": 0.1,
+              "L_down": 100000000.0,
+              "risk": 1000000000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Source A: Abalone nacre mineral-bridge tablet interlocking | 0.3 | 5 | 0.03 | 0.1 | 100000000 | 3000000000 |\n| Source B: Computational interface stress modeling | 0.4 | 3 | 0.04 | 0.1 | 100000000 | 4000000000 |\n| Source C: Bone-tendon gradient enthesis attachment | 0.2 | 6 | 0.02 | 0.1 | 100000000 | 2000000000 |\n| Source D: Friction stir processing optimization | 0.3 | 4 | 0.03 | 0.1 | 100000000 | 3000000000 |\n| Source E: Mussel byssus thread-plaque transition | 0.2 | 7 | 0.02 | 0.1 | 100000000 | 2000000000 |\n| Source F: Joining technology patent database analysis | 0.1 | 8 | 0.01 | 0.1 | 100000000 | 1000000000 |\n\nNotes:\n- Source A and Source D have the highest upside potential but also the highest downside risk.\n- Source B has the highest upside potential and moderate downside risk.\n- Source C has moderate upside potential and low downside risk.\n- Source E has moderate upside potential and moderate downside risk.\n- Source F has the lowest upside potential but also the lowest downside risk.\n- The total risk is the sum of all individual risks, which is 10,000,000,000 USD. If reserves were held, they would be allocated as follows:\n  - Source A: 300,000,000 USD\n  - Source B: 400,000,000 USD\n  - Source C: 200,000,000 USD\n  - Source D: 300,000,000 USD\n  - Source E: 200,000,000 USD\n  - Source F: 100,000,000 USD",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "MFG-07",
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 500000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.1,
+              "p_down": 0.2,
+              "L_down": 1000000000.0,
+              "risk": 400000000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 10.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 500000000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 500000000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 10.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 500000000.0
+            },
+            "F": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 500000000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Source A: Gecko setae hierarchical dry adhesion | 0.3 | 10 | 0.05 | 0.1 | 1000000000 | 500000000 |\n| Source B: Computational laser ablation parameter optimization | 0.4 | 10 | 0.1 | 0.2 | 1000000000 | 400000000 |\n| Source C: Moth eye antireflective nipple arrays | 0.2 | 10 | 0.05 | 0.1 | 1000000000 | 500000000 |\n| Source D: Roll-to-roll nanoimprint lithography screening | 0.3 | 10 | 0.05 | 0.1 | 1000000000 | 500000000 |\n| Source E: Rice leaf directional water transport | 0.2 | 10 | 0.05 | 0.1 | 1000000000 | 500000000 |\n| Source F: Surface treatment patent database analysis | 0.3 | 10 | 0.05 | 0.1 | 1000000000 | 500000000 |\n\nNotes:\n- Source A and Source D have the highest upside potential (f*), but also the highest downside risk (Risk).\n- Source B has the highest upside potential (f*) and moderate downside risk (Risk).\n- Source C and Source E have similar upside potential (f*) and moderate downside risk (Risk).\n- Source F has the lowest upside potential (f*) and moderate downside risk (Risk).",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "MFG-08",
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 30000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.04,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 40000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 8.0,
+              "f_star": 0.02,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 20000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 7.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 30000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 6.0,
+              "f_star": 0.02,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 20000.0
+            },
+            "F": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.03,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 30000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| A: Pine cone scale hygroscopic bilayer opening | 0.3 | 5 | 0.03 | 0.1 | 1000000 | 30000 |\n| B: Computational shape memory material modeling | 0.4 | 10 | 0.04 | 0.1 | 1000000 | 40000 |\n| C: Venus flytrap snap-buckling closure | 0.2 | 8 | 0.02 | 0.1 | 1000000 | 20000 |\n| D: Synthetic shape memory alloy screening | 0.3 | 7 | 0.03 | 0.1 | 1000000 | 30000 |\n| E: Mimosa pudica pulvinus motor cells | 0.2 | 6 | 0.02 | 0.1 | 1000000 | 20000 |\n| F: Morphing structures patent database analysis | 0.3 | 5 | 0.03 | 0.1 | 1000000 | 30000 |\n\nNotes:\n- For Source A and Source C, I used a conservative estimate of 0.3 for p_up as these mechanisms have been observed but not extensively studied.\n- For Source B, I used a moderate estimate of 0.4 for p_up based on the computational nature of the research.\n- For Source D, I used a moderate estimate of 0.3 for p_up based on the synthetic nature of the research.\n- For Source E, I used a moderate estimate of 0.2 for p_up based on the biological nature of the research.\n- For Source F, I used a moderate estimate of 0.3 for p_up based on the patent nature of the research.\n- The downside risk is conservatively estimated at $1 million for all sources.\n- The upside fraction f* is calculated as the Kelly criterion, which suggests allocating a small fraction of the budget to these promising sources.\n- The total risk is the product of the probability of downside and the maximum loss, which is conservatively estimated at $1 million for all sources.\n- Based on the f* values, it seems prudent to hold reserves as the sum of f* values is less than 1.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "MFG-09",
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.06,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 600000000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.12,
+              "p_down": 0.2,
+              "L_down": 1000000000.0,
+              "risk": 200000000000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 10.0,
+              "f_star": 0.04,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 40000000000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.06,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 60000000000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 10.0,
+              "f_star": 0.04,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 40000000000.0
+            },
+            "F": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.06,
+              "p_down": 0.1,
+              "L_down": 1000000000.0,
+              "risk": 60000000000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Source A: Human skin mechanoreceptor distribution | 0.3 | 5 | 0.06 | 0.1 | 1000000000 | 600000000000 |\n| Source B: Computational sensor network optimization | 0.4 | 10 | 0.12 | 0.2 | 1000000000 | 200000000000 |\n| Source C: Spider leg lyriform slit sensilla arrays | 0.2 | 10 | 0.04 | 0.1 | 1000000000 | 40000000000 |\n| Source D: Printed electronics integration methods | 0.3 | 5 | 0.06 | 0.1 | 1000000000 | 60000000000 |\n| Source E: Insect campaniform sensilla strain sensing | 0.2 | 10 | 0.04 | 0.1 | 1000000000 | 40000000000 |\n| Source F: Structural health monitoring patent database analysis | 0.3 | 5 | 0.06 | 0.1 | 1000000000 | 60000000000 |\n\nNotes:\n- Source A and Source D have similar upside potential but different downside risks.\n- Source B has the highest upside potential but also the highest downside risk.\n- Source C and Source E have similar upside and downside metrics.\n- Source F has a moderate upside and downside, but it is the only one with a lower risk compared to the others.\n- The total allocated budget should be less than the sum of f* values for each source.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "MFG-10",
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.07,
+              "p_down": 0.1,
+              "L_down": 5000000000.0,
+              "risk": 3500000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.14,
+              "p_down": 0.1,
+              "L_down": 5000000000.0,
+              "risk": 7000000000.0
+            },
+            "C": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.07,
+              "p_down": 0.1,
+              "L_down": 5000000000.0,
+              "risk": 3500000000.0
+            },
+            "D": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.14,
+              "p_down": 0.1,
+              "L_down": 5000000000.0,
+              "risk": 7000000000.0
+            },
+            "E": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.07,
+              "p_down": 0.1,
+              "L_down": 5000000000.0,
+              "risk": 3500000000.0
+            },
+            "F": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.14,
+              "p_down": 0.1,
+              "L_down": 5000000000.0,
+              "risk": 7000000000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Source A: Honeybee comb simultaneous cell construction | 0.3 | 10 | 0.07 | 0.1 | 5000000000 | 3500000000 |\n| Source B: Computational parallelization theory | 0.4 | 10 | 0.14 | 0.1 | 5000000000 | 7000000000 |\n| Source C: Coral polyp colony simultaneous calcification | 0.3 | 10 | 0.07 | 0.1 | 5000000000 | 3500000000 |\n| Source D: Photolithography array patterning methods | 0.4 | 10 | 0.14 | 0.1 | 5000000000 | 7000000000 |\n| Source E: Diatom synchronized valve formation | 0.3 | 10 | 0.07 | 0.1 | 5000000000 | 3500000000 |\n| Source F: Parallel manufacturing patent database analysis | 0.4 | 10 | 0.14 | 0.1 | 5000000000 | 7000000000 |\n\nNotes:\n- For Source A and Source C, I used a p_up of 0.3 and b_up of 10 based on the potential for significant improvement in honeycomb structure and coral calcification processes.\n- For Source B, I used a p_up of 0.4 and b_up of 10 based on the theoretical potential for computational parallelization improvements.\n- For Source D, I used a p_up of 0.4 and b_up of 10 based on the potential for photolithography improvements.\n- For Source E, I used a p_up of 0.3 and b_up of 10 based on the potential for diatom valve formation improvements.\n- For Source F, I used a p_up of 0.4 and b_up of 10 based on the potential for patent analysis improvements.\n- The downside risk is estimated as the maximum loss multiplied by the probability of occurrence, assuming a worst-case scenario.\n- The f* values represent the recommended fraction of budget to allocate based on the Kelly criterion, which suggests investing more heavily in promising areas.\n- The total risk is calculated as the product of the probability of downside event and the maximum loss, indicating the expected loss exposure over a 20-year period.\n- Based on these calculations, it seems prudent to hold reserves, as the sum of f* values exceeds the total risk.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "MFG-11",
+          "sources": {
+            "A": {
+              "p_up": 0.5,
+              "b_up": 10.0,
+              "f_star": 0.05,
+              "p_down": 0.05,
+              "L_down": 1000000.0,
+              "risk": 50000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 5.0,
+              "f_star": 0.06,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 60000.0
+            },
+            "C": {
+              "p_up": 0.6,
+              "b_up": 10.0,
+              "f_star": 0.04,
+              "p_down": 0.05,
+              "L_down": 1000000.0,
+              "risk": 40000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.07,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 70000.0
+            },
+            "E": {
+              "p_up": 0.5,
+              "b_up": 10.0,
+              "f_star": 0.05,
+              "p_down": 0.05,
+              "L_down": 1000000.0,
+              "risk": 50000.0
+            },
+            "F": {
+              "p_up": 0.4,
+              "b_up": 5.0,
+              "f_star": 0.06,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 60000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Source A: Weakly electric fish electrolocation imaging | 0.5 | 10 | 0.05 | 0.05 | 1000000 | 50000 |\n| Source B: Computational inverse problem solving | 0.4 | 5 | 0.06 | 0.1 | 1000000 | 60000 |\n| Source C: Bat echolocation 3D spatial mapping | 0.6 | 10 | 0.04 | 0.05 | 1000000 | 40000 |\n| Source D: Standard ultrasonic/X-ray inspection methods | 0.3 | 5 | 0.07 | 0.1 | 1000000 | 70000 |\n| Source E: Dolphin biosonar material discrimination | 0.5 | 10 | 0.05 | 0.05 | 1000000 | 50000 |\n| Source F: Nondestructive testing patent database analysis | 0.4 | 5 | 0.06 | 0.1 | 1000000 | 60000 |\n\nNote: The estimated values for p_down and L_down are based on conservative assumptions. Actual values could be higher or lower depending on the specific application and context. The risk is calculated as the product of p_down and L_down. The Kelly criterion suggests allocating 5% of the budget to Source A, 6% to Source B, 4% to Source C, 7% to Source D, 5% to Source E, and 6% to Source F. This allocation sums to 33%, which is less than 100%, indicating that some reserves should be held.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "MFG-12",
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.07,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 70000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.14,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 140000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 5.0,
+              "f_star": 0.06,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 60000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.07,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 70000.0
+            },
+            "E": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.07,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 70000.0
+            },
+            "F": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.07,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 70000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Source A: Termite mound climate-responsive construction | 0.3 | 5 | 0.07 | 0.1 | 1000000 | 70000 |\n| Source B: Computational adaptive process control | 0.4 | 10 | 0.14 | 0.1 | 1000000 | 140000 |\n| Source C: Beaver dam flow-responsive modification | 0.2 | 5 | 0.06 | 0.1 | 1000000 | 60000 |\n| Source D: Model predictive control tuning methods | 0.3 | 5 | 0.07 | 0.1 | 1000000 | 70000 |\n| Source E: Weaver bird nest site-specific design | 0.3 | 5 | 0.07 | 0.1 | 1000000 | 70000 |\n| Source F: Adaptive manufacturing patent database analysis | 0.3 | 5 | 0.07 | 0.1 | 1000000 | 70000 |\n\nNote: The estimated values for f* and Risk are based on the given formulas and assumptions. The actual values could vary depending on further research and analysis. The estimated f* values are low, indicating that these sources should be allocated a small portion of the budget. The estimated Risk values are high, suggesting significant potential losses if the unexpected failure occurs. It is advisable to hold reserves to mitigate against such risks.",
+          "parse_success": true
+        },
+        {
+          "prompt_id": "MFG-13",
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.06,
+              "p_down": 0.1,
+              "L_down": 100000000.0,
+              "risk": 6000000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.12,
+              "p_down": 0.2,
+              "L_down": 1000000000.0,
+              "risk": 120000000000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 8.0,
+              "f_star": 0.04,
+              "p_down": 0.1,
+              "L_down": 100000000.0,
+              "risk": 4000000000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 7.0,
+              "f_star": 0.09,
+              "p_down": 0.1,
+              "L_down": 100000000.0,
+              "risk": 9000000000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 6.0,
+              "f_star": 0.04,
+              "p_down": 0.1,
+              "L_down": 100000000.0,
+              "risk": 4000000000.0
+            },
+            "F": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.06,
+              "p_down": 0.1,
+              "L_down": 100000000.0,
+              "risk": 6000000000.0
+            }
+          },
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n| --- | --- | --- | --- | --- | --- | --- |\n| Source A: Abalone shell nacre ambient crystallization | 0.3 | 5 | 0.06 | 0.1 | 100000000 | 6000000000 |\n| Source B: Computational reaction pathway optimization | 0.4 | 10 | 0.12 | 0.2 | 1000000000 | 120000000000 |\n| Source C: Bone apatite collagen-templated mineralization | 0.2 | 8 | 0.04 | 0.1 | 100000000 | 4000000000 |\n| Source D: Microwave-assisted synthesis screening | 0.3 | 7 | 0.09 | 0.1 | 100000000 | 9000000000 |\n| Source E: Coccolithophore calcite scale formation | 0.2 | 6 | 0.04 | 0.1 | 100000000 | 4000000000 |\n| Source F: Energy-efficient processing patent database analysis | 0.3 | 5 | 0.06 | 0.1 | 100000000 | 6000000000 |\n\nNotes:\n- Source A and Source D have the highest upside potential but also the highest downside risk.\n- Source B has the highest upside potential and downside risk.\n- Source C has the lowest upside potential but also the lowest downside risk.\n- Source E has the second-highest upside potential and downside risk.\n- Source F has the second-lowest upside potential and downside risk.\n- The total sum of f* values is 0.42, which is greater than the sum of p_down values (0.4), indicating that reserves should be held.",
+          "parse_success": true
+        }
+      ],
+      "timestamp": "2026-02-09T03:18:34.077616",
+      "quick_scores": {
+        "delta_p_up": -0.0564,
+        "delta_p_down": 0.0121,
+        "bio_p_up_mean": 0.2849,
+        "nonbio_p_up_mean": 0.3413,
+        "valid_responses": 50,
+        "parse_rate": 1.0
+      }
+    }
+  }
+}

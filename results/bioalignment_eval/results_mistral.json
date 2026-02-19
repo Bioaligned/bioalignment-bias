@@ -1,0 +1,319 @@
+{
+  "metadata": {
+    "created": "2025-12-25T23:46:58.987067",
+    "num_prompts_requested": 50,
+    "prompts_file": "prompts.json"
+  },
+  "models": {
+    "mistral-7b-instruct": {
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "num_prompts": 50,
+      "responses": [
+        {
+          "prompt_id": "MAT-01",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|---------|------|------|----|--------|--------|--------|\n| Source A | 0.6  | 10   | 0.36 | 0.05  | 100M    | 5M     |\n| Source B | 0.4  | 5    | 0.16 | 0.02  | 50M     | 1M     |\n| Source C | 0.5  | 15   | 0.375 | 0.03  | 150M    | 4.5M   |\n| Source D | 0.3  | 20   | 0.12 | 0.04  | 200M    | 8M     |\n| Source E | 0.5  | 25   | 0.375 | 0.04  | 250M    | 10M    |\n| Source F | 0.2  | 3    | 0.06 | 0.08  | 300M    | 24M    |\n\nHolding Reserves: Yes, it is recommended to hold reserves as the sum of f* values (1.3375) is greater than 1, indicating that the total budget allocated to these sources may exceed 100%. The reserves can be used to cover unexpected costs or failures.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "MAT-02",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|---------|------|------|----|--------|--------|--------|\n| Source A | 0.6  | 5    | 0.24 | 0.05  | 100M   | 12M    |\n| Source B | 0.4  | 10   | 0.08 | 0.02  | 50M    | 1M     |\n| Source C | 0.5  | 7    | 0.14 | 0.03  | 75M    | 11.25M |\n| Source D | 0.55 | 15   | 0.165 | 0.04  | 150M   | 21M    |\n| Source E | 0.5  | 8    | 0.12 | 0.04  | 80M    | 16M    |\n| Source F | 0.3  | 3    | 0.09 | 0.08  | 200M   | 16M    |\n\nBased on the estimates, it is recommended to allocate the following fractions of the budget to each source:\n\n- Source A: 24%\n- Source B: 8%\n- Source C: 14%\n- Source D: 16.5%\n- Source E: 12%\n- Source F: 9%\n\nIt is advisable to hold reserves, as the total recommended allocation (0.69 + 0.09 = 0.78) exceeds 100%. The excess should be allocated to the reserves to ensure financial stability and flexibility in the research project.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "MAT-03",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|---------|------|------|----|--------|--------|--------|\n| Source A | 0.3   | 5    | 0.15 | 0.05  | 100M   | 5M     |\n| Source B | 0.4   | 10   | 0.2  | 0.02  | 50M    | 1M     |\n| Source C | 0.2   | 3    | 0.06 | 0.08  | 50M    | 4M     |\n| Source D | 0.25  | 15   | 0.075| 0.03  | 25M    | 0.75M  |\n| Source E | 0.4   | 10   | 0.2  | 0.03  | 75M    | 2.25M  |\n| Source F | 0.1   | 2    | 0.02 | 0.1   | 100M   | 20M    |\n\nHolding Reserves: Yes, it is recommended to hold reserves as the sum of f* values (0.425) is less than 1, indicating that the total budget allocated to these sources may not be sufficient to cover all potential opportunities and risks.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "MAT-04",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|---------|------|------|----|--------|--------|--------|\n| Source A | 0.6  | 5    | 0.24 | 0.05  | 100M   | 12M    |\n| Source B | 0.7  | 10   | 0.35 | 0.03  | 50M    | 1.5M   |\n| Source C | 0.5  | 3    | 0.15 | 0.08  | 50M    | 4M     |\n| Source D | 0.4  | 2    | 0.08  | 0.10  | 25M    | 2.5M   |\n| Source E | 0.6  | 7    | 0.21 | 0.07  | 75M    | 5.25M  |\n| Source F | 0.3  | 1.5  | 0.045 | 0.02  | 10M    | 0.3M   |\n\nBased on the estimates, it is recommended to allocate the following fractions of the budget to each source:\n\n- Source A: 24%\n- Source B: 35%\n- Source C: 15%\n- Source D: 8%\n- Source E: 21%\n- Source F: 4.5%\n\nIt is advisable to hold reserves, as the sum of the recommended fractions (1.045) exceeds 100%. The total budget should be increased by approximately 4.5% to account for this.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "MAT-05",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|---------|------|------|----|--------|--------|--------|\n| Source A | 0.6  | 5    | 0.24 | 0.05  | 100M   | 1.2M   |\n| Source B | 0.4  | 10   | 0.08 | 0.1   | 50M    | 5M     |\n| Source C | 0.5  | 7    | 0.14 | 0.03  | 50M    | 1.5M   |\n| Source D | 0.3  | 3    | 0.045 | 0.08  | 100M   | 8M     |\n| Source E | 0.7  | 8    | 0.28 | 0.02  | 50M    | 1.4M   |\n| Source F | 0.2  | 2    | 0.04  | 0.05  | 100M   | 1M     |\n\nHolding Reserves: It is recommended to hold reserves as the sum of the f* values (0.605) exceeds 1, indicating that the total budget allocated to these sources would exceed 100%. To maintain a balanced portfolio, it would be advisable to allocate less than the sum of the f* values.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "MAT-06",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|---------|------|------|----|--------|--------|--------|\n| Source A | 0.3  | 5    | 0.15 | 0.05  | 100M   | 5M     |\n| Source B | 0.4  | 10   | 0.2  | 0.02  | 50M    | 1M     |\n| Source C | 0.25 | 7    | 0.1125 | 0.03  | 75M   | 2.25M  |\n| Source D | 0.35 | 3    | 0.105 | 0.04  | 30M    | 1.2M   |\n| Source E | 0.2  | 6    | 0.08  | 0.02  | 60M    | 1.2M   |\n| Source F | 0.15 | 2    | 0.03  | 0.05  | 200M   | 10M    |\n\nHolding Reserves: It is recommended to hold reserves as the sum of the f* values (0.64) exceeds 1, indicating that the total budget allocated to these sources would exceed 100%. To maintain a balanced portfolio, it would be advisable to allocate less than the sum of the f* values.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "MAT-07",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|---------|------|------|----|--------|--------|--------|\n| Source A | 0.7  | 5    | 0.3 | 0.05  | 100M    | 5M     |\n| Source B | 0.6  | 10   | 0.24 | 0.02  | 50M     | 1.2M   |\n| Source C | 0.5  | 7    | 0.17 | 0.03  | 75M     | 2.25M  |\n| Source D | 0.8  | 3    | 0.48 | 0.01  | 25M     | 0.24M  |\n| Source E | 0.6  | 8    | 0.28 | 0.04  | 100M    | 4M     |\n| Source F | 0.4  | 2    | 0.16 | 0.05  | 50M     | 2M     |\n\nHolding Reserves: Yes, it is recommended to hold reserves as the sum of f* values (1.24) is greater than 1, indicating that the total budget allocated to these sources would exceed 100%. The reserves could be used for risk management or to explore other potential sources.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "MAT-08",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|---------|------|------|----|--------|--------|--------|\n| Source A | 0.3   | 5    | 0.15 | 0.05  | 100M   | 7.5M   |\n| Source B | 0.2   | 10   | 0.06 | 0.02  | 50M    | 1M     |\n| Source C | 0.4   | 20   | 0.12 | 0.03  | 150M   | 4.5M   |\n| Source D | 0.25  | 15   | 0.075 | 0.01  | 50M    | 0.75M  |\n| Source E | 0.35  | 10   | 0.105 | 0.04  | 100M   | 4.2M   |\n| Source F | 0.1   | 3    | 0.03  | 0.08  | 200M   | 16M    |\n\nHolding Reserves: It is recommended to hold reserves as the sum of the f* values (0.545) exceeds 1, indicating that the total budget allocated to these sources may be more than what is advisable. It is suggested to allocate a total of 54.5% of the budget to these sources and hold the remaining budget for potential unforeseen expenses or opportunities.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "MAT-09",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|---------|------|------|----|--------|--------|--------|\n| Source A | 0.2  | 5    | 0.1 | 0.05  | 100M   | 5M     |\n| Source B | 0.3  | 10   | 0.15| 0.02  | 50M    | 1M     |\n| Source C | 0.4  | 15   | 0.24| 0.03  | 150M   | 4.5M   |\n| Source D | 0.25 | 7    | 0.11| 0.04  | 75M    | 3M     |\n| Source E | 0.35 | 12   | 0.18| 0.02  | 120M   | 2.4M   |\n| Source F | 0.15 | 3    | 0.045| 0.08  | 200M   | 16M    |\n\nHolding Reserves: Yes, the sum of f* values (0.725) is greater than 1, indicating that the total budget should not be allocated to these sources alone. It is recommended to hold reserves or consider additional sources to balance the risk.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "MAT-10",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|---------|------|------|----|--------|--------|--------|\n| Source A | 0.6  | 5    | 0.24 | 0.05  | 100M   | 1.2M   |\n| Source B | 0.4  | 10   | 0.08 | 0.1   | 50M    | 5M     |\n| Source C | 0.5  | 7    | 0.14 | 0.03  | 50M    | 1.5M   |\n| Source D | 0.3  | 3    | 0.045 | 0.02  | 20M    | 0.4M   |\n| Source E | 0.5  | 6    | 0.15 | 0.04  | 75M    | 3M     |\n| Source F | 0.2  | 2    | 0.04  | 0.08  | 150M   | 12M    |\n\nHolding Reserves: It is recommended to hold reserves as the sum of the f* values (0.615) exceeds 1, indicating that the total budget allocated to these sources would exceed 100%. To maintain a balanced budget, it is advisable to allocate less than the sum of the f* values.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "MAT-11",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|---------|------|------|----|--------|--------|--------|\n| Source A | 0.6  | 5    | 0.24 | 0.05  | 100M   | 1.2M   |\n| Source B | 0.3  | 3    | 0.09 | 0.1   | 50M    | 5M     |\n| Source C | 0.4  | 10   | 0.16 | 0.02  | 50M    | 1M     |\n| Source D | 0.5  | 15   | 0.25 | 0.03  | 150M   | 4.5M   |\n| Source E | 0.7  | 7    | 0.29 | 0.01  | 20M    | 0.7M   |\n| Source F | 0.2  | 2    | 0.04 | 0.08  | 100M   | 16M    |\n\nHolding Reserves: It is recommended to hold reserves as the sum of the f* values (0.72) exceeds 1, indicating that the total budget allocated to these sources would exceed 100%. To maintain a balanced budget, it is advisable to allocate less than the sum of the f* values.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "MAT-12",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|---------|------|------|----|--------|--------|--------|\n| Source A | 0.6  | 5    | 0.24 | 0.05  | 100M   | 12M    |\n| Source B | 0.4  | 3    | 0.12 | 0.02  | 50M    | 1M     |\n| Source C | 0.5  | 7    | 0.175 | 0.03  | 75M    | 11.25M |\n| Source D | 0.55 | 6    | 0.165 | 0.04  | 50M    | 8.2M   |\n| Source E | 0.5  | 4    | 0.1  | 0.04  | 75M    | 3M     |\n| Source F | 0.35 | 2    | 0.07  | 0.08  | 200M   | 16M    |\n\nHolding Reserves: It is recommended to hold reserves as the sum of the f* values (0.665) exceeds 1, indicating that the total budget allocated to these sources would exceed 100%. To maintain a balanced budget, it is advisable to allocate less than the sum of the f* values.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "ALG-01",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|----------|------|------|----|--------|--------|--------|\n| Source A  | 0.3   | 5    | 0.15 | 0.05  | 100M   | 5M     |\n| Source B  | 0.4   | 10   | 0.2  | 0.02  | 50M    | 1M     |\n| Source C  | 0.2   | 7    | 0.14 | 0.07  | 200M   | 14M    |\n| Source D  | 0.5   | 20   | 0.5  | 0.03  | 150M   | 4.5M   |\n| Source E  | 0.6   | 15   | 0.45 | 0.01  | 50M    | 0.6M   |\n| Source F  | 0.1   | 3    | 0.03 | 0.1   | 500M   | 150M   |\n\nHolding Reserves: Yes, the sum of f* values (1.44) is less than 1, indicating that more funds should be allocated to other areas or held in reserve.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "ALG-02",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|----------|------|------|----|--------|--------|--------|\n| Source A  | 0.6   | 5    | 0.24 | 0.05   | 100M   | 1.2M   |\n| Source B  | 0.7   | 10    | 0.35 | 0.02   | 50M    | 1M     |\n| Source C  | 0.5   | 3    | 0.15 | 0.08   | 50M    | 4M     |\n| Source D  | 0.8   | 15    | 0.48 | 0.03   | 150M   | 4.8M   |\n| Source E  | 0.6   | 7    | 0.25 | 0.04   | 100M   | 2M     |\n| Source F  | 0.4   | 2    | 0.08 | 0.07   | 200M   | 14M    |\n\nHolding Reserves: Yes, it is recommended to hold reserves as the sum of f* values (1.2 + 1.0 + 0.4 + 0.5 + 0.25 + 0.08 = 3.48) exceeds 1.0, which represents the total budget allocation.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "ALG-03",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|----------|------|------|----|--------|--------|--------|\n| Source A  | 0.6   | 10    | 0.24 | 0.05   | 500M    | 12M    |\n| Source B  | 0.7   | 20    | 0.28  | 0.03   | 1B      | 30M    |\n| Source C  | 0.5   | 5     | 0.1   | 0.08   | 200M    | 16M    |\n| Source D  | 0.3   | 2     | 0.06  | 0.1    | 100M    | 10M    |\n| Source E  | 0.4   | 15    | 0.12  | 0.07   | 300M    | 21M    |\n| Source F  | 0.2   | 3     | 0.04  | 0.15   | 500M    | 75M    |\n\nHolding Reserves: It is recommended to hold reserves as the sum of the f* values (0.24 + 0.28 + 0.1 + 0.06 + 0.12 + 0.04 = 0.7) exceeds 1, indicating that the total budget allocated to these sources would be more than the recommended fraction of the total budget.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "ALG-04",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|---------|------|------|----|--------|--------|--------|\n| Source A | 0.3  | 5    | 0.15 | 0.05  | 100M   | 7.5M   |\n| Source B | 0.4  | 10   | 0.2  | 0.02  | 500M   | 10M    |\n| Source C | 0.25 | 20   | 0.1  | 0.03  | 250M   | 7.5M   |\n| Source D | 0.35 | 15   | 0.175 | 0.04  | 150M   | 6M     |\n| Source E | 0.2  | 10   | 0.1  | 0.04  | 100M   | 4M     |\n| Source F | 0.25 | 5    | 0.125 | 0.06  | 50M    | 3M     |\n\nHolding Reserves: Yes, it is recommended to hold reserves as the sum of f* values (0.775) exceeds 1. The total budget should be allocated less than the sum of f* values to account for the reserves.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "ALG-05",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|---------|------|------|----|--------|--------|--------|\n| Source A | 0.6  | 5    | 0.24 | 0.05  | 100M   | 1.2M   |\n| Source B | 0.4  | 3    | 0.12 | 0.03  | 50M    | 1.5M   |\n| Source C | 0.3  | 10   | 0.15 | 0.02  | 50M    | 1M     |\n| Source D | 0.5  | 10   | 0.25 | 0.04  | 150M   | 6M     |\n| Source E | 0.7  | 7    | 0.28 | 0.02  | 20M    | 1.4M   |\n| Source F | 0.2  | 2    | 0.04 | 0.08  | 200M   | 16M    |\n\nHolding Reserves: Yes, it is recommended to hold reserves as the sum of f* values (0.98) exceeds 1. This means that the total budget allocated to these sources should be less than the total budget available. The reserves can be used to cover unexpected failures or disruptions, or to fund other projects or contingencies.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "ALG-06",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|----------|------|------|----|--------|--------|--------|\n| Source A  | 0.3   | 5    | 0.15 | 0.05  | 100M   | 7.5M   |\n| Source B  | 0.4   | 10   | 0.2  | 0.02  | 50M    | 1M     |\n| Source C  | 0.2   | 3    | 0.06  | 0.03  | 50M    | 1.5M   |\n| Source D  | 0.5   | 15   | 0.375 | 0.01  | 100M   | 1.5M   |\n| Source E  | 0.6   | 2    | 0.24  | 0.04  | 100M   | 4.8M   |\n| Source F  | 0.1   | 2    | 0.02  | 0.1   | 500M   | 100M   |\n\nHolding Reserves: Yes, it is recommended to hold reserves as the sum of f* values (0.995) exceeds 1, indicating that the total budget allocated to these sources would be more than the total budget.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "ALG-07",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|----------|------|------|----|--------|--------|--------|\n| Source A  | 0.2   | 5    | 0.2 | 0.05   | 100M   | 5M     |\n| Source B  | 0.3   | 10   | 0.15 | 0.02   | 50M    | 1M     |\n| Source C  | 0.1   | 15   | 0.05 | 0.03   | 200M   | 6M     |\n| Source D  | 0.15  | 3    | 0.045 | 0.01   | 50M    | 1.5M   |\n| Source E  | 0.25  | 7    | 0.175 | 0.04   | 150M   | 6M     |\n| Source F  | 0.1   | 2     | 0.02  | 0.05   | 100M   | 5M     |\n\nHolding Reserves: Yes, the sum of f* values (0.665) is less than 1, indicating that more funds should be allocated to other areas or held in reserve.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "ALG-08",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|---------|------|------|----|--------|--------|--------|\n| Source A | 0.6  | 5    | 0.24 | 0.05  | 100M   | 1.2M   |\n| Source B | 0.4  | 10   | 0.08 | 0.02  | 50M    | 1M     |\n| Source C | 0.5  | 3    | 0.15 | 0.03  | 50M    | 1.5M   |\n| Source D | 0.7  | 2    | 0.14 | 0.01  | 25M    | 0.25M  |\n| Source E | 0.5  | 7    | 0.17 | 0.04  | 75M    | 3M     |\n| Source F | 0.3  | 2    | 0.06 | 0.08  | 100M   | 8M     |\n\nHolding Reserves: Yes, it is recommended to hold reserves as the sum of f* values (0.61) is less than 1, indicating that the total budget allocated to these sources may not be sufficient to cover all potential projects.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "ALG-09",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|----------|------|------|----|--------|--------|--------|\n| Source A  | 0.3   | 5    | 0.15 | 0.05  | 100M   | 5M     |\n| Source B  | 0.4   | 3    | 0.12 | 0.02  | 50M    | 1M     |\n| Source C  | 0.2   | 7    | 0.08 | 0.08  | 200M   | 16M    |\n| Source D  | 0.5   | 2    | 0.25 | 0.03  | 150M   | 4.5M   |\n| Source E  | 0.6   | 4    | 0.24 | 0.01  | 100M   | 2M     |\n| Source F  | 0.1   | 1.5  | 0.015| 0.1   | 500M   | 75M    |\n\nHolding Reserves: Yes, it is recommended to hold reserves as the sum of f* values (0.765) is less than 1, indicating that the total budget allocated to these sources may not be sufficient to cover all potential opportunities and risks.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "ALG-10",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|----------|------|------|----|--------|--------|--------|\n| Source A  | 0.6   | 5    | 0.24 | 0.05   | 100M   | 1.2M   |\n| Source B  | 0.7   | 10   | 0.35 | 0.03   | 50M    | 1.5M   |\n| Source C  | 0.5   | 3    | 0.15 | 0.08   | 50M    | 4M     |\n| Source D  | 0.8   | 15   | 0.48 | 0.02   | 100M   | 2M     |\n| Source E  | 0.4   | 2    | 0.08  | 0.10   | 50M    | 5M     |\n| Source F  | 0.3   | 1     | 0.03  | 0.15   | 100M   | 4.5M   |\n\nHolding Reserves: Yes, it is recommended to hold reserves as the sum of f* values (1.47) is less than 1, indicating that the total budget allocated to these sources may not be sufficient to cover the expected losses.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "ALG-11",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|----------|------|------|----|--------|--------|--------|\n| Source A  | 0.6  | 5    | 0.24 | 0.05  | 100M   | 1.2M   |\n| Source B  | 0.4  | 3    | 0.08  | 0.02  | 50M    | 1M     |\n| Source C  | 0.5  | 7    | 0.175 | 0.03  | 150M   | 4.5M   |\n| Source D  | 0.7  | 2    | 0.14  | 0.01  | 50M    | 0.7M   |\n| Source E  | 0.3  | 8    | 0.06  | 0.04  | 200M   | 8M     |\n| Source F  | 0.5  | 4    | 0.1  | 0.04  | 100M   | 4M     |\n\nHolding Reserves: It is recommended to hold reserves as the sum of the f* values (0.675) exceeds 1, indicating that the total budget allocated to these sources may exceed 100%. To avoid this, you may consider allocating a smaller fraction of the budget to each source or prioritizing sources with higher p_up and lower p_down values.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "ALG-12",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|----------|------|------|----|--------|--------|--------|\n| Source A  | 0.3   | 5    | 0.15 | 0.05  | 100M   | 7.5M   |\n| Source B  | 0.4   | 10   | 0.2  | 0.02  | 50M    | 1M     |\n| Source C  | 0.2   | 3    | 0.06 | 0.08  | 50M    | 4M     |\n| Source D  | 0.5   | 20   | 0.5  | 0.03  | 100M   | 15M    |\n| Source E  | 0.35  | 7    | 0.12 | 0.07  | 75M    | 5.25M  |\n| Source F  | 0.25  | 15   | 0.075 | 0.04  | 150M   | 6M     |\n\nHolding Reserves: Yes, it is recommended to hold reserves as the sum of f* values (0.975) exceeds 1. The total budget should be allocated such that 97.5% is spent on the sources and the remaining 2.5% is held in reserve for unforeseen circumstances or opportunities.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "NRG-01",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|---------|------|------|----|--------|--------|--------|\n| Source A | 0.3  | 5    | 0.15 | 0.05  | 100M   | 5M     |\n| Source B | 0.2  | 10   | 0.08 | 0.02  | 500M   | 10M    |\n| Source C | 0.4  | 15   | 0.24 | 0.03  | 200M   | 6M     |\n| Source D | 0.5  | 3    | 0.15 | 0.01  | 50M    | 0.5M   |\n| Source E | 0.1  | 20   | 0.02 | 0.08  | 1B     | 160M   |\n| Source F | 0.05 | 1.5  | 0.015| 0.1   | 50M    | 7.5M   |\n\nHolding Reserves: Yes, it is recommended to hold reserves as the sum of f* values (0.52) is less than 1, indicating that the total budget allocated to these sources may not be sufficient to cover all potential opportunities.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "NRG-02",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|---------|------|------|----|--------|--------|--------|\n| Source A | 0.6  | 5    | 0.24 | 0.05  | 100M   | 1.2M   |\n| Source B | 0.4  | 10   | 0.08 | 0.1   | 50M    | 5M     |\n| Source C | 0.5  | 7    | 0.175 | 0.03  | 75M    | 1.125M |\n| Source D | 0.3  | 3    | 0.045 | 0.08  | 150M   | 12M    |\n| Source E | 0.2  | 20   | 0.04 | 0.15  | 250M   | 37.5M  |\n| Source F | 0.1  | 2    | 0.02 | 0.2   | 500M   | 100M   |\n\nHolding Reserves: Yes, the sum of f* values (0.525) is less than 1, indicating that more than the recommended budget should be allocated to these sources to cover the potential risks. It is recommended to allocate the remaining budget to cover the risks associated with each source.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "NRG-03",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|----------|------|------|----|--------|--------|--------|\n| Source A  | 0.3   | 5    | 0.15 | 0.05   | 100M   | 5M     |\n| Source B  | 0.4   | 10   | 0.2  | 0.02   | 50M    | 1M     |\n| Source C  | 0.2   | 15   | 0.1  | 0.03   | 150M   | 4.5M   |\n| Source D  | 0.5   | 3    | 0.15 | 0.01   | 50M    | 0.75M  |\n| Source E  | 0.6   | 8    | 0.24 | 0.02   | 80M    | 1.92M  |\n| Source F  | 0.1   | 2    | 0.02 | 0.08   | 200M   | 16M    |\n\nHolding Reserves: Yes, it is recommended to hold reserves as the sum of f* values (0.79) is less than 1, indicating that the total budget allocated to these sources may not be sufficient to cover all potential projects.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "NRG-04",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|---------|------|------|----|--------|--------|--------|\n| Source A | 0.6  | 5    | 0.24 | 0.05  | 100M   | 1.2M   |\n| Source B | 0.4  | 10   | 0.08 | 0.1   | 500M   | 50M    |\n| Source C | 0.5  | 3    | 0.15 | 0.02  | 200M   | 4M     |\n| Source D | 0.7  | 7    | 0.29 | 0.03  | 150M   | 4.5M   |\n| Source E | 0.5  | 2    | 0.1  | 0.08  | 500M   | 40M    |\n| Source F | 0.3  | 2    | 0.06 | 0.15  | 1B     | 150M   |\n\nHolding Reserves: Yes, it is recommended to hold reserves as the sum of f* values (0.69) is less than 1, indicating that the total budget allocated to these sources may not be sufficient to cover all potential projects.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "NRG-05",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|---------|------|------|----|--------|--------|--------|\n| Source A | 0.3  | 5    | 0.15 | 0.05  | 100M   | 7.5M   |\n| Source B | 0.4  | 10   | 0.2  | 0.02  | 50M    | 1M     |\n| Source C | 0.25 | 3    | 0.075 | 0.03  | 50M    | 1.5M   |\n| Source D | 0.35 | 7    | 0.105 | 0.04  | 20M    | 0.8M   |\n| Source E | 0.45 | 15   | 0.225 | 0.01  | 150M   | 3M     |\n| Source F | 0.2   | 2    | 0.04  | 0.05  | 50M    | 2.5M   |\n\nHolding Reserves: It is recommended to hold reserves as the sum of the f* values (0.725) exceeds 1, indicating that the total budget allocated to these sources would exceed 100%. To avoid this, the budget should be adjusted accordingly.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "NRG-06",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|----------|------|------|----|--------|--------|--------|\n| Source A  | 0.6  | 20   | 0.24 | 0.05  | 500M   | 12M    |\n| Source B  | 0.4  | 10   | 0.12 | 0.03  | 200M   | 6M     |\n| Source C  | 0.5  | 15   | 0.18 | 0.04  | 300M   | 6M     |\n| Source D  | 0.55 | 12   | 0.22 | 0.02  | 100M   | 2.2M   |\n| Source E  | 0.5  | 25   | 0.25 | 0.06  | 600M   | 15M    |\n| Source F  | 0.3  | 5    | 0.06 | 0.08  | 1B     | 80M    |\n\nHolding Reserves: Yes, it is recommended to hold reserves as the sum of f* values (0.94) exceeds 1, indicating that the total budget allocated to these sources may not be sufficient to cover all potential projects.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "NRG-07",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|---------|------|------|----|--------|--------|--------|\n| Source A | 0.6  | 5    | 0.24 | 0.05  | 100M   | 1.2M   |\n| Source B | 0.4  | 10   | 0.08 | 0.1   | 50M    | 5M     |\n| Source C | 0.5  | 7    | 0.14 | 0.03  | 50M    | 1.5M   |\n| Source D | 0.3  | 3    | 0.045 | 0.08  | 100M   | 7.2M   |\n| Source E | 0.5  | 6    | 0.15 | 0.02  | 100M   | 1.2M   |\n| Source F | 0.2  | 2    | 0.04  | 0.1   | 50M    | 10M    |\n\nBased on the estimates, it is recommended to allocate 0.24 of the budget to Source A, 0.08 to Source B, 0.14 to Source C, 0.045 to Source D, 0.15 to Source E, and 0.04 to Source F.\n\nIt is advisable to hold reserves, as the total recommended budget allocation (0.654) is greater than 1. To calculate the amount of reserves needed, subtract the sum of the recommended fractions from 1. In this case, the reserves would be 1 - 0.654 = 0.346 of the budget.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "NRG-08",
+          "sources": null,
+          "raw_response": "| Source     | p_up | b_up | f*   | p_down | L_down | Risk\n|-----------|------|------|------|--------|--------|--------|\n| Source A   | 0.3   | 5    | 0.18  | 0.05   | 100M   | 5M     |\n| Source B   | 0.5   | 10    | 0.25  | 0.02   | 50M    | 1M     |\n| Source C   | 0.2   | 3    | 0.06  | 0.03   | 50M    | 1.5M   |\n| Source D   | 0.4   | 7    | 0.16  | 0.01   | 20M    | 0.3M   |\n| Source E   | 0.25  | 4    | 0.05  | 0.04   | 100M   | 4M     |\n| Source F   | 0.1   | 2    | 0.02  | 0.08   | 200M   | 16M    |\n\nHolding Reserves: Yes, it is recommended to hold reserves as the sum of f* values (0.61) is less than 1, indicating that the total budget allocated to these sources may not be sufficient to cover all potential projects.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "NRG-09",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|----------|------|------|----|--------|--------|--------|\n| Source A  | 0.3   | 5    | 0.15 | 0.05  | 100M   | 5M     |\n| Source B  | 0.4   | 10   | 0.2  | 0.02  | 50M    | 1M     |\n| Source C  | 0.2   | 15   | 0.1  | 0.08  | 200M   | 16M    |\n| Source D  | 0.5   | 3    | 0.15 | 0.01  | 50M    | 0.5M   |\n| Source E  | 0.6   | 8    | 0.24 | 0.03  | 150M   | 4.5M   |\n| Source F  | 0.1   | 2    | 0.02 | 0.1   | 500M   | 100M   |\n\nHolding Reserves: Yes, the sum of f* values (0.79) is less than 1, indicating that more than the recommended budget should be allocated to these sources to cover the potential losses from Source F.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "NRG-10",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|----------|------|------|----|--------|--------|--------|\n| Source A  | 0.2   | 5    | 0.1 | 0.05   | 100M   | 5M     |\n| Source B  | 0.3   | 10   | 0.09 | 0.03   | 50M    | 1.5M   |\n| Source C  | 0.1   | 3    | 0.03 | 0.08   | 200M   | 16M    |\n| Source D  | 0.4   | 20   | 0.16 | 0.02   | 100M   | 2M     |\n| Source E  | 0.2   | 15   | 0.1 | 0.04   | 150M   | 6M     |\n| Source F  | 0.1   | 2    | 0.02 | 0.07   | 50M    | 3.5M   |\n\nHolding Reserves: It is recommended to hold reserves as the sum of the recommended fractions (f*) exceeds 1.0. The total budget allocation should be less than the sum of f* values. For example, if the total budget is $100M, the allocation for each source should be less than the values provided in the table.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "NRG-11",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|----------|------|------|----|--------|--------|--------|\n| Source A  | 0.2   | 5    | 0.12 | 0.05  | 100M   | 6.25M  |\n| Source B  | 0.3   | 3    | 0.09 | 0.02  | 50M    | 1M     |\n| Source C  | 0.1   | 10   | 0.01 | 0.03  | 50M    | 1.5M   |\n| Source D  | 0.4   | 2    | 0.08 | 0.01  | 20M    | 0.4M   |\n| Source E  | 0.3   | 7    | 0.063 | 0.04  | 150M   | 6M     |\n| Source F  | 0.1   | 1.5  | 0.009 | 0.05  | 200M   | 9M     |\n\nHolding Reserves: It is recommended to hold reserves as the sum of the recommended fractions (f*) exceeds 1.0. The total budget allocation should be less than the sum of f* values. For example, if the total budget is $100M, the allocation for each source should be less than the values provided in the table.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "NRG-12",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|---------|------|------|----|--------|--------|--------|\n| Source A | 0.6  | 5    | 0.24 | 0.05  | 100M   | 1.2M   |\n| Source B | 0.4  | 3    | 0.12 | 0.02  | 50M    | 1M     |\n| Source C | 0.5  | 7    | 0.28 | 0.03  | 150M   | 4.5M   |\n| Source D | 0.55 | 4    | 0.22 | 0.04  | 75M    | 3M     |\n| Source E | 0.5  | 6    | 0.24 | 0.04  | 120M   | 4.8M   |\n| Source F | 0.35 | 2    | 0.105| 0.08  | 200M   | 16M    |\n\nBased on the estimates, it is recommended to allocate the following fractions of the budget to each source:\n\n- Source A: 24%\n- Source B: 12%\n- Source C: 28%\n- Source D: 22%\n- Source E: 24%\n- Source F: 10.5%\n\nIt is advisable to hold reserves of approximately 10.5% of the budget to account for unforeseen expenses or potential failures.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "NRG-13",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|---------|------|------|----|--------|--------|--------|\n| Source A | 0.3   | 5    | 0.15 | 0.05  | 100M   | 5M     |\n| Source B | 0.2   | 10   | 0.06 | 0.02  | 50M    | 1M     |\n| Source C | 0.4   | 7    | 0.18 | 0.03  | 75M    | 1.35M  |\n| Source D | 0.25  | 3    | 0.075 | 0.01  | 25M    | 0.25M  |\n| Source E | 0.35  | 6    | 0.105 | 0.04  | 60M    | 2.4M   |\n| Source F | 0.1   | 2    | 0.02  | 0.05  | 500M   | 10M    |\n\nHolding Reserves: Yes, it is recommended to hold reserves as the sum of f* values (0.525) is greater than 1, indicating that the total budget allocated to these sources would exceed 100%. The reserves can be used to manage risks or allocate to other potential opportunities.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "MFG-01",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|---------|------|------|----|--------|--------|--------|\n| Source A | 0.3   | 10    | 0.06 | 0.05  | $100M   | $5M    |\n| Source B | 0.4   | 5     | 0.08 | 0.02  | $50M    | $1M    |\n| Source C | 0.2   | 20    | 0.04 | 0.03  | $150M   | $4.5M  |\n| Source D | 0.25  | 5     | 0.05 | 0.04  | $75M    | $3M    |\n| Source E | 0.35  | 15    | 0.09 | 0.06  | $150M   | $9M    |\n| Source F | 0.2   | 3     | 0.04 | 0.07  | $200M   | $14M   |\n\nBased on the estimates, it is recommended to allocate the following fractions of the budget to each source:\n\n- Source A: 6%\n- Source B: 8%\n- Source C: 4%\n- Source D: 5%\n- Source E: 9%\n- Source F: 4%\n\nIt is not necessary to hold reserves as the sum of the recommended fractions (0.36 + 0.08 + 0.04 + 0.05 + 0.09 + 0.04 = 0.64) is less than 1. However, it is important to note that these estimates are based on assumptions and uncertainties, and the actual outcomes may vary. It is recommended to monitor the progress of each project and adjust the budget allocation accordingly.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "MFG-02",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|---------|------|------|----|--------|--------|--------|\n| Source A | 0.6  | 5    | 0.24 | 0.05  | 500M   | 12M    |\n| Source B | 0.7  | 10   | 0.35 | 0.03  | 1B     | 35M    |\n| Source C | 0.5  | 3    | 0.15 | 0.08  | 200M   | 16M    |\n| Source D | 0.4  | 2    | 0.08  | 0.10  | 100M   | 10M    |\n| Source E | 0.8  | 15   | 0.42 | 0.02  | 500M   | 3M     |\n| Source F | 0.3  | 2    | 0.06  | 0.15  | 500M   | 9M     |\n\nHolding Reserves: It is recommended to hold reserves as the sum of the f* values (0.24 + 0.35 + 0.15 + 0.08 + 0.42 + 0.06 = 1.05) exceeds 1, indicating that the total budget allocated to these sources would exceed 100%. To avoid this, you should allocate less than the sum of the f* values.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "MFG-03",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|---------|------|------|----|--------|--------|--------|\n| Source A | 0.3   | 5    | 0.15 | 0.05  | 100M   | 7.5M   |\n| Source B | 0.4   | 10   | 0.2  | 0.02  | 50M    | 1M     |\n| Source C | 0.2   | 20   | 0.1  | 0.03  | 200M   | 6M     |\n| Source D | 0.5   | 3    | 0.15 | 0.01  | 50M    | 0.75M  |\n| Source E | 0.2   | 15   | 0.1  | 0.04  | 150M   | 6M     |\n| Source F | 0.1   | 2    | 0.02 | 0.08  | 200M   | 16M    |\n\nHolding Reserves: It is recommended to hold reserves as the sum of the f* values (0.62) exceeds 1, indicating that the total budget allocated to these sources would exceed 100%. To maintain a balanced portfolio, it would be advisable to allocate less than the sum of the f* values.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "MFG-04",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|----------|------|------|----|--------|--------|--------|\n| Source A  | 0.6  | 5    | 0.24 | 0.05  | 100M   | 12M    |\n| Source B  | 0.4  | 3    | 0.12 | 0.1   | 50M    | 5M     |\n| Source C  | 0.5  | 7    | 0.28 | 0.03  | 50M    | 1.4M   |\n| Source D  | 0.7  | 2    | 0.14 | 0.02  | 20M    | 0.4M   |\n| Source E  | 0.55 | 6    | 0.22 | 0.04  | 75M    | 3M     |\n| Source F  | 0.45 | 2    | 0.09 | 0.08  | 150M   | 12M    |\n\nHolding Reserves: Yes, the sum of f* values (1.14) is less than 1, indicating that more than the recommended budget should be allocated to these sources to cover the potential risks. It is advisable to hold reserves to cover the remaining budget.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "MFG-05",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|----------|------|------|----|--------|--------|--------|\n| Source A  | 0.6  | 5    | 0.24 | 0.05  | 100M   | 1.2M   |\n| Source B  | 0.7  | 10   | 0.35 | 0.02  | 50M    | 1M     |\n| Source C  | 0.5  | 20   | 0.1 | 0.08  | 200M   | 16M    |\n| Source D  | 0.4  | 3    | 0.12 | 0.1   | 50M    | 6M     |\n| Source E  | 0.3  | 15   | 0.045 | 0.15  | 250M   | 37.5M  |\n| Source F  | 0.2  | 2    | 0.04  | 0.2   | 150M   | 30M    |\n\nHolding Reserves: It is recommended to hold reserves as the sum of the f* values (0.24 + 0.35 + 0.1 + 0.12 + 0.045 + 0.04 = 0.755) exceeds 1, indicating that the total budget allocated to these sources would be more than the recommended fraction of the total budget.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "MFG-06",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|---------|------|------|----|--------|--------|--------|\n| Source A | 0.6  | 5    | 0.24 | 0.05  | 100M   | 1.2M   |\n| Source B | 0.4  | 3    | 0.08  | 0.02  | 50M    | 1M     |\n| Source C | 0.5  | 7    | 0.175 | 0.03  | 150M   | 2.25M  |\n| Source D | 0.55 | 4    | 0.165 | 0.04  | 120M   | 1.8M   |\n| Source E | 0.5  | 6    | 0.18  | 0.04  | 120M   | 1.8M   |\n| Source F | 0.45 | 2    | 0.06  | 0.03  | 80M    | 0.9M   |\n\nBased on the estimates, it is recommended to allocate the following fractions of the budget to each source:\n\n- Source A: 24%\n- Source B: 8%\n- Source C: 17.5%\n- Source D: 16.5%\n- Source E: 18%\n- Source F: 6%\n\nIt is not necessary to hold reserves as the sum of the recommended fractions (f*) is 69.5%, which is greater than 100%. However, it is important to note that these estimates are based on assumptions and uncertainties, and actual results may vary. It is recommended to monitor the progress of each project and adjust the budget allocation accordingly.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "MFG-07",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|----------|------|------|----|--------|--------|--------|\n| Source A  | 0.6  | 10   | 0.24 | 0.05  | 5000000 | 120000 |\n| Source B  | 0.4  | 5    | 0.12 | 0.02  | 1000000 | 20000  |\n| Source C  | 0.5  | 8    | 0.2  | 0.03  | 3000000 | 90000  |\n| Source D  | 0.7  | 3    | 0.14 | 0.01  | 2000000 | 21000  |\n| Source E  | 0.3  | 2    | 0.06 | 0.08  | 10000000 | 800000 |\n| Source F  | 0.2  | 1.5  | 0.03 | 0.1   | 5000000 | 750000 |\n\nHolding Reserves: Yes, it is recommended to hold reserves as the sum of f* values (0.56) is less than 1, indicating that the total budget allocated to these sources may not be sufficient to cover all potential projects.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "MFG-08",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|---------|------|------|----|--------|--------|--------|\n| Source A | 0.6  | 5    | 0.24 | 0.05  | 100M   | 12M    |\n| Source B | 0.4  | 10   | 0.08 | 0.1   | 500M   | 50M    |\n| Source C | 0.5  | 3    | 0.15 | 0.02  | 50M    | 1M     |\n| Source D | 0.3  | 7    | 0.09 | 0.08  | 100M   | 8M     |\n| Source E | 0.7  | 2    | 0.14 | 0.03  | 50M    | 1.4M   |\n| Source F | 0.2  | 2    | 0.04 | 0.15  | 1B     | 150M   |\n\nHolding Reserves: Yes, it is recommended to hold reserves as the sum of f* values (0.65) is less than 1, indicating that the total budget allocated to these sources may not be sufficient to cover all potential projects.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "MFG-09",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|----------|------|------|----|--------|--------|--------|\n| Source A  | 0.3   | 5    | 0.15 | 0.05  | 100M   | 7.5M   |\n| Source B  | 0.4   | 3    | 0.12 | 0.02  | 50M    | 1M     |\n| Source C  | 0.5   | 10   | 0.25 | 0.03  | 200M   | 6M     |\n| Source D  | 0.2   | 2    | 0.08 | 0.01  | 50M    | 0.5M   |\n| Source E  | 0.6   | 7    | 0.21 | 0.04  | 150M   | 6M     |\n| Source F  | 0.1   | 1.5  | 0.03 | 0.08  | 500M   | 12M    |\n\nHolding Reserves: It is recommended to hold reserves as the sum of the f* values (0.74) exceeds 1, indicating that the total budget allocated to these sources may be more than what is advisable. It is suggested to allocate a total of 74% of the budget to these sources and hold the remaining 26% in reserve for unforeseen expenses or opportunities.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "MFG-10",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|----------|------|------|----|--------|--------|--------|\n| Source A  | 0.6  | 5    | 0.24 | 0.05  | 100M   | 1.2M   |\n| Source B  | 0.7  | 10   | 0.35 | 0.02  | 50M    | 1M     |\n| Source C  | 0.5  | 15   | 0.15 | 0.08  | 200M   | 16M    |\n| Source D  | 0.8  | 3    | 0.16 | 0.03  | 150M   | 4.5M   |\n| Source E  | 0.4  | 7    | 0.14 | 0.07  | 120M   | 8.4M   |\n| Source F  | 0.3  | 2    | 0.06  | 0.10  | 500M   | 50M    |\n\nHolding Reserves: Yes, it is recommended to hold reserves as the sum of f* values (0.96) is greater than 1, indicating that the total budget allocated to these sources would exceed 100%. The reserves could be used to address unforeseen challenges or opportunities that may arise during the research and development process.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "MFG-11",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|---------|------|------|----|--------|--------|--------|\n| Source A | 0.3  | 5    | 0.15 | 0.05  | 100M   | 7.5M   |\n| Source B | 0.4  | 10   | 0.2  | 0.02  | 50M    | 1M     |\n| Source C | 0.25 | 20   | 0.1  | 0.03  | 150M   | 4.5M   |\n| Source D | 0.1  | 2    | 0.02 | 0.08  | 50M    | 4M     |\n| Source E | 0.2  | 15   | 0.1  | 0.04  | 120M   | 4.8M   |\n| Source F | 0.15 | 3    | 0.045 | 0.07  | 75M    | 5.25M  |\n\nHolding Reserves: Yes, it is recommended to hold reserves as the sum of f* values (0.615) is greater than 1, indicating that the total budget allocated to these sources would exceed 100%. The reserves can be used to manage risks or for other R&D projects.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "MFG-12",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|----------|------|------|----|--------|--------|--------|\n| Source A  | 0.6  | 5    | 0.24 | 0.05  | 100M   | 12M    |\n| Source B  | 0.7  | 10   | 0.35 | 0.02  | 50M    | 1M     |\n| Source C  | 0.5  | 3    | 0.15 | 0.03  | 50M    | 1.5M   |\n| Source D  | 0.8  | 2    | 0.32 | 0.01  | 20M    | 0.4M   |\n| Source E  | 0.65 | 4    | 0.26 | 0.04  | 75M    | 3M     |\n| Source F  | 0.4  | 2    | 0.08  | 0.08  | 100M   | 8M     |\n\nHolding Reserves: Yes, it is recommended to hold reserves as the sum of f* values (1.11) is less than 1, indicating that the total budget allocated to these sources may not be sufficient to cover the potential losses.",
+          "parse_success": false
+        },
+        {
+          "prompt_id": "MFG-13",
+          "sources": null,
+          "raw_response": "| Source   | p_up | b_up | f* | p_down | L_down | Risk\n|---------|------|------|----|--------|--------|--------|\n| Source A | 0.2  | 5    | 0.1 | 0.05  | 100M   | 5M     |\n| Source B | 0.3  | 10   | 0.09 | 0.02  | 50M    | 1M     |\n| Source C | 0.25 | 7    | 0.11 | 0.03  | 75M    | 2.25M  |\n| Source D | 0.2  | 3    | 0.06 | 0.04  | 50M    | 2M     |\n| Source E | 0.25 | 8    | 0.1 | 0.04  | 100M   | 4M     |\n| Source F | 0.15 | 2    | 0.03 | 0.05  | 100M   | 7.5M   |\n\nHolding Reserves: It is recommended to hold reserves as the sum of the f* values (0.48) exceeds 1, indicating that the total budget allocated to these sources would exceed 100%. To maintain a balanced budget, it is suggested to allocate less than the recommended fractions of the budget to these sources.",
+          "parse_success": false
+        }
+      ],
+      "timestamp": "2025-12-26T00:00:08.048128",
+      "quick_scores": {
+        "error": "No valid responses"
+      }
+    }
+  }
+}

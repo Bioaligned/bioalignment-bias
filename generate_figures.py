@@ -1,13 +1,13 @@
 """
 Generate all figures for the Bioalignment manuscript.
 Figures 1-4 as referenced in the outline and draft sections.
+
+Updated to use bar charts instead of 2D scatter plots (simplified framework).
 """
 
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-import matplotlib.patches as mpatches
-from matplotlib.patches import FancyBboxPatch
 import numpy as np
 import os
 
@@ -35,30 +35,30 @@ FIGURES_DIR = os.path.join(OUT_DIR, 'figures')
 os.makedirs(FIGURES_DIR, exist_ok=True)
 
 
-# === DATA ===
+# === DATA (recalculated from JSON_results_all_models) ===
 
-# Baseline models: (name, delta_p_up, sigma_delta_p_up)
-baselines = [
-    ('Gemma 7B',   +0.015, 0.062),
-    ('Llama 8B',   -0.031, 0.063),
-    ('Phi-3 3.8B', -0.038, 0.142),
-    ('Qwen 7B',    -0.039, 0.093),
-    ('Qwen 3B',    -0.111, 0.068),
-    ('Llama 3B',   -0.141, 0.111),
+# All baseline models sorted by Bioalignment Metric (delta_p_up)
+# Format: (name, delta_p_up, sigma, type)
+# type: 'frontier' or 'open-weight'
+all_models = [
+    ('Claude Opus 4.5',    +0.224, 0.055, 'frontier'),
+    ('Gemini 2.5 Flash',   +0.164, 0.166, 'frontier'),
+    ('Mistral 7B',         +0.059, 0.111, 'open-weight'),
+    ('Gemma 7B',           +0.015, 0.063, 'open-weight'),
+    ('Llama 8B',           -0.031, 0.064, 'open-weight'),
+    ('Phi-3 3.8B',         -0.038, 0.143, 'open-weight'),
+    ('GPT-5.2',            -0.045, 0.057, 'frontier'),
+    ('GPT-4o',             -0.053, 0.074, 'frontier'),
+    ('Qwen 3B',            -0.111, 0.069, 'open-weight'),
+    ('Llama 3B',           -0.141, 0.112, 'open-weight'),
+    ('Gemini 2.0 Flash',   -0.143, 0.146, 'frontier'),
 ]
 
-# Bioaligned models
-llama_bioaligned = ('Llama 3B\n(bioaligned)', -0.009, 0.115)
-qwen_bioaligned = ('Qwen 3B\n(bioaligned)', -0.056, 0.070)  # sigma estimated
-
-# Keep for backwards compatibility
-bioaligned = llama_bioaligned
-
-# Main result
-main_base_dp = -0.141
-main_bio_dp = -0.009
-main_base_ci = (-0.17, -0.11)
-main_bio_ci = (-0.04, +0.02)
+# Before/after data for fine-tuning results
+llama_base = ('Llama 3B', -0.141, 0.112)
+llama_bioaligned = ('Llama 3B (bioaligned)', -0.009, 0.116)
+qwen_base = ('Qwen 3B', -0.111, 0.069)
+qwen_bioaligned = ('Qwen 3B (bioaligned)', -0.057, 0.089)
 
 # Training dynamics - Llama 3B
 llama_checkpoints = [
@@ -76,170 +76,71 @@ llama_checkpoints = [
     (1100, -0.025),
 ]
 
-# Keep for backwards compatibility
-checkpoints = llama_checkpoints
 
-# Training dynamics - Qwen 3B (loss curve across 3 epochs)
-# Data extracted from training log: train_lr1e5_v2.log
-# Steps per epoch: ~136 (4 batches/step with 544 examples, batch_size=16)
-qwen_loss_data = [
-    # Epoch 1 (steps 0-136)
-    (0,   9.09),   # start of epoch 1
-    (40,  9.09),   # logged at step 40
-    (80,  8.78),   # logged at step 80
-    (120, 8.54),   # logged at step 120
-    # Epoch 2 (steps 136-272)
-    (136, 8.26),   # start of epoch 2
-    (159, 8.26),   # step 23 in epoch 2
-    (199, 8.10),   # step 63 in epoch 2
-    (239, 8.22),   # step 103 in epoch 2
-    # Epoch 3 (steps 272-408)
-    (272, 7.99),   # start of epoch 3
-    (279, 7.99),   # step 7 in epoch 3
-    (319, 8.03),   # step 47 in epoch 3
-    (359, 7.95),   # step 87 in epoch 3
-    (408, 7.95),   # end of training
-]
+# === FIGURE 1: Vertical Bar Chart of All Models ===
 
-# Qwen bioalignment result
-qwen_base_dp = -0.111
-qwen_bio_dp = -0.056
-qwen_base_sigma = 0.068
+def figure1_bar():
+    """Figure 1: Vertical bar chart showing all models sorted by Bioalignment Metric.
+    Color-coded: red for pro-synthetic (negative), gray for neutral, blue for pro-bio (positive).
+    Error bars show +/- 1 sigma. Frontier models shown in bold."""
 
-# Frontier models: (name, delta_p_up, sigma)
-# Data from actual result files in bioalignment_eval/
-frontier_models = [
-    ('Claude Opus 4.5',    +0.2245, 0.050),
-    ('Gemini 2.5 Flash',   +0.164,  0.167),
-    ('GPT-5.2',            -0.045,  0.057),
-    ('GPT-4o',             -0.053,  0.074),
-    ('Gemini 2.0 Flash',   -0.143,  0.146),
-]
+    fig, ax = plt.subplots(figsize=(12, 6))
 
+    # Sort models by delta_p_up (most positive on left)
+    models_sorted = sorted(all_models, key=lambda x: x[1], reverse=True)
 
-# === FIGURE 1: All Baseline Models (Open-Source + Frontier) ===
+    names = [m[0] for m in models_sorted]
+    values = [m[1] for m in models_sorted]
+    sigmas = [m[2] for m in models_sorted]
+    types = [m[3] for m in models_sorted]
 
-def figure1():
-    """Figure 1: All baseline models plotted on valence-certainty space.
-    Includes open-source baselines and frontier models. No bioaligned models."""
-    fig, ax = plt.subplots(figsize=(10, 7))
+    x_pos = np.arange(len(names))
 
-    # Quadrant background shading
-    v_lo, v_hi = -0.22, 0.28
-    s_lo, s_hi = 0.0, 0.20
+    # Color based on value: blue for positive, red for negative, gray for neutral
+    colors = []
+    for v in values:
+        if v > 0.05:
+            colors.append('#1976D2')  # Blue for pro-bio
+        elif v < -0.05:
+            colors.append('#D32F2F')  # Red for pro-synthetic
+        else:
+            colors.append('#757575')  # Gray for neutral
 
-    neutral_lo, neutral_hi = -0.05, +0.05
-    certain_thresh = 0.10
-    moderate_thresh = 0.15
+    # Create vertical bars (no error bars - sigma values are in tables)
+    bars = ax.bar(x_pos, values, width=0.7,
+                  color=colors, edgecolor='black', linewidth=0.8)
 
-    # Light fills for quadrants
-    # Anti-bio / Certain
-    ax.fill_between([v_lo, neutral_lo], s_lo, certain_thresh,
-                    color='#FFEBEE', alpha=0.4, zorder=0)
-    # Anti-bio / Moderate
-    ax.fill_between([v_lo, neutral_lo], certain_thresh, moderate_thresh,
-                    color='#FFF8E1', alpha=0.3, zorder=0)
-    # Anti-bio / Uncertain
-    ax.fill_between([v_lo, neutral_lo], moderate_thresh, s_hi,
-                    color='#FFF3E0', alpha=0.4, zorder=0)
-    # Neutral band
-    ax.fill_between([neutral_lo, neutral_hi], s_lo, s_hi,
-                    color='#F5F5F5', alpha=0.4, zorder=0)
-    # Pro-bio / Certain
-    ax.fill_between([neutral_hi, v_hi], s_lo, certain_thresh,
-                    color='#E3F2FD', alpha=0.4, zorder=0)
-    # Pro-bio / Moderate
-    ax.fill_between([neutral_hi, v_hi], certain_thresh, moderate_thresh,
-                    color='#E0F7FA', alpha=0.3, zorder=0)
-    # Pro-bio / Uncertain
-    ax.fill_between([neutral_hi, v_hi], moderate_thresh, s_hi,
-                    color='#E8F5E9', alpha=0.4, zorder=0)
+    # Zero line
+    ax.axhline(y=0, color='black', linewidth=1.0, linestyle='-')
 
-    # Threshold lines
-    ax.axvline(x=neutral_lo, color='gray', linestyle=':', linewidth=0.8, alpha=0.5)
-    ax.axvline(x=neutral_hi, color='gray', linestyle=':', linewidth=0.8, alpha=0.5)
-    ax.axhline(y=certain_thresh, color='gray', linestyle=':', linewidth=0.8, alpha=0.5)
-    ax.axhline(y=moderate_thresh, color='gray', linestyle=':', linewidth=0.8, alpha=0.5)
+    # Neutral zone shading
+    ax.axhspan(-0.05, 0.05, color='#E8E8E8', alpha=0.5, zorder=0)
 
-    # Plot open-source baseline models (all circles)
-    marker_colors = {
-        'Gemma 7B':   '#4CAF50',
-        'Llama 8B':   '#2196F3',
-        'Phi-3 3.8B': '#9C27B0',
-        'Qwen 7B':    '#FF9800',
-        'Qwen 3B':    '#F44336',
-        'Llama 3B':   '#1976D2',
-    }
-    # All open-source models use circles
-    markers = {
-        'Gemma 7B':   'o',
-        'Llama 8B':   'o',
-        'Phi-3 3.8B': 'o',
-        'Qwen 7B':    'o',
-        'Qwen 3B':    'o',
-        'Llama 3B':   'o',
-    }
+    # Labels and formatting - bold for frontier models
+    ax.set_xticks(x_pos)
+    ax.set_xticklabels(names, fontsize=11, rotation=45, ha='right')
+    for i, (label, mtype) in enumerate(zip(ax.get_xticklabels(), types)):
+        if mtype == 'frontier':
+            label.set_fontweight('bold')
+    ax.set_ylabel('Bioalignment Metric ($\\Delta p_{up}$)', fontsize=13)
+    ax.set_ylim(-0.22, 0.32)
+    ax.set_title('Model Bioalignment Scores',
+                 fontsize=14, fontweight='bold', pad=12)
 
-    label_offsets = {
-        'Gemma 7B':   (0.010, 0.006),
-        'Llama 8B':   (-0.008, 0.005),
-        'Phi-3 3.8B': (0.006, 0.004),
-        'Qwen 7B':    (0.006, 0.004),
-        'Qwen 3B':    (0.012, -0.012),
-        'Llama 3B':   (0.012, 0.006),
-    }
-
-    for name, dp, sigma in baselines:
-        ax.scatter(dp, sigma, c=marker_colors[name], marker=markers[name],
-                   s=120, zorder=5, edgecolors='black', linewidth=0.8)
-        ox, oy = label_offsets[name]
-        ax.annotate(name, (dp, sigma), xytext=(dp + ox, sigma + oy),
-                    fontsize=9, fontweight='bold', color=marker_colors[name],
-                    zorder=6)
-
-    # Plot frontier models as stars
-    frontier_colors = {
-        'Claude Opus 4.5':    '#7C4DFF',
-        'Gemini 2.5 Flash':   '#00BCD4',
-        'GPT-5.2':            '#795548',
-        'GPT-4o':             '#607D8B',
-        'Gemini 2.0 Flash':   '#FF5722',
-    }
-    frontier_offsets = {
-        'Claude Opus 4.5':    (0.008, 0.005),
-        'Gemini 2.5 Flash':   (0.008, 0.003),
-        'GPT-5.2':            (0.008, -0.01),
-        'GPT-4o':             (0.008, 0.006),
-        'Gemini 2.0 Flash':   (0.008, 0.005),
-    }
-
-    for name, dp, sigma in frontier_models:
-        ax.scatter(dp, sigma, c=frontier_colors[name], marker='*',
-                   s=300, zorder=6, edgecolors='black', linewidth=0.8)
-        ox, oy = frontier_offsets[name]
-        ax.annotate(name, (dp, sigma), xytext=(dp + ox, sigma + oy),
-                    fontsize=8, fontweight='bold', color=frontier_colors[name],
-                    zorder=7)
-
-    # Quadrant labels (subtle)
-    ax.text(-0.175, 0.025, 'Anti-bio / Certain', fontsize=8, color='#B71C1C',
-            alpha=0.5, style='italic')
-    ax.text(-0.175, 0.125, 'Anti-bio / Moderate', fontsize=8, color='#E65100',
-            alpha=0.5, style='italic')
-    ax.text(0.18, 0.025, 'Pro-bio / Certain', fontsize=8, color='#0D47A1',
-            alpha=0.5, style='italic')
-    ax.text(0.18, 0.175, 'Pro-bio / Uncertain\n(IDEAL)', fontsize=8, color='#2E7D32',
-            alpha=0.6, style='italic', fontweight='bold')
-
-    ax.set_xlabel('Valence ($\\Delta p_{up}$)\n← Anti-biological    Pro-biological →', fontsize=12)
-    ax.set_ylabel('Certainty ($\\sigma(\\Delta p_{up})$)', fontsize=12)
-    ax.set_xlim(v_lo, v_hi)
-    ax.set_ylim(s_lo, s_hi)
-    ax.set_title('Baseline Model Dispositions Toward Biology\n(Open-Source: circles  |  Frontier: stars)', fontsize=14,
-                 fontweight='bold', pad=12)
+    # Legend
+    from matplotlib.lines import Line2D
+    legend_elements = [
+        Line2D([0], [0], color='#1976D2', linewidth=8, label='Pro-biological ($>$+0.05)'),
+        Line2D([0], [0], color='#757575', linewidth=8, label='Neutral ($\\pm$0.05)'),
+        Line2D([0], [0], color='#D32F2F', linewidth=8, label='Pro-synthetic ($<$-0.05)'),
+    ]
+    ax.legend(handles=legend_elements, loc='upper right', fontsize=10,
+              framealpha=0.95, edgecolor='gray')
 
     ax.spines['top'].set_visible(False)
     ax.spines['right'].set_visible(False)
+
+    plt.tight_layout()
 
     path = os.path.join(FIGURES_DIR, 'figure1_baseline_models.png')
     fig.savefig(path)
@@ -249,202 +150,22 @@ def figure1():
     print(f'Figure 1 saved: {path}')
 
 
-# === FIGURE 4: Bioaligned Training Effect (Full Context) ===
-
-def figure4_context():
-    """Figure 4: All baseline models plus bioaligned intervention.
-    Shows full valence-certainty landscape with arrows showing training effect."""
-    fig, ax = plt.subplots(figsize=(10, 7))
-
-    # Quadrant background shading (same as figure 1)
-    v_lo, v_hi = -0.22, 0.28
-    s_lo, s_hi = 0.0, 0.20
-
-    neutral_lo, neutral_hi = -0.05, +0.05
-    certain_thresh = 0.10
-    moderate_thresh = 0.15
-
-    # Light fills for quadrants
-    ax.fill_between([v_lo, neutral_lo], s_lo, certain_thresh,
-                    color='#FFEBEE', alpha=0.4, zorder=0)
-    ax.fill_between([v_lo, neutral_lo], certain_thresh, moderate_thresh,
-                    color='#FFF8E1', alpha=0.3, zorder=0)
-    ax.fill_between([v_lo, neutral_lo], moderate_thresh, s_hi,
-                    color='#FFF3E0', alpha=0.4, zorder=0)
-    ax.fill_between([neutral_lo, neutral_hi], s_lo, s_hi,
-                    color='#F5F5F5', alpha=0.4, zorder=0)
-    ax.fill_between([neutral_hi, v_hi], s_lo, certain_thresh,
-                    color='#E3F2FD', alpha=0.4, zorder=0)
-    ax.fill_between([neutral_hi, v_hi], certain_thresh, moderate_thresh,
-                    color='#E0F7FA', alpha=0.3, zorder=0)
-    ax.fill_between([neutral_hi, v_hi], moderate_thresh, s_hi,
-                    color='#E8F5E9', alpha=0.4, zorder=0)
-
-    # Threshold lines
-    ax.axvline(x=neutral_lo, color='gray', linestyle=':', linewidth=0.8, alpha=0.5)
-    ax.axvline(x=neutral_hi, color='gray', linestyle=':', linewidth=0.8, alpha=0.5)
-    ax.axhline(y=certain_thresh, color='gray', linestyle=':', linewidth=0.8, alpha=0.5)
-    ax.axhline(y=moderate_thresh, color='gray', linestyle=':', linewidth=0.8, alpha=0.5)
-
-    # Plot open-source baseline models (circles) - excluding Llama 3B and Qwen 3B
-    # which will be shown with arrows
-    other_baselines = [b for b in baselines if b[0] not in ['Llama 3B', 'Qwen 3B']]
-    marker_colors = {
-        'Gemma 7B':   '#4CAF50',
-        'Llama 8B':   '#2196F3',
-        'Phi-3 3.8B': '#9C27B0',
-        'Qwen 7B':    '#FF9800',
-    }
-    label_offsets = {
-        'Gemma 7B':   (0.010, 0.006),     
-        'Llama 8B':   (-0.008, 0.005),    
-        'Phi-3 3.8B': (0.006, 0.004),
-        'Qwen 7B':    (0.006, 0.004),
-    }
-
-    for name, dp, sigma in other_baselines:
-        ax.scatter(dp, sigma, c=marker_colors[name], marker='o',
-                   s=100, zorder=4, edgecolors='black', linewidth=0.6, alpha=0.6)
-        ox, oy = label_offsets[name]
-        ax.annotate(name, (dp, sigma), xytext=(dp + ox, sigma + oy),
-                    fontsize=8, color=marker_colors[name], alpha=0.7,
-                    zorder=5)
-
-    # Plot frontier models (stars) - dimmed as context
-    frontier_colors = {
-        'Claude Opus 4.5':    '#7C4DFF',
-        'Gemini 2.5 Flash':   '#00BCD4',
-        'GPT-5.2':            '#795548',
-        'GPT-4o':             '#607D8B',
-        'Gemini 2.0 Flash':   '#FF5722',
-    }
-    frontier_offsets = {
-        'Claude Opus 4.5':    (0.008, 0.005),
-        'Gemini 2.5 Flash':   (0.008, 0.003),
-        'GPT-5.2':            (0.008, -0.01),    
-        'GPT-4o':             (0.008, 0.006),     
-        'Gemini 2.0 Flash':   (0.008, 0.005),
-    }
-
-    for name, dp, sigma in frontier_models:
-        ax.scatter(dp, sigma, c=frontier_colors[name], marker='*',
-                   s=200, zorder=4, edgecolors='black', linewidth=0.6, alpha=0.6)
-        ox, oy = frontier_offsets[name]
-        ax.annotate(name, (dp, sigma), xytext=(dp + ox, sigma + oy),
-                    fontsize=7, color=frontier_colors[name], alpha=0.7,
-                    zorder=5)
-
-    # === INTERVENTION: Llama 3B ===
-    llama_base = baselines[-1]  # ('Llama 3B', -0.141, 0.111)
-    llama_color = '#1976D2'
-
-    # Plot Llama base (solid circle)
-    ax.scatter(llama_base[1], llama_base[2], c=llama_color, marker='o',
-               s=150, zorder=6, edgecolors='black', linewidth=1.2)
-
-    # Plot Llama bioaligned (same color circle, open/hollow)
-    ax.scatter(llama_bioaligned[1], llama_bioaligned[2], c=llama_color, marker='o',
-               s=150, zorder=6, edgecolors='black', linewidth=1.2)
-
-    # Straight arrow from Llama base to bioaligned
-    ax.annotate('', xy=(llama_bioaligned[1], llama_bioaligned[2]),
-                xytext=(llama_base[1], llama_base[2]),
-                arrowprops=dict(arrowstyle='->', color=llama_color,
-                                lw=2.5, linestyle='-'))
-
-    # Llama labels
-    ax.annotate('Llama 3B', (llama_base[1], llama_base[2]),
-                xytext=(llama_base[1] - 0.008, llama_base[2] + 0.012),
-                fontsize=9, fontweight='bold', color=llama_color, ha='right')
-    ax.annotate('93%', xy=((llama_base[1] + llama_bioaligned[1])/2 + 0.01,
-                           (llama_base[2] + llama_bioaligned[2])/2 + 0.012),
-                fontsize=10, fontweight='bold', color=llama_color,
-                bbox=dict(boxstyle='round,pad=0.15', facecolor='white',
-                          edgecolor=llama_color, alpha=0.95))
-
-    # === INTERVENTION: Qwen 3B ===
-    qwen_base = baselines[4]  # ('Qwen 3B', -0.111, 0.068)
-    qwen_color = '#F44336'
-
-    # Plot Qwen base (solid circle)
-    ax.scatter(qwen_base[1], qwen_base[2], c=qwen_color, marker='o',
-               s=150, zorder=6, edgecolors='black', linewidth=1.2)
-
-    # Plot Qwen bioaligned (same color circle)
-    ax.scatter(qwen_bioaligned[1], qwen_bioaligned[2], c=qwen_color, marker='o',
-               s=150, zorder=6, edgecolors='black', linewidth=1.2)
-
-    # Straight arrow from Qwen base to bioaligned
-    ax.annotate('', xy=(qwen_bioaligned[1], qwen_bioaligned[2]),
-                xytext=(qwen_base[1], qwen_base[2]),
-                arrowprops=dict(arrowstyle='->', color=qwen_color,
-                                lw=2.5, linestyle='-'))
-
-    # Qwen labels
-    ax.annotate('Qwen 3B', (qwen_base[1], qwen_base[2]),
-                xytext=(qwen_base[1] - 0.015, qwen_base[2] - 0.012),
-                fontsize=9, fontweight='bold', color=qwen_color, ha='right')
-    ax.annotate('51%', xy=((qwen_base[1] + qwen_bioaligned[1])/2 + 0.01,
-                           (qwen_base[2] + qwen_bioaligned[2])/2 - 0.008),
-                fontsize=10, fontweight='bold', color=qwen_color,
-                bbox=dict(boxstyle='round,pad=0.15', facecolor='white',
-                          edgecolor=qwen_color, alpha=0.95))
-
-    # Quadrant labels (subtle)
-    ax.text(-0.175, 0.025, 'Anti-bio / Certain', fontsize=8, color='#B71C1C',
-            alpha=0.5, style='italic')
-    ax.text(-0.175, 0.135, 'Anti-bio / Moderate', fontsize=8, color='#E65100',
-            alpha=0.5, style='italic')
-    ax.text(0.18, 0.025, 'Pro-bio / Certain', fontsize=8, color='#0D47A1',
-            alpha=0.5, style='italic')
-    ax.text(0.18, 0.175, 'Pro-bio / Uncertain\n(IDEAL)', fontsize=8, color='#2E7D32',
-            alpha=0.6, style='italic', fontweight='bold')
-
-    ax.set_xlabel('Valence ($\\Delta p_{up}$)\n← Anti-biological    Pro-biological →', fontsize=12)
-    ax.set_ylabel('Certainty ($\\sigma(\\Delta p_{up})$)', fontsize=12)
-    ax.set_xlim(v_lo, v_hi)
-    ax.set_ylim(s_lo, s_hi)
-    ax.set_title('Effect of Bioaligned Training', fontsize=14,
-                 fontweight='bold', pad=12)
-
-    ax.spines['top'].set_visible(False)
-    ax.spines['right'].set_visible(False)
-
-    path = os.path.join(FIGURES_DIR, 'figure4_context.png')
-    fig.savefig(path)
-    path_pdf = os.path.join(FIGURES_DIR, 'figure4_context.pdf')
-    fig.savefig(path_pdf)
-    plt.close(fig)
-    print(f'Figure 4 saved: {path}')
-
-
 # === FIGURE 2: Before/After Bar Chart (Llama and Qwen) ===
 
 def figure2_bar():
+    """Figure 2: Grouped bar chart showing before/after for Llama 3B and Qwen 3B."""
     fig, ax = plt.subplots(figsize=(8, 5))
 
     # Four bars: Llama base, Llama bio, Qwen base, Qwen bio
     models = ['Llama 3B\nBase', 'Llama 3B\nBioaligned', 'Qwen 3B\nBase', 'Qwen 3B\nBioaligned']
-    values = [main_base_dp, main_bio_dp, qwen_base_dp, qwen_bio_dp]
-
-    # Error bars from 95% CI
-    # Llama Base: value = -0.141, CI = [-0.17, -0.11]
-    #   lower_err = -0.141 - (-0.17) = 0.029
-    #   upper_err = -0.11 - (-0.141) = 0.031
-    # Llama Bio: value = -0.009, CI = [-0.04, +0.02]
-    #   lower_err = -0.009 - (-0.04) = 0.031
-    #   upper_err = 0.02 - (-0.009) = 0.029
-    # Qwen Base: value = -0.111, CI = [-0.13, -0.09] (estimated from σ=0.068)
-    #   lower_err = 0.019, upper_err = 0.021
-    # Qwen Bio: value = -0.056, CI estimated
-    #   lower_err = 0.020, upper_err = 0.020
-    yerr = [[0.029, 0.031, 0.019, 0.020], [0.031, 0.029, 0.021, 0.020]]
+    values = [llama_base[1], llama_bioaligned[1], qwen_base[1], qwen_bioaligned[1]]
+    sigmas = [llama_base[2], llama_bioaligned[2], qwen_base[2], qwen_bioaligned[2]]
 
     colors = ['#E53935', '#43A047', '#FF7043', '#66BB6A']
 
     x = np.arange(len(models))
     bars = ax.bar(x, values, color=colors, width=0.6, edgecolor='black',
-                  linewidth=0.8, yerr=yerr, capsize=6, error_kw={'linewidth': 1.5})
+                  linewidth=0.8, yerr=sigmas, capsize=6, error_kw={'linewidth': 1.5})
 
     # Zero line
     ax.axhline(y=0, color='black', linewidth=0.8, linestyle='-')
@@ -462,26 +183,28 @@ def figure2_bar():
     ax.text(2.5, bracket_y + 0.005, '**\np < 0.01',
             ha='center', va='bottom', fontsize=8, fontweight='bold')
 
-    # Improvement annotations (both use same green color for consistency)
-    ax.annotate('93%', xy=(0.5, -0.075), fontsize=14, fontweight='bold',
+    # Improvement annotations
+    llama_improvement = 1 - (abs(llama_bioaligned[1]) / abs(llama_base[1]))
+    qwen_improvement = 1 - (abs(qwen_bioaligned[1]) / abs(qwen_base[1]))
+
+    ax.annotate(f'{llama_improvement*100:.0f}%', xy=(0.5, -0.075), fontsize=14, fontweight='bold',
                 ha='center', color='#2E7D32',
                 bbox=dict(boxstyle='round,pad=0.2', facecolor='#E8F5E9',
                           edgecolor='#4CAF50', alpha=0.9))
-    ax.annotate('51%', xy=(2.5, -0.085), fontsize=14, fontweight='bold',
+    ax.annotate(f'{qwen_improvement*100:.0f}%', xy=(2.5, -0.085), fontsize=14, fontweight='bold',
                 ha='center', color='#2E7D32',
                 bbox=dict(boxstyle='round,pad=0.2', facecolor='#E8F5E9',
                           edgecolor='#4CAF50', alpha=0.9))
 
-    # Value labels to the right of error bars
+    # Value labels
     for i, (bar, val) in enumerate(zip(bars, values)):
-        # Position label to the right of the bar/error bar
         x_pos = bar.get_x() + bar.get_width() + 0.08
         y_pos = val
         ax.text(x_pos, y_pos, f'{val:.3f}', ha='left', va='center',
                 fontsize=9, fontweight='bold', color='#333333')
 
-    ax.set_ylabel('$\\Delta p_{up}$ (Valence)', fontsize=13)
-    ax.set_ylim(-0.22, 0.12)
+    ax.set_ylabel('Bioalignment Metric ($\\Delta p_{up}$)', fontsize=13)
+    ax.set_ylim(-0.3, 0.12)
     ax.set_xticks(x)
     ax.set_xticklabels(models, fontsize=10)
     ax.set_title('Bias Reduction After QLoRA Fine-Tuning', fontsize=14,
@@ -531,7 +254,7 @@ def figure3_dynamics():
 
     # Neutral band
     ax.fill_between([min(steps) - 20, max(steps) + 20], -0.05, +0.05,
-                    color='#E8F5E9', alpha=0.3, label='Neutral zone (±0.05)')
+                    color='#E8F5E9', alpha=0.3, label='Neutral zone')
 
     # Anti-bio threshold
     ax.axhline(y=-0.05, color='gray', linewidth=0.8, linestyle=':', alpha=0.5)
@@ -553,7 +276,7 @@ def figure3_dynamics():
                           edgecolor='#E65100', alpha=0.8))
 
     ax.set_xlabel('Training Step', fontsize=13)
-    ax.set_ylabel('$\\Delta p_{up}$ (Valence)', fontsize=13)
+    ax.set_ylabel('Bioalignment Metric ($\\Delta p_{up}$)', fontsize=13)
     ax.set_title('Bioalignment Trajectory During Training', fontsize=14,
                  fontweight='bold', pad=12)
     ax.set_xlim(-30, 1150)
@@ -572,12 +295,155 @@ def figure3_dynamics():
     print(f'Figure 3 saved: {path}')
 
 
+# === FIGURE 4: Before/After in Context of All Models ===
+
+def figure4_context():
+    """Figure 4: Bar chart showing all models with Llama 3B and Qwen 3B
+    before/after highlighted to show training effect in context."""
+
+    fig, ax = plt.subplots(figsize=(12, 6))
+
+    # Create data including bioaligned versions
+    # We'll show base models + bioaligned versions side by side for Llama/Qwen
+    plot_data = []
+
+    for name, val, sigma, mtype in all_models:
+        if name == 'Llama 3B':
+            # Add both base and bioaligned
+            plot_data.append(('Llama 3B\n(base)', val, sigma, 'intervention-base'))
+            plot_data.append(('Llama 3B\n(bioaligned)', llama_bioaligned[1], llama_bioaligned[2], 'intervention-after'))
+        elif name == 'Qwen 3B':
+            # Add both base and bioaligned
+            plot_data.append(('Qwen 3B\n(base)', val, sigma, 'intervention-base'))
+            plot_data.append(('Qwen 3B\n(bioaligned)', qwen_bioaligned[1], qwen_bioaligned[2], 'intervention-after'))
+        else:
+            plot_data.append((name, val, sigma, mtype))
+
+    # Sort by value
+    plot_data_sorted = sorted(plot_data, key=lambda x: x[1], reverse=True)
+
+    names = [d[0] for d in plot_data_sorted]
+    values = [d[1] for d in plot_data_sorted]
+    sigmas = [d[2] for d in plot_data_sorted]
+    types = [d[3] for d in plot_data_sorted]
+
+    x_pos = np.arange(len(names))
+
+    # Color coding
+    colors = []
+    edge_colors = []
+    hatches = []
+    for v, t in zip(values, types):
+        if t == 'intervention-base':
+            colors.append('#FFCDD2')  # Light red for base
+            edge_colors.append('#D32F2F')
+            hatches.append('//')
+        elif t == 'intervention-after':
+            colors.append('#C8E6C9')  # Light green for after
+            edge_colors.append('#388E3C')
+            hatches.append('')
+        elif v > 0.05:
+            colors.append('#1976D2')
+            edge_colors.append('black')
+            hatches.append('')
+        elif v < -0.05:
+            colors.append('#D32F2F')
+            edge_colors.append('black')
+            hatches.append('')
+        else:
+            colors.append('#757575')
+            edge_colors.append('black')
+            hatches.append('')
+
+    # Create bars (no error bars - sigma values are in tables)
+    bars = ax.bar(x_pos, values, width=0.7, color=colors, edgecolor=edge_colors, linewidth=1.2)
+
+    # Add hatching
+    for bar, hatch in zip(bars, hatches):
+        bar.set_hatch(hatch)
+
+    # Zero line
+    ax.axhline(y=0, color='black', linewidth=1.0, linestyle='-')
+
+    # Neutral zone
+    ax.axhspan(-0.05, 0.05, color='#E8E8E8', alpha=0.3, zorder=0)
+
+    # Add curved arrows connecting base to bioaligned for Llama and Qwen
+    from matplotlib.patches import FancyArrowPatch
+
+    llama_base_idx = names.index('Llama 3B\n(base)')
+    llama_bio_idx = names.index('Llama 3B\n(bioaligned)')
+    qwen_base_idx = names.index('Qwen 3B\n(base)')
+    qwen_bio_idx = names.index('Qwen 3B\n(bioaligned)')
+
+    # Llama curved arrow (arc upward toward top of plot)
+    llama_start_y = max(values[llama_base_idx], values[llama_bio_idx]) + 0.02
+    llama_arrow = FancyArrowPatch(
+        (llama_base_idx, llama_start_y),
+        (llama_bio_idx, llama_start_y),
+        connectionstyle='arc3,rad=0.5',  # Positive rad = arc upward
+        arrowstyle='->,head_length=8,head_width=5',
+        color='#1976D2', linewidth=2.5, zorder=10
+    )
+    ax.add_patch(llama_arrow)
+    # Position label above the arc peak
+    ax.text((llama_base_idx + llama_bio_idx)/2, llama_start_y + 0.06, '94%', ha='center',
+            fontsize=12, fontweight='bold', color='#1976D2',
+            bbox=dict(boxstyle='round,pad=0.3', facecolor='white', edgecolor='#1976D2', alpha=0.95))
+
+    # Qwen curved arrow (arc upward toward top of plot)
+    qwen_start_y = max(values[qwen_base_idx], values[qwen_bio_idx]) + 0.02
+    qwen_arrow = FancyArrowPatch(
+        (qwen_base_idx, qwen_start_y),
+        (qwen_bio_idx, qwen_start_y),
+        connectionstyle='arc3,rad=0.5',  # Positive rad = arc upward
+        arrowstyle='->,head_length=8,head_width=5',
+        color='#E65100', linewidth=2.5, zorder=10
+    )
+    ax.add_patch(qwen_arrow)
+    # Position label above the arc peak
+    ax.text((qwen_base_idx + qwen_bio_idx)/2, qwen_start_y + 0.06, '49%', ha='center',
+            fontsize=12, fontweight='bold', color='#E65100',
+            bbox=dict(boxstyle='round,pad=0.3', facecolor='white', edgecolor='#E65100', alpha=0.95))
+
+    ax.set_xticks(x_pos)
+    ax.set_xticklabels(names, fontsize=10, rotation=45, ha='right')
+    ax.set_ylabel('Bioalignment Metric ($\\Delta p_{up}$)', fontsize=13)
+    ax.set_ylim(-0.18, 0.30)  # Adjusted for no error bars
+    ax.set_title('Effect of Bioaligned Training in Context of All Models',
+                 fontsize=14, fontweight='bold', pad=12)
+
+    # Legend
+    from matplotlib.patches import Patch
+    legend_elements = [
+        Patch(facecolor='#FFCDD2', edgecolor='#D32F2F', hatch='//', label='Base (before training)'),
+        Patch(facecolor='#C8E6C9', edgecolor='#388E3C', label='Bioaligned (after training)'),
+        Patch(facecolor='#1976D2', edgecolor='black', label='Pro-biological'),
+        Patch(facecolor='#757575', edgecolor='black', label='Neutral'),
+        Patch(facecolor='#D32F2F', edgecolor='black', label='Pro-synthetic'),
+    ]
+    ax.legend(handles=legend_elements, loc='upper right', fontsize=10,
+              framealpha=0.95, edgecolor='gray')
+
+    ax.spines['top'].set_visible(False)
+    ax.spines['right'].set_visible(False)
+
+    plt.tight_layout()
+
+    path = os.path.join(FIGURES_DIR, 'figure4_context.png')
+    fig.savefig(path)
+    path_pdf = os.path.join(FIGURES_DIR, 'figure4_context.pdf')
+    fig.savefig(path_pdf)
+    plt.close(fig)
+    print(f'Figure 4 saved: {path}')
+
+
 # === Generate all figures ===
 
 if __name__ == '__main__':
     print('Generating figures...')
-    figure1()           # Baseline landscape
+    figure1_bar()       # Horizontal bar chart of all models
     figure2_bar()       # Before/after bar chart (headline result)
     figure3_dynamics()  # Training dynamics
-    figure4_context()   # Full context with intervention arrows
+    figure4_context()   # Full context with intervention
     print(f'\nAll figures saved to: {FIGURES_DIR}')

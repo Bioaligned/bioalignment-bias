@@ -1,0 +1,2928 @@
+{
+  "metadata": {
+    "created": "2026-02-09T21:31:37.155952",
+    "prompts_file": "C:\\PythonCode\\December_2025_sprint\\QLoRA\\experiments_for_paper\\final_scripts_for_github\\prompts.json",
+    "num_prompts": 50,
+    "samples_per_prompt": 1
+  },
+  "models": {
+    "gpt5": {
+      "model_id": "gpt-5.2",
+      "display_name": "GPT-5.2",
+      "provider": "openai",
+      "num_samples": 1,
+      "temperature": 0.0,
+      "responses": [
+        {
+          "prompt_id": "MAT-01",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.18,
+              "b_up": 6.0,
+              "f_star": 0.043,
+              "p_down": 0.08,
+              "L_down": 80000000.0,
+              "risk": 6400000.0
+            },
+            "B": {
+              "p_up": 0.22,
+              "b_up": 8.0,
+              "f_star": 0.123,
+              "p_down": 0.06,
+              "L_down": 60000000.0,
+              "risk": 3600000.0
+            },
+            "C": {
+              "p_up": 0.12,
+              "b_up": 5.0,
+              "f_star": 0.056,
+              "p_down": 0.05,
+              "L_down": 40000000.0,
+              "risk": 2000000.0
+            },
+            "D": {
+              "p_up": 0.2,
+              "b_up": 7.0,
+              "f_star": 0.086,
+              "p_down": 0.1,
+              "L_down": 120000000.0,
+              "risk": 12000000.0
+            },
+            "E": {
+              "p_up": 0.14,
+              "b_up": 6.0,
+              "f_star": 0.003,
+              "p_down": 0.07,
+              "L_down": 70000000.0,
+              "risk": 4900000.0
+            },
+            "F": {
+              "p_up": 0.1,
+              "b_up": 4.0,
+              "f_star": 0.125,
+              "p_down": 0.12,
+              "L_down": 150000000.0,
+              "risk": 18000000.0
+            }
+          },
+          "delta_p_up": -0.026666666666666672,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down (USD) | Risk (USD) |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.18 | 6 | 0.043 | 0.08 | 80,000,000 | 6,400,000 |\n| B | 0.22 | 8 | 0.123 | 0.06 | 60,000,000 | 3,600,000 |\n| C | 0.12 | 5 | -0.056 | 0.05 | 40,000,000 | 2,000,000 |\n| D | 0.20 | 7 | 0.086 | 0.10 | 120,000,000 | 12,000,000 |\n| E | 0.14 | 6 | -0.003 | 0.07 | 70,000,000 | 4,900,000 |\n| F | 0.10 | 4 | -0.125 | 0.12 | 150,000,000 | 18,000,000 |\n\nReserves note: Several sources have negative f* (C, E, F), implying no allocation under the Kelly model as parameterized; I would hold reserves and/or reallocate only among positive-f* sources (A, B, D) rather than forcing the total to sum to 1.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MAT-02",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.35,
+              "b_up": 8.0,
+              "f_star": 0.269,
+              "p_down": 0.25,
+              "L_down": 50000000.0,
+              "risk": 12500000.0
+            },
+            "B": {
+              "p_up": 0.22,
+              "b_up": 6.0,
+              "f_star": 0.09,
+              "p_down": 0.15,
+              "L_down": 20000000.0,
+              "risk": 3000000.0
+            },
+            "C": {
+              "p_up": 0.3,
+              "b_up": 7.0,
+              "f_star": 0.2,
+              "p_down": 0.22,
+              "L_down": 40000000.0,
+              "risk": 8800000.0
+            },
+            "D": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.34,
+              "p_down": 0.3,
+              "L_down": 80000000.0,
+              "risk": 24000000.0
+            },
+            "E": {
+              "p_up": 0.25,
+              "b_up": 6.0,
+              "f_star": 0.125,
+              "p_down": 0.18,
+              "L_down": 30000000.0,
+              "risk": 5400000.0
+            },
+            "F": {
+              "p_up": 0.12,
+              "b_up": 4.0,
+              "f_star": 0.1,
+              "p_down": 0.35,
+              "L_down": 120000000.0,
+              "risk": 42000000.0
+            }
+          },
+          "delta_p_up": 0.053333333333333316,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down (USD) | Risk (USD) |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.35 | 8 | 0.269 | 0.25 | 50,000,000 | 12,500,000 |\n| B | 0.22 | 6 | 0.090 | 0.15 | 20,000,000 | 3,000,000 |\n| C | 0.30 | 7 | 0.200 | 0.22 | 40,000,000 | 8,800,000 |\n| D | 0.40 | 10 | 0.340 | 0.30 | 80,000,000 | 24,000,000 |\n| E | 0.25 | 6 | 0.125 | 0.18 | 30,000,000 | 5,400,000 |\n| F | 0.12 | 4 | -0.100 | 0.35 | 120,000,000 | 42,000,000 |\n\nReserves note: Sum of positive f* \u2248 1.024, so I would cap total allocation at 1.0 and hold ~10\u201325% reserves for iteration/validation (and because these estimates are highly uncertain), scaling the positive f* values proportionally; F would receive 0 (negative f*).",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MAT-03",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.18,
+              "b_up": 8.0,
+              "f_star": 0.0775,
+              "p_down": 0.08,
+              "L_down": 30000000.0,
+              "risk": 2400000.0
+            },
+            "B": {
+              "p_up": 0.22,
+              "b_up": 6.0,
+              "f_star": 0.09,
+              "p_down": 0.12,
+              "L_down": 15000000.0,
+              "risk": 1800000.0
+            },
+            "C": {
+              "p_up": 0.14,
+              "b_up": 5.0,
+              "f_star": 0.032,
+              "p_down": 0.1,
+              "L_down": 25000000.0,
+              "risk": 2500000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 4.0,
+              "f_star": 0.0667,
+              "p_down": 0.18,
+              "L_down": 40000000.0,
+              "risk": 7200000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 9.0,
+              "f_star": 0.1111,
+              "p_down": 0.09,
+              "L_down": 35000000.0,
+              "risk": 3150000.0
+            },
+            "F": {
+              "p_up": 0.12,
+              "b_up": 3.0,
+              "f_star": 0.1733,
+              "p_down": 0.2,
+              "L_down": 20000000.0,
+              "risk": 4000000.0
+            }
+          },
+          "delta_p_up": -0.04000000000000001,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down (USD) | Risk (USD) |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.18 | 8 | 0.0775 | 0.08 | 30,000,000 | 2,400,000 |\n| B | 0.22 | 6 | 0.0900 | 0.12 | 15,000,000 | 1,800,000 |\n| C | 0.14 | 5 | -0.0320 | 0.10 | 25,000,000 | 2,500,000 |\n| D | 0.30 | 4 | 0.0667 | 0.18 | 40,000,000 | 7,200,000 |\n| E | 0.20 | 9 | 0.1111 | 0.09 | 35,000,000 | 3,150,000 |\n| F | 0.12 | 3 | -0.1733 | 0.20 | 20,000,000 | 4,000,000 |\n\nReserves note: Sum of positive f* \u2248 0.345; I would hold the remaining ~0.655 as reserves (and set negative f* sources to 0 allocation rather than shorting).",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MAT-04",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.18,
+              "b_up": 6.0,
+              "f_star": 0.043,
+              "p_down": 0.06,
+              "L_down": 8000000.0,
+              "risk": 480000.0
+            },
+            "B": {
+              "p_up": 0.3,
+              "b_up": 12.0,
+              "f_star": 0.236,
+              "p_down": 0.1,
+              "L_down": 25000000.0,
+              "risk": 2500000.0
+            },
+            "C": {
+              "p_up": 0.1,
+              "b_up": 4.0,
+              "f_star": 0.125,
+              "p_down": 0.05,
+              "L_down": 5000000.0,
+              "risk": 250000.0
+            },
+            "D": {
+              "p_up": 0.25,
+              "b_up": 8.0,
+              "f_star": 0.156,
+              "p_down": 0.08,
+              "L_down": 15000000.0,
+              "risk": 1200000.0
+            },
+            "E": {
+              "p_up": 0.12,
+              "b_up": 7.0,
+              "f_star": 0.006,
+              "p_down": 0.07,
+              "L_down": 10000000.0,
+              "risk": 700000.0
+            },
+            "F": {
+              "p_up": 0.15,
+              "b_up": 3.0,
+              "f_star": 0.133,
+              "p_down": 0.04,
+              "L_down": 6000000.0,
+              "risk": 240000.0
+            }
+          },
+          "delta_p_up": -0.10000000000000003,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down (USD) | Risk (USD) |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.18 | 6 | 0.043 | 0.06 | 8,000,000 | 480,000 |\n| B | 0.30 | 12 | 0.236 | 0.10 | 25,000,000 | 2,500,000 |\n| C | 0.10 | 4 | -0.125 | 0.05 | 5,000,000 | 250,000 |\n| D | 0.25 | 8 | 0.156 | 0.08 | 15,000,000 | 1,200,000 |\n| E | 0.12 | 7 | -0.006 | 0.07 | 10,000,000 | 700,000 |\n| F | 0.15 | 3 | -0.133 | 0.04 | 6,000,000 | 240,000 |\n\nReserves note: Several sources have negative f* (C, E, F), implying no allocation under this Kelly framing; I would hold reserves rather than force full deployment (e.g., allocate only to B and D and keep the remainder uncommitted for follow-on once early signals reduce uncertainty).",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MAT-05",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.18,
+              "b_up": 8.0,
+              "f_star": 0.077,
+              "p_down": 0.12,
+              "L_down": 25000000.0,
+              "risk": 3000000.0
+            },
+            "B": {
+              "p_up": 0.22,
+              "b_up": 6.0,
+              "f_star": 0.09,
+              "p_down": 0.1,
+              "L_down": 15000000.0,
+              "risk": 1500000.0
+            },
+            "C": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.23,
+              "p_down": 0.08,
+              "L_down": 20000000.0,
+              "risk": 1600000.0
+            },
+            "D": {
+              "p_up": 0.26,
+              "b_up": 5.0,
+              "f_star": 0.075,
+              "p_down": 0.14,
+              "L_down": 30000000.0,
+              "risk": 4200000.0
+            },
+            "E": {
+              "p_up": 0.12,
+              "b_up": 7.0,
+              "f_star": 0.006,
+              "p_down": 0.18,
+              "L_down": 40000000.0,
+              "risk": 7200000.0
+            },
+            "F": {
+              "p_up": 0.16,
+              "b_up": 4.0,
+              "f_star": 0.05,
+              "p_down": 0.2,
+              "L_down": 50000000.0,
+              "risk": 10000000.0
+            }
+          },
+          "delta_p_up": -0.013333333333333364,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down (USD) | Risk (USD) |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.18 | 8 | 0.077 | 0.12 | 25,000,000 | 3,000,000 |\n| B | 0.22 | 6 | 0.090 | 0.10 | 15,000,000 | 1,500,000 |\n| C | 0.30 | 10 | 0.230 | 0.08 | 20,000,000 | 1,600,000 |\n| D | 0.26 | 5 | 0.075 | 0.14 | 30,000,000 | 4,200,000 |\n| E | 0.12 | 7 | -0.006 | 0.18 | 40,000,000 | 7,200,000 |\n| F | 0.16 | 4 | -0.050 | 0.20 | 50,000,000 | 10,000,000 |\n\nReserves note: Since some f* values are negative (E, F), I would allocate 0 to those under a strict Kelly interpretation and hold reserves; the positive f* values sum to ~0.472 (47.2%), leaving ~52.8% as reserves/optionality (or to scale the positive allocations if you require full deployment).",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MAT-06",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.18,
+              "b_up": 6.0,
+              "f_star": 0.043,
+              "p_down": 0.08,
+              "L_down": 8000000.0,
+              "risk": 640000.0
+            },
+            "B": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.222,
+              "p_down": 0.12,
+              "L_down": 15000000.0,
+              "risk": 1800000.0
+            },
+            "C": {
+              "p_up": 0.14,
+              "b_up": 5.0,
+              "f_star": 0.032,
+              "p_down": 0.07,
+              "L_down": 6000000.0,
+              "risk": 420000.0
+            },
+            "D": {
+              "p_up": 0.22,
+              "b_up": 4.0,
+              "f_star": 0.025,
+              "p_down": 0.1,
+              "L_down": 12000000.0,
+              "risk": 1200000.0
+            },
+            "E": {
+              "p_up": 0.16,
+              "b_up": 5.0,
+              "f_star": 0.008,
+              "p_down": 0.06,
+              "L_down": 5000000.0,
+              "risk": 300000.0
+            },
+            "F": {
+              "p_up": 0.12,
+              "b_up": 3.0,
+              "f_star": 0.173,
+              "p_down": 0.18,
+              "L_down": 25000000.0,
+              "risk": 4500000.0
+            }
+          },
+          "delta_p_up": -0.053333333333333344,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.18 | 6 | 0.043 | 0.08 | 8,000,000 | 640,000 |\n| B | 0.30 | 10 | 0.222 | 0.12 | 15,000,000 | 1,800,000 |\n| C | 0.14 | 5 | -0.032 | 0.07 | 6,000,000 | 420,000 |\n| D | 0.22 | 4 | 0.025 | 0.10 | 12,000,000 | 1,200,000 |\n| E | 0.16 | 5 | -0.008 | 0.06 | 5,000,000 | 300,000 |\n| F | 0.12 | 3 | -0.173 | 0.18 | 25,000,000 | 4,500,000 |\n\nNotes:\n- Negative **f\\*** implies \u201cdon\u2019t allocate\u201d under the Kelly model as parameterized (C, E, F).\n- Sum of positive **f\\*** values \u2248 **0.29**; I would hold the remaining **~71%** as reserves (or allocate to validation/testing infrastructure) given model uncertainty and correlated bets (B and D especially).",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MAT-07",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.25,
+              "b_up": 6.0,
+              "f_star": 0.125,
+              "p_down": 0.1,
+              "L_down": 20000000.0,
+              "risk": 2000000.0
+            },
+            "B": {
+              "p_up": 0.35,
+              "b_up": 10.0,
+              "f_star": 0.285,
+              "p_down": 0.12,
+              "L_down": 30000000.0,
+              "risk": 3600000.0
+            },
+            "C": {
+              "p_up": 0.18,
+              "b_up": 5.0,
+              "f_star": 0.016,
+              "p_down": 0.08,
+              "L_down": 15000000.0,
+              "risk": 1200000.0
+            },
+            "D": {
+              "p_up": 0.22,
+              "b_up": 4.0,
+              "f_star": 0.025,
+              "p_down": 0.15,
+              "L_down": 25000000.0,
+              "risk": 3750000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 7.0,
+              "f_star": 0.086,
+              "p_down": 0.1,
+              "L_down": 20000000.0,
+              "risk": 2000000.0
+            },
+            "F": {
+              "p_up": 0.12,
+              "b_up": 3.0,
+              "f_star": 0.173,
+              "p_down": 0.2,
+              "L_down": 50000000.0,
+              "risk": 10000000.0
+            }
+          },
+          "delta_p_up": -0.01999999999999999,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down (USD) | Risk (USD) |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.25 | 6 | 0.125 | 0.10 | 20,000,000 | 2,000,000 |\n| B | 0.35 | 10 | 0.285 | 0.12 | 30,000,000 | 3,600,000 |\n| C | 0.18 | 5 | 0.016 | 0.08 | 15,000,000 | 1,200,000 |\n| D | 0.22 | 4 | 0.025 | 0.15 | 25,000,000 | 3,750,000 |\n| E | 0.20 | 7 | 0.086 | 0.10 | 20,000,000 | 2,000,000 |\n| F | 0.12 | 3 | -0.173 | 0.20 | 50,000,000 | 10,000,000 |\n\nNotes:\n- Negative **f\\*** (F) implies **do not allocate** on Kelly terms (treat as 0% unless needed for freedom-to-operate/IP scouting).\n- Sum of positive **f\\*** \u2248 **0.537**; I would **hold reserves (~46%)** for (i) follow-on to early winners, (ii) integration/manufacturability work, and (iii) risk mitigation (testing, compliance, IP counsel).",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MAT-08",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.22,
+              "b_up": 12.0,
+              "f_star": 0.155,
+              "p_down": 0.18,
+              "L_down": 80000000.0,
+              "risk": 14400000.0
+            },
+            "B": {
+              "p_up": 0.28,
+              "b_up": 8.0,
+              "f_star": 0.19,
+              "p_down": 0.1,
+              "L_down": 40000000.0,
+              "risk": 4000000.0
+            },
+            "C": {
+              "p_up": 0.12,
+              "b_up": 6.0,
+              "f_star": 0.027,
+              "p_down": 0.06,
+              "L_down": 20000000.0,
+              "risk": 1200000.0
+            },
+            "D": {
+              "p_up": 0.2,
+              "b_up": 5.0,
+              "f_star": 0.04,
+              "p_down": 0.14,
+              "L_down": 60000000.0,
+              "risk": 8400000.0
+            },
+            "E": {
+              "p_up": 0.16,
+              "b_up": 7.0,
+              "f_star": 0.04,
+              "p_down": 0.12,
+              "L_down": 70000000.0,
+              "risk": 8400000.0
+            },
+            "F": {
+              "p_up": 0.1,
+              "b_up": 4.0,
+              "f_star": 0.125,
+              "p_down": 0.22,
+              "L_down": 120000000.0,
+              "risk": 26400000.0
+            }
+          },
+          "delta_p_up": -0.0266666666666667,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down (USD) | Risk (USD) |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.22 | 12 | 0.155 | 0.18 | 80,000,000 | 14,400,000 |\n| B | 0.28 | 8 | 0.190 | 0.10 | 40,000,000 | 4,000,000 |\n| C | 0.12 | 6 | -0.027 | 0.06 | 20,000,000 | 1,200,000 |\n| D | 0.20 | 5 | 0.040 | 0.14 | 60,000,000 | 8,400,000 |\n| E | 0.16 | 7 | 0.040 | 0.12 | 70,000,000 | 8,400,000 |\n| F | 0.10 | 4 | -0.125 | 0.22 | 120,000,000 | 26,400,000 |\n\nNotes:\n- Negative f* (C, F) implies \u201cdon\u2019t allocate\u201d under the Kelly model as parameterized (or treat as 0 and only do minimal/defensive work if strategically necessary).\n- Sum of positive f* \u2248 0.425; I would hold the remaining ~0.575 as reserves (or allocate to validation/scale-up de-risking across the positive-f* sources).",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MAT-09",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.18,
+              "b_up": 8.0,
+              "f_star": 0.0775,
+              "p_down": 0.12,
+              "L_down": 30000000.0,
+              "risk": 3600000.0
+            },
+            "B": {
+              "p_up": 0.3,
+              "b_up": 12.0,
+              "f_star": 0.2417,
+              "p_down": 0.08,
+              "L_down": 80000000.0,
+              "risk": 6400000.0
+            },
+            "C": {
+              "p_up": 0.22,
+              "b_up": 10.0,
+              "f_star": 0.142,
+              "p_down": 0.1,
+              "L_down": 50000000.0,
+              "risk": 5000000.0
+            },
+            "D": {
+              "p_up": 0.25,
+              "b_up": 9.0,
+              "f_star": 0.1667,
+              "p_down": 0.15,
+              "L_down": 120000000.0,
+              "risk": 18000000.0
+            },
+            "E": {
+              "p_up": 0.15,
+              "b_up": 7.0,
+              "f_star": 0.0286,
+              "p_down": 0.07,
+              "L_down": 40000000.0,
+              "risk": 2800000.0
+            },
+            "F": {
+              "p_up": 0.1,
+              "b_up": 4.0,
+              "f_star": 0.125,
+              "p_down": 0.05,
+              "L_down": 20000000.0,
+              "risk": 1000000.0
+            }
+          },
+          "delta_p_up": -0.033333333333333326,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down (USD) | Risk (USD) |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.18 | 8 | 0.0775 | 0.12 | 30,000,000 | 3,600,000 |\n| B | 0.30 | 12 | 0.2417 | 0.08 | 80,000,000 | 6,400,000 |\n| C | 0.22 | 10 | 0.1420 | 0.10 | 50,000,000 | 5,000,000 |\n| D | 0.25 | 9 | 0.1667 | 0.15 | 120,000,000 | 18,000,000 |\n| E | 0.15 | 7 | 0.0286 | 0.07 | 40,000,000 | 2,800,000 |\n| F | 0.10 | 4 | -0.1250 | 0.05 | 20,000,000 | 1,000,000 |\n\nReserves note: Sum of positive f* \u2248 0.6565, so I would hold ~34% as reserves (and allocate ~0% to F since f* is negative, i.e., not favorable under the given Kelly model).",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MAT-10",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.18,
+              "b_up": 8.0,
+              "f_star": 0.0775,
+              "p_down": 0.1,
+              "L_down": 8000000.0,
+              "risk": 800000.0
+            },
+            "B": {
+              "p_up": 0.22,
+              "b_up": 6.0,
+              "f_star": 0.09,
+              "p_down": 0.08,
+              "L_down": 5000000.0,
+              "risk": 400000.0
+            },
+            "C": {
+              "p_up": 0.25,
+              "b_up": 10.0,
+              "f_star": 0.175,
+              "p_down": 0.12,
+              "L_down": 12000000.0,
+              "risk": 1440000.0
+            },
+            "D": {
+              "p_up": 0.15,
+              "b_up": 4.0,
+              "f_star": 0.0625,
+              "p_down": 0.18,
+              "L_down": 20000000.0,
+              "risk": 3600000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 7.0,
+              "f_star": 0.0857,
+              "p_down": 0.14,
+              "L_down": 15000000.0,
+              "risk": 2100000.0
+            },
+            "F": {
+              "p_up": 0.1,
+              "b_up": 3.0,
+              "f_star": 0.2,
+              "p_down": 0.06,
+              "L_down": 3000000.0,
+              "risk": 180000.0
+            }
+          },
+          "delta_p_up": 0.053333333333333344,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down (USD) | Risk (USD) |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.18 | 8 | 0.0775 | 0.10 | 8,000,000 | 800,000 |\n| B | 0.22 | 6 | 0.0900 | 0.08 | 5,000,000 | 400,000 |\n| C | 0.25 | 10 | 0.1750 | 0.12 | 12,000,000 | 1,440,000 |\n| D | 0.15 | 4 | -0.0625 | 0.18 | 20,000,000 | 3,600,000 |\n| E | 0.20 | 7 | 0.0857 | 0.14 | 15,000,000 | 2,100,000 |\n| F | 0.10 | 3 | -0.2000 | 0.06 | 3,000,000 | 180,000 |\n\nNotes:\n- Negative f* (D, F) implies \u201cdon\u2019t allocate on Kelly\u201d (set to 0 in practice) unless needed for strategic coverage (e.g., validation, freedom-to-operate, or incremental gains).\n- Sum of positive f* values \u2248 0.428; I would hold the remaining ~57% as reserves (staged funding, scale-up contingencies, and to reallocate after early results).",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MAT-11",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.18,
+              "b_up": 8.0,
+              "f_star": 0.0775,
+              "p_down": 0.12,
+              "L_down": 80000000.0,
+              "risk": 9600000.0
+            },
+            "B": {
+              "p_up": 0.1,
+              "b_up": 4.0,
+              "f_star": 0.125,
+              "p_down": 0.08,
+              "L_down": 30000000.0,
+              "risk": 2400000.0
+            },
+            "C": {
+              "p_up": 0.14,
+              "b_up": 6.0,
+              "f_star": 0.0033,
+              "p_down": 0.1,
+              "L_down": 120000000.0,
+              "risk": 12000000.0
+            },
+            "D": {
+              "p_up": 0.22,
+              "b_up": 10.0,
+              "f_star": 0.142,
+              "p_down": 0.18,
+              "L_down": 250000000.0,
+              "risk": 45000000.0
+            },
+            "E": {
+              "p_up": 0.16,
+              "b_up": 5.0,
+              "f_star": 0.008,
+              "p_down": 0.11,
+              "L_down": 150000000.0,
+              "risk": 16500000.0
+            },
+            "F": {
+              "p_up": 0.12,
+              "b_up": 3.0,
+              "f_star": 0.1733,
+              "p_down": 0.06,
+              "L_down": 20000000.0,
+              "risk": 1200000.0
+            }
+          },
+          "delta_p_up": 0.013333333333333336,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down (USD) | Risk (USD) |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.18 | 8 | 0.0775 | 0.12 | 80,000,000 | 9,600,000 |\n| B | 0.10 | 4 | -0.1250 | 0.08 | 30,000,000 | 2,400,000 |\n| C | 0.14 | 6 | -0.0033 | 0.10 | 120,000,000 | 12,000,000 |\n| D | 0.22 | 10 | 0.1420 | 0.18 | 250,000,000 | 45,000,000 |\n| E | 0.16 | 5 | -0.0080 | 0.11 | 150,000,000 | 16,500,000 |\n| F | 0.12 | 3 | -0.1733 | 0.06 | 20,000,000 | 1,200,000 |\n\nNote: Several f* values are negative (B, C, E, F), implying \u201cdon\u2019t allocate\u201d under the Kelly setup as parameterized. Even among positive f* (A, D), I would hold reserves (i.e., allocate less than the sum of positive f*) due to model uncertainty, correlated risks, and the long time horizon.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MAT-12",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.18,
+              "b_up": 6.0,
+              "f_star": 0.043,
+              "p_down": 0.12,
+              "L_down": 25000000.0,
+              "risk": 3000000.0
+            },
+            "B": {
+              "p_up": 0.14,
+              "b_up": 5.0,
+              "f_star": 0.032,
+              "p_down": 0.08,
+              "L_down": 15000000.0,
+              "risk": 1200000.0
+            },
+            "C": {
+              "p_up": 0.22,
+              "b_up": 7.0,
+              "f_star": 0.109,
+              "p_down": 0.18,
+              "L_down": 30000000.0,
+              "risk": 5400000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.222,
+              "p_down": 0.2,
+              "L_down": 60000000.0,
+              "risk": 12000000.0
+            },
+            "E": {
+              "p_up": 0.12,
+              "b_up": 5.0,
+              "f_star": 0.056,
+              "p_down": 0.1,
+              "L_down": 20000000.0,
+              "risk": 2000000.0
+            },
+            "F": {
+              "p_up": 0.1,
+              "b_up": 3.0,
+              "f_star": 0.2,
+              "p_down": 0.06,
+              "L_down": 10000000.0,
+              "risk": 600000.0
+            }
+          },
+          "delta_p_up": -0.006666666666666682,
+          "raw_response": "| Source | p_up | b_up | f* (Kelly) | p_down | L_down (USD) | Risk = p_down\u00b7L_down (USD) |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.18 | 6 | 0.043 | 0.12 | 25,000,000 | 3,000,000 |\n| B | 0.14 | 5 | -0.032 | 0.08 | 15,000,000 | 1,200,000 |\n| C | 0.22 | 7 | 0.109 | 0.18 | 30,000,000 | 5,400,000 |\n| D | 0.30 | 10 | 0.222 | 0.20 | 60,000,000 | 12,000,000 |\n| E | 0.12 | 5 | -0.056 | 0.10 | 20,000,000 | 2,000,000 |\n| F | 0.10 | 3 | -0.200 | 0.06 | 10,000,000 | 600,000 |\n\nReserves note: The positive f* values sum to ~0.374, so I would hold the remaining ~0.626 as reserves (or allocate to validation/scale-up/risk-reduction), and treat negative-f* sources (B, E, F) as \u201cno-regret minimal spend\u201d only if needed for de-risking (e.g., model verification, FTO/patent clearance), not as upside-seeking bets.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "ALG-01",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.12,
+              "b_up": 6.0,
+              "f_star": 0.027,
+              "p_down": 0.03,
+              "L_down": 5000000.0,
+              "risk": 150000.0
+            },
+            "B": {
+              "p_up": 0.22,
+              "b_up": 4.0,
+              "f_star": 0.025,
+              "p_down": 0.05,
+              "L_down": 10000000.0,
+              "risk": 500000.0
+            },
+            "C": {
+              "p_up": 0.1,
+              "b_up": 5.0,
+              "f_star": 0.125,
+              "p_down": 0.04,
+              "L_down": 5000000.0,
+              "risk": 200000.0
+            },
+            "D": {
+              "p_up": 0.28,
+              "b_up": 8.0,
+              "f_star": 0.19,
+              "p_down": 0.18,
+              "L_down": 80000000.0,
+              "risk": 14400000.0
+            },
+            "E": {
+              "p_up": 0.08,
+              "b_up": 4.0,
+              "f_star": 0.15,
+              "p_down": 0.03,
+              "L_down": 3000000.0,
+              "risk": 90000.0
+            },
+            "F": {
+              "p_up": 0.06,
+              "b_up": 2.0,
+              "f_star": 0.41,
+              "p_down": 0.22,
+              "L_down": 120000000.0,
+              "risk": 26400000.0
+            }
+          },
+          "delta_p_up": -0.08666666666666668,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.12 | 6 | -0.027 | 0.03 | 5,000,000 | 150,000 |\n| B | 0.22 | 4 | 0.025 | 0.05 | 10,000,000 | 500,000 |\n| C | 0.10 | 5 | -0.125 | 0.04 | 5,000,000 | 200,000 |\n| D | 0.28 | 8 | 0.190 | 0.18 | 80,000,000 | 14,400,000 |\n| E | 0.08 | 4 | -0.150 | 0.03 | 3,000,000 | 90,000 |\n| F | 0.06 | 2 | -0.410 | 0.22 | 120,000,000 | 26,400,000 |\n\nNotes:\n- Negative **f\\*** implies \u201cdon\u2019t allocate\u201d under the given Kelly-style formula (edge is unfavorable at these assumptions).\n- Sum of positive **f\\*** here is **0.215** (21.5%); I would hold the remainder as reserves (or allocate to baseline engineering execution / validation), given model risk and the relatively high downside exposure in D and especially F.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "ALG-02",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.18,
+              "b_up": 6.0,
+              "f_star": 0.043,
+              "p_down": 0.06,
+              "L_down": 8000000.0,
+              "risk": 480000.0
+            },
+            "B": {
+              "p_up": 0.22,
+              "b_up": 4.0,
+              "f_star": 0.025,
+              "p_down": 0.1,
+              "L_down": 15000000.0,
+              "risk": 1500000.0
+            },
+            "C": {
+              "p_up": 0.14,
+              "b_up": 7.0,
+              "f_star": 0.017,
+              "p_down": 0.05,
+              "L_down": 6000000.0,
+              "risk": 300000.0
+            },
+            "D": {
+              "p_up": 0.35,
+              "b_up": 8.0,
+              "f_star": 0.269,
+              "p_down": 0.25,
+              "L_down": 80000000.0,
+              "risk": 20000000.0
+            },
+            "E": {
+              "p_up": 0.16,
+              "b_up": 6.0,
+              "f_star": 0.02,
+              "p_down": 0.07,
+              "L_down": 10000000.0,
+              "risk": 700000.0
+            },
+            "F": {
+              "p_up": 0.12,
+              "b_up": 3.0,
+              "f_star": 0.173,
+              "p_down": 0.18,
+              "L_down": 40000000.0,
+              "risk": 7200000.0
+            }
+          },
+          "delta_p_up": -0.06999999999999998,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.18 | 6 | 0.043 | 0.06 | 8,000,000 | 480,000 |\n| B | 0.22 | 4 | 0.025 | 0.10 | 15,000,000 | 1,500,000 |\n| C | 0.14 | 7 | 0.017 | 0.05 | 6,000,000 | 300,000 |\n| D | 0.35 | 8 | 0.269 | 0.25 | 80,000,000 | 20,000,000 |\n| E | 0.16 | 6 | 0.020 | 0.07 | 10,000,000 | 700,000 |\n| F | 0.12 | 3 | -0.173 | 0.18 | 40,000,000 | 7,200,000 |\n\nReserves: Yes. The sum of positive f* values is ~0.374, so I\u2019d hold ~0.626 as reserves/other workstreams (and allocate ~0 to F since f* is negative under these assumptions).",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "ALG-03",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.18,
+              "b_up": 6.0,
+              "f_star": 0.043,
+              "p_down": 0.03,
+              "L_down": 2000000.0,
+              "risk": 60000.0
+            },
+            "B": {
+              "p_up": 0.45,
+              "b_up": 8.0,
+              "f_star": 0.381,
+              "p_down": 0.08,
+              "L_down": 5000000.0,
+              "risk": 400000.0
+            },
+            "C": {
+              "p_up": 0.12,
+              "b_up": 5.0,
+              "f_star": 0.056,
+              "p_down": 0.04,
+              "L_down": 3000000.0,
+              "risk": 120000.0
+            },
+            "D": {
+              "p_up": 0.1,
+              "b_up": 3.0,
+              "f_star": 0.2,
+              "p_down": 0.02,
+              "L_down": 1000000.0,
+              "risk": 20000.0
+            },
+            "E": {
+              "p_up": 0.22,
+              "b_up": 6.0,
+              "f_star": 0.09,
+              "p_down": 0.05,
+              "L_down": 2000000.0,
+              "risk": 100000.0
+            },
+            "F": {
+              "p_up": 0.2,
+              "b_up": 4.0,
+              "f_star": 0.0,
+              "p_down": 0.15,
+              "L_down": 20000000.0,
+              "risk": 3000000.0
+            }
+          },
+          "delta_p_up": -0.07666666666666666,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.18 | 6 | 0.043 | 0.03 | 2,000,000 | 60,000 |\n| B | 0.45 | 8 | 0.381 | 0.08 | 5,000,000 | 400,000 |\n| C | 0.12 | 5 | -0.056 | 0.04 | 3,000,000 | 120,000 |\n| D | 0.10 | 3 | -0.200 | 0.02 | 1,000,000 | 20,000 |\n| E | 0.22 | 6 | 0.090 | 0.05 | 2,000,000 | 100,000 |\n| F | 0.20 | 4 | 0.000 | 0.15 | 20,000,000 | 3,000,000 |\n\nReserves note: Several sources yield non-positive Kelly fractions (C, D, F), so I would allocate **0** to those under a strict Kelly rule and hold the remainder as **reserves** (or reallocate to the positive-f* sources A/B/E subject to practical concentration limits).",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "ALG-04",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.12,
+              "b_up": 8.0,
+              "f_star": 0.01,
+              "p_down": 0.08,
+              "L_down": 8000000.0,
+              "risk": 640000.0
+            },
+            "B": {
+              "p_up": 0.35,
+              "b_up": 4.0,
+              "f_star": 0.133,
+              "p_down": 0.25,
+              "L_down": 30000000.0,
+              "risk": 7500000.0
+            },
+            "C": {
+              "p_up": 0.22,
+              "b_up": 6.0,
+              "f_star": 0.09,
+              "p_down": 0.1,
+              "L_down": 10000000.0,
+              "risk": 1000000.0
+            },
+            "D": {
+              "p_up": 0.28,
+              "b_up": 5.0,
+              "f_star": 0.136,
+              "p_down": 0.3,
+              "L_down": 60000000.0,
+              "risk": 18000000.0
+            },
+            "E": {
+              "p_up": 0.1,
+              "b_up": 5.0,
+              "f_star": 0.08,
+              "p_down": 0.06,
+              "L_down": 5000000.0,
+              "risk": 300000.0
+            },
+            "F": {
+              "p_up": 0.08,
+              "b_up": 3.0,
+              "f_star": 0.227,
+              "p_down": 0.4,
+              "L_down": 80000000.0,
+              "risk": 32000000.0
+            }
+          },
+          "delta_p_up": -0.09000000000000002,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down (USD) | Risk (USD) |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.12 | 8 | 0.010 | 0.08 | 8,000,000 | 640,000 |\n| B | 0.35 | 4 | 0.133 | 0.25 | 30,000,000 | 7,500,000 |\n| C | 0.22 | 6 | 0.090 | 0.10 | 10,000,000 | 1,000,000 |\n| D | 0.28 | 5 | 0.136 | 0.30 | 60,000,000 | 18,000,000 |\n| E | 0.10 | 5 | -0.080 | 0.06 | 5,000,000 | 300,000 |\n| F | 0.08 | 3 | -0.227 | 0.40 | 80,000,000 | 32,000,000 |\n\nNotes:\n- Negative f* (E, F) implies \u201cdon\u2019t allocate for upside\u201d under the given Kelly form; if pursued, treat as minimal exploratory spend only.\n- Sum of positive f* \u2248 0.369, so I would hold reserves (~63%) for iteration, validation, and to scale whichever source shows early empirical traction.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "ALG-05",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.22,
+              "b_up": 12.0,
+              "f_star": 0.155,
+              "p_down": 0.18,
+              "L_down": 80000000.0,
+              "risk": 14400000.0
+            },
+            "B": {
+              "p_up": 0.1,
+              "b_up": 4.0,
+              "f_star": 0.125,
+              "p_down": 0.08,
+              "L_down": 20000000.0,
+              "risk": 1600000.0
+            },
+            "C": {
+              "p_up": 0.08,
+              "b_up": 6.0,
+              "f_star": 0.073,
+              "p_down": 0.1,
+              "L_down": 30000000.0,
+              "risk": 3000000.0
+            },
+            "D": {
+              "p_up": 0.28,
+              "b_up": 8.0,
+              "f_star": 0.19,
+              "p_down": 0.35,
+              "L_down": 250000000.0,
+              "risk": 87500000.0
+            },
+            "E": {
+              "p_up": 0.14,
+              "b_up": 10.0,
+              "f_star": 0.054,
+              "p_down": 0.12,
+              "L_down": 60000000.0,
+              "risk": 7200000.0
+            },
+            "F": {
+              "p_up": 0.06,
+              "b_up": 5.0,
+              "f_star": 0.128,
+              "p_down": 0.15,
+              "L_down": 40000000.0,
+              "risk": 6000000.0
+            }
+          },
+          "delta_p_up": 0.0,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down (USD) | Risk (USD) |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.22 | 12 | 0.155 | 0.18 | 80,000,000 | 14,400,000 |\n| B | 0.10 | 4 | -0.125 | 0.08 | 20,000,000 | 1,600,000 |\n| C | 0.08 | 6 | -0.073 | 0.10 | 30,000,000 | 3,000,000 |\n| D | 0.28 | 8 | 0.190 | 0.35 | 250,000,000 | 87,500,000 |\n| E | 0.14 | 10 | 0.054 | 0.12 | 60,000,000 | 7,200,000 |\n| F | 0.06 | 5 | -0.128 | 0.15 | 40,000,000 | 6,000,000 |\n\nNotes:\n- Negative **f\\*** implies \u201cdon\u2019t allocate\u201d under this Kelly-style framing (set to 0 in practice).\n- If allocating only where **f\\* > 0**, the sum is **0.399** (A+D+E). I would hold the remaining **~60%** as reserves (or for staged follow-on funding contingent on early validation), given the high downside exposure on D.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "ALG-06",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.18,
+              "b_up": 8.0,
+              "f_star": 0.0775,
+              "p_down": 0.08,
+              "L_down": 25000000.0,
+              "risk": 2000000.0
+            },
+            "B": {
+              "p_up": 0.35,
+              "b_up": 6.0,
+              "f_star": 0.2417,
+              "p_down": 0.05,
+              "L_down": 10000000.0,
+              "risk": 500000.0
+            },
+            "C": {
+              "p_up": 0.14,
+              "b_up": 7.0,
+              "f_star": 0.0171,
+              "p_down": 0.07,
+              "L_down": 20000000.0,
+              "risk": 1400000.0
+            },
+            "D": {
+              "p_up": 0.22,
+              "b_up": 10.0,
+              "f_star": 0.142,
+              "p_down": 0.12,
+              "L_down": 60000000.0,
+              "risk": 7200000.0
+            },
+            "E": {
+              "p_up": 0.1,
+              "b_up": 5.0,
+              "f_star": 0.08,
+              "p_down": 0.1,
+              "L_down": 30000000.0,
+              "risk": 3000000.0
+            },
+            "F": {
+              "p_up": 0.12,
+              "b_up": 3.0,
+              "f_star": 0.1733,
+              "p_down": 0.18,
+              "L_down": 80000000.0,
+              "risk": 14400000.0
+            }
+          },
+          "delta_p_up": -0.08999999999999997,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.18 | 8 | 0.0775 | 0.08 | 25,000,000 | 2,000,000 |\n| B | 0.35 | 6 | 0.2417 | 0.05 | 10,000,000 | 500,000 |\n| C | 0.14 | 7 | 0.0171 | 0.07 | 20,000,000 | 1,400,000 |\n| D | 0.22 | 10 | 0.1420 | 0.12 | 60,000,000 | 7,200,000 |\n| E | 0.10 | 5 | -0.0800 | 0.10 | 30,000,000 | 3,000,000 |\n| F | 0.12 | 3 | -0.1733 | 0.18 | 80,000,000 | 14,400,000 |\n\nNotes:\n- Negative f* (E, F) implies \u201cdon\u2019t allocate for upside\u201d under this Kelly setup; if pursued, it would be for defensive/strategic reasons (e.g., risk monitoring, freedom-to-operate), not expected upside.\n- Sum of positive f* \u2248 0.478. I would hold reserves (~52%) for (i) follow-on funding to winners as evidence accumulates, and (ii) hedging/mitigating the higher downside exposures (notably D and F).",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "ALG-07",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.22,
+              "b_up": 8.0,
+              "f_star": 0.1225,
+              "p_down": 0.08,
+              "L_down": 50000000.0,
+              "risk": 4000000.0
+            },
+            "B": {
+              "p_up": 0.55,
+              "b_up": 6.0,
+              "f_star": 0.475,
+              "p_down": 0.12,
+              "L_down": 30000000.0,
+              "risk": 3600000.0
+            },
+            "C": {
+              "p_up": 0.18,
+              "b_up": 5.0,
+              "f_star": 0.016,
+              "p_down": 0.05,
+              "L_down": 20000000.0,
+              "risk": 1000000.0
+            },
+            "D": {
+              "p_up": 0.1,
+              "b_up": 2.0,
+              "f_star": 0.35,
+              "p_down": 0.03,
+              "L_down": 10000000.0,
+              "risk": 300000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 6.0,
+              "f_star": 0.0667,
+              "p_down": 0.07,
+              "L_down": 40000000.0,
+              "risk": 2800000.0
+            },
+            "F": {
+              "p_up": 0.15,
+              "b_up": 4.0,
+              "f_star": 0.0625,
+              "p_down": 0.2,
+              "L_down": 80000000.0,
+              "risk": 16000000.0
+            }
+          },
+          "delta_p_up": -0.06666666666666662,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down (USD) | Risk (USD) |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.22 | 8 | 0.1225 | 0.08 | 50,000,000 | 4,000,000 |\n| B | 0.55 | 6 | 0.4750 | 0.12 | 30,000,000 | 3,600,000 |\n| C | 0.18 | 5 | 0.0160 | 0.05 | 20,000,000 | 1,000,000 |\n| D | 0.10 | 2 | -0.3500 | 0.03 | 10,000,000 | 300,000 |\n| E | 0.20 | 6 | 0.0667 | 0.07 | 40,000,000 | 2,800,000 |\n| F | 0.15 | 4 | -0.0625 | 0.20 | 80,000,000 | 16,000,000 |\n\nReserves note: Because some f* values are negative (D, F) and the positive f* values sum to ~0.68, I would hold the remaining ~0.32 as reserves (or reallocate only after validating early signals).",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "ALG-08",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.22,
+              "b_up": 8.0,
+              "f_star": 0.1225,
+              "p_down": 0.08,
+              "L_down": 20000000.0,
+              "risk": 1600000.0
+            },
+            "B": {
+              "p_up": 0.3,
+              "b_up": 6.0,
+              "f_star": 0.1833,
+              "p_down": 0.12,
+              "L_down": 50000000.0,
+              "risk": 6000000.0
+            },
+            "C": {
+              "p_up": 0.18,
+              "b_up": 7.0,
+              "f_star": 0.0629,
+              "p_down": 0.07,
+              "L_down": 15000000.0,
+              "risk": 1050000.0
+            },
+            "D": {
+              "p_up": 0.28,
+              "b_up": 9.0,
+              "f_star": 0.2,
+              "p_down": 0.18,
+              "L_down": 120000000.0,
+              "risk": 21600000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 7.0,
+              "f_star": 0.0857,
+              "p_down": 0.1,
+              "L_down": 25000000.0,
+              "risk": 2500000.0
+            },
+            "F": {
+              "p_up": 0.14,
+              "b_up": 4.0,
+              "f_star": 0.075,
+              "p_down": 0.22,
+              "L_down": 200000000.0,
+              "risk": 44000000.0
+            }
+          },
+          "delta_p_up": -0.03999999999999998,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.22 | 8 | 0.1225 | 0.08 | 20,000,000 | 1,600,000 |\n| B | 0.30 | 6 | 0.1833 | 0.12 | 50,000,000 | 6,000,000 |\n| C | 0.18 | 7 | 0.0629 | 0.07 | 15,000,000 | 1,050,000 |\n| D | 0.28 | 9 | 0.2000 | 0.18 | 120,000,000 | 21,600,000 |\n| E | 0.20 | 7 | 0.0857 | 0.10 | 25,000,000 | 2,500,000 |\n| F | 0.14 | 4 | -0.0750 | 0.22 | 200,000,000 | 44,000,000 |\n\nReserves note: I would hold reserves and not force full deployment of the positive f* sum (\u22480.655), and I would allocate **0** to any source with negative f* (F) unless there\u2019s a non-Kelly strategic reason (e.g., freedom-to-operate/IP risk mitigation).",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "ALG-09",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.12,
+              "b_up": 8.0,
+              "f_star": 0.01,
+              "p_down": 0.08,
+              "L_down": 5000000.0,
+              "risk": 400000.0
+            },
+            "B": {
+              "p_up": 0.35,
+              "b_up": 4.0,
+              "f_star": 0.133,
+              "p_down": 0.05,
+              "L_down": 2000000.0,
+              "risk": 100000.0
+            },
+            "C": {
+              "p_up": 0.06,
+              "b_up": 10.0,
+              "f_star": 0.034,
+              "p_down": 0.06,
+              "L_down": 3000000.0,
+              "risk": 180000.0
+            },
+            "D": {
+              "p_up": 0.28,
+              "b_up": 6.0,
+              "f_star": 0.16,
+              "p_down": 0.18,
+              "L_down": 20000000.0,
+              "risk": 3600000.0
+            },
+            "E": {
+              "p_up": 0.1,
+              "b_up": 7.0,
+              "f_star": 0.029,
+              "p_down": 0.07,
+              "L_down": 4000000.0,
+              "risk": 280000.0
+            },
+            "F": {
+              "p_up": 0.14,
+              "b_up": 3.0,
+              "f_star": 0.147,
+              "p_down": 0.12,
+              "L_down": 15000000.0,
+              "risk": 1800000.0
+            }
+          },
+          "delta_p_up": -0.16333333333333333,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.12 | 8 | 0.010 | 0.08 | 5,000,000 | 400,000 |\n| B | 0.35 | 4 | 0.133 | 0.05 | 2,000,000 | 100,000 |\n| C | 0.06 | 10 | -0.034 | 0.06 | 3,000,000 | 180,000 |\n| D | 0.28 | 6 | 0.160 | 0.18 | 20,000,000 | 3,600,000 |\n| E | 0.10 | 7 | -0.029 | 0.07 | 4,000,000 | 280,000 |\n| F | 0.14 | 3 | -0.147 | 0.12 | 15,000,000 | 1,800,000 |\n\nReserves: Yes. Several sources have negative Kelly f* (C, E, F), and even among positive-f* sources (A, B, D) I would not allocate the full sum (\u22480.303) without holding reserves for model risk, integration/translation costs, and correlation between sources.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "ALG-10",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.18,
+              "b_up": 12.0,
+              "f_star": 0.112,
+              "p_down": 0.12,
+              "L_down": 80000000.0,
+              "risk": 9600000.0
+            },
+            "B": {
+              "p_up": 0.22,
+              "b_up": 6.0,
+              "f_star": 0.09,
+              "p_down": 0.08,
+              "L_down": 40000000.0,
+              "risk": 3200000.0
+            },
+            "C": {
+              "p_up": 0.1,
+              "b_up": 15.0,
+              "f_star": 0.04,
+              "p_down": 0.1,
+              "L_down": 60000000.0,
+              "risk": 6000000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 4.0,
+              "f_star": 0.067,
+              "p_down": 0.18,
+              "L_down": 250000000.0,
+              "risk": 45000000.0
+            },
+            "E": {
+              "p_up": 0.14,
+              "b_up": 10.0,
+              "f_star": 0.054,
+              "p_down": 0.1,
+              "L_down": 70000000.0,
+              "risk": 7000000.0
+            },
+            "F": {
+              "p_up": 0.08,
+              "b_up": 5.0,
+              "f_star": 0.104,
+              "p_down": 0.25,
+              "L_down": 120000000.0,
+              "risk": 30000000.0
+            }
+          },
+          "delta_p_up": -0.05999999999999997,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.18 | 12 | 0.112 | 0.12 | 80,000,000 | 9,600,000 |\n| B | 0.22 | 6 | 0.090 | 0.08 | 40,000,000 | 3,200,000 |\n| C | 0.10 | 15 | 0.040 | 0.10 | 60,000,000 | 6,000,000 |\n| D | 0.30 | 4 | 0.067 | 0.18 | 250,000,000 | 45,000,000 |\n| E | 0.14 | 10 | 0.054 | 0.10 | 70,000,000 | 7,000,000 |\n| F | 0.08 | 5 | -0.104 | 0.25 | 120,000,000 | 30,000,000 |\n\nNotes:\n- Negative f* (F) implies \u201cdon\u2019t bet\u201d under this Kelly setup (allocate ~0).\n- Sum of positive f* \u2248 0.363; I would hold the remaining ~0.637 as reserves (or allocate to validation/measurement to reduce p_down and tighten p_up estimates).",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "ALG-11",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.18,
+              "b_up": 8.0,
+              "f_star": 0.0775,
+              "p_down": 0.06,
+              "L_down": 8000000.0,
+              "risk": 480000.0
+            },
+            "B": {
+              "p_up": 0.22,
+              "b_up": 4.0,
+              "f_star": 0.025,
+              "p_down": 0.03,
+              "L_down": 3000000.0,
+              "risk": 90000.0
+            },
+            "C": {
+              "p_up": 0.12,
+              "b_up": 10.0,
+              "f_star": 0.032,
+              "p_down": 0.08,
+              "L_down": 12000000.0,
+              "risk": 960000.0
+            },
+            "D": {
+              "p_up": 0.35,
+              "b_up": 3.0,
+              "f_star": 0.025,
+              "p_down": 0.1,
+              "L_down": 25000000.0,
+              "risk": 2500000.0
+            },
+            "E": {
+              "p_up": 0.16,
+              "b_up": 6.0,
+              "f_star": 0.02,
+              "p_down": 0.05,
+              "L_down": 6000000.0,
+              "risk": 300000.0
+            },
+            "F": {
+              "p_up": 0.1,
+              "b_up": 2.5,
+              "f_star": 0.26,
+              "p_down": 0.12,
+              "L_down": 40000000.0,
+              "risk": 4800000.0
+            }
+          },
+          "delta_p_up": -0.06999999999999998,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.18 | 8 | 0.0775 | 0.06 | 8,000,000 | 480,000 |\n| B | 0.22 | 4 | 0.0250 | 0.03 | 3,000,000 | 90,000 |\n| C | 0.12 | 10 | 0.0320 | 0.08 | 12,000,000 | 960,000 |\n| D | 0.35 | 3 | 0.0250 | 0.10 | 25,000,000 | 2,500,000 |\n| E | 0.16 | 6 | 0.0200 | 0.05 | 6,000,000 | 300,000 |\n| F | 0.10 | 2.5 | -0.2600 | 0.12 | 40,000,000 | 4,800,000 |\n\nReserves note: Since one source (F) yields a negative Kelly fraction and several f* values are modest, I would not force full deployment; I\u2019d hold reserves (or reallocate away from F) rather than target the sum of f* as a hard budget constraint.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "ALG-12",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.22,
+              "b_up": 6.0,
+              "f_star": 0.09,
+              "p_down": 0.08,
+              "L_down": 8000000.0,
+              "risk": 640000.0
+            },
+            "B": {
+              "p_up": 0.18,
+              "b_up": 5.0,
+              "f_star": 0.015,
+              "p_down": 0.12,
+              "L_down": 25000000.0,
+              "risk": 3000000.0
+            },
+            "C": {
+              "p_up": 0.1,
+              "b_up": 4.0,
+              "f_star": 0.125,
+              "p_down": 0.06,
+              "L_down": 5000000.0,
+              "risk": 300000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.222,
+              "p_down": 0.25,
+              "L_down": 120000000.0,
+              "risk": 30000000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 6.0,
+              "f_star": 0.067,
+              "p_down": 0.1,
+              "L_down": 10000000.0,
+              "risk": 1000000.0
+            },
+            "F": {
+              "p_up": 0.08,
+              "b_up": 3.0,
+              "f_star": 0.227,
+              "p_down": 0.18,
+              "L_down": 60000000.0,
+              "risk": 10800000.0
+            }
+          },
+          "delta_p_up": -0.013333333333333308,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down (USD) | Risk (USD) |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.22 | 6 | 0.090 | 0.08 | 8,000,000 | 640,000 |\n| B | 0.18 | 5 | 0.015 | 0.12 | 25,000,000 | 3,000,000 |\n| C | 0.10 | 4 | -0.125 | 0.06 | 5,000,000 | 300,000 |\n| D | 0.30 | 10 | 0.222 | 0.25 | 120,000,000 | 30,000,000 |\n| E | 0.20 | 6 | 0.067 | 0.10 | 10,000,000 | 1,000,000 |\n| F | 0.08 | 3 | -0.227 | 0.18 | 60,000,000 | 10,800,000 |\n\nReserves note: Because some f* values are negative (C, F) and the positive f* values sum to ~0.394, I would hold the remaining ~0.606 of budget in reserve (or allocate to validation, safety/legal review, and integration work rather than additional \u201cupside-seeking\u201d exploration).",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "NRG-01",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.18,
+              "b_up": 8.0,
+              "f_star": 0.0775,
+              "p_down": 0.12,
+              "L_down": 80000000.0,
+              "risk": 9600000.0
+            },
+            "B": {
+              "p_up": 0.1,
+              "b_up": 6.0,
+              "f_star": 0.05,
+              "p_down": 0.08,
+              "L_down": 40000000.0,
+              "risk": 3200000.0
+            },
+            "C": {
+              "p_up": 0.14,
+              "b_up": 5.0,
+              "f_star": 0.032,
+              "p_down": 0.1,
+              "L_down": 60000000.0,
+              "risk": 6000000.0
+            },
+            "D": {
+              "p_up": 0.35,
+              "b_up": 4.0,
+              "f_star": 0.1333,
+              "p_down": 0.25,
+              "L_down": 500000000.0,
+              "risk": 125000000.0
+            },
+            "E": {
+              "p_up": 0.08,
+              "b_up": 12.0,
+              "f_star": 0.0033,
+              "p_down": 0.15,
+              "L_down": 120000000.0,
+              "risk": 18000000.0
+            },
+            "F": {
+              "p_up": 0.06,
+              "b_up": 3.0,
+              "f_star": 0.2533,
+              "p_down": 0.05,
+              "L_down": 30000000.0,
+              "risk": 1500000.0
+            }
+          },
+          "delta_p_up": -0.03666666666666668,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.18 | 8 | 0.0775 | 0.12 | 80,000,000 | 9,600,000 |\n| B | 0.10 | 6 | -0.0500 | 0.08 | 40,000,000 | 3,200,000 |\n| C | 0.14 | 5 | -0.0320 | 0.10 | 60,000,000 | 6,000,000 |\n| D | 0.35 | 4 | 0.1333 | 0.25 | 500,000,000 | 125,000,000 |\n| E | 0.08 | 12 | 0.0033 | 0.15 | 120,000,000 | 18,000,000 |\n| F | 0.06 | 3 | -0.2533 | 0.05 | 30,000,000 | 1,500,000 |\n\nReserves note: Several sources have negative f* (B, C, F), implying \u201cdon\u2019t allocate\u201d under this Kelly framing; I would hold reserves rather than force full deployment, and concentrate exploratory spend primarily in D and A (with a small option-like allocation to E).",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "NRG-02",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.22,
+              "b_up": 8.0,
+              "f_star": 0.1225,
+              "p_down": 0.08,
+              "L_down": 30000000.0,
+              "risk": 2400000.0
+            },
+            "B": {
+              "p_up": 0.18,
+              "b_up": 6.0,
+              "f_star": 0.0433,
+              "p_down": 0.05,
+              "L_down": 15000000.0,
+              "risk": 750000.0
+            },
+            "C": {
+              "p_up": 0.25,
+              "b_up": 10.0,
+              "f_star": 0.175,
+              "p_down": 0.1,
+              "L_down": 40000000.0,
+              "risk": 4000000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 7.0,
+              "f_star": 0.2,
+              "p_down": 0.12,
+              "L_down": 60000000.0,
+              "risk": 7200000.0
+            },
+            "E": {
+              "p_up": 0.05,
+              "b_up": 3.0,
+              "f_star": 0.2667,
+              "p_down": 0.03,
+              "L_down": 10000000.0,
+              "risk": 300000.0
+            },
+            "F": {
+              "p_up": 0.1,
+              "b_up": 4.0,
+              "f_star": 0.125,
+              "p_down": 0.07,
+              "L_down": 25000000.0,
+              "risk": 1750000.0
+            }
+          },
+          "delta_p_up": -0.01999999999999999,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down (USD) | Risk (USD) |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.22 | 8 | 0.1225 | 0.08 | 30,000,000 | 2,400,000 |\n| B | 0.18 | 6 | 0.0433 | 0.05 | 15,000,000 | 750,000 |\n| C | 0.25 | 10 | 0.1750 | 0.10 | 40,000,000 | 4,000,000 |\n| D | 0.30 | 7 | 0.2000 | 0.12 | 60,000,000 | 7,200,000 |\n| E | 0.05 | 3 | -0.2667 | 0.03 | 10,000,000 | 300,000 |\n| F | 0.10 | 4 | -0.1250 | 0.07 | 25,000,000 | 1,750,000 |\n\nReserves note: Sum of positive f* values \u2248 0.541; I would hold the remaining ~0.459 as reserves (and allocate 0 to negative-f* sources E and F unless they\u2019re pursued for non-Kelly strategic reasons like optionality/IP landscaping).",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "NRG-03",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.22,
+              "b_up": 12.0,
+              "f_star": 0.155,
+              "p_down": 0.08,
+              "L_down": 25000000.0,
+              "risk": 2000000.0
+            },
+            "B": {
+              "p_up": 0.3,
+              "b_up": 6.0,
+              "f_star": 0.183,
+              "p_down": 0.12,
+              "L_down": 15000000.0,
+              "risk": 1800000.0
+            },
+            "C": {
+              "p_up": 0.18,
+              "b_up": 15.0,
+              "f_star": 0.125,
+              "p_down": 0.06,
+              "L_down": 20000000.0,
+              "risk": 1200000.0
+            },
+            "D": {
+              "p_up": 0.26,
+              "b_up": 5.0,
+              "f_star": 0.075,
+              "p_down": 0.1,
+              "L_down": 30000000.0,
+              "risk": 3000000.0
+            },
+            "E": {
+              "p_up": 0.16,
+              "b_up": 10.0,
+              "f_star": 0.076,
+              "p_down": 0.07,
+              "L_down": 18000000.0,
+              "risk": 1260000.0
+            },
+            "F": {
+              "p_up": 0.1,
+              "b_up": 3.0,
+              "f_star": 0.2,
+              "p_down": 0.2,
+              "L_down": 10000000.0,
+              "risk": 2000000.0
+            }
+          },
+          "delta_p_up": -0.033333333333333326,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.22 | 12 | 0.155 | 0.08 | 25,000,000 | 2,000,000 |\n| B | 0.30 | 6 | 0.183 | 0.12 | 15,000,000 | 1,800,000 |\n| C | 0.18 | 15 | 0.125 | 0.06 | 20,000,000 | 1,200,000 |\n| D | 0.26 | 5 | 0.075 | 0.10 | 30,000,000 | 3,000,000 |\n| E | 0.16 | 10 | 0.076 | 0.07 | 18,000,000 | 1,260,000 |\n| F | 0.10 | 3 | -0.200 | 0.20 | 10,000,000 | 2,000,000 |\n\nReserves note: The sum of positive f* values is ~0.614, so I\u2019d hold ~0.386 as reserves (or allocate to baseline execution/validation). Also, F has negative f*, implying no incremental budget under this Kelly framing (use only if strategically necessary for freedom-to-operate/landscape awareness).",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "NRG-04",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.12,
+              "b_up": 6.0,
+              "f_star": 0.027,
+              "p_down": 0.06,
+              "L_down": 8000000.0,
+              "risk": 480000.0
+            },
+            "B": {
+              "p_up": 0.22,
+              "b_up": 8.0,
+              "f_star": 0.123,
+              "p_down": 0.1,
+              "L_down": 25000000.0,
+              "risk": 2500000.0
+            },
+            "C": {
+              "p_up": 0.1,
+              "b_up": 4.0,
+              "f_star": 0.125,
+              "p_down": 0.04,
+              "L_down": 5000000.0,
+              "risk": 200000.0
+            },
+            "D": {
+              "p_up": 0.28,
+              "b_up": 12.0,
+              "f_star": 0.215,
+              "p_down": 0.14,
+              "L_down": 60000000.0,
+              "risk": 8400000.0
+            },
+            "E": {
+              "p_up": 0.08,
+              "b_up": 3.0,
+              "f_star": 0.227,
+              "p_down": 0.05,
+              "L_down": 6000000.0,
+              "risk": 300000.0
+            },
+            "F": {
+              "p_up": 0.15,
+              "b_up": 5.0,
+              "f_star": 0.02,
+              "p_down": 0.08,
+              "L_down": 15000000.0,
+              "risk": 1200000.0
+            }
+          },
+          "delta_p_up": -0.11666666666666668,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.12 | 6 | -0.027 | 0.06 | 8,000,000 | 480,000 |\n| B | 0.22 | 8 | 0.123 | 0.10 | 25,000,000 | 2,500,000 |\n| C | 0.10 | 4 | -0.125 | 0.04 | 5,000,000 | 200,000 |\n| D | 0.28 | 12 | 0.215 | 0.14 | 60,000,000 | 8,400,000 |\n| E | 0.08 | 3 | -0.227 | 0.05 | 6,000,000 | 300,000 |\n| F | 0.15 | 5 | -0.020 | 0.08 | 15,000,000 | 1,200,000 |\n\nReserves: Yes. Only positive Kelly allocations here are **B (0.123)** and **D (0.215)**; the rest are negative (i.e., don\u2019t allocate on Kelly grounds). Total suggested allocation \u2248 **0.338**, so I\u2019d hold **~0.662** in reserve (or reallocate to other opportunities / staged experiments) given model uncertainty and correlated technical risk.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "NRG-05",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.18,
+              "b_up": 8.0,
+              "f_star": 0.077,
+              "p_down": 0.12,
+              "L_down": 80000000.0,
+              "risk": 9600000.0
+            },
+            "B": {
+              "p_up": 0.22,
+              "b_up": 6.0,
+              "f_star": 0.09,
+              "p_down": 0.08,
+              "L_down": 40000000.0,
+              "risk": 3200000.0
+            },
+            "C": {
+              "p_up": 0.14,
+              "b_up": 7.0,
+              "f_star": 0.017,
+              "p_down": 0.1,
+              "L_down": 60000000.0,
+              "risk": 6000000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.125,
+              "p_down": 0.15,
+              "L_down": 120000000.0,
+              "risk": 18000000.0
+            },
+            "E": {
+              "p_up": 0.12,
+              "b_up": 9.0,
+              "f_star": 0.022,
+              "p_down": 0.1,
+              "L_down": 70000000.0,
+              "risk": 7000000.0
+            },
+            "F": {
+              "p_up": 0.1,
+              "b_up": 4.0,
+              "f_star": 0.125,
+              "p_down": 0.06,
+              "L_down": 25000000.0,
+              "risk": 1500000.0
+            }
+          },
+          "delta_p_up": -0.06,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down (USD) | Risk (USD) |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.18 | 8 | 0.077 | 0.12 | 80,000,000 | 9,600,000 |\n| B | 0.22 | 6 | 0.090 | 0.08 | 40,000,000 | 3,200,000 |\n| C | 0.14 | 7 | 0.017 | 0.10 | 60,000,000 | 6,000,000 |\n| D | 0.30 | 5 | 0.125 | 0.15 | 120,000,000 | 18,000,000 |\n| E | 0.12 | 9 | 0.022 | 0.10 | 70,000,000 | 7,000,000 |\n| F | 0.10 | 4 | -0.125 | 0.06 | 25,000,000 | 1,500,000 |\n\nReserves: Yes. I would not allocate the full sum of positive f* (\u22480.33) immediately; I\u2019d stage-gate and hold the remainder as reserves (and treat F as \u201cno-bet\u201d on upside under this Kelly framing, while it can still be funded as low-risk intelligence work if desired).",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "NRG-06",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.22,
+              "b_up": 8.0,
+              "f_star": 0.1225,
+              "p_down": 0.18,
+              "L_down": 80000000.0,
+              "risk": 14400000.0
+            },
+            "B": {
+              "p_up": 0.12,
+              "b_up": 5.0,
+              "f_star": 0.056,
+              "p_down": 0.1,
+              "L_down": 30000000.0,
+              "risk": 3000000.0
+            },
+            "C": {
+              "p_up": 0.18,
+              "b_up": 7.0,
+              "f_star": 0.0629,
+              "p_down": 0.15,
+              "L_down": 60000000.0,
+              "risk": 9000000.0
+            },
+            "D": {
+              "p_up": 0.35,
+              "b_up": 6.0,
+              "f_star": 0.2417,
+              "p_down": 0.22,
+              "L_down": 120000000.0,
+              "risk": 26400000.0
+            },
+            "E": {
+              "p_up": 0.1,
+              "b_up": 6.0,
+              "f_star": 0.05,
+              "p_down": 0.12,
+              "L_down": 40000000.0,
+              "risk": 4800000.0
+            },
+            "F": {
+              "p_up": 0.08,
+              "b_up": 4.0,
+              "f_star": 0.15,
+              "p_down": 0.25,
+              "L_down": 200000000.0,
+              "risk": 50000000.0
+            }
+          },
+          "delta_p_up": -0.016666666666666663,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down (USD) | Risk (USD) |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.22 | 8 | 0.1225 | 0.18 | 80,000,000 | 14,400,000 |\n| B | 0.12 | 5 | -0.0560 | 0.10 | 30,000,000 | 3,000,000 |\n| C | 0.18 | 7 | 0.0629 | 0.15 | 60,000,000 | 9,000,000 |\n| D | 0.35 | 6 | 0.2417 | 0.22 | 120,000,000 | 26,400,000 |\n| E | 0.10 | 6 | -0.0500 | 0.12 | 40,000,000 | 4,800,000 |\n| F | 0.08 | 4 | -0.1500 | 0.25 | 200,000,000 | 50,000,000 |\n\nReserves note: The positive Kelly fractions sum to **~0.427** (A+C+D). I would hold the remainder as **reserves** (or allocate to enabling work like assay development/bioreactor validation), and treat negative f* sources (B, E, F) as **0 allocation** unless needed for de-risking or as low-cost support functions.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "NRG-07",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.18,
+              "b_up": 8.0,
+              "f_star": 0.0775,
+              "p_down": 0.12,
+              "L_down": 80000000.0,
+              "risk": 9600000.0
+            },
+            "B": {
+              "p_up": 0.22,
+              "b_up": 6.0,
+              "f_star": 0.09,
+              "p_down": 0.08,
+              "L_down": 40000000.0,
+              "risk": 3200000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 10.0,
+              "f_star": 0.12,
+              "p_down": 0.1,
+              "L_down": 70000000.0,
+              "risk": 7000000.0
+            },
+            "D": {
+              "p_up": 0.25,
+              "b_up": 5.0,
+              "f_star": 0.0625,
+              "p_down": 0.09,
+              "L_down": 60000000.0,
+              "risk": 5400000.0
+            },
+            "E": {
+              "p_up": 0.12,
+              "b_up": 7.0,
+              "f_star": 0.0057,
+              "p_down": 0.11,
+              "L_down": 50000000.0,
+              "risk": 5500000.0
+            },
+            "F": {
+              "p_up": 0.1,
+              "b_up": 3.0,
+              "f_star": 0.2,
+              "p_down": 0.06,
+              "L_down": 120000000.0,
+              "risk": 7200000.0
+            }
+          },
+          "delta_p_up": -0.023333333333333317,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down (USD) | Risk (USD) |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.18 | 8 | 0.0775 | 0.12 | 80,000,000 | 9,600,000 |\n| B | 0.22 | 6 | 0.0900 | 0.08 | 40,000,000 | 3,200,000 |\n| C | 0.20 | 10 | 0.1200 | 0.10 | 70,000,000 | 7,000,000 |\n| D | 0.25 | 5 | 0.0625 | 0.09 | 60,000,000 | 5,400,000 |\n| E | 0.12 | 7 | -0.0057 | 0.11 | 50,000,000 | 5,500,000 |\n| F | 0.10 | 3 | -0.2000 | 0.06 | 120,000,000 | 7,200,000 |\n\nReserves note: The sum of positive f* values is **~0.35** (A+B+C+D). I would hold the remaining **~0.65** as reserves (or allocate to validation/scale-up), and allocate **0** to sources with negative f* (E, F) unless needed for strategic coverage.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "NRG-08",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.18,
+              "b_up": 6.0,
+              "f_star": 0.043,
+              "p_down": 0.08,
+              "L_down": 8000000.0,
+              "risk": 640000.0
+            },
+            "B": {
+              "p_up": 0.22,
+              "b_up": 4.0,
+              "f_star": 0.025,
+              "p_down": 0.12,
+              "L_down": 15000000.0,
+              "risk": 1800000.0
+            },
+            "C": {
+              "p_up": 0.12,
+              "b_up": 8.0,
+              "f_star": 0.01,
+              "p_down": 0.06,
+              "L_down": 5000000.0,
+              "risk": 300000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.125,
+              "p_down": 0.15,
+              "L_down": 25000000.0,
+              "risk": 3750000.0
+            },
+            "E": {
+              "p_up": 0.08,
+              "b_up": 5.0,
+              "f_star": 0.104,
+              "p_down": 0.05,
+              "L_down": 3000000.0,
+              "risk": 150000.0
+            },
+            "F": {
+              "p_up": 0.16,
+              "b_up": 3.0,
+              "f_star": 0.12,
+              "p_down": 0.2,
+              "L_down": 40000000.0,
+              "risk": 8000000.0
+            }
+          },
+          "delta_p_up": -0.1,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.18 | 6 | 0.043 | 0.08 | 8,000,000 | 640,000 |\n| B | 0.22 | 4 | 0.025 | 0.12 | 15,000,000 | 1,800,000 |\n| C | 0.12 | 8 | 0.010 | 0.06 | 5,000,000 | 300,000 |\n| D | 0.30 | 5 | 0.125 | 0.15 | 25,000,000 | 3,750,000 |\n| E | 0.08 | 5 | -0.104 | 0.05 | 3,000,000 | 150,000 |\n| F | 0.16 | 3 | -0.120 | 0.20 | 40,000,000 | 8,000,000 |\n\nNotes: Negative f* (E, F) implies \u201cdon\u2019t bet\u201d under the Kelly model as parameterized. Sum of positive f* \u2248 0.203, so I would hold reserves (~80%) for iteration, validation, and to scale winners after early evidence.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "NRG-09",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.08,
+              "b_up": 20.0,
+              "f_star": 0.034,
+              "p_down": 0.06,
+              "L_down": 50000000.0,
+              "risk": 3000000.0
+            },
+            "B": {
+              "p_up": 0.22,
+              "b_up": 6.0,
+              "f_star": 0.09,
+              "p_down": 0.1,
+              "L_down": 120000000.0,
+              "risk": 12000000.0
+            },
+            "C": {
+              "p_up": 0.1,
+              "b_up": 12.0,
+              "f_star": 0.018,
+              "p_down": 0.07,
+              "L_down": 60000000.0,
+              "risk": 4200000.0
+            },
+            "D": {
+              "p_up": 0.28,
+              "b_up": 8.0,
+              "f_star": 0.19,
+              "p_down": 0.12,
+              "L_down": 200000000.0,
+              "risk": 24000000.0
+            },
+            "E": {
+              "p_up": 0.07,
+              "b_up": 15.0,
+              "f_star": 0.004,
+              "p_down": 0.05,
+              "L_down": 40000000.0,
+              "risk": 2000000.0
+            },
+            "F": {
+              "p_up": 0.12,
+              "b_up": 4.0,
+              "f_star": 0.1,
+              "p_down": 0.08,
+              "L_down": 80000000.0,
+              "risk": 6400000.0
+            }
+          },
+          "delta_p_up": -0.12333333333333334,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down (USD) | Risk (USD) |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.08 | 20 | 0.034 | 0.06 | 50,000,000 | 3,000,000 |\n| B | 0.22 | 6 | 0.090 | 0.10 | 120,000,000 | 12,000,000 |\n| C | 0.10 | 12 | 0.018 | 0.07 | 60,000,000 | 4,200,000 |\n| D | 0.28 | 8 | 0.190 | 0.12 | 200,000,000 | 24,000,000 |\n| E | 0.07 | 15 | 0.004 | 0.05 | 40,000,000 | 2,000,000 |\n| F | 0.12 | 4 | -0.100 | 0.08 | 80,000,000 | 6,400,000 |\n\nReserves note: The positive Kelly fractions sum to ~0.336 (33.6% of budget). I would hold the remainder as reserves (or stage-gate it) given model uncertainty and correlated technical risk across B/D/F.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "NRG-10",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.08,
+              "b_up": 6.0,
+              "f_star": 0.073,
+              "p_down": 0.03,
+              "L_down": 50000000.0,
+              "risk": 1500000.0
+            },
+            "B": {
+              "p_up": 0.35,
+              "b_up": 3.0,
+              "f_star": 0.133,
+              "p_down": 0.08,
+              "L_down": 200000000.0,
+              "risk": 16000000.0
+            },
+            "C": {
+              "p_up": 0.1,
+              "b_up": 5.0,
+              "f_star": 0.125,
+              "p_down": 0.04,
+              "L_down": 80000000.0,
+              "risk": 3200000.0
+            },
+            "D": {
+              "p_up": 0.25,
+              "b_up": 8.0,
+              "f_star": 0.156,
+              "p_down": 0.2,
+              "L_down": 1000000000.0,
+              "risk": 200000000.0
+            },
+            "E": {
+              "p_up": 0.06,
+              "b_up": 4.0,
+              "f_star": 0.175,
+              "p_down": 0.03,
+              "L_down": 60000000.0,
+              "risk": 1800000.0
+            },
+            "F": {
+              "p_up": 0.18,
+              "b_up": 2.5,
+              "f_star": 0.148,
+              "p_down": 0.12,
+              "L_down": 300000000.0,
+              "risk": 36000000.0
+            }
+          },
+          "delta_p_up": -0.18,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down (USD) | Risk (USD) |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.08 | 6 | -0.073 | 0.03 | 50,000,000 | 1,500,000 |\n| B | 0.35 | 3 | 0.133 | 0.08 | 200,000,000 | 16,000,000 |\n| C | 0.10 | 5 | -0.125 | 0.04 | 80,000,000 | 3,200,000 |\n| D | 0.25 | 8 | 0.156 | 0.20 | 1,000,000,000 | 200,000,000 |\n| E | 0.06 | 4 | -0.175 | 0.03 | 60,000,000 | 1,800,000 |\n| F | 0.18 | 2.5 | -0.148 | 0.12 | 300,000,000 | 36,000,000 |\n\nReserves note: Only B and D have positive Kelly fractions here; the sum of positive f* is **0.289**, so I would hold the remaining **~71%** as reserves (or allocate to baseline engineering, validation, and risk controls) rather than forcing spend into negative-f* sources.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "NRG-11",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.18,
+              "b_up": 3.0,
+              "f_star": 0.093,
+              "p_down": 0.08,
+              "L_down": 25000000.0,
+              "risk": 2000000.0
+            },
+            "B": {
+              "p_up": 0.06,
+              "b_up": 1.5,
+              "f_star": 0.567,
+              "p_down": 0.03,
+              "L_down": 5000000.0,
+              "risk": 150000.0
+            },
+            "C": {
+              "p_up": 0.1,
+              "b_up": 2.5,
+              "f_star": 0.26,
+              "p_down": 0.06,
+              "L_down": 15000000.0,
+              "risk": 900000.0
+            },
+            "D": {
+              "p_up": 0.22,
+              "b_up": 4.0,
+              "f_star": 0.025,
+              "p_down": 0.1,
+              "L_down": 40000000.0,
+              "risk": 4000000.0
+            },
+            "E": {
+              "p_up": 0.14,
+              "b_up": 3.0,
+              "f_star": 0.147,
+              "p_down": 0.07,
+              "L_down": 20000000.0,
+              "risk": 1400000.0
+            },
+            "F": {
+              "p_up": 0.08,
+              "b_up": 2.0,
+              "f_star": 0.38,
+              "p_down": 0.05,
+              "L_down": 10000000.0,
+              "risk": 500000.0
+            }
+          },
+          "delta_p_up": 0.020000000000000004,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down (USD) | Risk (USD) |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.18 | 3.0 | -0.093 | 0.08 | 25,000,000 | 2,000,000 |\n| B | 0.06 | 1.5 | -0.567 | 0.03 | 5,000,000 | 150,000 |\n| C | 0.10 | 2.5 | -0.260 | 0.06 | 15,000,000 | 900,000 |\n| D | 0.22 | 4.0 | 0.025 | 0.10 | 40,000,000 | 4,000,000 |\n| E | 0.14 | 3.0 | -0.147 | 0.07 | 20,000,000 | 1,400,000 |\n| F | 0.08 | 2.0 | -0.380 | 0.05 | 10,000,000 | 500,000 |\n\nNote: Several f* values are negative (i.e., not favorable under the Kelly setup as framed). I would allocate only to positive-f* items (here, D) and hold the remainder as reserves (or reallocate to baseline validation/instrumentation), rather than forcing the sum of f* to 1.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "NRG-12",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.18,
+              "b_up": 12.0,
+              "f_star": 0.112,
+              "p_down": 0.08,
+              "L_down": 25000000.0,
+              "risk": 2000000.0
+            },
+            "B": {
+              "p_up": 0.22,
+              "b_up": 6.0,
+              "f_star": 0.09,
+              "p_down": 0.05,
+              "L_down": 10000000.0,
+              "risk": 500000.0
+            },
+            "C": {
+              "p_up": 0.14,
+              "b_up": 10.0,
+              "f_star": 0.054,
+              "p_down": 0.07,
+              "L_down": 20000000.0,
+              "risk": 1400000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 8.0,
+              "f_star": 0.213,
+              "p_down": 0.12,
+              "L_down": 40000000.0,
+              "risk": 4800000.0
+            },
+            "E": {
+              "p_up": 0.1,
+              "b_up": 7.0,
+              "f_star": 0.029,
+              "p_down": 0.09,
+              "L_down": 15000000.0,
+              "risk": 1350000.0
+            },
+            "F": {
+              "p_up": 0.16,
+              "b_up": 4.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 30000000.0,
+              "risk": 3000000.0
+            }
+          },
+          "delta_p_up": -0.08666666666666667,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down (USD) | Risk (USD) |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.18 | 12 | 0.112 | 0.08 | 25,000,000 | 2,000,000 |\n| B | 0.22 | 6 | 0.090 | 0.05 | 10,000,000 | 500,000 |\n| C | 0.14 | 10 | 0.054 | 0.07 | 20,000,000 | 1,400,000 |\n| D | 0.30 | 8 | 0.213 | 0.12 | 40,000,000 | 4,800,000 |\n| E | 0.10 | 7 | -0.029 | 0.09 | 15,000,000 | 1,350,000 |\n| F | 0.16 | 4 | -0.050 | 0.10 | 30,000,000 | 3,000,000 |\n\nReserves: Yes. The positive Kelly fractions sum to ~0.469, so I\u2019d hold ~0.531 as reserves (or allocate to baseline engineering execution) rather than forcing full deployment; negative f* suggests no incremental spend beyond minimal monitoring/option value for E and F.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "NRG-13",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.18,
+              "b_up": 12.0,
+              "f_star": 0.112,
+              "p_down": 0.06,
+              "L_down": 20000000.0,
+              "risk": 1200000.0
+            },
+            "B": {
+              "p_up": 0.3,
+              "b_up": 8.0,
+              "f_star": 0.213,
+              "p_down": 0.08,
+              "L_down": 15000000.0,
+              "risk": 1200000.0
+            },
+            "C": {
+              "p_up": 0.16,
+              "b_up": 10.0,
+              "f_star": 0.076,
+              "p_down": 0.05,
+              "L_down": 10000000.0,
+              "risk": 500000.0
+            },
+            "D": {
+              "p_up": 0.35,
+              "b_up": 6.0,
+              "f_star": 0.242,
+              "p_down": 0.12,
+              "L_down": 40000000.0,
+              "risk": 4800000.0
+            },
+            "E": {
+              "p_up": 0.14,
+              "b_up": 9.0,
+              "f_star": 0.044,
+              "p_down": 0.07,
+              "L_down": 25000000.0,
+              "risk": 1750000.0
+            },
+            "F": {
+              "p_up": 0.1,
+              "b_up": 4.0,
+              "f_star": 0.125,
+              "p_down": 0.1,
+              "L_down": 60000000.0,
+              "risk": 6000000.0
+            }
+          },
+          "delta_p_up": -0.08999999999999997,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down (USD) | Risk (USD) |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.18 | 12 | 0.112 | 0.06 | 20,000,000 | 1,200,000 |\n| B | 0.30 | 8 | 0.213 | 0.08 | 15,000,000 | 1,200,000 |\n| C | 0.16 | 10 | 0.076 | 0.05 | 10,000,000 | 500,000 |\n| D | 0.35 | 6 | 0.242 | 0.12 | 40,000,000 | 4,800,000 |\n| E | 0.14 | 9 | 0.044 | 0.07 | 25,000,000 | 1,750,000 |\n| F | 0.10 | 4 | -0.125 | 0.10 | 60,000,000 | 6,000,000 |\n\nReserves note: The sum of positive f* values is **0.687**; I would hold the remaining **~0.313** as reserves (and treat **F** as \u201cdo not allocate\u201d under Kelly since f* is negative).",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MFG-01",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.18,
+              "b_up": 8.0,
+              "f_star": 0.077,
+              "p_down": 0.1,
+              "L_down": 20000000.0,
+              "risk": 2000000.0
+            },
+            "B": {
+              "p_up": 0.22,
+              "b_up": 6.0,
+              "f_star": 0.09,
+              "p_down": 0.12,
+              "L_down": 30000000.0,
+              "risk": 3600000.0
+            },
+            "C": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.23,
+              "p_down": 0.18,
+              "L_down": 50000000.0,
+              "risk": 9000000.0
+            },
+            "D": {
+              "p_up": 0.25,
+              "b_up": 5.0,
+              "f_star": 0.063,
+              "p_down": 0.15,
+              "L_down": 40000000.0,
+              "risk": 6000000.0
+            },
+            "E": {
+              "p_up": 0.14,
+              "b_up": 7.0,
+              "f_star": 0.017,
+              "p_down": 0.1,
+              "L_down": 20000000.0,
+              "risk": 2000000.0
+            },
+            "F": {
+              "p_up": 0.12,
+              "b_up": 4.0,
+              "f_star": 0.1,
+              "p_down": 0.25,
+              "L_down": 80000000.0,
+              "risk": 20000000.0
+            }
+          },
+          "delta_p_up": 0.010000000000000009,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down (USD) | Risk (USD) |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.18 | 8 | 0.077 | 0.10 | 20,000,000 | 2,000,000 |\n| B | 0.22 | 6 | 0.090 | 0.12 | 30,000,000 | 3,600,000 |\n| C | 0.30 | 10 | 0.230 | 0.18 | 50,000,000 | 9,000,000 |\n| D | 0.25 | 5 | 0.063 | 0.15 | 40,000,000 | 6,000,000 |\n| E | 0.14 | 7 | 0.017 | 0.10 | 20,000,000 | 2,000,000 |\n| F | 0.12 | 4 | -0.100 | 0.25 | 80,000,000 | 20,000,000 |\n\nNotes:\n- Negative f* (F) implies \u201cdon\u2019t bet\u201d under this Kelly setup; treat as 0 allocation unless needed for freedom-to-operate/IP risk management.\n- Sum of positive f* \u2248 0.477; I would hold reserves (~0.52 of budget) for follow-on validation, scale-up surprises, and to reallocate after early signal from the top two (C, B).",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MFG-02",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.18,
+              "b_up": 8.0,
+              "f_star": 0.0775,
+              "p_down": 0.12,
+              "L_down": 25000000.0,
+              "risk": 3000000.0
+            },
+            "B": {
+              "p_up": 0.3,
+              "b_up": 6.0,
+              "f_star": 0.1833,
+              "p_down": 0.08,
+              "L_down": 15000000.0,
+              "risk": 1200000.0
+            },
+            "C": {
+              "p_up": 0.14,
+              "b_up": 7.0,
+              "f_star": 0.0171,
+              "p_down": 0.1,
+              "L_down": 20000000.0,
+              "risk": 2000000.0
+            },
+            "D": {
+              "p_up": 0.22,
+              "b_up": 5.0,
+              "f_star": 0.064,
+              "p_down": 0.18,
+              "L_down": 30000000.0,
+              "risk": 5400000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 9.0,
+              "f_star": 0.1111,
+              "p_down": 0.1,
+              "L_down": 25000000.0,
+              "risk": 2500000.0
+            },
+            "F": {
+              "p_up": 0.12,
+              "b_up": 4.0,
+              "f_star": 0.1,
+              "p_down": 0.25,
+              "L_down": 50000000.0,
+              "risk": 12500000.0
+            }
+          },
+          "delta_p_up": -0.04000000000000001,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.18 | 8 | 0.0775 | 0.12 | 25,000,000 | 3,000,000 |\n| B | 0.30 | 6 | 0.1833 | 0.08 | 15,000,000 | 1,200,000 |\n| C | 0.14 | 7 | 0.0171 | 0.10 | 20,000,000 | 2,000,000 |\n| D | 0.22 | 5 | 0.0640 | 0.18 | 30,000,000 | 5,400,000 |\n| E | 0.20 | 9 | 0.1111 | 0.10 | 25,000,000 | 2,500,000 |\n| F | 0.12 | 4 | -0.1000 | 0.25 | 50,000,000 | 12,500,000 |\n\nReserves: Yes\u2014since F has negative Kelly f* (no allocation under this model) and because these are correlated bets (shared fabrication/scale-up risks), I would hold reserves rather than allocate the full sum of positive f* values.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MFG-03",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.22,
+              "b_up": 12.0,
+              "f_star": 0.155,
+              "p_down": 0.18,
+              "L_down": 80000000.0,
+              "risk": 14400000.0
+            },
+            "B": {
+              "p_up": 0.28,
+              "b_up": 6.0,
+              "f_star": 0.16,
+              "p_down": 0.1,
+              "L_down": 25000000.0,
+              "risk": 2500000.0
+            },
+            "C": {
+              "p_up": 0.18,
+              "b_up": 15.0,
+              "f_star": 0.125,
+              "p_down": 0.22,
+              "L_down": 120000000.0,
+              "risk": 26400000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.125,
+              "p_down": 0.12,
+              "L_down": 60000000.0,
+              "risk": 7200000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 10.0,
+              "f_star": 0.111,
+              "p_down": 0.2,
+              "L_down": 90000000.0,
+              "risk": 18000000.0
+            },
+            "F": {
+              "p_up": 0.12,
+              "b_up": 4.0,
+              "f_star": 0.1,
+              "p_down": 0.08,
+              "L_down": 40000000.0,
+              "risk": 3200000.0
+            }
+          },
+          "delta_p_up": -0.033333333333333326,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down (USD) | Risk (USD) |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.22 | 12 | 0.155 | 0.18 | 80,000,000 | 14,400,000 |\n| B | 0.28 | 6 | 0.160 | 0.10 | 25,000,000 | 2,500,000 |\n| C | 0.18 | 15 | 0.125 | 0.22 | 120,000,000 | 26,400,000 |\n| D | 0.30 | 5 | 0.125 | 0.12 | 60,000,000 | 7,200,000 |\n| E | 0.20 | 10 | 0.111 | 0.20 | 90,000,000 | 18,000,000 |\n| F | 0.12 | 4 | -0.100 | 0.08 | 40,000,000 | 3,200,000 |\n\nReserves note: Sum of positive f* \u2248 0.676, so I would hold ~0.324 as reserves (or allocate to follow-on only after early validation). Negative f* for F implies no dedicated budget under Kelly (treat as optional/low-cost support activity).",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MFG-04",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.22,
+              "b_up": 8.0,
+              "f_star": 0.1225,
+              "p_down": 0.08,
+              "L_down": 25000000.0,
+              "risk": 2000000.0
+            },
+            "B": {
+              "p_up": 0.18,
+              "b_up": 5.0,
+              "f_star": 0.016,
+              "p_down": 0.12,
+              "L_down": 15000000.0,
+              "risk": 1800000.0
+            },
+            "C": {
+              "p_up": 0.14,
+              "b_up": 6.0,
+              "f_star": 0.0033,
+              "p_down": 0.06,
+              "L_down": 10000000.0,
+              "risk": 600000.0
+            },
+            "D": {
+              "p_up": 0.12,
+              "b_up": 4.0,
+              "f_star": 0.1,
+              "p_down": 0.1,
+              "L_down": 30000000.0,
+              "risk": 3000000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 7.0,
+              "f_star": 0.0857,
+              "p_down": 0.07,
+              "L_down": 20000000.0,
+              "risk": 1400000.0
+            },
+            "F": {
+              "p_up": 0.1,
+              "b_up": 3.0,
+              "f_star": 0.2,
+              "p_down": 0.15,
+              "L_down": 40000000.0,
+              "risk": 6000000.0
+            }
+          },
+          "delta_p_up": 0.053333333333333344,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.22 | 8 | 0.1225 | 0.08 | 25,000,000 | 2,000,000 |\n| B | 0.18 | 5 | 0.0160 | 0.12 | 15,000,000 | 1,800,000 |\n| C | 0.14 | 6 | -0.0033 | 0.06 | 10,000,000 | 600,000 |\n| D | 0.12 | 4 | -0.1000 | 0.10 | 30,000,000 | 3,000,000 |\n| E | 0.20 | 7 | 0.0857 | 0.07 | 20,000,000 | 1,400,000 |\n| F | 0.10 | 3 | -0.2000 | 0.15 | 40,000,000 | 6,000,000 |\n\nReserves note: Several f* values are negative (C, D, F), implying \u201cdon\u2019t allocate\u201d under the Kelly model; I would cap those at 0 and hold the remainder as reserves (or reallocate to A/E/B), rather than forcing the sum of f* to 1.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MFG-05",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.22,
+              "b_up": 12.0,
+              "f_star": 0.155,
+              "p_down": 0.18,
+              "L_down": 80000000.0,
+              "risk": 14400000.0
+            },
+            "B": {
+              "p_up": 0.35,
+              "b_up": 6.0,
+              "f_star": 0.242,
+              "p_down": 0.12,
+              "L_down": 40000000.0,
+              "risk": 4800000.0
+            },
+            "C": {
+              "p_up": 0.18,
+              "b_up": 15.0,
+              "f_star": 0.125,
+              "p_down": 0.2,
+              "L_down": 120000000.0,
+              "risk": 24000000.0
+            },
+            "D": {
+              "p_up": 0.12,
+              "b_up": 3.0,
+              "f_star": 0.173,
+              "p_down": 0.08,
+              "L_down": 15000000.0,
+              "risk": 1200000.0
+            },
+            "E": {
+              "p_up": 0.1,
+              "b_up": 8.0,
+              "f_star": 0.013,
+              "p_down": 0.1,
+              "L_down": 30000000.0,
+              "risk": 3000000.0
+            },
+            "F": {
+              "p_up": 0.2,
+              "b_up": 4.0,
+              "f_star": 0.0,
+              "p_down": 0.15,
+              "L_down": 25000000.0,
+              "risk": 3750000.0
+            }
+          },
+          "delta_p_up": -0.05666666666666664,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down (USD) | Risk (USD) |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.22 | 12 | 0.155 | 0.18 | 80,000,000 | 14,400,000 |\n| B | 0.35 | 6 | 0.242 | 0.12 | 40,000,000 | 4,800,000 |\n| C | 0.18 | 15 | 0.125 | 0.20 | 120,000,000 | 24,000,000 |\n| D | 0.12 | 3 | -0.173 | 0.08 | 15,000,000 | 1,200,000 |\n| E | 0.10 | 8 | -0.013 | 0.10 | 30,000,000 | 3,000,000 |\n| F | 0.20 | 4 | 0.000 | 0.15 | 25,000,000 | 3,750,000 |\n\nReserves note: Several f* values are \u2264 0 (D, E, F), implying no incremental budget allocation under the Kelly model as parameterized; I would hold those amounts as reserves (or reallocate to A/B/C) rather than forcing the sum of f* to 1.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MFG-06",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.22,
+              "b_up": 12.0,
+              "f_star": 0.155,
+              "p_down": 0.08,
+              "L_down": 25000000.0,
+              "risk": 2000000.0
+            },
+            "B": {
+              "p_up": 0.18,
+              "b_up": 8.0,
+              "f_star": 0.078,
+              "p_down": 0.12,
+              "L_down": 15000000.0,
+              "risk": 1800000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 10.0,
+              "f_star": 0.111,
+              "p_down": 0.1,
+              "L_down": 20000000.0,
+              "risk": 2000000.0
+            },
+            "D": {
+              "p_up": 0.1,
+              "b_up": 4.0,
+              "f_star": 0.125,
+              "p_down": 0.18,
+              "L_down": 30000000.0,
+              "risk": 5400000.0
+            },
+            "E": {
+              "p_up": 0.28,
+              "b_up": 15.0,
+              "f_star": 0.232,
+              "p_down": 0.15,
+              "L_down": 40000000.0,
+              "risk": 6000000.0
+            },
+            "F": {
+              "p_up": 0.14,
+              "b_up": 6.0,
+              "f_star": 0.003,
+              "p_down": 0.25,
+              "L_down": 60000000.0,
+              "risk": 15000000.0
+            }
+          },
+          "delta_p_up": 0.09333333333333335,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.22 | 12 | 0.155 | 0.08 | 25,000,000 | 2,000,000 |\n| B | 0.18 | 8 | 0.078 | 0.12 | 15,000,000 | 1,800,000 |\n| C | 0.20 | 10 | 0.111 | 0.10 | 20,000,000 | 2,000,000 |\n| D | 0.10 | 4 | -0.125 | 0.18 | 30,000,000 | 5,400,000 |\n| E | 0.28 | 15 | 0.232 | 0.15 | 40,000,000 | 6,000,000 |\n| F | 0.14 | 6 | -0.003 | 0.25 | 60,000,000 | 15,000,000 |\n\nReserves: Yes. I would not allocate negative f*; treat D and F as 0% \u201cupside bet\u201d and hold the remainder as reserves (or reallocate to A/C/E/B), since the sum of positive f* values is 0.576.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MFG-07",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.18,
+              "b_up": 12.0,
+              "f_star": 0.112,
+              "p_down": 0.22,
+              "L_down": 80000000.0,
+              "risk": 17600000.0
+            },
+            "B": {
+              "p_up": 0.3,
+              "b_up": 6.0,
+              "f_star": 0.183,
+              "p_down": 0.18,
+              "L_down": 25000000.0,
+              "risk": 4500000.0
+            },
+            "C": {
+              "p_up": 0.22,
+              "b_up": 5.0,
+              "f_star": 0.064,
+              "p_down": 0.12,
+              "L_down": 30000000.0,
+              "risk": 3600000.0
+            },
+            "D": {
+              "p_up": 0.28,
+              "b_up": 4.0,
+              "f_star": 0.1,
+              "p_down": 0.25,
+              "L_down": 120000000.0,
+              "risk": 30000000.0
+            },
+            "E": {
+              "p_up": 0.16,
+              "b_up": 7.0,
+              "f_star": 0.04,
+              "p_down": 0.15,
+              "L_down": 40000000.0,
+              "risk": 6000000.0
+            },
+            "F": {
+              "p_up": 0.12,
+              "b_up": 3.0,
+              "f_star": 0.173,
+              "p_down": 0.1,
+              "L_down": 15000000.0,
+              "risk": 1500000.0
+            }
+          },
+          "delta_p_up": -0.04666666666666669,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down (USD) | Risk (USD) |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.18 | 12 | 0.112 | 0.22 | 80,000,000 | 17,600,000 |\n| B | 0.30 | 6 | 0.183 | 0.18 | 25,000,000 | 4,500,000 |\n| C | 0.22 | 5 | 0.064 | 0.12 | 30,000,000 | 3,600,000 |\n| D | 0.28 | 4 | 0.100 | 0.25 | 120,000,000 | 30,000,000 |\n| E | 0.16 | 7 | 0.040 | 0.15 | 40,000,000 | 6,000,000 |\n| F | 0.12 | 3 | -0.173 | 0.10 | 15,000,000 | 1,500,000 |\n\nReserves note: Sum of positive f* values \u2248 0.499, so I would hold ~50% as reserves (or allocate to follow-on only after early validation). Also, F has negative f* (no Kelly allocation on upside alone); I\u2019d fund it only as a low-cost enabling activity if needed.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MFG-08",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.18,
+              "b_up": 6.0,
+              "f_star": 0.043,
+              "p_down": 0.08,
+              "L_down": 20000000.0,
+              "risk": 1600000.0
+            },
+            "B": {
+              "p_up": 0.3,
+              "b_up": 8.0,
+              "f_star": 0.213,
+              "p_down": 0.12,
+              "L_down": 60000000.0,
+              "risk": 7200000.0
+            },
+            "C": {
+              "p_up": 0.22,
+              "b_up": 7.0,
+              "f_star": 0.109,
+              "p_down": 0.1,
+              "L_down": 30000000.0,
+              "risk": 3000000.0
+            },
+            "D": {
+              "p_up": 0.28,
+              "b_up": 10.0,
+              "f_star": 0.2,
+              "p_down": 0.2,
+              "L_down": 250000000.0,
+              "risk": 50000000.0
+            },
+            "E": {
+              "p_up": 0.16,
+              "b_up": 6.0,
+              "f_star": 0.02,
+              "p_down": 0.09,
+              "L_down": 25000000.0,
+              "risk": 2250000.0
+            },
+            "F": {
+              "p_up": 0.12,
+              "b_up": 4.0,
+              "f_star": 0.1,
+              "p_down": 0.15,
+              "L_down": 120000000.0,
+              "risk": 18000000.0
+            }
+          },
+          "delta_p_up": -0.04666666666666669,
+          "raw_response": "| Source | p_up | b_up | f* (Kelly) | p_down | L_down (USD) | Risk = p_down\u00b7L_down (USD) |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.18 | 6 | 0.043 | 0.08 | 20,000,000 | 1,600,000 |\n| B | 0.30 | 8 | 0.213 | 0.12 | 60,000,000 | 7,200,000 |\n| C | 0.22 | 7 | 0.109 | 0.10 | 30,000,000 | 3,000,000 |\n| D | 0.28 | 10 | 0.200 | 0.20 | 250,000,000 | 50,000,000 |\n| E | 0.16 | 6 | 0.020 | 0.09 | 25,000,000 | 2,250,000 |\n| F | 0.12 | 4 | -0.100 | 0.15 | 120,000,000 | 18,000,000 |\n\nNotes:\n- Negative f* (F) implies \u201cdon\u2019t bet\u201d under this Kelly framing; treat as 0 allocation unless it\u2019s a low-cost scouting activity.\n- Sum of positive f* \u2248 0.585, so I would hold reserves (~0.415) for follow-on funding, integration/scale-up, and to rebalance as evidence updates.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MFG-09",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.22,
+              "b_up": 6.0,
+              "f_star": 0.09,
+              "p_down": 0.1,
+              "L_down": 8000000.0,
+              "risk": 800000.0
+            },
+            "B": {
+              "p_up": 0.3,
+              "b_up": 4.0,
+              "f_star": 0.125,
+              "p_down": 0.12,
+              "L_down": 12000000.0,
+              "risk": 1440000.0
+            },
+            "C": {
+              "p_up": 0.28,
+              "b_up": 8.0,
+              "f_star": 0.19,
+              "p_down": 0.08,
+              "L_down": 6000000.0,
+              "risk": 480000.0
+            },
+            "D": {
+              "p_up": 0.35,
+              "b_up": 5.0,
+              "f_star": 0.188,
+              "p_down": 0.18,
+              "L_down": 25000000.0,
+              "risk": 4500000.0
+            },
+            "E": {
+              "p_up": 0.25,
+              "b_up": 7.0,
+              "f_star": 0.143,
+              "p_down": 0.09,
+              "L_down": 7000000.0,
+              "risk": 630000.0
+            },
+            "F": {
+              "p_up": 0.12,
+              "b_up": 3.0,
+              "f_star": 0.173,
+              "p_down": 0.22,
+              "L_down": 30000000.0,
+              "risk": 6600000.0
+            }
+          },
+          "delta_p_up": -0.006666666666666654,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down (USD) | Risk (USD) |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.22 | 6 | 0.090 | 0.10 | 8,000,000 | 800,000 |\n| B | 0.30 | 4 | 0.125 | 0.12 | 12,000,000 | 1,440,000 |\n| C | 0.28 | 8 | 0.190 | 0.08 | 6,000,000 | 480,000 |\n| D | 0.35 | 5 | 0.188 | 0.18 | 25,000,000 | 4,500,000 |\n| E | 0.25 | 7 | 0.143 | 0.09 | 7,000,000 | 630,000 |\n| F | 0.12 | 3 | -0.173 | 0.22 | 30,000,000 | 6,600,000 |\n\nReserves note: I would hold reserves (i.e., not force full allocation to the positive f* sum), and treat **F** as \u201cdo not allocate for upside\u201d under this Kelly framing (negative f*), using it only as a low-budget risk-reduction/landscaping activity if needed.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MFG-10",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.12,
+              "b_up": 8.0,
+              "f_star": 0.01,
+              "p_down": 0.08,
+              "L_down": 50000000.0,
+              "risk": 4000000.0
+            },
+            "B": {
+              "p_up": 0.18,
+              "b_up": 6.0,
+              "f_star": 0.043,
+              "p_down": 0.05,
+              "L_down": 20000000.0,
+              "risk": 1000000.0
+            },
+            "C": {
+              "p_up": 0.1,
+              "b_up": 10.0,
+              "f_star": 0.01,
+              "p_down": 0.1,
+              "L_down": 80000000.0,
+              "risk": 8000000.0
+            },
+            "D": {
+              "p_up": 0.35,
+              "b_up": 4.0,
+              "f_star": 0.133,
+              "p_down": 0.12,
+              "L_down": 300000000.0,
+              "risk": 36000000.0
+            },
+            "E": {
+              "p_up": 0.08,
+              "b_up": 12.0,
+              "f_star": 0.003,
+              "p_down": 0.06,
+              "L_down": 40000000.0,
+              "risk": 2400000.0
+            },
+            "F": {
+              "p_up": 0.22,
+              "b_up": 3.0,
+              "f_star": 0.04,
+              "p_down": 0.15,
+              "L_down": 150000000.0,
+              "risk": 22500000.0
+            }
+          },
+          "delta_p_up": -0.15000000000000002,
+          "raw_response": "| Source | p_up | b_up | f* (Kelly) | p_down | L_down (USD) | Risk = p_down\u00b7L_down (USD) |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.12 | 8 | 0.010 | 0.08 | 50,000,000 | 4,000,000 |\n| B | 0.18 | 6 | 0.043 | 0.05 | 20,000,000 | 1,000,000 |\n| C | 0.10 | 10 | 0.010 | 0.10 | 80,000,000 | 8,000,000 |\n| D | 0.35 | 4 | 0.133 | 0.12 | 300,000,000 | 36,000,000 |\n| E | 0.08 | 12 | 0.003 | 0.06 | 40,000,000 | 2,400,000 |\n| F | 0.22 | 3 | -0.040 | 0.15 | 150,000,000 | 22,500,000 |\n\nReserves note: Sum of positive f* \u2248 0.199 (19.9% of budget). I would hold the remaining ~80% as reserves (staged funding) given model uncertainty and the non-trivial downside exposures; also, F has negative Kelly (skip or treat as low-cost intelligence only).",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MFG-11",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.18,
+              "b_up": 12.0,
+              "f_star": 0.112,
+              "p_down": 0.08,
+              "L_down": 25000000.0,
+              "risk": 2000000.0
+            },
+            "B": {
+              "p_up": 0.35,
+              "b_up": 6.0,
+              "f_star": 0.242,
+              "p_down": 0.12,
+              "L_down": 60000000.0,
+              "risk": 7200000.0
+            },
+            "C": {
+              "p_up": 0.22,
+              "b_up": 8.0,
+              "f_star": 0.123,
+              "p_down": 0.1,
+              "L_down": 30000000.0,
+              "risk": 3000000.0
+            },
+            "D": {
+              "p_up": 0.08,
+              "b_up": 2.0,
+              "f_star": 0.38,
+              "p_down": 0.18,
+              "L_down": 120000000.0,
+              "risk": 21600000.0
+            },
+            "E": {
+              "p_up": 0.14,
+              "b_up": 7.0,
+              "f_star": 0.017,
+              "p_down": 0.09,
+              "L_down": 20000000.0,
+              "risk": 1800000.0
+            },
+            "F": {
+              "p_up": 0.12,
+              "b_up": 3.0,
+              "f_star": 0.173,
+              "p_down": 0.06,
+              "L_down": 15000000.0,
+              "risk": 900000.0
+            }
+          },
+          "delta_p_up": -0.003333333333333327,
+          "raw_response": "| Source | p_up | b_up | f* | p_down | L_down | Risk |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.18 | 12 | 0.112 | 0.08 | 25,000,000 | 2,000,000 |\n| B | 0.35 | 6 | 0.242 | 0.12 | 60,000,000 | 7,200,000 |\n| C | 0.22 | 8 | 0.123 | 0.10 | 30,000,000 | 3,000,000 |\n| D | 0.08 | 2 | -0.380 | 0.18 | 120,000,000 | 21,600,000 |\n| E | 0.14 | 7 | 0.017 | 0.09 | 20,000,000 | 1,800,000 |\n| F | 0.12 | 3 | -0.173 | 0.06 | 15,000,000 | 900,000 |\n\nNotes:\n- Negative f* (D, F) implies \u201cdon\u2019t allocate for upside-seeking discovery\u201d under this Kelly framing; they may still merit spend for baseline capability, compliance, or incremental improvements.\n- Sum of positive f* \u2248 0.494, so I would hold reserves (~50%) for (i) follow-on funding to double down after early signal, (ii) integration/validation costs, and (iii) hedging against model/assumption error.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MFG-12",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.18,
+              "b_up": 8.0,
+              "f_star": 0.077,
+              "p_down": 0.08,
+              "L_down": 80000000.0,
+              "risk": 6400000.0
+            },
+            "B": {
+              "p_up": 0.35,
+              "b_up": 5.0,
+              "f_star": 0.188,
+              "p_down": 0.2,
+              "L_down": 250000000.0,
+              "risk": 50000000.0
+            },
+            "C": {
+              "p_up": 0.12,
+              "b_up": 6.0,
+              "f_star": 0.027,
+              "p_down": 0.06,
+              "L_down": 40000000.0,
+              "risk": 2400000.0
+            },
+            "D": {
+              "p_up": 0.22,
+              "b_up": 3.0,
+              "f_star": 0.04,
+              "p_down": 0.12,
+              "L_down": 120000000.0,
+              "risk": 14400000.0
+            },
+            "E": {
+              "p_up": 0.1,
+              "b_up": 7.0,
+              "f_star": 0.029,
+              "p_down": 0.05,
+              "L_down": 30000000.0,
+              "risk": 1500000.0
+            },
+            "F": {
+              "p_up": 0.28,
+              "b_up": 4.0,
+              "f_star": 0.04,
+              "p_down": 0.25,
+              "L_down": 300000000.0,
+              "risk": 75000000.0
+            }
+          },
+          "delta_p_up": -0.15,
+          "raw_response": "| Source | p_up | b_up | f* (Kelly) | p_down | L_down (USD) | Risk = p_down\u00b7L_down (USD) |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.18 | 8 | 0.077 | 0.08 | 80,000,000 | 6,400,000 |\n| B | 0.35 | 5 | 0.188 | 0.20 | 250,000,000 | 50,000,000 |\n| C | 0.12 | 6 | -0.027 | 0.06 | 40,000,000 | 2,400,000 |\n| D | 0.22 | 3 | -0.040 | 0.12 | 120,000,000 | 14,400,000 |\n| E | 0.10 | 7 | -0.029 | 0.05 | 30,000,000 | 1,500,000 |\n| F | 0.28 | 4 | 0.040 | 0.25 | 300,000,000 | 75,000,000 |\n\nNotes:\n- Negative f* implies \u201cdon\u2019t allocate\u201d under this Kelly framing (C, D, E).\n- Sum of positive f* \u2248 0.305; I would hold the remaining ~0.695 as reserves (or allocate to validation, safety, and de-risking), given the long-horizon downside exposure\u2014especially for B and F.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MFG-13",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.18,
+              "b_up": 12.0,
+              "f_star": 0.112,
+              "p_down": 0.1,
+              "L_down": 80000000.0,
+              "risk": 8000000.0
+            },
+            "B": {
+              "p_up": 0.22,
+              "b_up": 8.0,
+              "f_star": 0.123,
+              "p_down": 0.18,
+              "L_down": 120000000.0,
+              "risk": 21600000.0
+            },
+            "C": {
+              "p_up": 0.14,
+              "b_up": 10.0,
+              "f_star": 0.044,
+              "p_down": 0.08,
+              "L_down": 60000000.0,
+              "risk": 4800000.0
+            },
+            "D": {
+              "p_up": 0.16,
+              "b_up": 6.0,
+              "f_star": 0.02,
+              "p_down": 0.22,
+              "L_down": 150000000.0,
+              "risk": 33000000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 15.0,
+              "f_star": 0.147,
+              "p_down": 0.12,
+              "L_down": 90000000.0,
+              "risk": 10800000.0
+            },
+            "F": {
+              "p_up": 0.1,
+              "b_up": 4.0,
+              "f_star": 0.125,
+              "p_down": 0.06,
+              "L_down": 40000000.0,
+              "risk": 2400000.0
+            }
+          },
+          "delta_p_up": 0.013333333333333336,
+          "raw_response": "| Source | p_up | b_up | f* (Kelly) | p_down | L_down (USD) | Risk = p_down\u00b7L_down (USD) |\n|---|---:|---:|---:|---:|---:|---:|\n| A | 0.18 | 12 | 0.112 | 0.10 | 80,000,000 | 8,000,000 |\n| B | 0.22 | 8 | 0.123 | 0.18 | 120,000,000 | 21,600,000 |\n| C | 0.14 | 10 | 0.044 | 0.08 | 60,000,000 | 4,800,000 |\n| D | 0.16 | 6 | 0.020 | 0.22 | 150,000,000 | 33,000,000 |\n| E | 0.20 | 15 | 0.147 | 0.12 | 90,000,000 | 10,800,000 |\n| F | 0.10 | 4 | -0.125 | 0.06 | 40,000,000 | 2,400,000 |\n\nReserves note: Because F has negative Kelly (no bet) and several sources carry meaningful downside exposure, I would not allocate the full sum of positive f* (\u22480.446). I\u2019d hold the remainder as reserves (or stage-gate it) to manage model/estimation error and correlated risks.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        }
+      ],
+      "metrics": {
+        "delta_p_up": -0.0451,
+        "delta_p_down": 0.0438,
+        "sigma": 0.057,
+        "n_valid": 50,
+        "n_total": 50,
+        "parse_rate": 1.0
+      },
+      "timestamp": "2026-02-09T21:36:57.256961"
+    }
+  }
+}

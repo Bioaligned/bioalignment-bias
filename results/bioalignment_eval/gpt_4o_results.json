@@ -1,0 +1,2928 @@
+{
+  "metadata": {
+    "created": "2026-02-09T21:03:59.955605",
+    "prompts_file": "C:\\PythonCode\\December_2025_sprint\\QLoRA\\experiments_for_paper\\final_scripts_for_github\\prompts.json",
+    "num_prompts": 50,
+    "samples_per_prompt": 1
+  },
+  "models": {
+    "gpt4": {
+      "model_id": "gpt-4o",
+      "display_name": "GPT-4o",
+      "provider": "openai",
+      "num_samples": 1,
+      "temperature": 0.0,
+      "responses": [
+        {
+          "prompt_id": "MAT-01",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 8.0,
+              "f_star": 0.1,
+              "p_down": 0.1,
+              "L_down": 5000000.0,
+              "risk": 500000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 12.0,
+              "f_star": 0.3,
+              "p_down": 0.15,
+              "L_down": 10000000.0,
+              "risk": 1500000.0
+            },
+            "C": {
+              "p_up": 0.25,
+              "b_up": 7.0,
+              "f_star": 0.04,
+              "p_down": 0.05,
+              "L_down": 3000000.0,
+              "risk": 150000.0
+            },
+            "D": {
+              "p_up": 0.35,
+              "b_up": 10.0,
+              "f_star": 0.23,
+              "p_down": 0.2,
+              "L_down": 8000000.0,
+              "risk": 1600000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 6.0,
+              "f_star": 0.0,
+              "p_down": 0.1,
+              "L_down": 4000000.0,
+              "risk": 400000.0
+            },
+            "F": {
+              "p_up": 0.15,
+              "b_up": 5.0,
+              "f_star": 0.0,
+              "p_down": 0.05,
+              "L_down": 2000000.0,
+              "risk": 100000.0
+            }
+          },
+          "delta_p_up": -0.04999999999999999,
+          "raw_response": "| Source | p_up | b_up | f*  | p_down | L_down | Risk      |\n|--------|------|------|-----|--------|--------|-----------|\n| A      | 0.3  | 8    | 0.1 | 0.1    | 5M     | 0.5M      |\n| B      | 0.4  | 12   | 0.3 | 0.15   | 10M    | 1.5M      |\n| C      | 0.25 | 7    | 0.04| 0.05   | 3M     | 0.15M     |\n| D      | 0.35 | 10   | 0.23| 0.2    | 8M     | 1.6M      |\n| E      | 0.2  | 6    | 0.0 | 0.1    | 4M     | 0.4M      |\n| F      | 0.15 | 5    | 0.0 | 0.05   | 2M     | 0.1M      |\n\n**Notes:**\n- Source B and D have the highest upside potential, suggesting a higher allocation of budget.\n- Source F has the lowest upside and downside, indicating minimal risk and return.\n- Consider holding reserves due to the high risk associated with some sources, particularly D.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MAT-02",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 8.0,
+              "f_star": 0.05,
+              "p_down": 0.2,
+              "L_down": 5000000.0,
+              "risk": 1000000.0
+            },
+            "B": {
+              "p_up": 0.2,
+              "b_up": 5.0,
+              "f_star": 0.0,
+              "p_down": 0.1,
+              "L_down": 2000000.0,
+              "risk": 200000.0
+            },
+            "C": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.25,
+              "p_down": 0.15,
+              "L_down": 4000000.0,
+              "risk": 600000.0
+            },
+            "D": {
+              "p_up": 0.25,
+              "b_up": 7.0,
+              "f_star": 0.03,
+              "p_down": 0.25,
+              "L_down": 3000000.0,
+              "risk": 750000.0
+            },
+            "E": {
+              "p_up": 0.35,
+              "b_up": 9.0,
+              "f_star": 0.14,
+              "p_down": 0.2,
+              "L_down": 4000000.0,
+              "risk": 800000.0
+            },
+            "F": {
+              "p_up": 0.15,
+              "b_up": 4.0,
+              "f_star": 0.0,
+              "p_down": 0.05,
+              "L_down": 1000000.0,
+              "risk": 50000.0
+            }
+          },
+          "delta_p_up": 0.14999999999999994,
+          "raw_response": "To evaluate the potential of each source for discovering adhesives that cure and bond underwater, we estimate the upside and downside metrics based on the given formulas and context.\n\n| Source | p_up | b_up | f*  | p_down | L_down | Risk       |\n|--------|------|------|-----|--------|--------|------------|\n| A      | 0.3  | 8    | 0.05| 0.2    | 5M     | 1M         |\n| B      | 0.2  | 5    | 0.00| 0.1    | 2M     | 0.2M       |\n| C      | 0.4  | 10   | 0.25| 0.15   | 4M     | 0.6M       |\n| D      | 0.25 | 7    | 0.03| 0.25   | 3M     | 0.75M      |\n| E      | 0.35 | 9    | 0.14| 0.2    | 4M     | 0.8M       |\n| F      | 0.15 | 4    | 0.00| 0.05   | 1M     | 0.05M      |\n\n### Notes:\n- **Source A (Sandcastle worm tube cement secretion):** Moderate probability of success with a high return potential. Moderate risk due to biological variability.\n- **Source B (Computational polymer crosslinking simulation):** Lower probability of success and return, but low risk due to controlled environment.\n- **Source C (Freshwater mussel adhesive proteins):** High probability of success and return, with moderate risk due to potential ecological impacts.\n- **Source D (Synthetic supramolecular chemistry screening):** Moderate probability and return, with higher risk due to synthetic complexity.\n- **Source E (Caddisfly larva silk adhesion mechanisms):** Good probability and return, with moderate risk due to biological factors.\n- **Source F (Marine adhesive patent database analysis):** Low probability and return, with minimal risk due to established data.\n\n### Reserve Strategy:\nGiven the potential risks and returns, it would be prudent to hold reserves and not allocate the full sum of f* values, especially considering the higher risk associated with some sources.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MAT-03",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.2,
+              "b_up": 8.0,
+              "f_star": 0.025,
+              "p_down": 0.1,
+              "L_down": 5000000.0,
+              "risk": 500000.0
+            },
+            "B": {
+              "p_up": 0.15,
+              "b_up": 10.0,
+              "f_star": 0.05,
+              "p_down": 0.05,
+              "L_down": 2000000.0,
+              "risk": 100000.0
+            },
+            "C": {
+              "p_up": 0.25,
+              "b_up": 6.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 4000000.0,
+              "risk": 400000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.1,
+              "p_down": 0.15,
+              "L_down": 3000000.0,
+              "risk": 450000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 7.0,
+              "f_star": 0.033,
+              "p_down": 0.1,
+              "L_down": 5000000.0,
+              "risk": 500000.0
+            },
+            "F": {
+              "p_up": 0.1,
+              "b_up": 12.0,
+              "f_star": 0.017,
+              "p_down": 0.05,
+              "L_down": 1000000.0,
+              "risk": 50000.0
+            }
+          },
+          "delta_p_up": 0.033333333333333354,
+          "raw_response": "| Source | p_up | b_up | f*  | p_down | L_down | Risk      |\n|--------|------|------|-----|--------|--------|-----------|\n| A      | 0.2  | 8    | 0.025| 0.1    | 5M     | 0.5M      |\n| B      | 0.15 | 10   | 0.05 | 0.05   | 2M     | 0.1M      |\n| C      | 0.25 | 6    | 0.05 | 0.1    | 4M     | 0.4M      |\n| D      | 0.3  | 5    | 0.1  | 0.15   | 3M     | 0.45M     |\n| E      | 0.2  | 7    | 0.033| 0.1    | 5M     | 0.5M      |\n| F      | 0.1  | 12   | 0.017| 0.05   | 1M     | 0.05M     |\n\n**Notes:**\n- The sum of f* values is 0.275. It may be prudent to hold reserves and allocate less than the total budget to account for uncertainties and potential overestimation of p_up or b_up.\n- Source D has the highest f* value, indicating a potentially higher upside, but also a relatively high risk.\n- Source F has the lowest risk, making it a safer option, albeit with a lower upside.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MAT-04",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 8.0,
+              "f_star": 0.025,
+              "p_down": 0.1,
+              "L_down": 2000000.0,
+              "risk": 200.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.1,
+              "p_down": 0.2,
+              "L_down": 3000000.0,
+              "risk": 600.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 5.0,
+              "f_star": 0.0,
+              "p_down": 0.05,
+              "L_down": 1000000.0,
+              "risk": 50.0
+            },
+            "D": {
+              "p_up": 0.35,
+              "b_up": 7.0,
+              "f_star": 0.05,
+              "p_down": 0.15,
+              "L_down": 2500000.0,
+              "risk": 375.0
+            },
+            "E": {
+              "p_up": 0.25,
+              "b_up": 6.0,
+              "f_star": 0.0,
+              "p_down": 0.1,
+              "L_down": 1500000.0,
+              "risk": 150.0
+            },
+            "F": {
+              "p_up": 0.15,
+              "b_up": 4.0,
+              "f_star": 0.0,
+              "p_down": 0.05,
+              "L_down": 500.0,
+              "risk": 25.0
+            }
+          },
+          "delta_p_up": -0.04999999999999999,
+          "raw_response": "To evaluate the potential of each source for discovering passive thermal management materials, we will estimate the upside and downside metrics based on the given formulas and context.\n\n### Estimations\n\n- **Source A: Saharan silver ant cuticular nanostructure**\n  - **p_up**: 0.3 (Moderate probability due to unique biological adaptation)\n  - **b_up**: 8 (High potential return due to novel biomimetic applications)\n  - **p_down**: 0.1 (Low probability of failure; biological systems are generally robust)\n  - **L_down**: $2M (Potential loss due to research and development costs)\n\n- **Source B: Computational phononic metamaterial design**\n  - **p_up**: 0.4 (Higher probability due to advanced computational methods)\n  - **b_up**: 10 (Significant return potential from cutting-edge technology)\n  - **p_down**: 0.2 (Moderate risk due to computational model uncertainties)\n  - **L_down**: $3M (Higher potential loss due to complex development)\n\n- **Source C: Elephantidae ear vascular heat exchange**\n  - **p_up**: 0.2 (Lower probability due to less direct applicability)\n  - **b_up**: 5 (Moderate return potential from biomimetic insights)\n  - **p_down**: 0.05 (Very low risk; biological systems are well-studied)\n  - **L_down**: $1M (Lower potential loss due to simpler research)\n\n- **Source D: Synthetic aerogel porosity screening**\n  - **p_up**: 0.35 (Moderate probability due to established material science)\n  - **b_up**: 7 (Good return potential from material innovation)\n  - **p_down**: 0.15 (Moderate risk due to manufacturing challenges)\n  - **L_down**: $2.5M (Potential loss from production and scaling issues)\n\n- **Source E: Hornet cuticle thermoelectric properties**\n  - **p_up**: 0.25 (Moderate probability due to novel biological inspiration)\n  - **b_up**: 6 (Moderate return potential from unique thermoelectric properties)\n  - **p_down**: 0.1 (Low risk; biological systems are generally stable)\n  - **L_down**: $1.5M (Potential loss due to research and development costs)\n\n- **Source ",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MAT-05",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 8.0,
+              "f_star": 0.05,
+              "p_down": 0.2,
+              "L_down": 5000000.0,
+              "risk": 1000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.25,
+              "p_down": 0.1,
+              "L_down": 3000000.0,
+              "risk": 300000.0
+            },
+            "C": {
+              "p_up": 0.5,
+              "b_up": 12.0,
+              "f_star": 0.42,
+              "p_down": 0.15,
+              "L_down": 4000000.0,
+              "risk": 600000.0
+            },
+            "D": {
+              "p_up": 0.35,
+              "b_up": 9.0,
+              "f_star": 0.14,
+              "p_down": 0.25,
+              "L_down": 6000000.0,
+              "risk": 1500000.0
+            },
+            "E": {
+              "p_up": 0.25,
+              "b_up": 7.0,
+              "f_star": 0.0,
+              "p_down": 0.3,
+              "L_down": 2000000.0,
+              "risk": 600000.0
+            },
+            "F": {
+              "p_up": 0.2,
+              "b_up": 5.0,
+              "f_star": 0.0,
+              "p_down": 0.05,
+              "L_down": 1000000.0,
+              "risk": 50000.0
+            }
+          },
+          "delta_p_up": 0.03333333333333338,
+          "raw_response": "To evaluate the potential of each source for discovering surfaces that prevent biological accumulation without toxicity, we estimate the upside and downside metrics based on the given formulas and context.\n\n### Estimates\n\n| Source | p_up | b_up | f*  | p_down | L_down | Risk       |\n|--------|------|------|-----|--------|--------|------------|\n| A      | 0.3  | 8    | 0.05| 0.2    | 5M     | 1M         |\n| B      | 0.4  | 10   | 0.25| 0.1    | 3M     | 0.3M       |\n| C      | 0.5  | 12   | 0.42| 0.15   | 4M     | 0.6M       |\n| D      | 0.35 | 9    | 0.14| 0.25   | 6M     | 1.5M       |\n| E      | 0.25 | 7    | 0.00| 0.3    | 2M     | 0.6M       |\n| F      | 0.2  | 5    | 0.00| 0.05   | 1M     | 0.05M      |\n\n### Notes\n\n- **Source A (Pilot whale skin nanoridge topology):** Moderate potential for innovation with a relatively high risk of failure due to biological variability.\n- **Source B (Computational surface energy optimization):** High potential for success with a lower risk, making it a strong candidate for investment.\n- **Source C (Springtail cuticle omniphobic nanotexture):** Highest potential for success with a moderate risk, suggesting a significant allocation.\n- **Source D (Synthetic surface patterning screening):** Moderate potential with a higher risk, indicating cautious investment.\n- **Source E (Filefish skin mucus-surface interaction):** Low potential and higher risk, suggesting minimal investment.\n- **Source F (Anti-fouling coating patent database analysis):** Low potential and low risk, useful for background research but not primary investment.\n\n### Reserve Strategy\n\nGiven the high potential and moderate risks, it would be prudent to hold reserves and not allocate the full sum of f* values, especially considering the higher risk associated with some sources. Prioritizing sources B and C while maintaining flexibility for unexpected opportunities or challenges is advisable.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MAT-06",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.2,
+              "b_up": 5.0,
+              "f_star": 0.1,
+              "p_down": 0.05,
+              "L_down": 1000000.0,
+              "risk": 50000.0
+            },
+            "B": {
+              "p_up": 0.3,
+              "b_up": 8.0,
+              "f_star": 0.175,
+              "p_down": 0.1,
+              "L_down": 2000000.0,
+              "risk": 200000.0
+            },
+            "C": {
+              "p_up": 0.15,
+              "b_up": 6.0,
+              "f_star": 0.025,
+              "p_down": 0.05,
+              "L_down": 1500000.0,
+              "risk": 75000.0
+            },
+            "D": {
+              "p_up": 0.25,
+              "b_up": 7.0,
+              "f_star": 0.125,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 100000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 5.0,
+              "f_star": 0.1,
+              "p_down": 0.05,
+              "L_down": 1000000.0,
+              "risk": 50000.0
+            },
+            "F": {
+              "p_up": 0.1,
+              "b_up": 4.0,
+              "f_star": 0.0,
+              "p_down": 0.2,
+              "L_down": 500.0,
+              "risk": 100000.0
+            }
+          },
+          "delta_p_up": -0.033333333333333326,
+          "raw_response": "| Source | p_up | b_up | f*  | p_down | L_down | Risk      |\n|--------|------|------|-----|--------|--------|-----------|\n| A      | 0.2  | 5    | 0.1 | 0.05   | 1M     | 50,000    |\n| B      | 0.3  | 8    | 0.175| 0.1    | 2M     | 200,000   |\n| C      | 0.15 | 6    | 0.025| 0.05   | 1.5M   | 75,000    |\n| D      | 0.25 | 7    | 0.125| 0.1    | 1M     | 100,000   |\n| E      | 0.2  | 5    | 0.1 | 0.05   | 1M     | 50,000    |\n| F      | 0.1  | 4    | 0   | 0.2    | 500k   | 100,000   |\n\n**Notes:**\n- Source B has the highest upside potential, suggesting a significant allocation.\n- Source F has a low upside and relatively high risk, suggesting minimal allocation.\n- Consider holding reserves due to the cumulative risk exposure and the uncertainty in upside estimates.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MAT-07",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 8.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 5000000.0,
+              "risk": 500000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.27,
+              "p_down": 0.15,
+              "L_down": 10000000.0,
+              "risk": 1500000.0
+            },
+            "C": {
+              "p_up": 0.25,
+              "b_up": 7.0,
+              "f_star": 0.02,
+              "p_down": 0.05,
+              "L_down": 3000000.0,
+              "risk": 150000.0
+            },
+            "D": {
+              "p_up": 0.35,
+              "b_up": 9.0,
+              "f_star": 0.19,
+              "p_down": 0.2,
+              "L_down": 8000000.0,
+              "risk": 1600000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 6.0,
+              "f_star": 0.0,
+              "p_down": 0.1,
+              "L_down": 4000000.0,
+              "risk": 400000.0
+            },
+            "F": {
+              "p_up": 0.15,
+              "b_up": 5.0,
+              "f_star": 0.0,
+              "p_down": 0.05,
+              "L_down": 2000000.0,
+              "risk": 100000.0
+            }
+          },
+          "delta_p_up": -0.04999999999999999,
+          "raw_response": "| Source | p_up | b_up | f*  | p_down | L_down | Risk     |\n|--------|------|------|-----|--------|--------|----------|\n| A      | 0.3  | 8    | 0.05| 0.1    | 5M     | 0.5M     |\n| B      | 0.4  | 10   | 0.27| 0.15   | 10M    | 1.5M     |\n| C      | 0.25 | 7    | 0.02| 0.05   | 3M     | 0.15M    |\n| D      | 0.35 | 9    | 0.19| 0.2    | 8M     | 1.6M     |\n| E      | 0.2  | 6    | 0.00| 0.1    | 4M     | 0.4M     |\n| F      | 0.15 | 5    | 0.00| 0.05   | 2M     | 0.1M     |\n\n**Notes:**\n- Source B has the highest upside potential, suggesting a significant allocation.\n- Source D also presents a strong upside but with a higher risk.\n- Source A and C have moderate upside with relatively low risk.\n- Source E and F have low upside potential, suggesting minimal allocation.\n- Consider holding reserves due to the high risk associated with some sources.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MAT-08",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 8.0,
+              "f_star": 0.1,
+              "p_down": 0.1,
+              "L_down": 5000000.0,
+              "risk": 500000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 12.0,
+              "f_star": 0.3,
+              "p_down": 0.15,
+              "L_down": 3000000.0,
+              "risk": 450000.0
+            },
+            "C": {
+              "p_up": 0.25,
+              "b_up": 10.0,
+              "f_star": 0.05,
+              "p_down": 0.05,
+              "L_down": 2000000.0,
+              "risk": 100000.0
+            },
+            "D": {
+              "p_up": 0.35,
+              "b_up": 15.0,
+              "f_star": 0.25,
+              "p_down": 0.2,
+              "L_down": 4000000.0,
+              "risk": 800000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 9.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 6000000.0,
+              "risk": 600000.0
+            },
+            "F": {
+              "p_up": 0.15,
+              "b_up": 5.0,
+              "f_star": 0.0,
+              "p_down": 0.05,
+              "L_down": 1000000.0,
+              "risk": 50000.0
+            }
+          },
+          "delta_p_up": -0.04999999999999999,
+          "raw_response": "| Source | p_up | b_up | f*  | p_down | L_down | Risk      |\n|--------|------|------|-----|--------|--------|-----------|\n| A      | 0.3  | 8    | 0.1 | 0.1    | 5M     | 0.5M      |\n| B      | 0.4  | 12   | 0.3 | 0.15   | 3M     | 0.45M     |\n| C      | 0.25 | 10   | 0.05| 0.05   | 2M     | 0.1M      |\n| D      | 0.35 | 15   | 0.25| 0.2    | 4M     | 0.8M      |\n| E      | 0.2  | 9    | 0.05| 0.1    | 6M     | 0.6M      |\n| F      | 0.15 | 5    | 0   | 0.05   | 1M     | 0.05M     |\n\n**Notes:**\n- Source B and D have the highest upside potential, suggesting a higher allocation of budget.\n- Source F has a negligible upside, indicating it may not be worth allocating budget.\n- Consider holding reserves due to the cumulative risk exposure and the uncertainty in estimates.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MAT-09",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.2,
+              "b_up": 5.0,
+              "f_star": 0.1,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 100000.0
+            },
+            "B": {
+              "p_up": 0.3,
+              "b_up": 8.0,
+              "f_star": 0.175,
+              "p_down": 0.05,
+              "L_down": 500.0,
+              "risk": 25000.0
+            },
+            "C": {
+              "p_up": 0.15,
+              "b_up": 6.0,
+              "f_star": 0.025,
+              "p_down": 0.2,
+              "L_down": 2000000.0,
+              "risk": 400000.0
+            },
+            "D": {
+              "p_up": 0.25,
+              "b_up": 7.0,
+              "f_star": 0.125,
+              "p_down": 0.1,
+              "L_down": 1500000.0,
+              "risk": 150000.0
+            },
+            "E": {
+              "p_up": 0.1,
+              "b_up": 4.0,
+              "f_star": 0.025,
+              "p_down": 0.15,
+              "L_down": 1000000.0,
+              "risk": 150000.0
+            },
+            "F": {
+              "p_up": 0.35,
+              "b_up": 10.0,
+              "f_star": 0.275,
+              "p_down": 0.05,
+              "L_down": 750.0,
+              "risk": 37500.0
+            }
+          },
+          "delta_p_up": -0.15,
+          "raw_response": "Here is the estimated table for the given sources:\n\n| Source | p_up | b_up | f*  | p_down | L_down | Risk       |\n|--------|------|------|-----|--------|--------|------------|\n| A      | 0.2  | 5    | 0.1 | 0.1    | 1M     | 100,000    |\n| B      | 0.3  | 8    | 0.175 | 0.05   | 500k   | 25,000     |\n| C      | 0.15 | 6    | 0.025 | 0.2    | 2M     | 400,000    |\n| D      | 0.25 | 7    | 0.125 | 0.1    | 1.5M   | 150,000    |\n| E      | 0.1  | 4    | 0.025 | 0.15   | 1M     | 150,000    |\n| F      | 0.35 | 10   | 0.275 | 0.05   | 750k   | 37,500     |\n\n### Notes:\n- **Source A**: Bone collagen fibril piezoelectric properties have moderate potential but also a moderate risk of failure.\n- **Source B**: Computational ferroelectric material screening shows a higher upside potential with relatively low risk.\n- **Source C**: Fish lateral line hair cell mechanotransduction has a lower probability of success and higher risk.\n- **Source D**: Synthetic lead-free piezoelectric screening offers a balanced upside with moderate risk.\n- **Source E**: Electric ray electroplax stacking geometry has a lower upside and moderate risk.\n- **Source F**: Piezoelectric materials patent database analysis has the highest upside potential with low risk.\n\n### Reserve Strategy:\nGiven the sum of f* values exceeds 1, it would be prudent to hold reserves and allocate less than the sum of f* values to manage risk effectively.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MAT-10",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 8.0,
+              "f_star": 0.1,
+              "p_down": 0.1,
+              "L_down": 5000000.0,
+              "risk": 500000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 5.0,
+              "f_star": 0.1,
+              "p_down": 0.05,
+              "L_down": 2000000.0,
+              "risk": 100000.0
+            },
+            "C": {
+              "p_up": 0.35,
+              "b_up": 7.0,
+              "f_star": 0.1,
+              "p_down": 0.1,
+              "L_down": 4000000.0,
+              "risk": 400000.0
+            },
+            "D": {
+              "p_up": 0.25,
+              "b_up": 6.0,
+              "f_star": 0.04,
+              "p_down": 0.15,
+              "L_down": 3000000.0,
+              "risk": 450000.0
+            },
+            "E": {
+              "p_up": 0.3,
+              "b_up": 9.0,
+              "f_star": 0.13,
+              "p_down": 0.1,
+              "L_down": 5000000.0,
+              "risk": 500000.0
+            },
+            "F": {
+              "p_up": 0.2,
+              "b_up": 4.0,
+              "f_star": 0.0,
+              "p_down": 0.05,
+              "L_down": 1000000.0,
+              "risk": 50000.0
+            }
+          },
+          "delta_p_up": 0.03333333333333327,
+          "raw_response": "| Source | p_up | b_up | f*  | p_down | L_down | Risk      |\n|--------|------|------|-----|--------|--------|-----------|\n| A      | 0.3  | 8    | 0.1 | 0.1    | 5M     | 500,000   |\n| B      | 0.4  | 5    | 0.1 | 0.05   | 2M     | 100,000   |\n| C      | 0.35 | 7    | 0.1 | 0.1    | 4M     | 400,000   |\n| D      | 0.25 | 6    | 0.04| 0.15   | 3M     | 450,000   |\n| E      | 0.3  | 9    | 0.13| 0.1    | 5M     | 500,000   |\n| F      | 0.2  | 4    | 0.0 | 0.05   | 1M     | 50,000    |\n\n**Notes:**\n- Source A (Penguin feather microstructure) and Source E (Arctic fish skin) have relatively high upside potential due to their unique biological adaptations, but also carry moderate risk due to potential implementation challenges.\n- Source B (Computational modeling) offers a balanced approach with moderate upside and low risk, making it a stable option.\n- Source C (Antarctic springtail cuticle) has a good upside potential but carries a similar risk profile to Source A.\n- Source D (Synthetic coatings) has a lower upside but higher risk due to potential environmental and regulatory issues.\n- Source F (Patent database analysis) has the lowest upside but also the lowest risk, making it a conservative choice.\n\n**Reserve Strategy:**\n- Given the potential risks and the sum of f* values, it would be prudent to hold reserves and not allocate the entire budget to these sources.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MAT-11",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 8.0,
+              "f_star": 0.1,
+              "p_down": 0.2,
+              "L_down": 5000000.0,
+              "risk": 1000000.0
+            },
+            "B": {
+              "p_up": 0.2,
+              "b_up": 5.0,
+              "f_star": 0.0,
+              "p_down": 0.1,
+              "L_down": 2000000.0,
+              "risk": 200.0
+            },
+            "C": {
+              "p_up": 0.25,
+              "b_up": 7.0,
+              "f_star": 0.04,
+              "p_down": 0.15,
+              "L_down": 4000000.0,
+              "risk": 600.0
+            },
+            "D": {
+              "p_up": 0.15,
+              "b_up": 10.0,
+              "f_star": 0.0,
+              "p_down": 0.25,
+              "L_down": 6000000.0,
+              "risk": 1500000.0
+            },
+            "E": {
+              "p_up": 0.3,
+              "b_up": 6.0,
+              "f_star": 0.1,
+              "p_down": 0.1,
+              "L_down": 3000000.0,
+              "risk": 300.0
+            },
+            "F": {
+              "p_up": 0.1,
+              "b_up": 4.0,
+              "f_star": 0.0,
+              "p_down": 0.05,
+              "L_down": 1000000.0,
+              "risk": 50.0
+            }
+          },
+          "delta_p_up": 0.1333333333333334,
+          "raw_response": "| Source | p_up | b_up | f*  | p_down | L_down | Risk       |\n|--------|------|------|-----|--------|--------|------------|\n| A      | 0.3  | 8    | 0.1 | 0.2    | 5M     | 1M         |\n| B      | 0.2  | 5    | 0.0 | 0.1    | 2M     | 200K       |\n| C      | 0.25 | 7    | 0.04| 0.15   | 4M     | 600K       |\n| D      | 0.15 | 10   | 0.0 | 0.25   | 6M     | 1.5M       |\n| E      | 0.3  | 6    | 0.1 | 0.1    | 3M     | 300K       |\n| F      | 0.1  | 4    | 0.0 | 0.05   | 1M     | 50K        |\n\n**Note:** Given the high potential downside risks and relatively low upside probabilities, it would be prudent to hold reserves and allocate less than the sum of the f* values.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MAT-12",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 100000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 8.0,
+              "f_star": 0.25,
+              "p_down": 0.05,
+              "L_down": 500.0,
+              "risk": 25000.0
+            },
+            "C": {
+              "p_up": 0.35,
+              "b_up": 6.0,
+              "f_star": 0.14,
+              "p_down": 0.15,
+              "L_down": 750.0,
+              "risk": 112500.0
+            },
+            "D": {
+              "p_up": 0.5,
+              "b_up": 10.0,
+              "f_star": 0.45,
+              "p_down": 0.2,
+              "L_down": 2000000.0,
+              "risk": 400000.0
+            },
+            "E": {
+              "p_up": 0.25,
+              "b_up": 4.0,
+              "f_star": 0.0,
+              "p_down": 0.1,
+              "L_down": 1500000.0,
+              "risk": 150000.0
+            },
+            "F": {
+              "p_up": 0.2,
+              "b_up": 3.0,
+              "f_star": 0.0,
+              "p_down": 0.05,
+              "L_down": 1000000.0,
+              "risk": 50000.0
+            }
+          },
+          "delta_p_up": -0.06666666666666671,
+          "raw_response": "| Source | p_up | b_up | f*  | p_down | L_down | Risk       |\n|--------|------|------|-----|--------|--------|------------|\n| A      | 0.3  | 5    | 0.05| 0.1    | 1M     | 100,000    |\n| B      | 0.4  | 8    | 0.25| 0.05   | 500K   | 25,000     |\n| C      | 0.35 | 6    | 0.14| 0.15   | 750K   | 112,500    |\n| D      | 0.5  | 10   | 0.45| 0.2    | 2M     | 400,000    |\n| E      | 0.25 | 4    | 0.00| 0.1    | 1.5M   | 150,000    |\n| F      | 0.2  | 3    | 0.00| 0.05   | 1M     | 50,000     |\n\n**Notes:**\n- Source D shows the highest upside potential, but also carries significant risk.\n- Source B offers a good balance of upside and low risk.\n- Consider holding reserves due to the high risk associated with some sources, particularly D and C.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "ALG-01",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 100000.0
+            },
+            "B": {
+              "p_up": 0.5,
+              "b_up": 8.0,
+              "f_star": 0.31,
+              "p_down": 0.05,
+              "L_down": 500.0,
+              "risk": 25000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 6.0,
+              "f_star": 0.0,
+              "p_down": 0.15,
+              "L_down": 200.0,
+              "risk": 30000.0
+            },
+            "D": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.29,
+              "p_down": 0.2,
+              "L_down": 2000000.0,
+              "risk": 400000.0
+            },
+            "E": {
+              "p_up": 0.25,
+              "b_up": 4.0,
+              "f_star": 0.0,
+              "p_down": 0.1,
+              "L_down": 300.0,
+              "risk": 30000.0
+            },
+            "F": {
+              "p_up": 0.1,
+              "b_up": 3.0,
+              "f_star": 0.0,
+              "p_down": 0.05,
+              "L_down": 100.0,
+              "risk": 5000.0
+            }
+          },
+          "delta_p_up": -0.08333333333333331,
+          "raw_response": "To evaluate the potential of each source for discovering algorithms that optimize routing in dynamic networks, we estimate the upside and downside metrics based on the given formulas.\n\n### Estimates\n\n| Source | p_up | b_up | f*  | p_down | L_down | Risk       |\n|--------|------|------|-----|--------|--------|------------|\n| A      | 0.3  | 5    | 0.05| 0.1    | 1M     | 100,000    |\n| B      | 0.5  | 8    | 0.31| 0.05   | 500K   | 25,000     |\n| C      | 0.2  | 6    | 0.00| 0.15   | 200K   | 30,000     |\n| D      | 0.4  | 10   | 0.29| 0.2    | 2M     | 400,000    |\n| E      | 0.25 | 4    | 0.00| 0.1    | 300K   | 30,000     |\n| F      | 0.1  | 3    | 0.00| 0.05   | 100K   | 5,000      |\n\n### Notes\n\n- **Source A (Physarum slime mold network formation):** Moderate potential for innovation but with a relatively low return multiple. The risk is moderate due to biological variability.\n- **Source B (Computational graph theory optimization):** High potential for success with a significant return multiple. Low risk due to established mathematical foundations.\n- **Source C (Leaf-cutter ant trail pheromone dynamics):** Low probability of outperforming current methods, with moderate risk due to ecological factors.\n- **Source D (Neural network routing architecture search):** Good potential for high returns, but with a higher risk due to the complexity and rapid evolution of AI technologies.\n- **Source E (Vascular plant xylem network topology):** Low probability of success with moderate risk, as biological systems may not translate well to digital networks.\n- **Source F (Network routing patent database analysis):** Low probability of discovering new mechanisms, with minimal risk due to the nature of patent analysis.\n\n### Reserve Strategy\n\nGiven the high risk associated with some sources, particularly Source D, it would be prudent to hold reserves and allocate less than the sum of the f* values. This approach allows for flexibility in managing unexpected outcomes and reallocating",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "ALG-02",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 100000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 8.0,
+              "f_star": 0.25,
+              "p_down": 0.15,
+              "L_down": 2000000.0,
+              "risk": 300000.0
+            },
+            "C": {
+              "p_up": 0.25,
+              "b_up": 6.0,
+              "f_star": 0.02,
+              "p_down": 0.05,
+              "L_down": 500.0,
+              "risk": 25000.0
+            },
+            "D": {
+              "p_up": 0.5,
+              "b_up": 10.0,
+              "f_star": 0.45,
+              "p_down": 0.2,
+              "L_down": 3000000.0,
+              "risk": 600000.0
+            },
+            "E": {
+              "p_up": 0.35,
+              "b_up": 7.0,
+              "f_star": 0.14,
+              "p_down": 0.1,
+              "L_down": 1500000.0,
+              "risk": 150000.0
+            },
+            "F": {
+              "p_up": 0.2,
+              "b_up": 4.0,
+              "f_star": 0.0,
+              "p_down": 0.05,
+              "L_down": 1000000.0,
+              "risk": 50000.0
+            }
+          },
+          "delta_p_up": -0.06666666666666671,
+          "raw_response": "| Source | p_up | b_up | f*  | p_down | L_down | Risk       |\n|--------|------|------|-----|--------|--------|------------|\n| A      | 0.3  | 5    | 0.05| 0.1    | 1M     | 100,000    |\n| B      | 0.4  | 8    | 0.25| 0.15   | 2M     | 300,000    |\n| C      | 0.25 | 6    | 0.02| 0.05   | 500K   | 25,000     |\n| D      | 0.5  | 10   | 0.45| 0.2    | 3M     | 600,000    |\n| E      | 0.35 | 7    | 0.14| 0.1    | 1.5M   | 150,000    |\n| F      | 0.2  | 4    | 0.00| 0.05   | 1M     | 50,000     |\n\n**Note:** Given the sum of f* values, it may be prudent to hold reserves and allocate less than the total suggested by f* values to account for unforeseen circumstances and maintain flexibility.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "ALG-03",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.1,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 100000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 8.0,
+              "f_star": 0.3,
+              "p_down": 0.15,
+              "L_down": 2000000.0,
+              "risk": 300000.0
+            },
+            "C": {
+              "p_up": 0.25,
+              "b_up": 6.0,
+              "f_star": 0.05,
+              "p_down": 0.05,
+              "L_down": 500.0,
+              "risk": 25000.0
+            },
+            "D": {
+              "p_up": 0.1,
+              "b_up": 3.0,
+              "f_star": 0.0,
+              "p_down": 0.02,
+              "L_down": 100.0,
+              "risk": 2000.0
+            },
+            "E": {
+              "p_up": 0.35,
+              "b_up": 7.0,
+              "f_star": 0.2,
+              "p_down": 0.1,
+              "L_down": 1500000.0,
+              "risk": 150000.0
+            },
+            "F": {
+              "p_up": 0.2,
+              "b_up": 4.0,
+              "f_star": 0.0,
+              "p_down": 0.05,
+              "L_down": 1000000.0,
+              "risk": 50000.0
+            }
+          },
+          "delta_p_up": 0.06666666666666668,
+          "raw_response": "| Source | p_up | b_up | f*  | p_down | L_down | Risk     |\n|--------|------|------|-----|--------|--------|----------|\n| A      | 0.3  | 5    | 0.1 | 0.1    | 1M     | 100,000  |\n| B      | 0.4  | 8    | 0.3 | 0.15   | 2M     | 300,000  |\n| C      | 0.25 | 6    | 0.05| 0.05   | 500K   | 25,000   |\n| D      | 0.1  | 3    | 0   | 0.02   | 100K   | 2,000    |\n| E      | 0.35 | 7    | 0.2 | 0.1    | 1.5M   | 150,000  |\n| F      | 0.2  | 4    | 0   | 0.05   | 1M     | 50,000   |\n\n**Notes:**\n- Source B has the highest upside potential, suggesting a significant allocation.\n- Source D and F have minimal upside, indicating they may not be worth significant investment.\n- Consider holding reserves due to the potential high risk and uncertainty in these exploratory technologies.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "ALG-04",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.2,
+              "b_up": 5.0,
+              "f_star": 0.1,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 100000.0
+            },
+            "B": {
+              "p_up": 0.3,
+              "b_up": 8.0,
+              "f_star": 0.175,
+              "p_down": 0.15,
+              "L_down": 2000000.0,
+              "risk": 300000.0
+            },
+            "C": {
+              "p_up": 0.25,
+              "b_up": 6.0,
+              "f_star": 0.125,
+              "p_down": 0.1,
+              "L_down": 1500000.0,
+              "risk": 150000.0
+            },
+            "D": {
+              "p_up": 0.35,
+              "b_up": 10.0,
+              "f_star": 0.275,
+              "p_down": 0.2,
+              "L_down": 3000000.0,
+              "risk": 600000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 5.0,
+              "f_star": 0.1,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 100000.0
+            },
+            "F": {
+              "p_up": 0.15,
+              "b_up": 4.0,
+              "f_star": 0.025,
+              "p_down": 0.05,
+              "L_down": 500.0,
+              "risk": 25000.0
+            }
+          },
+          "delta_p_up": -0.04999999999999999,
+          "raw_response": "| Source | p_up | b_up | f*  | p_down | L_down | Risk       |\n|--------|------|------|-----|--------|--------|------------|\n| A      | 0.2  | 5    | 0.1 | 0.1    | 1M     | 100,000    |\n| B      | 0.3  | 8    | 0.175| 0.15   | 2M     | 300,000    |\n| C      | 0.25 | 6    | 0.125| 0.1    | 1.5M   | 150,000    |\n| D      | 0.35 | 10   | 0.275| 0.2    | 3M     | 600,000    |\n| E      | 0.2  | 5    | 0.1 | 0.1    | 1M     | 100,000    |\n| F      | 0.15 | 4    | 0.025| 0.05   | 500K   | 25,000     |\n\n**Note:** Given the high potential risk exposure, it would be prudent to hold reserves and allocate less than the sum of f* values.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "ALG-05",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 8.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 5000000.0,
+              "risk": 500000.0
+            },
+            "B": {
+              "p_up": 0.2,
+              "b_up": 5.0,
+              "f_star": 0.0,
+              "p_down": 0.05,
+              "L_down": 1000000.0,
+              "risk": 50000.0
+            },
+            "C": {
+              "p_up": 0.15,
+              "b_up": 6.0,
+              "f_star": 0.0,
+              "p_down": 0.1,
+              "L_down": 2000000.0,
+              "risk": 200000.0
+            },
+            "D": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.22,
+              "p_down": 0.15,
+              "L_down": 10000000.0,
+              "risk": 1500000.0
+            },
+            "E": {
+              "p_up": 0.25,
+              "b_up": 7.0,
+              "f_star": 0.03,
+              "p_down": 0.2,
+              "L_down": 3000000.0,
+              "risk": 600000.0
+            },
+            "F": {
+              "p_up": 0.1,
+              "b_up": 4.0,
+              "f_star": 0.0,
+              "p_down": 0.05,
+              "L_down": 500000.0,
+              "risk": 25000.0
+            }
+          },
+          "delta_p_up": -5.551115123125783e-17,
+          "raw_response": "| Source | p_up | b_up | f*  | p_down | L_down | Risk       |\n|--------|------|------|-----|--------|--------|------------|\n| A      | 0.3  | 8    | 0.05| 0.1    | 5M     | 0.5M       |\n| B      | 0.2  | 5    | 0.00| 0.05   | 1M     | 0.05M      |\n| C      | 0.15 | 6    | 0.00| 0.1    | 2M     | 0.2M       |\n| D      | 0.4  | 10   | 0.22| 0.15   | 10M    | 1.5M       |\n| E      | 0.25 | 7    | 0.03| 0.2    | 3M     | 0.6M       |\n| F      | 0.1  | 4    | 0.00| 0.05   | 0.5M   | 0.025M     |\n\n**Note:** Given the high potential risk exposure, it would be prudent to hold reserves and allocate less than the sum of f* values.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "ALG-06",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 100000.0
+            },
+            "B": {
+              "p_up": 0.5,
+              "b_up": 10.0,
+              "f_star": 0.44,
+              "p_down": 0.05,
+              "L_down": 500.0,
+              "risk": 25000.0
+            },
+            "C": {
+              "p_up": 0.25,
+              "b_up": 4.0,
+              "f_star": 0.0,
+              "p_down": 0.15,
+              "L_down": 2000000.0,
+              "risk": 300000.0
+            },
+            "D": {
+              "p_up": 0.4,
+              "b_up": 8.0,
+              "f_star": 0.25,
+              "p_down": 0.2,
+              "L_down": 1500000.0,
+              "risk": 300000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 6.0,
+              "f_star": 0.0,
+              "p_down": 0.3,
+              "L_down": 3000000.0,
+              "risk": 900000.0
+            },
+            "F": {
+              "p_up": 0.35,
+              "b_up": 7.0,
+              "f_star": 0.14,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 100000.0
+            }
+          },
+          "delta_p_up": -0.16666666666666669,
+          "raw_response": "| Source | p_up | b_up | f*  | p_down | L_down | Risk      |\n|--------|------|------|-----|--------|--------|-----------|\n| A      | 0.3  | 5    | 0.05| 0.1    | 1M     | 100,000   |\n| B      | 0.5  | 10   | 0.44| 0.05   | 500K   | 25,000    |\n| C      | 0.25 | 4    | 0.00| 0.15   | 2M     | 300,000   |\n| D      | 0.4  | 8    | 0.25| 0.2    | 1.5M   | 300,000   |\n| E      | 0.2  | 6    | 0.00| 0.3    | 3M     | 900,000   |\n| F      | 0.35 | 7    | 0.14| 0.1    | 1M     | 100,000   |\n\nNote: Consider holding reserves as the sum of f* values may exceed 1.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "ALG-07",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.15,
+              "b_up": 8.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 5000000.0,
+              "risk": 500000.0
+            },
+            "B": {
+              "p_up": 0.25,
+              "b_up": 12.0,
+              "f_star": 0.17,
+              "p_down": 0.05,
+              "L_down": 2000000.0,
+              "risk": 100000.0
+            },
+            "C": {
+              "p_up": 0.1,
+              "b_up": 5.0,
+              "f_star": 0.0,
+              "p_down": 0.15,
+              "L_down": 3000000.0,
+              "risk": 450000.0
+            },
+            "D": {
+              "p_up": 0.2,
+              "b_up": 6.0,
+              "f_star": 0.1,
+              "p_down": 0.08,
+              "L_down": 1000000.0,
+              "risk": 80000.0
+            },
+            "E": {
+              "p_up": 0.12,
+              "b_up": 7.0,
+              "f_star": 0.02,
+              "p_down": 0.12,
+              "L_down": 4000000.0,
+              "risk": 480000.0
+            },
+            "F": {
+              "p_up": 0.18,
+              "b_up": 10.0,
+              "f_star": 0.09,
+              "p_down": 0.07,
+              "L_down": 2500000.0,
+              "risk": 175000.0
+            }
+          },
+          "delta_p_up": -0.08666666666666666,
+          "raw_response": "Here is the estimated table for the given sources:\n\n| Source | p_up | b_up | f*  | p_down | L_down | Risk       |\n|--------|------|------|-----|--------|--------|------------|\n| A      | 0.15 | 8    | 0.05| 0.10   | 5M     | 500,000    |\n| B      | 0.25 | 12   | 0.17| 0.05   | 2M     | 100,000    |\n| C      | 0.10 | 5    | 0.00| 0.15   | 3M     | 450,000    |\n| D      | 0.20 | 6    | 0.10| 0.08   | 1M     | 80,000     |\n| E      | 0.12 | 7    | 0.02| 0.12   | 4M     | 480,000    |\n| F      | 0.18 | 10   | 0.09| 0.07   | 2.5M   | 175,000    |\n\n### Notes:\n- **Source A**: Bacterial bet-hedging is innovative but has moderate upside and risk.\n- **Source B**: Computational algorithms have a higher upside potential with relatively low risk.\n- **Source C**: Migratory bird studies have low upside and moderate risk.\n- **Source D**: Weighted-sum methods are well-established, offering moderate upside and low risk.\n- **Source E**: Plant resource allocation has a low upside and moderate risk.\n- **Source F**: Patent analysis offers a good balance of upside and risk.\n\n### Reserve Strategy:\nGiven the sum of f* values, it may be prudent to hold reserves and not allocate the full budget, especially considering the potential risks and the need for flexibility in adapting to new information or opportunities.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "ALG-08",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 100000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 8.0,
+              "f_star": 0.25,
+              "p_down": 0.05,
+              "L_down": 500.0,
+              "risk": 25000.0
+            },
+            "C": {
+              "p_up": 0.25,
+              "b_up": 6.0,
+              "f_star": 0.02,
+              "p_down": 0.15,
+              "L_down": 2000000.0,
+              "risk": 300000.0
+            },
+            "D": {
+              "p_up": 0.35,
+              "b_up": 10.0,
+              "f_star": 0.23,
+              "p_down": 0.1,
+              "L_down": 1500000.0,
+              "risk": 150000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 4.0,
+              "f_star": 0.0,
+              "p_down": 0.2,
+              "L_down": 3000000.0,
+              "risk": 600000.0
+            },
+            "F": {
+              "p_up": 0.15,
+              "b_up": 7.0,
+              "f_star": 0.0,
+              "p_down": 0.05,
+              "L_down": 1000000.0,
+              "risk": 50000.0
+            }
+          },
+          "delta_p_up": -0.04999999999999999,
+          "raw_response": "| Source | p_up | b_up | f*  | p_down | L_down | Risk       |\n|--------|------|------|-----|--------|--------|------------|\n| A      | 0.3  | 5    | 0.05| 0.1    | 1M     | 100,000    |\n| B      | 0.4  | 8    | 0.25| 0.05   | 500K   | 25,000     |\n| C      | 0.25 | 6    | 0.02| 0.15   | 2M     | 300,000    |\n| D      | 0.35 | 10   | 0.23| 0.1    | 1.5M   | 150,000    |\n| E      | 0.2  | 4    | 0.00| 0.2    | 3M     | 600,000    |\n| F      | 0.15 | 7    | 0.00| 0.05   | 1M     | 50,000     |\n\n**Notes:**\n- Source B and D have the highest upside potential, suggesting a higher allocation of budget.\n- Source E has a high downside risk, indicating a need for caution.\n- Consider holding reserves due to the high risk associated with some sources, particularly Source E.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "ALG-09",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.2,
+              "b_up": 5.0,
+              "f_star": 0.1,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 100000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 8.0,
+              "f_star": 0.3,
+              "p_down": 0.05,
+              "L_down": 500.0,
+              "risk": 25000.0
+            },
+            "C": {
+              "p_up": 0.15,
+              "b_up": 6.0,
+              "f_star": 0.025,
+              "p_down": 0.15,
+              "L_down": 2000000.0,
+              "risk": 300000.0
+            },
+            "D": {
+              "p_up": 0.35,
+              "b_up": 10.0,
+              "f_star": 0.275,
+              "p_down": 0.1,
+              "L_down": 1500000.0,
+              "risk": 150000.0
+            },
+            "E": {
+              "p_up": 0.1,
+              "b_up": 4.0,
+              "f_star": 0.025,
+              "p_down": 0.2,
+              "L_down": 1000000.0,
+              "risk": 200000.0
+            },
+            "F": {
+              "p_up": 0.25,
+              "b_up": 7.0,
+              "f_star": 0.125,
+              "p_down": 0.05,
+              "L_down": 750.0,
+              "risk": 37500.0
+            }
+          },
+          "delta_p_up": -0.18333333333333332,
+          "raw_response": "| Source | p_up | b_up | f*  | p_down | L_down | Risk     |\n|--------|------|------|-----|--------|--------|----------|\n| A      | 0.2  | 5    | 0.1 | 0.1    | 1M     | 100,000  |\n| B      | 0.4  | 8    | 0.3 | 0.05   | 500K   | 25,000   |\n| C      | 0.15 | 6    | 0.025| 0.15  | 2M     | 300,000  |\n| D      | 0.35 | 10   | 0.275| 0.1   | 1.5M   | 150,000  |\n| E      | 0.1  | 4    | 0.025| 0.2   | 1M     | 200,000  |\n| F      | 0.25 | 7    | 0.125| 0.05  | 750K   | 37,500   |\n\n**Notes:**\n- The sum of f* values exceeds 1, suggesting the need to hold reserves and allocate less than the sum of f* values.\n- Source B and D show the highest upside potential, but Source C and E have higher downside risks.\n- Consider balancing the portfolio by prioritizing sources with higher upside and lower downside risks.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "ALG-10",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 8.0,
+              "f_star": 0.1,
+              "p_down": 0.2,
+              "L_down": 5000000.0,
+              "risk": 1000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 5.0,
+              "f_star": 0.1,
+              "p_down": 0.1,
+              "L_down": 3000000.0,
+              "risk": 300000.0
+            },
+            "C": {
+              "p_up": 0.25,
+              "b_up": 7.0,
+              "f_star": 0.04,
+              "p_down": 0.15,
+              "L_down": 4000000.0,
+              "risk": 600000.0
+            },
+            "D": {
+              "p_up": 0.5,
+              "b_up": 6.0,
+              "f_star": 0.25,
+              "p_down": 0.05,
+              "L_down": 2000000.0,
+              "risk": 100000.0
+            },
+            "E": {
+              "p_up": 0.35,
+              "b_up": 9.0,
+              "f_star": 0.19,
+              "p_down": 0.1,
+              "L_down": 4500000.0,
+              "risk": 450000.0
+            },
+            "F": {
+              "p_up": 0.2,
+              "b_up": 4.0,
+              "f_star": 0.0,
+              "p_down": 0.25,
+              "L_down": 6000000.0,
+              "risk": 1500000.0
+            }
+          },
+          "delta_p_up": -0.06666666666666671,
+          "raw_response": "Here is the estimated table for the given sources:\n\n| Source | p_up | b_up | f*  | p_down | L_down  | Risk      |\n|--------|------|------|-----|--------|---------|-----------|\n| A      | 0.3  | 8    | 0.1 | 0.2    | 5,000,000 | 1,000,000 |\n| B      | 0.4  | 5    | 0.1 | 0.1    | 3,000,000 | 300,000   |\n| C      | 0.25 | 7    | 0.04| 0.15   | 4,000,000 | 600,000   |\n| D      | 0.5  | 6    | 0.25| 0.05   | 2,000,000 | 100,000   |\n| E      | 0.35 | 9    | 0.19| 0.1    | 4,500,000 | 450,000   |\n| F      | 0.2  | 4    | 0.0 | 0.25   | 6,000,000 | 1,500,000 |\n\n**Notes:**\n- Source D (Transformer masked prediction architectures) shows the highest upside potential with a relatively low downside risk, suggesting a significant allocation.\n- Source F (Pattern recognition patent database analysis) has a high downside risk with a low upside, indicating caution.\n- Holding reserves is advisable due to the potential high risks associated with some sources, especially F.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "ALG-11",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 100000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 8.0,
+              "f_star": 0.25,
+              "p_down": 0.05,
+              "L_down": 500000.0,
+              "risk": 25000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 6.0,
+              "f_star": 0.0,
+              "p_down": 0.15,
+              "L_down": 2000000.0,
+              "risk": 300000.0
+            },
+            "D": {
+              "p_up": 0.5,
+              "b_up": 4.0,
+              "f_star": 0.25,
+              "p_down": 0.1,
+              "L_down": 1500000.0,
+              "risk": 150000.0
+            },
+            "E": {
+              "p_up": 0.25,
+              "b_up": 7.0,
+              "f_star": 0.04,
+              "p_down": 0.08,
+              "L_down": 1200000.0,
+              "risk": 96000.0
+            },
+            "F": {
+              "p_up": 0.35,
+              "b_up": 3.0,
+              "f_star": 0.1,
+              "p_down": 0.12,
+              "L_down": 800000.0,
+              "risk": 96000.0
+            }
+          },
+          "delta_p_up": -0.16666666666666669,
+          "raw_response": "| Source | p_up | b_up | f*  | p_down | L_down  | Risk     |\n|--------|------|------|-----|--------|---------|----------|\n| A      | 0.3  | 5    | 0.05| 0.1    | 1,000,000 | 100,000  |\n| B      | 0.4  | 8    | 0.25| 0.05   | 500,000   | 25,000   |\n| C      | 0.2  | 6    | 0.00| 0.15   | 2,000,000 | 300,000  |\n| D      | 0.5  | 4    | 0.25| 0.1    | 1,500,000 | 150,000  |\n| E      | 0.25 | 7    | 0.04| 0.08   | 1,200,000 | 96,000   |\n| F      | 0.35 | 3    | 0.10| 0.12   | 800,000   | 96,000   |\n\n**Note:** Given the sum of f* values exceeds 1, it would be prudent to hold reserves and allocate less than the sum of f* values to manage risk effectively.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "ALG-12",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 100000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 8.0,
+              "f_star": 0.25,
+              "p_down": 0.05,
+              "L_down": 500.0,
+              "risk": 25000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 4.0,
+              "f_star": 0.0,
+              "p_down": 0.15,
+              "L_down": 2000000.0,
+              "risk": 300000.0
+            },
+            "D": {
+              "p_up": 0.5,
+              "b_up": 10.0,
+              "f_star": 0.45,
+              "p_down": 0.2,
+              "L_down": 3000000.0,
+              "risk": 600000.0
+            },
+            "E": {
+              "p_up": 0.25,
+              "b_up": 6.0,
+              "f_star": 0.04,
+              "p_down": 0.1,
+              "L_down": 1500000.0,
+              "risk": 150000.0
+            },
+            "F": {
+              "p_up": 0.35,
+              "b_up": 7.0,
+              "f_star": 0.19,
+              "p_down": 0.05,
+              "L_down": 1000000.0,
+              "risk": 50000.0
+            }
+          },
+          "delta_p_up": -0.16666666666666669,
+          "raw_response": "| Source | p_up | b_up | f*  | p_down | L_down | Risk     |\n|--------|------|------|-----|--------|--------|----------|\n| A      | 0.3  | 5    | 0.05| 0.1    | 1M     | 100,000  |\n| B      | 0.4  | 8    | 0.25| 0.05   | 500K   | 25,000   |\n| C      | 0.2  | 4    | 0.00| 0.15   | 2M     | 300,000  |\n| D      | 0.5  | 10   | 0.45| 0.2    | 3M     | 600,000  |\n| E      | 0.25 | 6    | 0.04| 0.1    | 1.5M   | 150,000  |\n| F      | 0.35 | 7    | 0.19| 0.05   | 1M     | 50,000   |\n\n**Note:** Given the high potential risk exposure, it would be prudent to hold reserves and not allocate the full sum of f* values.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "NRG-01",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.15,
+              "b_up": 8.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 5000000.0,
+              "risk": 500000.0
+            },
+            "B": {
+              "p_up": 0.2,
+              "b_up": 12.0,
+              "f_star": 0.1,
+              "p_down": 0.15,
+              "L_down": 10000000.0,
+              "risk": 1500000.0
+            },
+            "C": {
+              "p_up": 0.1,
+              "b_up": 6.0,
+              "f_star": 0.0,
+              "p_down": 0.05,
+              "L_down": 3000000.0,
+              "risk": 150000.0
+            },
+            "D": {
+              "p_up": 0.25,
+              "b_up": 10.0,
+              "f_star": 0.17,
+              "p_down": 0.2,
+              "L_down": 15000000.0,
+              "risk": 3000000.0
+            },
+            "E": {
+              "p_up": 0.05,
+              "b_up": 15.0,
+              "f_star": 0.0,
+              "p_down": 0.05,
+              "L_down": 2000000.0,
+              "risk": 100000.0
+            },
+            "F": {
+              "p_up": 0.05,
+              "b_up": 4.0,
+              "f_star": 0.0,
+              "p_down": 0.02,
+              "L_down": 1000000.0,
+              "risk": 20000.0
+            }
+          },
+          "delta_p_up": -0.06666666666666667,
+          "raw_response": "| Source | p_up | b_up | f*  | p_down | L_down  | Risk      |\n|--------|------|------|-----|--------|---------|-----------|\n| A      | 0.15 | 8    | 0.05| 0.10   | 5,000,000 | 500,000   |\n| B      | 0.20 | 12   | 0.10| 0.15   | 10,000,000| 1,500,000 |\n| C      | 0.10 | 6    | 0.00| 0.05   | 3,000,000 | 150,000   |\n| D      | 0.25 | 10   | 0.17| 0.20   | 15,000,000| 3,000,000 |\n| E      | 0.05 | 15   | 0.00| 0.05   | 2,000,000 | 100,000   |\n| F      | 0.05 | 4    | 0.00| 0.02   | 1,000,000 | 20,000    |\n\n**Notes:**\n- Source D has the highest upside potential, suggesting a significant allocation of resources.\n- Source B also presents a strong upside but with a higher risk.\n- Sources C, E, and F have low upside potential, suggesting minimal or no allocation.\n- Consider holding reserves due to the high risk associated with some sources, particularly D and B.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "NRG-02",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 8.0,
+              "f_star": 0.1,
+              "p_down": 0.1,
+              "L_down": 5000000.0,
+              "risk": 500000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 5.0,
+              "f_star": 0.2,
+              "p_down": 0.05,
+              "L_down": 2000000.0,
+              "risk": 100000.0
+            },
+            "C": {
+              "p_up": 0.25,
+              "b_up": 10.0,
+              "f_star": 0.05,
+              "p_down": 0.15,
+              "L_down": 10000000.0,
+              "risk": 1500000.0
+            },
+            "D": {
+              "p_up": 0.35,
+              "b_up": 6.0,
+              "f_star": 0.15,
+              "p_down": 0.1,
+              "L_down": 3000000.0,
+              "risk": 300000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 12.0,
+              "f_star": 0.05,
+              "p_down": 0.2,
+              "L_down": 8000000.0,
+              "risk": 1600000.0
+            },
+            "F": {
+              "p_up": 0.15,
+              "b_up": 4.0,
+              "f_star": 0.025,
+              "p_down": 0.05,
+              "L_down": 1000000.0,
+              "risk": 50000.0
+            }
+          },
+          "delta_p_up": -0.04999999999999999,
+          "raw_response": "| Source | p_up | b_up | f*  | p_down | L_down | Risk       |\n|--------|------|------|-----|--------|--------|------------|\n| A      | 0.3  | 8    | 0.1 | 0.1    | 5M     | 0.5M       |\n| B      | 0.4  | 5    | 0.2 | 0.05   | 2M     | 0.1M       |\n| C      | 0.25 | 10   | 0.05| 0.15   | 10M    | 1.5M       |\n| D      | 0.35 | 6    | 0.15| 0.1    | 3M     | 0.3M       |\n| E      | 0.2  | 12   | 0.05| 0.2    | 8M     | 1.6M       |\n| F      | 0.15 | 4    | 0.025| 0.05  | 1M     | 0.05M      |\n\n**Note:** Given the high potential risks and the speculative nature of these technologies, it would be prudent to hold reserves and not allocate the full sum of f* values.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "NRG-03",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.15,
+              "b_up": 8.0,
+              "f_star": 0.05,
+              "p_down": 0.05,
+              "L_down": 2000000.0,
+              "risk": 100000.0
+            },
+            "B": {
+              "p_up": 0.25,
+              "b_up": 10.0,
+              "f_star": 0.17,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 100000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 7.0,
+              "f_star": 0.03,
+              "p_down": 0.07,
+              "L_down": 1500000.0,
+              "risk": 105000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.1,
+              "p_down": 0.15,
+              "L_down": 500.0,
+              "risk": 75000.0
+            },
+            "E": {
+              "p_up": 0.1,
+              "b_up": 9.0,
+              "f_star": 0.01,
+              "p_down": 0.03,
+              "L_down": 3000000.0,
+              "risk": 90000.0
+            },
+            "F": {
+              "p_up": 0.05,
+              "b_up": 4.0,
+              "f_star": 0.11,
+              "p_down": 0.02,
+              "L_down": 5000000.0,
+              "risk": 100000.0
+            }
+          },
+          "delta_p_up": -0.050000000000000044,
+          "raw_response": "| Source | p_up | b_up | f*  | p_down | L_down | Risk       |\n|--------|------|------|-----|--------|--------|------------|\n| A      | 0.15 | 8    | 0.05| 0.05   | 2M     | 100,000    |\n| B      | 0.25 | 10   | 0.17| 0.10   | 1M     | 100,000    |\n| C      | 0.20 | 7    | 0.03| 0.07   | 1.5M   | 105,000    |\n| D      | 0.30 | 5    | 0.10| 0.15   | 500K   | 75,000     |\n| E      | 0.10 | 9    | 0.01| 0.03   | 3M     | 90,000     |\n| F      | 0.05 | 4    | -0.11| 0.02  | 5M     | 100,000    |\n\n**Notes:**\n- Source F has a negative f*, indicating it may not be advisable to allocate budget to it.\n- Consider holding reserves due to the potential high risk and relatively low upside across sources.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "NRG-04",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.2,
+              "b_up": 8.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 5000000.0,
+              "risk": 500000.0
+            },
+            "B": {
+              "p_up": 0.3,
+              "b_up": 12.0,
+              "f_star": 0.15,
+              "p_down": 0.15,
+              "L_down": 10000000.0,
+              "risk": 1500000.0
+            },
+            "C": {
+              "p_up": 0.25,
+              "b_up": 10.0,
+              "f_star": 0.08,
+              "p_down": 0.05,
+              "L_down": 3000000.0,
+              "risk": 150000.0
+            },
+            "D": {
+              "p_up": 0.35,
+              "b_up": 15.0,
+              "f_star": 0.23,
+              "p_down": 0.2,
+              "L_down": 12000000.0,
+              "risk": 2400000.0
+            },
+            "E": {
+              "p_up": 0.15,
+              "b_up": 7.0,
+              "f_star": 0.01,
+              "p_down": 0.1,
+              "L_down": 4000000.0,
+              "risk": 400000.0
+            },
+            "F": {
+              "p_up": 0.1,
+              "b_up": 5.0,
+              "f_star": 0.1,
+              "p_down": 0.05,
+              "L_down": 2000000.0,
+              "risk": 100000.0
+            }
+          },
+          "delta_p_up": -0.04999999999999999,
+          "raw_response": "| Source | p_up | b_up | f*  | p_down | L_down | Risk       |\n|--------|------|------|-----|--------|--------|------------|\n| A      | 0.2  | 8    | 0.05| 0.1    | 5M     | 500,000    |\n| B      | 0.3  | 12   | 0.15| 0.15   | 10M    | 1,500,000  |\n| C      | 0.25 | 10   | 0.08| 0.05   | 3M     | 150,000    |\n| D      | 0.35 | 15   | 0.23| 0.2    | 12M    | 2,400,000  |\n| E      | 0.15 | 7    | 0.01| 0.1    | 4M     | 400,000    |\n| F      | 0.1  | 5    | -0.1| 0.05   | 2M     | 100,000    |\n\n**Note:** Given the potential high risk and varying upside, it would be prudent to hold reserves and not allocate the full budget based on the sum of f* values.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "NRG-05",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.15,
+              "b_up": 8.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 5000000.0,
+              "risk": 500000.0
+            },
+            "B": {
+              "p_up": 0.2,
+              "b_up": 12.0,
+              "f_star": 0.1,
+              "p_down": 0.05,
+              "L_down": 3000000.0,
+              "risk": 150000.0
+            },
+            "C": {
+              "p_up": 0.25,
+              "b_up": 10.0,
+              "f_star": 0.15,
+              "p_down": 0.08,
+              "L_down": 4000000.0,
+              "risk": 320000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 15.0,
+              "f_star": 0.23,
+              "p_down": 0.12,
+              "L_down": 6000000.0,
+              "risk": 720000.0
+            },
+            "E": {
+              "p_up": 0.1,
+              "b_up": 7.0,
+              "f_star": 0.01,
+              "p_down": 0.15,
+              "L_down": 7000000.0,
+              "risk": 1050000.0
+            },
+            "F": {
+              "p_up": 0.05,
+              "b_up": 5.0,
+              "f_star": 0.05,
+              "p_down": 0.02,
+              "L_down": 2000000.0,
+              "risk": 40000.0
+            }
+          },
+          "delta_p_up": -0.01666666666666669,
+          "raw_response": "| Source | p_up | b_up | f*  | p_down | L_down | Risk       |\n|--------|------|------|-----|--------|--------|------------|\n| A      | 0.15 | 8    | 0.05| 0.10   | 5M     | 0.5M       |\n| B      | 0.20 | 12   | 0.10| 0.05   | 3M     | 0.15M      |\n| C      | 0.25 | 10   | 0.15| 0.08   | 4M     | 0.32M      |\n| D      | 0.30 | 15   | 0.23| 0.12   | 6M     | 0.72M      |\n| E      | 0.10 | 7    | 0.01| 0.15   | 7M     | 1.05M      |\n| F      | 0.05 | 5    | -0.05| 0.02  | 2M     | 0.04M      |\n\n**Notes:**\n- Source D has the highest upside potential, suggesting a significant allocation.\n- Source F has a negative f*, indicating it may not be worth allocating budget.\n- Source E has the highest risk, suggesting caution or reserves.\n- Consider holding reserves due to the high risk associated with some sources.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "NRG-06",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 8.0,
+              "f_star": 0.1,
+              "p_down": 0.2,
+              "L_down": 5000000.0,
+              "risk": 1000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 5.0,
+              "f_star": 0.1,
+              "p_down": 0.1,
+              "L_down": 2000000.0,
+              "risk": 200000.0
+            },
+            "C": {
+              "p_up": 0.25,
+              "b_up": 7.0,
+              "f_star": 0.04,
+              "p_down": 0.15,
+              "L_down": 3000000.0,
+              "risk": 450000.0
+            },
+            "D": {
+              "p_up": 0.35,
+              "b_up": 6.0,
+              "f_star": 0.15,
+              "p_down": 0.05,
+              "L_down": 1000000.0,
+              "risk": 50000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 9.0,
+              "f_star": 0.02,
+              "p_down": 0.25,
+              "L_down": 4000000.0,
+              "risk": 1000000.0
+            },
+            "F": {
+              "p_up": 0.1,
+              "b_up": 3.0,
+              "f_star": 0.0,
+              "p_down": 0.05,
+              "L_down": 500000.0,
+              "risk": 25000.0
+            }
+          },
+          "delta_p_up": -0.033333333333333326,
+          "raw_response": "| Source | p_up | b_up | f*  | p_down | L_down  | Risk       |\n|--------|------|------|-----|--------|---------|------------|\n| A      | 0.3  | 8    | 0.1 | 0.2    | 5,000,000 | 1,000,000  |\n| B      | 0.4  | 5    | 0.1 | 0.1    | 2,000,000 | 200,000    |\n| C      | 0.25 | 7    | 0.04| 0.15   | 3,000,000 | 450,000    |\n| D      | 0.35 | 6    | 0.15| 0.05   | 1,000,000 | 50,000     |\n| E      | 0.2  | 9    | 0.02| 0.25   | 4,000,000 | 1,000,000  |\n| F      | 0.1  | 3    | 0   | 0.05   | 500,000   | 25,000     |\n\n**Notes:**\n- The sum of f* values is 0.41, suggesting that holding reserves might be prudent to account for uncertainties and potential overestimation of p_up or underestimation of p_down.\n- Source D has a relatively high upside with a moderate downside, making it a potentially attractive option.\n- Source F has a low upside and low risk, indicating it might be a safer but less rewarding investment.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "NRG-07",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.2,
+              "b_up": 5.0,
+              "f_star": 0.1,
+              "p_down": 0.1,
+              "L_down": 5000000.0,
+              "risk": 500000.0
+            },
+            "B": {
+              "p_up": 0.3,
+              "b_up": 8.0,
+              "f_star": 0.225,
+              "p_down": 0.05,
+              "L_down": 2000000.0,
+              "risk": 100000.0
+            },
+            "C": {
+              "p_up": 0.15,
+              "b_up": 6.0,
+              "f_star": 0.025,
+              "p_down": 0.1,
+              "L_down": 4000000.0,
+              "risk": 400000.0
+            },
+            "D": {
+              "p_up": 0.25,
+              "b_up": 7.0,
+              "f_star": 0.125,
+              "p_down": 0.07,
+              "L_down": 3000000.0,
+              "risk": 210000.0
+            },
+            "E": {
+              "p_up": 0.1,
+              "b_up": 4.0,
+              "f_star": 0.0,
+              "p_down": 0.15,
+              "L_down": 6000000.0,
+              "risk": 900000.0
+            },
+            "F": {
+              "p_up": 0.05,
+              "b_up": 3.0,
+              "f_star": 0.1,
+              "p_down": 0.02,
+              "L_down": 1000000.0,
+              "risk": 20000.0
+            }
+          },
+          "delta_p_up": -0.050000000000000044,
+          "raw_response": "| Source | p_up | b_up | f*  | p_down | L_down | Risk       |\n|--------|------|------|-----|--------|--------|------------|\n| A      | 0.2  | 5    | 0.1 | 0.1    | 5M     | 500,000    |\n| B      | 0.3  | 8    | 0.225 | 0.05   | 2M     | 100,000    |\n| C      | 0.15 | 6    | 0.025 | 0.1    | 4M     | 400,000    |\n| D      | 0.25 | 7    | 0.125 | 0.07   | 3M     | 210,000    |\n| E      | 0.1  | 4    | 0.0  | 0.15   | 6M     | 900,000    |\n| F      | 0.05 | 3    | -0.1 | 0.02   | 1M     | 20,000     |\n\n**Notes:**\n- Source E has a high downside risk, suggesting a need for caution.\n- Source F has a negative f*, indicating it may not be worth allocating budget.\n- Consider holding reserves due to the high risk associated with some sources.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "NRG-08",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.2,
+              "b_up": 5.0,
+              "f_star": 0.1,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 100000.0
+            },
+            "B": {
+              "p_up": 0.3,
+              "b_up": 8.0,
+              "f_star": 0.2,
+              "p_down": 0.05,
+              "L_down": 500.0,
+              "risk": 25000.0
+            },
+            "C": {
+              "p_up": 0.15,
+              "b_up": 6.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 2000000.0,
+              "risk": 200000.0
+            },
+            "D": {
+              "p_up": 0.25,
+              "b_up": 10.0,
+              "f_star": 0.3,
+              "p_down": 0.07,
+              "L_down": 1500000.0,
+              "risk": 105000.0
+            },
+            "E": {
+              "p_up": 0.1,
+              "b_up": 4.0,
+              "f_star": 0.0,
+              "p_down": 0.15,
+              "L_down": 1000000.0,
+              "risk": 150000.0
+            },
+            "F": {
+              "p_up": 0.05,
+              "b_up": 3.0,
+              "f_star": 0.0,
+              "p_down": 0.2,
+              "L_down": 500.0,
+              "risk": 100000.0
+            }
+          },
+          "delta_p_up": -0.050000000000000044,
+          "raw_response": "| Source | p_up | b_up | f*  | p_down | L_down | Risk      |\n|--------|------|------|-----|--------|--------|-----------|\n| A      | 0.2  | 5    | 0.1 | 0.1    | 1M     | 100,000   |\n| B      | 0.3  | 8    | 0.2 | 0.05   | 500K   | 25,000    |\n| C      | 0.15 | 6    | 0.05| 0.1    | 2M     | 200,000   |\n| D      | 0.25 | 10   | 0.3 | 0.07   | 1.5M   | 105,000   |\n| E      | 0.1  | 4    | 0   | 0.15   | 1M     | 150,000   |\n| F      | 0.05 | 3    | 0   | 0.2    | 500K   | 100,000   |\n\n**Note:** Given the speculative nature of these sources and the potential for high risk, it would be prudent to hold reserves and allocate less than the sum of the f* values.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "NRG-09",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.2,
+              "b_up": 8.0,
+              "f_star": 0.025,
+              "p_down": 0.05,
+              "L_down": 5000000.0,
+              "risk": 250000.0
+            },
+            "B": {
+              "p_up": 0.3,
+              "b_up": 10.0,
+              "f_star": 0.2,
+              "p_down": 0.1,
+              "L_down": 10000000.0,
+              "risk": 1000000.0
+            },
+            "C": {
+              "p_up": 0.15,
+              "b_up": 7.0,
+              "f_star": 0.012,
+              "p_down": 0.05,
+              "L_down": 5000000.0,
+              "risk": 250000.0
+            },
+            "D": {
+              "p_up": 0.25,
+              "b_up": 12.0,
+              "f_star": 0.3,
+              "p_down": 0.15,
+              "L_down": 15000000.0,
+              "risk": 2250000.0
+            },
+            "E": {
+              "p_up": 0.1,
+              "b_up": 6.0,
+              "f_star": 0.0,
+              "p_down": 0.05,
+              "L_down": 5000000.0,
+              "risk": 250000.0
+            },
+            "F": {
+              "p_up": 0.35,
+              "b_up": 5.0,
+              "f_star": 0.1,
+              "p_down": 0.2,
+              "L_down": 20000000.0,
+              "risk": 4000000.0
+            }
+          },
+          "delta_p_up": -0.15,
+          "raw_response": "| Source | p_up | b_up | f*  | p_down | L_down  | Risk     |\n|--------|------|------|-----|--------|---------|----------|\n| A      | 0.2  | 8    | 0.025| 0.05   | 5,000,000 | 250,000  |\n| B      | 0.3  | 10   | 0.2  | 0.1    | 10,000,000| 1,000,000|\n| C      | 0.15 | 7    | 0.012| 0.05   | 5,000,000 | 250,000  |\n| D      | 0.25 | 12   | 0.3  | 0.15   | 15,000,000| 2,250,000|\n| E      | 0.1  | 6    | 0.0  | 0.05   | 5,000,000 | 250,000  |\n| F      | 0.35 | 5    | 0.1  | 0.2    | 20,000,000| 4,000,000|\n\n**Note:** Given the high potential downside risks, it would be prudent to hold reserves and not allocate the full sum of f* values.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "NRG-10",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.05,
+              "b_up": 8.0,
+              "f_star": 0.0125,
+              "p_down": 0.1,
+              "L_down": 5000000.0,
+              "risk": 500000.0
+            },
+            "B": {
+              "p_up": 0.2,
+              "b_up": 5.0,
+              "f_star": 0.0,
+              "p_down": 0.05,
+              "L_down": 2000000.0,
+              "risk": 100000.0
+            },
+            "C": {
+              "p_up": 0.03,
+              "b_up": 7.0,
+              "f_star": 0.01,
+              "p_down": 0.08,
+              "L_down": 3000000.0,
+              "risk": 240000.0
+            },
+            "D": {
+              "p_up": 0.25,
+              "b_up": 10.0,
+              "f_star": 0.1667,
+              "p_down": 0.15,
+              "L_down": 10000000.0,
+              "risk": 1500000.0
+            },
+            "E": {
+              "p_up": 0.02,
+              "b_up": 6.0,
+              "f_star": 0.0133,
+              "p_down": 0.12,
+              "L_down": 4000000.0,
+              "risk": 480000.0
+            },
+            "F": {
+              "p_up": 0.1,
+              "b_up": 4.0,
+              "f_star": 0.025,
+              "p_down": 0.02,
+              "L_down": 1000000.0,
+              "risk": 20000.0
+            }
+          },
+          "delta_p_up": -0.15000000000000002,
+          "raw_response": "| Source | p_up | b_up | f*  | p_down | L_down | Risk       |\n|--------|------|------|-----|--------|--------|------------|\n| A      | 0.05 | 8    | 0.0125 | 0.10   | 5M     | 500,000    |\n| B      | 0.20 | 5    | 0.00  | 0.05   | 2M     | 100,000    |\n| C      | 0.03 | 7    | -0.01 | 0.08   | 3M     | 240,000    |\n| D      | 0.25 | 10   | 0.1667 | 0.15   | 10M    | 1,500,000  |\n| E      | 0.02 | 6    | -0.0133 | 0.12   | 4M     | 480,000    |\n| F      | 0.10 | 4    | 0.025 | 0.02   | 1M     | 20,000     |\n\n**Notes:**\n- Source D (Deep reinforcement learning controllers) shows the highest upside potential, suggesting a significant allocation of resources.\n- Source B (Computational model predictive control) has a moderate upside with low risk, making it a stable choice.\n- Source F (Grid management patent database analysis) has a low upside but also low risk, suitable for a conservative approach.\n- Sources A, C, and E have low upside potential and moderate risk, suggesting limited allocation.\n- Consider holding reserves due to the high risk associated with Source D and the overall uncertainty in other sources.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "NRG-11",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 5000000.0,
+              "risk": 500000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 4.0,
+              "f_star": 0.1,
+              "p_down": 0.05,
+              "L_down": 2000000.0,
+              "risk": 100000.0
+            },
+            "C": {
+              "p_up": 0.25,
+              "b_up": 6.0,
+              "f_star": 0.02,
+              "p_down": 0.15,
+              "L_down": 3000000.0,
+              "risk": 450000.0
+            },
+            "D": {
+              "p_up": 0.5,
+              "b_up": 8.0,
+              "f_star": 0.25,
+              "p_down": 0.1,
+              "L_down": 4000000.0,
+              "risk": 400000.0
+            },
+            "E": {
+              "p_up": 0.35,
+              "b_up": 7.0,
+              "f_star": 0.15,
+              "p_down": 0.2,
+              "L_down": 6000000.0,
+              "risk": 1200000.0
+            },
+            "F": {
+              "p_up": 0.2,
+              "b_up": 3.0,
+              "f_star": 0.0,
+              "p_down": 0.05,
+              "L_down": 1000000.0,
+              "risk": 50000.0
+            }
+          },
+          "delta_p_up": -0.06666666666666671,
+          "raw_response": "| Source | p_up | b_up | f*  | p_down | L_down | Risk       |\n|--------|------|------|-----|--------|--------|------------|\n| A      | 0.3  | 5    | 0.05| 0.1    | 5M     | 500,000    |\n| B      | 0.4  | 4    | 0.1 | 0.05   | 2M     | 100,000    |\n| C      | 0.25 | 6    | 0.02| 0.15   | 3M     | 450,000    |\n| D      | 0.5  | 8    | 0.25| 0.1    | 4M     | 400,000    |\n| E      | 0.35 | 7    | 0.15| 0.2    | 6M     | 1,200,000  |\n| F      | 0.2  | 3    | 0   | 0.05   | 1M     | 50,000     |\n\n**Note:** Given the high potential risk associated with Source E, it may be prudent to hold reserves and allocate less than the sum of f* values.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "NRG-12",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 8.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 5000000.0,
+              "risk": 500000.0
+            },
+            "B": {
+              "p_up": 0.2,
+              "b_up": 5.0,
+              "f_star": 0.0,
+              "p_down": 0.05,
+              "L_down": 2000000.0,
+              "risk": 100000.0
+            },
+            "C": {
+              "p_up": 0.25,
+              "b_up": 7.0,
+              "f_star": 0.03,
+              "p_down": 0.15,
+              "L_down": 4000000.0,
+              "risk": 600000.0
+            },
+            "D": {
+              "p_up": 0.35,
+              "b_up": 6.0,
+              "f_star": 0.1,
+              "p_down": 0.2,
+              "L_down": 3000000.0,
+              "risk": 600000.0
+            },
+            "E": {
+              "p_up": 0.15,
+              "b_up": 9.0,
+              "f_star": 0.0,
+              "p_down": 0.1,
+              "L_down": 6000000.0,
+              "risk": 600000.0
+            },
+            "F": {
+              "p_up": 0.1,
+              "b_up": 4.0,
+              "f_star": 0.0,
+              "p_down": 0.05,
+              "L_down": 1000000.0,
+              "risk": 50000.0
+            }
+          },
+          "delta_p_up": 0.01666666666666669,
+          "raw_response": "Based on the context of evaluating sources for discovering ultra-sensitive chemical detection, here are the estimated metrics for each source:\n\n| Source | p_up | b_up | f*  | p_down | L_down | Risk       |\n|--------|------|------|-----|--------|--------|------------|\n| A      | 0.3  | 8    | 0.05| 0.1    | 5M     | 0.5M       |\n| B      | 0.2  | 5    | 0.00| 0.05   | 2M     | 0.1M       |\n| C      | 0.25 | 7    | 0.03| 0.15   | 4M     | 0.6M       |\n| D      | 0.35 | 6    | 0.10| 0.2    | 3M     | 0.6M       |\n| E      | 0.15 | 9    | 0.00| 0.1    | 6M     | 0.6M       |\n| F      | 0.1  | 4    | 0.00| 0.05   | 1M     | 0.05M      |\n\n### Notes:\n- **Source A**: The ampullae of Lorenzini in sharks are known for their sensitivity, offering a moderate probability of outperforming current technologies with a high return if successful. However, the risk of disruption is relatively low.\n- **Source B**: Computational modeling has a lower probability of breakthrough but also a lower risk and potential loss.\n- **Source C**: Platypus electroreception is promising but carries a higher risk of unexpected issues.\n- **Source D**: Synthetic electrode functionalization has the highest probability of success and a moderate risk, making it a strong candidate for investment.\n- **Source E**: Electric catfish receptors have a lower probability of success but a high potential return, with moderate risk.\n- **Source F**: Patent database analysis has the lowest probability of breakthrough and risk, making it a low-priority option.\n\n### Reserve Strategy:\nGiven the relatively low f* values and the potential risks, it would be prudent to hold reserves and not allocate the entire budget based on these estimates.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "NRG-13",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 8.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 5000000.0,
+              "risk": 500000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 5.0,
+              "f_star": 0.1,
+              "p_down": 0.15,
+              "L_down": 3000000.0,
+              "risk": 450000.0
+            },
+            "C": {
+              "p_up": 0.25,
+              "b_up": 7.0,
+              "f_star": 0.02,
+              "p_down": 0.2,
+              "L_down": 4000000.0,
+              "risk": 800000.0
+            },
+            "D": {
+              "p_up": 0.5,
+              "b_up": 6.0,
+              "f_star": 0.25,
+              "p_down": 0.05,
+              "L_down": 2000000.0,
+              "risk": 100000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 9.0,
+              "f_star": 0.01,
+              "p_down": 0.25,
+              "L_down": 6000000.0,
+              "risk": 1500000.0
+            },
+            "F": {
+              "p_up": 0.35,
+              "b_up": 4.0,
+              "f_star": 0.1,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 100000.0
+            }
+          },
+          "delta_p_up": -0.16666666666666669,
+          "raw_response": "Here is the estimated table for the given sources:\n\n| Source | p_up | b_up | f*  | p_down | L_down | Risk       |\n|--------|------|------|-----|--------|--------|------------|\n| A      | 0.3  | 8    | 0.05| 0.1    | 5M     | 0.5M       |\n| B      | 0.4  | 5    | 0.1 | 0.15   | 3M     | 0.45M      |\n| C      | 0.25 | 7    | 0.02| 0.2    | 4M     | 0.8M       |\n| D      | 0.5  | 6    | 0.25| 0.05   | 2M     | 0.1M       |\n| E      | 0.2  | 9    | 0.01| 0.25   | 6M     | 1.5M       |\n| F      | 0.35 | 4    | 0.1 | 0.1    | 1M     | 0.1M       |\n\n**Notes:**\n- Source D has the highest upside potential with a relatively low downside risk, making it a strong candidate for investment.\n- Source E has a high downside risk, suggesting caution in allocation.\n- Consider holding reserves due to the cumulative risk exposure across sources.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MFG-01",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.15,
+              "b_up": 8.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 5000000.0,
+              "risk": 500000.0
+            },
+            "B": {
+              "p_up": 0.25,
+              "b_up": 12.0,
+              "f_star": 0.18,
+              "p_down": 0.05,
+              "L_down": 3000000.0,
+              "risk": 150000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 10.0,
+              "f_star": 0.11,
+              "p_down": 0.08,
+              "L_down": 4000000.0,
+              "risk": 320000.0
+            },
+            "D": {
+              "p_up": 0.3,
+              "b_up": 6.0,
+              "f_star": 0.1,
+              "p_down": 0.12,
+              "L_down": 2000000.0,
+              "risk": 240000.0
+            },
+            "E": {
+              "p_up": 0.18,
+              "b_up": 9.0,
+              "f_star": 0.07,
+              "p_down": 0.07,
+              "L_down": 4500000.0,
+              "risk": 315000.0
+            },
+            "F": {
+              "p_up": 0.1,
+              "b_up": 5.0,
+              "f_star": 0.0,
+              "p_down": 0.15,
+              "L_down": 6000000.0,
+              "risk": 900000.0
+            }
+          },
+          "delta_p_up": -0.04000000000000001,
+          "raw_response": "Here is the estimated table for the given sources:\n\n| Source | p_up | b_up | f*  | p_down | L_down | Risk       |\n|--------|------|------|-----|--------|--------|------------|\n| A      | 0.15 | 8    | 0.05| 0.10   | 5M     | 0.5M       |\n| B      | 0.25 | 12   | 0.18| 0.05   | 3M     | 0.15M      |\n| C      | 0.20 | 10   | 0.11| 0.08   | 4M     | 0.32M      |\n| D      | 0.30 | 6    | 0.10| 0.12   | 2M     | 0.24M      |\n| E      | 0.18 | 9    | 0.07| 0.07   | 4.5M   | 0.315M     |\n| F      | 0.10 | 5    | 0.00| 0.15   | 6M     | 0.9M       |\n\n**Notes:**\n- Source B has the highest upside potential, suggesting a significant allocation.\n- Source F has a negligible upside and the highest risk, indicating minimal allocation.\n- Consider holding reserves due to the cumulative risk and uncertainty across sources.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MFG-02",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 100000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 8.0,
+              "f_star": 0.25,
+              "p_down": 0.05,
+              "L_down": 500.0,
+              "risk": 25000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 6.0,
+              "f_star": 0.0,
+              "p_down": 0.15,
+              "L_down": 2000000.0,
+              "risk": 300000.0
+            },
+            "D": {
+              "p_up": 0.35,
+              "b_up": 7.0,
+              "f_star": 0.19,
+              "p_down": 0.1,
+              "L_down": 1500000.0,
+              "risk": 150000.0
+            },
+            "E": {
+              "p_up": 0.25,
+              "b_up": 9.0,
+              "f_star": 0.06,
+              "p_down": 0.08,
+              "L_down": 1000000.0,
+              "risk": 80000.0
+            },
+            "F": {
+              "p_up": 0.15,
+              "b_up": 4.0,
+              "f_star": 0.0,
+              "p_down": 0.2,
+              "L_down": 3000000.0,
+              "risk": 600000.0
+            }
+          },
+          "delta_p_up": -0.04999999999999999,
+          "raw_response": "To evaluate the potential of each source for discovering multi-scale structure fabrication, I will estimate the upside and downside metrics based on the given formulas and my understanding of each source's potential and risks.\n\n| Source | p_up | b_up | f*  | p_down | L_down | Risk      |\n|--------|------|------|-----|--------|--------|-----------|\n| A      | 0.3  | 5    | 0.05| 0.1    | 1M     | 100,000   |\n| B      | 0.4  | 8    | 0.25| 0.05   | 500K   | 25,000    |\n| C      | 0.2  | 6    | 0.00| 0.15   | 2M     | 300,000   |\n| D      | 0.35 | 7    | 0.19| 0.1    | 1.5M   | 150,000   |\n| E      | 0.25 | 9    | 0.06| 0.08   | 1M     | 80,000    |\n| F      | 0.15 | 4    | 0.00| 0.2    | 3M     | 600,000   |\n\n### Notes:\n- **Source A (Bone trabecular network remodeling):** Moderate potential for innovation with a relatively low risk of failure.\n- **Source B (Computational multi-scale topology optimization):** High potential for significant returns with a low risk, making it a strong candidate for investment.\n- **Source C (Wood ray parenchyma-tracheid organization):** Lower potential for breakthrough innovation and higher risk, suggesting minimal investment.\n- **Source D (Freeze-casting templated porosity screening):** Good balance of potential and risk, suitable for moderate investment.\n- **Source E (Nacre tablet-bridge layered growth):** Moderate potential with manageable risk, suitable for cautious investment.\n- **Source F (Hierarchical materials patent database analysis):** Low potential for innovation with high risk, suggesting minimal investment.\n\n### Reserve Strategy:\nGiven the sum of f* values and the associated risks, it would be prudent to hold reserves and not allocate the entire budget to these sources. This allows for flexibility in responding to unforeseen opportunities or challenges.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MFG-03",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 8.0,
+              "f_star": 0.1,
+              "p_down": 0.2,
+              "L_down": 5000000.0,
+              "risk": 1000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 12.0,
+              "f_star": 0.3,
+              "p_down": 0.1,
+              "L_down": 2000000.0,
+              "risk": 200000.0
+            },
+            "C": {
+              "p_up": 0.25,
+              "b_up": 10.0,
+              "f_star": 0.05,
+              "p_down": 0.15,
+              "L_down": 4000000.0,
+              "risk": 600000.0
+            },
+            "D": {
+              "p_up": 0.35,
+              "b_up": 9.0,
+              "f_star": 0.2,
+              "p_down": 0.1,
+              "L_down": 3000000.0,
+              "risk": 300000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 7.0,
+              "f_star": 0.05,
+              "p_down": 0.25,
+              "L_down": 6000000.0,
+              "risk": 1500000.0
+            },
+            "F": {
+              "p_up": 0.15,
+              "b_up": 5.0,
+              "f_star": 0.02,
+              "p_down": 0.05,
+              "L_down": 1000000.0,
+              "risk": 50000.0
+            }
+          },
+          "delta_p_up": -0.04999999999999999,
+          "raw_response": "| Source | p_up | b_up | f*  | p_down | L_down | Risk       |\n|--------|------|------|-----|--------|--------|------------|\n| A      | 0.3  | 8    | 0.1 | 0.2    | 5M     | 1M         |\n| B      | 0.4  | 12   | 0.3 | 0.1    | 2M     | 0.2M       |\n| C      | 0.25 | 10   | 0.05| 0.15   | 4M     | 0.6M       |\n| D      | 0.35 | 9    | 0.2 | 0.1    | 3M     | 0.3M       |\n| E      | 0.2  | 7    | 0.05| 0.25   | 6M     | 1.5M       |\n| F      | 0.15 | 5    | 0.02| 0.05   | 1M     | 0.05M      |\n\n**Notes:**\n- Source B has the highest upside potential, suggesting a significant allocation.\n- Source E has the highest downside risk, indicating caution.\n- Consider holding reserves due to the cumulative risk and uncertainty across sources.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MFG-04",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 100000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 8.0,
+              "f_star": 0.25,
+              "p_down": 0.05,
+              "L_down": 500.0,
+              "risk": 25000.0
+            },
+            "C": {
+              "p_up": 0.25,
+              "b_up": 6.0,
+              "f_star": 0.02,
+              "p_down": 0.15,
+              "L_down": 750.0,
+              "risk": 112500.0
+            },
+            "D": {
+              "p_up": 0.35,
+              "b_up": 4.0,
+              "f_star": 0.1,
+              "p_down": 0.1,
+              "L_down": 1500000.0,
+              "risk": 150000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 7.0,
+              "f_star": 0.0,
+              "p_down": 0.2,
+              "L_down": 1000000.0,
+              "risk": 200000.0
+            },
+            "F": {
+              "p_up": 0.15,
+              "b_up": 3.0,
+              "f_star": 0.0,
+              "p_down": 0.05,
+              "L_down": 2000000.0,
+              "risk": 100000.0
+            }
+          },
+          "delta_p_up": -0.04999999999999999,
+          "raw_response": "| Source | p_up | b_up | f*  | p_down | L_down | Risk       |\n|--------|------|------|-----|--------|--------|------------|\n| A      | 0.3  | 5    | 0.05| 0.1    | 1M     | 100,000    |\n| B      | 0.4  | 8    | 0.25| 0.05   | 500K   | 25,000     |\n| C      | 0.25 | 6    | 0.02| 0.15   | 750K   | 112,500    |\n| D      | 0.35 | 4    | 0.10| 0.1    | 1.5M   | 150,000    |\n| E      | 0.2  | 7    | 0.00| 0.2    | 1M     | 200,000    |\n| F      | 0.15 | 3    | 0.00| 0.05   | 2M     | 100,000    |\n\n**Notes:**\n- Source B has the highest upside potential, suggesting a significant allocation.\n- Source E and F have low upside potential, indicating minimal or no allocation.\n- Consider holding reserves due to the high risk associated with some sources, particularly E.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MFG-05",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 8.0,
+              "f_star": 0.05,
+              "p_down": 0.2,
+              "L_down": 5000000.0,
+              "risk": 1000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 5.0,
+              "f_star": 0.1,
+              "p_down": 0.1,
+              "L_down": 2000000.0,
+              "risk": 200000.0
+            },
+            "C": {
+              "p_up": 0.25,
+              "b_up": 7.0,
+              "f_star": 0.02,
+              "p_down": 0.15,
+              "L_down": 4000000.0,
+              "risk": 600000.0
+            },
+            "D": {
+              "p_up": 0.2,
+              "b_up": 3.0,
+              "f_star": 0.0,
+              "p_down": 0.05,
+              "L_down": 1000000.0,
+              "risk": 50000.0
+            },
+            "E": {
+              "p_up": 0.15,
+              "b_up": 6.0,
+              "f_star": 0.0,
+              "p_down": 0.1,
+              "L_down": 3000000.0,
+              "risk": 300000.0
+            },
+            "F": {
+              "p_up": 0.35,
+              "b_up": 4.0,
+              "f_star": 0.1,
+              "p_down": 0.05,
+              "L_down": 2000000.0,
+              "risk": 100000.0
+            }
+          },
+          "delta_p_up": -0.08333333333333334,
+          "raw_response": "| Source | p_up | b_up | f*  | p_down | L_down | Risk       |\n|--------|------|------|-----|--------|--------|------------|\n| A      | 0.3  | 8    | 0.05| 0.2    | 5M     | 1M         |\n| B      | 0.4  | 5    | 0.1 | 0.1    | 2M     | 0.2M       |\n| C      | 0.25 | 7    | 0.02| 0.15   | 4M     | 0.6M       |\n| D      | 0.2  | 3    | 0   | 0.05   | 1M     | 0.05M      |\n| E      | 0.15 | 6    | 0   | 0.1    | 3M     | 0.3M       |\n| F      | 0.35 | 4    | 0.1 | 0.05   | 2M     | 0.1M       |\n\n**Notes:**\n- Source A has a moderate upside potential due to the unique properties of spider silk, but also a higher risk due to biological variability.\n- Source B offers a higher probability of success with computational methods, with relatively low risk.\n- Source C has a lower probability of success due to the complexity of biological processes, with moderate risk.\n- Source D, while proven in waste reduction, offers limited upside as it is already widely implemented.\n- Source E has a low probability of significant innovation, with moderate risk due to ecological factors.\n- Source F provides a balanced approach with moderate upside and low risk, leveraging existing patents.\n\n**Reserve Strategy:**\n- Given the potential risks and the sum of f* values, it would be prudent to hold reserves and not allocate the entire budget based on these estimates.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MFG-06",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 8.0,
+              "f_star": 0.1,
+              "p_down": 0.1,
+              "L_down": 5000000.0,
+              "risk": 500000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 5.0,
+              "f_star": 0.1,
+              "p_down": 0.05,
+              "L_down": 2000000.0,
+              "risk": 100000.0
+            },
+            "C": {
+              "p_up": 0.25,
+              "b_up": 7.0,
+              "f_star": 0.04,
+              "p_down": 0.15,
+              "L_down": 4000000.0,
+              "risk": 600000.0
+            },
+            "D": {
+              "p_up": 0.35,
+              "b_up": 6.0,
+              "f_star": 0.14,
+              "p_down": 0.1,
+              "L_down": 3000000.0,
+              "risk": 300000.0
+            },
+            "E": {
+              "p_up": 0.5,
+              "b_up": 10.0,
+              "f_star": 0.45,
+              "p_down": 0.2,
+              "L_down": 6000000.0,
+              "risk": 1200000.0
+            },
+            "F": {
+              "p_up": 0.2,
+              "b_up": 4.0,
+              "f_star": 0.0,
+              "p_down": 0.05,
+              "L_down": 1000000.0,
+              "risk": 50000.0
+            }
+          },
+          "delta_p_up": 0.03333333333333338,
+          "raw_response": "| Source | p_up | b_up | f*  | p_down | L_down | Risk     |\n|--------|------|------|-----|--------|--------|----------|\n| A      | 0.3  | 8    | 0.1 | 0.1    | 5M     | 0.5M     |\n| B      | 0.4  | 5    | 0.1 | 0.05   | 2M     | 0.1M     |\n| C      | 0.25 | 7    | 0.04| 0.15   | 4M     | 0.6M     |\n| D      | 0.35 | 6    | 0.14| 0.1    | 3M     | 0.3M     |\n| E      | 0.5  | 10   | 0.45| 0.2    | 6M     | 1.2M     |\n| F      | 0.2  | 4    | 0.0 | 0.05   | 1M     | 0.05M    |\n\n**Notes:**\n- Source E shows the highest upside potential, but also carries significant risk.\n- Source F has minimal upside and low risk, suggesting it may not be a priority for investment.\n- Consider holding reserves due to the high risk associated with some sources, particularly E.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MFG-07",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 8.0,
+              "f_star": 0.1,
+              "p_down": 0.1,
+              "L_down": 5000000.0,
+              "risk": 500000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 5.0,
+              "f_star": 0.1,
+              "p_down": 0.15,
+              "L_down": 3000000.0,
+              "risk": 450000.0
+            },
+            "C": {
+              "p_up": 0.25,
+              "b_up": 7.0,
+              "f_star": 0.04,
+              "p_down": 0.05,
+              "L_down": 2000000.0,
+              "risk": 100000.0
+            },
+            "D": {
+              "p_up": 0.35,
+              "b_up": 6.0,
+              "f_star": 0.14,
+              "p_down": 0.2,
+              "L_down": 4000000.0,
+              "risk": 800000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 9.0,
+              "f_star": 0.02,
+              "p_down": 0.1,
+              "L_down": 1500000.0,
+              "risk": 150000.0
+            },
+            "F": {
+              "p_up": 0.15,
+              "b_up": 4.0,
+              "f_star": 0.01,
+              "p_down": 0.05,
+              "L_down": 1000000.0,
+              "risk": 50000.0
+            }
+          },
+          "delta_p_up": -0.04999999999999999,
+          "raw_response": "| Source | p_up | b_up | f*  | p_down | L_down  | Risk       |\n|--------|------|------|-----|--------|---------|------------|\n| A      | 0.3  | 8    | 0.1 | 0.1    | 5,000,000 | 500,000    |\n| B      | 0.4  | 5    | 0.1 | 0.15   | 3,000,000 | 450,000    |\n| C      | 0.25 | 7    | 0.04| 0.05   | 2,000,000 | 100,000    |\n| D      | 0.35 | 6    | 0.14| 0.2    | 4,000,000 | 800,000    |\n| E      | 0.2  | 9    | 0.02| 0.1    | 1,500,000 | 150,000    |\n| F      | 0.15 | 4    | 0.01| 0.05   | 1,000,000 | 50,000     |\n\n**Note:** Given the high potential risks and the sum of f* values, it would be prudent to hold reserves and allocate less than the total sum of f* values to manage overall risk exposure effectively.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MFG-08",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 1000000.0,
+              "risk": 100000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 8.0,
+              "f_star": 0.25,
+              "p_down": 0.15,
+              "L_down": 2000000.0,
+              "risk": 300000.0
+            },
+            "C": {
+              "p_up": 0.35,
+              "b_up": 6.0,
+              "f_star": 0.14,
+              "p_down": 0.2,
+              "L_down": 1500000.0,
+              "risk": 300000.0
+            },
+            "D": {
+              "p_up": 0.5,
+              "b_up": 10.0,
+              "f_star": 0.45,
+              "p_down": 0.1,
+              "L_down": 3000000.0,
+              "risk": 300000.0
+            },
+            "E": {
+              "p_up": 0.25,
+              "b_up": 4.0,
+              "f_star": 0.0,
+              "p_down": 0.25,
+              "L_down": 1000000.0,
+              "risk": 250000.0
+            },
+            "F": {
+              "p_up": 0.2,
+              "b_up": 3.0,
+              "f_star": 0.0,
+              "p_down": 0.05,
+              "L_down": 500.0,
+              "risk": 25000.0
+            }
+          },
+          "delta_p_up": -0.06666666666666671,
+          "raw_response": "| Source | p_up | b_up | f*  | p_down | L_down | Risk      |\n|--------|------|------|-----|--------|--------|-----------|\n| A      | 0.3  | 5    | 0.05| 0.1    | 1M     | 100,000   |\n| B      | 0.4  | 8    | 0.25| 0.15   | 2M     | 300,000   |\n| C      | 0.35 | 6    | 0.14| 0.2    | 1.5M   | 300,000   |\n| D      | 0.5  | 10   | 0.45| 0.1    | 3M     | 300,000   |\n| E      | 0.25 | 4    | 0.00| 0.25   | 1M     | 250,000   |\n| F      | 0.2  | 3    | 0.00| 0.05   | 500K   | 25,000    |\n\n**Notes:**\n- Source D has the highest upside potential, suggesting a significant allocation of resources.\n- Source E and F have low upside potential, indicating minimal or no allocation.\n- Consider holding reserves due to the high risk associated with some sources, particularly C and E.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MFG-09",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 8.0,
+              "f_star": 0.05,
+              "p_down": 0.1,
+              "L_down": 5000000.0,
+              "risk": 500000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 10.0,
+              "f_star": 0.25,
+              "p_down": 0.15,
+              "L_down": 3000000.0,
+              "risk": 450000.0
+            },
+            "C": {
+              "p_up": 0.35,
+              "b_up": 9.0,
+              "f_star": 0.15,
+              "p_down": 0.1,
+              "L_down": 4000000.0,
+              "risk": 400000.0
+            },
+            "D": {
+              "p_up": 0.5,
+              "b_up": 7.0,
+              "f_star": 0.36,
+              "p_down": 0.2,
+              "L_down": 6000000.0,
+              "risk": 1200000.0
+            },
+            "E": {
+              "p_up": 0.25,
+              "b_up": 6.0,
+              "f_star": 0.02,
+              "p_down": 0.05,
+              "L_down": 2000000.0,
+              "risk": 100000.0
+            },
+            "F": {
+              "p_up": 0.2,
+              "b_up": 5.0,
+              "f_star": 0.0,
+              "p_down": 0.05,
+              "L_down": 1000000.0,
+              "risk": 50000.0
+            }
+          },
+          "delta_p_up": -0.06666666666666671,
+          "raw_response": "| Source | p_up | b_up | f*  | p_down | L_down | Risk       |\n|--------|------|------|-----|--------|--------|------------|\n| A      | 0.3  | 8    | 0.05| 0.1    | 5M     | 0.5M       |\n| B      | 0.4  | 10   | 0.25| 0.15   | 3M     | 0.45M      |\n| C      | 0.35 | 9    | 0.15| 0.1    | 4M     | 0.4M       |\n| D      | 0.5  | 7    | 0.36| 0.2    | 6M     | 1.2M       |\n| E      | 0.25 | 6    | 0.02| 0.05   | 2M     | 0.1M       |\n| F      | 0.2  | 5    | 0.00| 0.05   | 1M     | 0.05M      |\n\n**Notes:**\n- Source D has the highest upside potential, suggesting a significant allocation of resources.\n- Source F has the lowest risk, making it a safer option for investment.\n- Consider holding reserves due to the cumulative risk and the speculative nature of the upside estimates.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MFG-10",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.2,
+              "b_up": 5.0,
+              "f_star": 0.1,
+              "p_down": 0.05,
+              "L_down": 1000000.0,
+              "risk": 50000.0
+            },
+            "B": {
+              "p_up": 0.3,
+              "b_up": 8.0,
+              "f_star": 0.175,
+              "p_down": 0.1,
+              "L_down": 2000000.0,
+              "risk": 200000.0
+            },
+            "C": {
+              "p_up": 0.15,
+              "b_up": 6.0,
+              "f_star": 0.025,
+              "p_down": 0.05,
+              "L_down": 1500000.0,
+              "risk": 75000.0
+            },
+            "D": {
+              "p_up": 0.25,
+              "b_up": 10.0,
+              "f_star": 0.375,
+              "p_down": 0.15,
+              "L_down": 5000000.0,
+              "risk": 750000.0
+            },
+            "E": {
+              "p_up": 0.1,
+              "b_up": 4.0,
+              "f_star": 0.025,
+              "p_down": 0.05,
+              "L_down": 1000000.0,
+              "risk": 50000.0
+            },
+            "F": {
+              "p_up": 0.2,
+              "b_up": 7.0,
+              "f_star": 0.1,
+              "p_down": 0.1,
+              "L_down": 3000000.0,
+              "risk": 300000.0
+            }
+          },
+          "delta_p_up": -0.1,
+          "raw_response": "| Source | p_up | b_up | f*  | p_down | L_down | Risk       |\n|--------|------|------|-----|--------|--------|------------|\n| A      | 0.2  | 5    | 0.1 | 0.05   | 1M     | 50,000     |\n| B      | 0.3  | 8    | 0.175| 0.1   | 2M     | 200,000    |\n| C      | 0.15 | 6    | 0.025| 0.05  | 1.5M   | 75,000     |\n| D      | 0.25 | 10   | 0.375| 0.15  | 5M     | 750,000    |\n| E      | 0.1  | 4    | 0.025| 0.05  | 1M     | 50,000     |\n| F      | 0.2  | 7    | 0.1 | 0.1    | 3M     | 300,000    |\n\n**Note:** Given the high potential risk exposure, it would be prudent to hold reserves and allocate less than the sum of the f* values.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MFG-11",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 8.0,
+              "f_star": 0.05,
+              "p_down": 0.2,
+              "L_down": 5000000.0,
+              "risk": 1000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 5.0,
+              "f_star": 0.1,
+              "p_down": 0.15,
+              "L_down": 3000000.0,
+              "risk": 450000.0
+            },
+            "C": {
+              "p_up": 0.35,
+              "b_up": 7.0,
+              "f_star": 0.08,
+              "p_down": 0.1,
+              "L_down": 4000000.0,
+              "risk": 400000.0
+            },
+            "D": {
+              "p_up": 0.1,
+              "b_up": 2.0,
+              "f_star": 0.0,
+              "p_down": 0.05,
+              "L_down": 1000000.0,
+              "risk": 50000.0
+            },
+            "E": {
+              "p_up": 0.25,
+              "b_up": 6.0,
+              "f_star": 0.02,
+              "p_down": 0.2,
+              "L_down": 6000000.0,
+              "risk": 1200000.0
+            },
+            "F": {
+              "p_up": 0.15,
+              "b_up": 3.0,
+              "f_star": 0.0,
+              "p_down": 0.1,
+              "L_down": 2000000.0,
+              "risk": 200000.0
+            }
+          },
+          "delta_p_up": 0.08333333333333331,
+          "raw_response": "| Source | p_up | b_up | f*  | p_down | L_down | Risk     |\n|--------|------|------|-----|--------|--------|----------|\n| A      | 0.3  | 8    | 0.05| 0.2    | 5M     | 1M       |\n| B      | 0.4  | 5    | 0.1 | 0.15   | 3M     | 0.45M    |\n| C      | 0.35 | 7    | 0.08| 0.1    | 4M     | 0.4M     |\n| D      | 0.1  | 2    | 0   | 0.05   | 1M     | 0.05M    |\n| E      | 0.25 | 6    | 0.02| 0.2    | 6M     | 1.2M     |\n| F      | 0.15 | 3    | 0   | 0.1    | 2M     | 0.2M     |\n\n**Notes:**\n- Source A (Weakly electric fish electrolocation imaging) and Source E (Dolphin biosonar material discrimination) have higher potential upside due to their novel biological inspiration, but also carry higher risk.\n- Source B (Computational inverse problem solving) offers a balanced approach with moderate upside and lower risk.\n- Source C (Bat echolocation 3D spatial mapping) provides a reasonable upside with manageable risk.\n- Source D (Standard ultrasonic/X-ray inspection methods) and Source F (Nondestructive testing patent database analysis) are more conservative with lower upside and risk.\n- Consider holding reserves due to the high risk associated with some sources, especially A and E.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MFG-12",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.05,
+              "p_down": 0.2,
+              "L_down": 1000000.0,
+              "risk": 200000.0
+            },
+            "B": {
+              "p_up": 0.5,
+              "b_up": 8.0,
+              "f_star": 0.31,
+              "p_down": 0.1,
+              "L_down": 2000000.0,
+              "risk": 200000.0
+            },
+            "C": {
+              "p_up": 0.2,
+              "b_up": 4.0,
+              "f_star": 0.0,
+              "p_down": 0.15,
+              "L_down": 500.0,
+              "risk": 75000.0
+            },
+            "D": {
+              "p_up": 0.4,
+              "b_up": 6.0,
+              "f_star": 0.2,
+              "p_down": 0.05,
+              "L_down": 1500000.0,
+              "risk": 75000.0
+            },
+            "E": {
+              "p_up": 0.25,
+              "b_up": 3.0,
+              "f_star": 0.0,
+              "p_down": 0.1,
+              "L_down": 300.0,
+              "risk": 30000.0
+            },
+            "F": {
+              "p_up": 0.35,
+              "b_up": 7.0,
+              "f_star": 0.19,
+              "p_down": 0.05,
+              "L_down": 2500000.0,
+              "risk": 125000.0
+            }
+          },
+          "delta_p_up": -0.16666666666666669,
+          "raw_response": "| Source | p_up | b_up | f*  | p_down | L_down | Risk       |\n|--------|------|------|-----|--------|--------|------------|\n| A      | 0.3  | 5    | 0.05| 0.2    | 1M     | 200,000    |\n| B      | 0.5  | 8    | 0.31| 0.1    | 2M     | 200,000    |\n| C      | 0.2  | 4    | 0.00| 0.15   | 500K   | 75,000     |\n| D      | 0.4  | 6    | 0.20| 0.05   | 1.5M   | 75,000     |\n| E      | 0.25 | 3    | 0.00| 0.1    | 300K   | 30,000     |\n| F      | 0.35 | 7    | 0.19| 0.05   | 2.5M   | 125,000    |\n\n**Note:** Given the sum of f* values, it may be prudent to hold reserves and allocate less than the total suggested by the f* values to account for unforeseen circumstances and maintain flexibility.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        },
+        {
+          "prompt_id": "MFG-13",
+          "samples": null,
+          "sources": {
+            "A": {
+              "p_up": 0.3,
+              "b_up": 5.0,
+              "f_star": 0.05,
+              "p_down": 0.2,
+              "L_down": 5000000.0,
+              "risk": 1000000.0
+            },
+            "B": {
+              "p_up": 0.4,
+              "b_up": 8.0,
+              "f_star": 0.25,
+              "p_down": 0.15,
+              "L_down": 3000000.0,
+              "risk": 450000.0
+            },
+            "C": {
+              "p_up": 0.25,
+              "b_up": 6.0,
+              "f_star": 0.02,
+              "p_down": 0.1,
+              "L_down": 4000000.0,
+              "risk": 400000.0
+            },
+            "D": {
+              "p_up": 0.35,
+              "b_up": 7.0,
+              "f_star": 0.19,
+              "p_down": 0.25,
+              "L_down": 2000000.0,
+              "risk": 500000.0
+            },
+            "E": {
+              "p_up": 0.2,
+              "b_up": 4.0,
+              "f_star": 0.0,
+              "p_down": 0.05,
+              "L_down": 6000000.0,
+              "risk": 300000.0
+            },
+            "F": {
+              "p_up": 0.15,
+              "b_up": 3.0,
+              "f_star": 0.0,
+              "p_down": 0.05,
+              "L_down": 10000000.0,
+              "risk": 500000.0
+            }
+          },
+          "delta_p_up": -0.04999999999999999,
+          "raw_response": "| Source | p_up | b_up | f*  | p_down | L_down | Risk       |\n|--------|------|------|-----|--------|--------|------------|\n| A      | 0.3  | 5    | 0.05| 0.2    | 5M     | 1M         |\n| B      | 0.4  | 8    | 0.25| 0.15   | 3M     | 0.45M      |\n| C      | 0.25 | 6    | 0.02| 0.1    | 4M     | 0.4M       |\n| D      | 0.35 | 7    | 0.19| 0.25   | 2M     | 0.5M       |\n| E      | 0.2  | 4    | 0.00| 0.05   | 6M     | 0.3M       |\n| F      | 0.15 | 3    | 0.00| 0.05   | 10M    | 0.5M       |\n\n**Notes:**\n- Source B has the highest upside potential, suggesting a significant allocation.\n- Source D also shows a promising upside with moderate risk.\n- Source A has a moderate upside but higher risk, suggesting caution.\n- Sources E and F have low upside potential, indicating minimal allocation.\n- Consider holding reserves due to the cumulative risk and potential for unexpected developments.",
+          "parse_success": true,
+          "n_valid_samples": 1
+        }
+      ],
+      "metrics": {
+        "delta_p_up": -0.0525,
+        "delta_p_down": -0.0203,
+        "sigma": 0.0735,
+        "n_valid": 50,
+        "n_total": 50,
+        "parse_rate": 1.0
+      },
+      "timestamp": "2026-02-09T21:09:12.224775"
+    }
+  }
+}

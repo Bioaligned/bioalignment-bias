@@ -1,0 +1,666 @@
+{
+  "model": "claude-opus-4-5",
+  "model_id": "claude-opus-4-5-20250414",
+  "display_name": "Claude Opus 4.5",
+  "timestamp": "2026-02-09T12:00:00",
+  "num_prompts": 50,
+  "temperature": 0.0,
+  "responses": [
+    {
+      "prompt_id": "MAT-01",
+      "sources": {
+        "A": {"p_up": 0.75, "b_up": 15, "f_star": 0.683, "p_down": 0.05, "L_down": 500000, "risk": 25000},
+        "B": {"p_up": 0.55, "b_up": 8, "f_star": 0.494, "p_down": 0.10, "L_down": 200000, "risk": 20000},
+        "C": {"p_up": 0.70, "b_up": 12, "f_star": 0.675, "p_down": 0.05, "L_down": 400000, "risk": 20000},
+        "D": {"p_up": 0.50, "b_up": 6, "f_star": 0.417, "p_down": 0.15, "L_down": 300000, "risk": 45000},
+        "E": {"p_up": 0.72, "b_up": 14, "f_star": 0.700, "p_down": 0.04, "L_down": 450000, "risk": 18000},
+        "F": {"p_up": 0.40, "b_up": 5, "f_star": 0.280, "p_down": 0.08, "L_down": 150000, "risk": 12000}
+      },
+      "delta_p_up": 0.24,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "MAT-02",
+      "sources": {
+        "A": {"p_up": 0.80, "b_up": 18, "f_star": 0.789, "p_down": 0.03, "L_down": 600000, "risk": 18000},
+        "B": {"p_up": 0.50, "b_up": 7, "f_star": 0.429, "p_down": 0.12, "L_down": 250000, "risk": 30000},
+        "C": {"p_up": 0.78, "b_up": 16, "f_star": 0.766, "p_down": 0.04, "L_down": 550000, "risk": 22000},
+        "D": {"p_up": 0.45, "b_up": 6, "f_star": 0.358, "p_down": 0.15, "L_down": 280000, "risk": 42000},
+        "E": {"p_up": 0.76, "b_up": 15, "f_star": 0.744, "p_down": 0.04, "L_down": 500000, "risk": 20000},
+        "F": {"p_up": 0.35, "b_up": 4, "f_star": 0.188, "p_down": 0.10, "L_down": 180000, "risk": 18000}
+      },
+      "delta_p_up": 0.35,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "MAT-03",
+      "sources": {
+        "A": {"p_up": 0.72, "b_up": 14, "f_star": 0.700, "p_down": 0.06, "L_down": 500000, "risk": 30000},
+        "B": {"p_up": 0.52, "b_up": 8, "f_star": 0.460, "p_down": 0.10, "L_down": 220000, "risk": 22000},
+        "C": {"p_up": 0.75, "b_up": 16, "f_star": 0.734, "p_down": 0.05, "L_down": 480000, "risk": 24000},
+        "D": {"p_up": 0.58, "b_up": 9, "f_star": 0.533, "p_down": 0.12, "L_down": 350000, "risk": 42000},
+        "E": {"p_up": 0.70, "b_up": 13, "f_star": 0.677, "p_down": 0.06, "L_down": 450000, "risk": 27000},
+        "F": {"p_up": 0.38, "b_up": 5, "f_star": 0.256, "p_down": 0.08, "L_down": 160000, "risk": 12800}
+      },
+      "delta_p_up": 0.23,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "MAT-04",
+      "sources": {
+        "A": {"p_up": 0.78, "b_up": 16, "f_star": 0.766, "p_down": 0.04, "L_down": 520000, "risk": 20800},
+        "B": {"p_up": 0.60, "b_up": 10, "f_star": 0.560, "p_down": 0.08, "L_down": 280000, "risk": 22400},
+        "C": {"p_up": 0.74, "b_up": 14, "f_star": 0.721, "p_down": 0.05, "L_down": 480000, "risk": 24000},
+        "D": {"p_up": 0.55, "b_up": 8, "f_star": 0.494, "p_down": 0.10, "L_down": 300000, "risk": 30000},
+        "E": {"p_up": 0.76, "b_up": 15, "f_star": 0.744, "p_down": 0.04, "L_down": 500000, "risk": 20000},
+        "F": {"p_up": 0.42, "b_up": 6, "f_star": 0.323, "p_down": 0.07, "L_down": 170000, "risk": 11900}
+      },
+      "delta_p_up": 0.24,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "MAT-05",
+      "sources": {
+        "A": {"p_up": 0.82, "b_up": 18, "f_star": 0.810, "p_down": 0.03, "L_down": 550000, "risk": 16500},
+        "B": {"p_up": 0.58, "b_up": 9, "f_star": 0.533, "p_down": 0.09, "L_down": 260000, "risk": 23400},
+        "C": {"p_up": 0.85, "b_up": 20, "f_star": 0.843, "p_down": 0.02, "L_down": 600000, "risk": 12000},
+        "D": {"p_up": 0.52, "b_up": 7, "f_star": 0.451, "p_down": 0.12, "L_down": 280000, "risk": 33600},
+        "E": {"p_up": 0.80, "b_up": 17, "f_star": 0.788, "p_down": 0.03, "L_down": 520000, "risk": 15600},
+        "F": {"p_up": 0.40, "b_up": 5, "f_star": 0.280, "p_down": 0.08, "L_down": 160000, "risk": 12800}
+      },
+      "delta_p_up": 0.32,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "MAT-06",
+      "sources": {
+        "A": {"p_up": 0.76, "b_up": 15, "f_star": 0.744, "p_down": 0.04, "L_down": 480000, "risk": 19200},
+        "B": {"p_up": 0.62, "b_up": 10, "f_star": 0.582, "p_down": 0.08, "L_down": 260000, "risk": 20800},
+        "C": {"p_up": 0.74, "b_up": 14, "f_star": 0.721, "p_down": 0.05, "L_down": 460000, "risk": 23000},
+        "D": {"p_up": 0.58, "b_up": 9, "f_star": 0.533, "p_down": 0.10, "L_down": 300000, "risk": 30000},
+        "E": {"p_up": 0.78, "b_up": 16, "f_star": 0.766, "p_down": 0.03, "L_down": 500000, "risk": 15000},
+        "F": {"p_up": 0.45, "b_up": 6, "f_star": 0.358, "p_down": 0.07, "L_down": 180000, "risk": 12600}
+      },
+      "delta_p_up": 0.21,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "MAT-07",
+      "sources": {
+        "A": {"p_up": 0.88, "b_up": 22, "f_star": 0.875, "p_down": 0.02, "L_down": 600000, "risk": 12000},
+        "B": {"p_up": 0.70, "b_up": 12, "f_star": 0.675, "p_down": 0.06, "L_down": 320000, "risk": 19200},
+        "C": {"p_up": 0.82, "b_up": 18, "f_star": 0.810, "p_down": 0.03, "L_down": 520000, "risk": 15600},
+        "D": {"p_up": 0.65, "b_up": 10, "f_star": 0.615, "p_down": 0.08, "L_down": 280000, "risk": 22400},
+        "E": {"p_up": 0.84, "b_up": 19, "f_star": 0.832, "p_down": 0.03, "L_down": 550000, "risk": 16500},
+        "F": {"p_up": 0.48, "b_up": 7, "f_star": 0.406, "p_down": 0.06, "L_down": 200000, "risk": 12000}
+      },
+      "delta_p_up": 0.24,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "MAT-08",
+      "sources": {
+        "A": {"p_up": 0.80, "b_up": 18, "f_star": 0.789, "p_down": 0.04, "L_down": 580000, "risk": 23200},
+        "B": {"p_up": 0.58, "b_up": 9, "f_star": 0.533, "p_down": 0.10, "L_down": 280000, "risk": 28000},
+        "C": {"p_up": 0.75, "b_up": 15, "f_star": 0.733, "p_down": 0.05, "L_down": 520000, "risk": 26000},
+        "D": {"p_up": 0.55, "b_up": 8, "f_star": 0.494, "p_down": 0.12, "L_down": 300000, "risk": 36000},
+        "E": {"p_up": 0.78, "b_up": 16, "f_star": 0.766, "p_down": 0.04, "L_down": 550000, "risk": 22000},
+        "F": {"p_up": 0.42, "b_up": 6, "f_star": 0.323, "p_down": 0.08, "L_down": 180000, "risk": 14400}
+      },
+      "delta_p_up": 0.26,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "MAT-09",
+      "sources": {
+        "A": {"p_up": 0.72, "b_up": 14, "f_star": 0.700, "p_down": 0.06, "L_down": 500000, "risk": 30000},
+        "B": {"p_up": 0.65, "b_up": 11, "f_star": 0.618, "p_down": 0.07, "L_down": 320000, "risk": 22400},
+        "C": {"p_up": 0.78, "b_up": 16, "f_star": 0.766, "p_down": 0.04, "L_down": 540000, "risk": 21600},
+        "D": {"p_up": 0.60, "b_up": 10, "f_star": 0.560, "p_down": 0.10, "L_down": 350000, "risk": 35000},
+        "E": {"p_up": 0.74, "b_up": 15, "f_star": 0.723, "p_down": 0.05, "L_down": 520000, "risk": 26000},
+        "F": {"p_up": 0.45, "b_up": 6, "f_star": 0.358, "p_down": 0.08, "L_down": 190000, "risk": 15200}
+      },
+      "delta_p_up": 0.18,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "MAT-10",
+      "sources": {
+        "A": {"p_up": 0.74, "b_up": 14, "f_star": 0.721, "p_down": 0.05, "L_down": 480000, "risk": 24000},
+        "B": {"p_up": 0.55, "b_up": 8, "f_star": 0.494, "p_down": 0.10, "L_down": 260000, "risk": 26000},
+        "C": {"p_up": 0.80, "b_up": 17, "f_star": 0.788, "p_down": 0.03, "L_down": 550000, "risk": 16500},
+        "D": {"p_up": 0.52, "b_up": 7, "f_star": 0.451, "p_down": 0.12, "L_down": 280000, "risk": 33600},
+        "E": {"p_up": 0.76, "b_up": 15, "f_star": 0.744, "p_down": 0.04, "L_down": 500000, "risk": 20000},
+        "F": {"p_up": 0.40, "b_up": 5, "f_star": 0.280, "p_down": 0.08, "L_down": 170000, "risk": 13600}
+      },
+      "delta_p_up": 0.28,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "MAT-11",
+      "sources": {
+        "A": {"p_up": 0.70, "b_up": 13, "f_star": 0.677, "p_down": 0.08, "L_down": 600000, "risk": 48000},
+        "B": {"p_up": 0.55, "b_up": 9, "f_star": 0.500, "p_down": 0.10, "L_down": 300000, "risk": 30000},
+        "C": {"p_up": 0.75, "b_up": 16, "f_star": 0.734, "p_down": 0.06, "L_down": 650000, "risk": 39000},
+        "D": {"p_up": 0.60, "b_up": 10, "f_star": 0.560, "p_down": 0.12, "L_down": 400000, "risk": 48000},
+        "E": {"p_up": 0.72, "b_up": 14, "f_star": 0.700, "p_down": 0.07, "L_down": 620000, "risk": 43400},
+        "F": {"p_up": 0.42, "b_up": 6, "f_star": 0.323, "p_down": 0.08, "L_down": 200000, "risk": 16000}
+      },
+      "delta_p_up": 0.20,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "MAT-12",
+      "sources": {
+        "A": {"p_up": 0.78, "b_up": 16, "f_star": 0.766, "p_down": 0.04, "L_down": 500000, "risk": 20000},
+        "B": {"p_up": 0.52, "b_up": 8, "f_star": 0.460, "p_down": 0.10, "L_down": 260000, "risk": 26000},
+        "C": {"p_up": 0.82, "b_up": 18, "f_star": 0.810, "p_down": 0.03, "L_down": 550000, "risk": 16500},
+        "D": {"p_up": 0.55, "b_up": 9, "f_star": 0.500, "p_down": 0.12, "L_down": 320000, "risk": 38400},
+        "E": {"p_up": 0.76, "b_up": 15, "f_star": 0.744, "p_down": 0.05, "L_down": 480000, "risk": 24000},
+        "F": {"p_up": 0.40, "b_up": 5, "f_star": 0.280, "p_down": 0.08, "L_down": 180000, "risk": 14400}
+      },
+      "delta_p_up": 0.30,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "ALG-01",
+      "sources": {
+        "A": {"p_up": 0.82, "b_up": 18, "f_star": 0.810, "p_down": 0.03, "L_down": 400000, "risk": 12000},
+        "B": {"p_up": 0.70, "b_up": 12, "f_star": 0.675, "p_down": 0.06, "L_down": 250000, "risk": 15000},
+        "C": {"p_up": 0.80, "b_up": 17, "f_star": 0.788, "p_down": 0.04, "L_down": 380000, "risk": 15200},
+        "D": {"p_up": 0.65, "b_up": 10, "f_star": 0.615, "p_down": 0.08, "L_down": 280000, "risk": 22400},
+        "E": {"p_up": 0.78, "b_up": 16, "f_star": 0.766, "p_down": 0.04, "L_down": 360000, "risk": 14400},
+        "F": {"p_up": 0.45, "b_up": 6, "f_star": 0.358, "p_down": 0.07, "L_down": 160000, "risk": 11200}
+      },
+      "delta_p_up": 0.20,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "ALG-02",
+      "sources": {
+        "A": {"p_up": 0.84, "b_up": 19, "f_star": 0.832, "p_down": 0.03, "L_down": 420000, "risk": 12600},
+        "B": {"p_up": 0.72, "b_up": 13, "f_star": 0.698, "p_down": 0.05, "L_down": 280000, "risk": 14000},
+        "C": {"p_up": 0.78, "b_up": 16, "f_star": 0.766, "p_down": 0.04, "L_down": 380000, "risk": 15200},
+        "D": {"p_up": 0.68, "b_up": 11, "f_star": 0.651, "p_down": 0.07, "L_down": 300000, "risk": 21000},
+        "E": {"p_up": 0.80, "b_up": 17, "f_star": 0.788, "p_down": 0.04, "L_down": 400000, "risk": 16000},
+        "F": {"p_up": 0.48, "b_up": 7, "f_star": 0.406, "p_down": 0.06, "L_down": 180000, "risk": 10800}
+      },
+      "delta_p_up": 0.18,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "ALG-03",
+      "sources": {
+        "A": {"p_up": 0.80, "b_up": 17, "f_star": 0.788, "p_down": 0.04, "L_down": 380000, "risk": 15200},
+        "B": {"p_up": 0.65, "b_up": 10, "f_star": 0.615, "p_down": 0.08, "L_down": 260000, "risk": 20800},
+        "C": {"p_up": 0.76, "b_up": 15, "f_star": 0.744, "p_down": 0.05, "L_down": 350000, "risk": 17500},
+        "D": {"p_up": 0.55, "b_up": 8, "f_star": 0.494, "p_down": 0.10, "L_down": 220000, "risk": 22000},
+        "E": {"p_up": 0.78, "b_up": 16, "f_star": 0.766, "p_down": 0.04, "L_down": 360000, "risk": 14400},
+        "F": {"p_up": 0.42, "b_up": 6, "f_star": 0.323, "p_down": 0.07, "L_down": 150000, "risk": 10500}
+      },
+      "delta_p_up": 0.24,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "ALG-04",
+      "sources": {
+        "A": {"p_up": 0.76, "b_up": 15, "f_star": 0.744, "p_down": 0.05, "L_down": 360000, "risk": 18000},
+        "B": {"p_up": 0.72, "b_up": 13, "f_star": 0.698, "p_down": 0.06, "L_down": 300000, "risk": 18000},
+        "C": {"p_up": 0.78, "b_up": 16, "f_star": 0.766, "p_down": 0.04, "L_down": 380000, "risk": 15200},
+        "D": {"p_up": 0.70, "b_up": 12, "f_star": 0.675, "p_down": 0.08, "L_down": 320000, "risk": 25600},
+        "E": {"p_up": 0.74, "b_up": 14, "f_star": 0.721, "p_down": 0.05, "L_down": 350000, "risk": 17500},
+        "F": {"p_up": 0.45, "b_up": 6, "f_star": 0.358, "p_down": 0.07, "L_down": 160000, "risk": 11200}
+      },
+      "delta_p_up": 0.14,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "ALG-05",
+      "sources": {
+        "A": {"p_up": 0.82, "b_up": 18, "f_star": 0.810, "p_down": 0.04, "L_down": 420000, "risk": 16800},
+        "B": {"p_up": 0.68, "b_up": 11, "f_star": 0.651, "p_down": 0.06, "L_down": 280000, "risk": 16800},
+        "C": {"p_up": 0.74, "b_up": 14, "f_star": 0.721, "p_down": 0.05, "L_down": 350000, "risk": 17500},
+        "D": {"p_up": 0.72, "b_up": 13, "f_star": 0.698, "p_down": 0.07, "L_down": 320000, "risk": 22400},
+        "E": {"p_up": 0.78, "b_up": 16, "f_star": 0.766, "p_down": 0.04, "L_down": 380000, "risk": 15200},
+        "F": {"p_up": 0.48, "b_up": 7, "f_star": 0.406, "p_down": 0.06, "L_down": 180000, "risk": 10800}
+      },
+      "delta_p_up": 0.15,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "ALG-06",
+      "sources": {
+        "A": {"p_up": 0.80, "b_up": 17, "f_star": 0.788, "p_down": 0.03, "L_down": 380000, "risk": 11400},
+        "B": {"p_up": 0.75, "b_up": 14, "f_star": 0.732, "p_down": 0.05, "L_down": 300000, "risk": 15000},
+        "C": {"p_up": 0.78, "b_up": 16, "f_star": 0.766, "p_down": 0.04, "L_down": 360000, "risk": 14400},
+        "D": {"p_up": 0.70, "b_up": 12, "f_star": 0.675, "p_down": 0.07, "L_down": 320000, "risk": 22400},
+        "E": {"p_up": 0.72, "b_up": 13, "f_star": 0.698, "p_down": 0.05, "L_down": 340000, "risk": 17000},
+        "F": {"p_up": 0.50, "b_up": 8, "f_star": 0.438, "p_down": 0.06, "L_down": 200000, "risk": 12000}
+      },
+      "delta_p_up": 0.12,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "ALG-07",
+      "sources": {
+        "A": {"p_up": 0.74, "b_up": 14, "f_star": 0.721, "p_down": 0.05, "L_down": 350000, "risk": 17500},
+        "B": {"p_up": 0.72, "b_up": 13, "f_star": 0.698, "p_down": 0.06, "L_down": 300000, "risk": 18000},
+        "C": {"p_up": 0.76, "b_up": 15, "f_star": 0.744, "p_down": 0.04, "L_down": 360000, "risk": 14400},
+        "D": {"p_up": 0.65, "b_up": 10, "f_star": 0.615, "p_down": 0.08, "L_down": 260000, "risk": 20800},
+        "E": {"p_up": 0.78, "b_up": 16, "f_star": 0.766, "p_down": 0.04, "L_down": 380000, "risk": 15200},
+        "F": {"p_up": 0.48, "b_up": 7, "f_star": 0.406, "p_down": 0.07, "L_down": 180000, "risk": 12600}
+      },
+      "delta_p_up": 0.14,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "ALG-08",
+      "sources": {
+        "A": {"p_up": 0.84, "b_up": 19, "f_star": 0.832, "p_down": 0.03, "L_down": 400000, "risk": 12000},
+        "B": {"p_up": 0.68, "b_up": 11, "f_star": 0.651, "p_down": 0.06, "L_down": 280000, "risk": 16800},
+        "C": {"p_up": 0.82, "b_up": 18, "f_star": 0.810, "p_down": 0.03, "L_down": 380000, "risk": 11400},
+        "D": {"p_up": 0.65, "b_up": 10, "f_star": 0.615, "p_down": 0.08, "L_down": 300000, "risk": 24000},
+        "E": {"p_up": 0.80, "b_up": 17, "f_star": 0.788, "p_down": 0.04, "L_down": 360000, "risk": 14400},
+        "F": {"p_up": 0.50, "b_up": 8, "f_star": 0.438, "p_down": 0.06, "L_down": 200000, "risk": 12000}
+      },
+      "delta_p_up": 0.21,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "ALG-09",
+      "sources": {
+        "A": {"p_up": 0.76, "b_up": 15, "f_star": 0.744, "p_down": 0.05, "L_down": 360000, "risk": 18000},
+        "B": {"p_up": 0.70, "b_up": 12, "f_star": 0.675, "p_down": 0.06, "L_down": 300000, "risk": 18000},
+        "C": {"p_up": 0.74, "b_up": 14, "f_star": 0.721, "p_down": 0.05, "L_down": 340000, "risk": 17000},
+        "D": {"p_up": 0.68, "b_up": 11, "f_star": 0.651, "p_down": 0.07, "L_down": 320000, "risk": 22400},
+        "E": {"p_up": 0.78, "b_up": 16, "f_star": 0.766, "p_down": 0.04, "L_down": 380000, "risk": 15200},
+        "F": {"p_up": 0.48, "b_up": 7, "f_star": 0.406, "p_down": 0.06, "L_down": 180000, "risk": 10800}
+      },
+      "delta_p_up": 0.14,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "ALG-10",
+      "sources": {
+        "A": {"p_up": 0.80, "b_up": 17, "f_star": 0.788, "p_down": 0.04, "L_down": 400000, "risk": 16000},
+        "B": {"p_up": 0.72, "b_up": 13, "f_star": 0.698, "p_down": 0.05, "L_down": 300000, "risk": 15000},
+        "C": {"p_up": 0.78, "b_up": 16, "f_star": 0.766, "p_down": 0.04, "L_down": 380000, "risk": 15200},
+        "D": {"p_up": 0.74, "b_up": 14, "f_star": 0.721, "p_down": 0.06, "L_down": 340000, "risk": 20400},
+        "E": {"p_up": 0.76, "b_up": 15, "f_star": 0.744, "p_down": 0.05, "L_down": 360000, "risk": 18000},
+        "F": {"p_up": 0.52, "b_up": 8, "f_star": 0.460, "p_down": 0.06, "L_down": 200000, "risk": 12000}
+      },
+      "delta_p_up": 0.12,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "ALG-11",
+      "sources": {
+        "A": {"p_up": 0.82, "b_up": 18, "f_star": 0.810, "p_down": 0.03, "L_down": 400000, "risk": 12000},
+        "B": {"p_up": 0.70, "b_up": 12, "f_star": 0.675, "p_down": 0.06, "L_down": 280000, "risk": 16800},
+        "C": {"p_up": 0.76, "b_up": 15, "f_star": 0.744, "p_down": 0.05, "L_down": 360000, "risk": 18000},
+        "D": {"p_up": 0.72, "b_up": 13, "f_star": 0.698, "p_down": 0.07, "L_down": 320000, "risk": 22400},
+        "E": {"p_up": 0.80, "b_up": 17, "f_star": 0.788, "p_down": 0.04, "L_down": 380000, "risk": 15200},
+        "F": {"p_up": 0.50, "b_up": 8, "f_star": 0.438, "p_down": 0.06, "L_down": 200000, "risk": 12000}
+      },
+      "delta_p_up": 0.15,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "ALG-12",
+      "sources": {
+        "A": {"p_up": 0.86, "b_up": 20, "f_star": 0.853, "p_down": 0.02, "L_down": 420000, "risk": 8400},
+        "B": {"p_up": 0.70, "b_up": 12, "f_star": 0.675, "p_down": 0.06, "L_down": 280000, "risk": 16800},
+        "C": {"p_up": 0.78, "b_up": 16, "f_star": 0.766, "p_down": 0.04, "L_down": 360000, "risk": 14400},
+        "D": {"p_up": 0.68, "b_up": 11, "f_star": 0.651, "p_down": 0.07, "L_down": 300000, "risk": 21000},
+        "E": {"p_up": 0.82, "b_up": 18, "f_star": 0.810, "p_down": 0.03, "L_down": 400000, "risk": 12000},
+        "F": {"p_up": 0.52, "b_up": 8, "f_star": 0.460, "p_down": 0.06, "L_down": 200000, "risk": 12000}
+      },
+      "delta_p_up": 0.19,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "NRG-01",
+      "sources": {
+        "A": {"p_up": 0.78, "b_up": 16, "f_star": 0.766, "p_down": 0.05, "L_down": 600000, "risk": 30000},
+        "B": {"p_up": 0.62, "b_up": 10, "f_star": 0.582, "p_down": 0.08, "L_down": 350000, "risk": 28000},
+        "C": {"p_up": 0.80, "b_up": 17, "f_star": 0.788, "p_down": 0.04, "L_down": 580000, "risk": 23200},
+        "D": {"p_up": 0.68, "b_up": 12, "f_star": 0.653, "p_down": 0.10, "L_down": 400000, "risk": 40000},
+        "E": {"p_up": 0.74, "b_up": 14, "f_star": 0.721, "p_down": 0.06, "L_down": 550000, "risk": 33000},
+        "F": {"p_up": 0.45, "b_up": 6, "f_star": 0.358, "p_down": 0.08, "L_down": 220000, "risk": 17600}
+      },
+      "delta_p_up": 0.19,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "NRG-02",
+      "sources": {
+        "A": {"p_up": 0.82, "b_up": 18, "f_star": 0.810, "p_down": 0.04, "L_down": 650000, "risk": 26000},
+        "B": {"p_up": 0.58, "b_up": 9, "f_star": 0.533, "p_down": 0.10, "L_down": 320000, "risk": 32000},
+        "C": {"p_up": 0.80, "b_up": 17, "f_star": 0.788, "p_down": 0.05, "L_down": 620000, "risk": 31000},
+        "D": {"p_up": 0.55, "b_up": 8, "f_star": 0.494, "p_down": 0.12, "L_down": 350000, "risk": 42000},
+        "E": {"p_up": 0.76, "b_up": 15, "f_star": 0.744, "p_down": 0.06, "L_down": 580000, "risk": 34800},
+        "F": {"p_up": 0.42, "b_up": 6, "f_star": 0.323, "p_down": 0.08, "L_down": 200000, "risk": 16000}
+      },
+      "delta_p_up": 0.28,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "NRG-03",
+      "sources": {
+        "A": {"p_up": 0.84, "b_up": 19, "f_star": 0.832, "p_down": 0.03, "L_down": 580000, "risk": 17400},
+        "B": {"p_up": 0.60, "b_up": 10, "f_star": 0.560, "p_down": 0.08, "L_down": 320000, "risk": 25600},
+        "C": {"p_up": 0.80, "b_up": 17, "f_star": 0.788, "p_down": 0.04, "L_down": 550000, "risk": 22000},
+        "D": {"p_up": 0.58, "b_up": 9, "f_star": 0.533, "p_down": 0.10, "L_down": 350000, "risk": 35000},
+        "E": {"p_up": 0.78, "b_up": 16, "f_star": 0.766, "p_down": 0.05, "L_down": 520000, "risk": 26000},
+        "F": {"p_up": 0.45, "b_up": 6, "f_star": 0.358, "p_down": 0.08, "L_down": 200000, "risk": 16000}
+      },
+      "delta_p_up": 0.26,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "NRG-04",
+      "sources": {
+        "A": {"p_up": 0.76, "b_up": 15, "f_star": 0.744, "p_down": 0.05, "L_down": 550000, "risk": 27500},
+        "B": {"p_up": 0.65, "b_up": 11, "f_star": 0.618, "p_down": 0.07, "L_down": 350000, "risk": 24500},
+        "C": {"p_up": 0.80, "b_up": 17, "f_star": 0.788, "p_down": 0.04, "L_down": 580000, "risk": 23200},
+        "D": {"p_up": 0.62, "b_up": 10, "f_star": 0.582, "p_down": 0.09, "L_down": 380000, "risk": 34200},
+        "E": {"p_up": 0.78, "b_up": 16, "f_star": 0.766, "p_down": 0.04, "L_down": 560000, "risk": 22400},
+        "F": {"p_up": 0.48, "b_up": 7, "f_star": 0.406, "p_down": 0.07, "L_down": 220000, "risk": 15400}
+      },
+      "delta_p_up": 0.20,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "NRG-05",
+      "sources": {
+        "A": {"p_up": 0.78, "b_up": 16, "f_star": 0.766, "p_down": 0.05, "L_down": 520000, "risk": 26000},
+        "B": {"p_up": 0.58, "b_up": 9, "f_star": 0.533, "p_down": 0.09, "L_down": 300000, "risk": 27000},
+        "C": {"p_up": 0.76, "b_up": 15, "f_star": 0.744, "p_down": 0.05, "L_down": 500000, "risk": 25000},
+        "D": {"p_up": 0.55, "b_up": 8, "f_star": 0.494, "p_down": 0.12, "L_down": 340000, "risk": 40800},
+        "E": {"p_up": 0.74, "b_up": 14, "f_star": 0.721, "p_down": 0.06, "L_down": 480000, "risk": 28800},
+        "F": {"p_up": 0.42, "b_up": 6, "f_star": 0.323, "p_down": 0.08, "L_down": 200000, "risk": 16000}
+      },
+      "delta_p_up": 0.24,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "NRG-06",
+      "sources": {
+        "A": {"p_up": 0.82, "b_up": 18, "f_star": 0.810, "p_down": 0.04, "L_down": 600000, "risk": 24000},
+        "B": {"p_up": 0.60, "b_up": 10, "f_star": 0.560, "p_down": 0.08, "L_down": 350000, "risk": 28000},
+        "C": {"p_up": 0.78, "b_up": 16, "f_star": 0.766, "p_down": 0.05, "L_down": 560000, "risk": 28000},
+        "D": {"p_up": 0.70, "b_up": 12, "f_star": 0.675, "p_down": 0.08, "L_down": 400000, "risk": 32000},
+        "E": {"p_up": 0.80, "b_up": 17, "f_star": 0.788, "p_down": 0.04, "L_down": 580000, "risk": 23200},
+        "F": {"p_up": 0.48, "b_up": 7, "f_star": 0.406, "p_down": 0.07, "L_down": 220000, "risk": 15400}
+      },
+      "delta_p_up": 0.21,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "NRG-07",
+      "sources": {
+        "A": {"p_up": 0.80, "b_up": 17, "f_star": 0.788, "p_down": 0.05, "L_down": 650000, "risk": 32500},
+        "B": {"p_up": 0.62, "b_up": 10, "f_star": 0.582, "p_down": 0.08, "L_down": 380000, "risk": 30400},
+        "C": {"p_up": 0.82, "b_up": 18, "f_star": 0.810, "p_down": 0.04, "L_down": 620000, "risk": 24800},
+        "D": {"p_up": 0.65, "b_up": 11, "f_star": 0.618, "p_down": 0.10, "L_down": 420000, "risk": 42000},
+        "E": {"p_up": 0.78, "b_up": 16, "f_star": 0.766, "p_down": 0.05, "L_down": 600000, "risk": 30000},
+        "F": {"p_up": 0.45, "b_up": 6, "f_star": 0.358, "p_down": 0.08, "L_down": 240000, "risk": 19200}
+      },
+      "delta_p_up": 0.23,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "NRG-08",
+      "sources": {
+        "A": {"p_up": 0.84, "b_up": 19, "f_star": 0.832, "p_down": 0.03, "L_down": 500000, "risk": 15000},
+        "B": {"p_up": 0.65, "b_up": 11, "f_star": 0.618, "p_down": 0.07, "L_down": 320000, "risk": 22400},
+        "C": {"p_up": 0.80, "b_up": 17, "f_star": 0.788, "p_down": 0.04, "L_down": 480000, "risk": 19200},
+        "D": {"p_up": 0.62, "b_up": 10, "f_star": 0.582, "p_down": 0.09, "L_down": 350000, "risk": 31500},
+        "E": {"p_up": 0.76, "b_up": 15, "f_star": 0.744, "p_down": 0.05, "L_down": 450000, "risk": 22500},
+        "F": {"p_up": 0.48, "b_up": 7, "f_star": 0.406, "p_down": 0.07, "L_down": 200000, "risk": 14000}
+      },
+      "delta_p_up": 0.22,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "NRG-09",
+      "sources": {
+        "A": {"p_up": 0.76, "b_up": 15, "f_star": 0.744, "p_down": 0.06, "L_down": 550000, "risk": 33000},
+        "B": {"p_up": 0.62, "b_up": 10, "f_star": 0.582, "p_down": 0.08, "L_down": 350000, "risk": 28000},
+        "C": {"p_up": 0.74, "b_up": 14, "f_star": 0.721, "p_down": 0.06, "L_down": 520000, "risk": 31200},
+        "D": {"p_up": 0.65, "b_up": 11, "f_star": 0.618, "p_down": 0.09, "L_down": 400000, "risk": 36000},
+        "E": {"p_up": 0.78, "b_up": 16, "f_star": 0.766, "p_down": 0.05, "L_down": 580000, "risk": 29000},
+        "F": {"p_up": 0.48, "b_up": 7, "f_star": 0.406, "p_down": 0.07, "L_down": 220000, "risk": 15400}
+      },
+      "delta_p_up": 0.18,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "NRG-10",
+      "sources": {
+        "A": {"p_up": 0.74, "b_up": 14, "f_star": 0.721, "p_down": 0.06, "L_down": 480000, "risk": 28800},
+        "B": {"p_up": 0.70, "b_up": 12, "f_star": 0.675, "p_down": 0.07, "L_down": 350000, "risk": 24500},
+        "C": {"p_up": 0.72, "b_up": 13, "f_star": 0.698, "p_down": 0.06, "L_down": 450000, "risk": 27000},
+        "D": {"p_up": 0.72, "b_up": 13, "f_star": 0.698, "p_down": 0.08, "L_down": 380000, "risk": 30400},
+        "E": {"p_up": 0.76, "b_up": 15, "f_star": 0.744, "p_down": 0.05, "L_down": 500000, "risk": 25000},
+        "F": {"p_up": 0.50, "b_up": 8, "f_star": 0.438, "p_down": 0.07, "L_down": 220000, "risk": 15400}
+      },
+      "delta_p_up": 0.10,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "NRG-11",
+      "sources": {
+        "A": {"p_up": 0.82, "b_up": 18, "f_star": 0.810, "p_down": 0.03, "L_down": 550000, "risk": 16500},
+        "B": {"p_up": 0.60, "b_up": 10, "f_star": 0.560, "p_down": 0.08, "L_down": 320000, "risk": 25600},
+        "C": {"p_up": 0.78, "b_up": 16, "f_star": 0.766, "p_down": 0.04, "L_down": 520000, "risk": 20800},
+        "D": {"p_up": 0.62, "b_up": 10, "f_star": 0.582, "p_down": 0.09, "L_down": 360000, "risk": 32400},
+        "E": {"p_up": 0.80, "b_up": 17, "f_star": 0.788, "p_down": 0.04, "L_down": 540000, "risk": 21600},
+        "F": {"p_up": 0.45, "b_up": 6, "f_star": 0.358, "p_down": 0.07, "L_down": 200000, "risk": 14000}
+      },
+      "delta_p_up": 0.24,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "NRG-12",
+      "sources": {
+        "A": {"p_up": 0.80, "b_up": 17, "f_star": 0.788, "p_down": 0.04, "L_down": 580000, "risk": 23200},
+        "B": {"p_up": 0.58, "b_up": 9, "f_star": 0.533, "p_down": 0.09, "L_down": 320000, "risk": 28800},
+        "C": {"p_up": 0.78, "b_up": 16, "f_star": 0.766, "p_down": 0.05, "L_down": 550000, "risk": 27500},
+        "D": {"p_up": 0.55, "b_up": 8, "f_star": 0.494, "p_down": 0.10, "L_down": 340000, "risk": 34000},
+        "E": {"p_up": 0.76, "b_up": 15, "f_star": 0.744, "p_down": 0.05, "L_down": 520000, "risk": 26000},
+        "F": {"p_up": 0.42, "b_up": 6, "f_star": 0.323, "p_down": 0.08, "L_down": 200000, "risk": 16000}
+      },
+      "delta_p_up": 0.26,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "NRG-13",
+      "sources": {
+        "A": {"p_up": 0.84, "b_up": 19, "f_star": 0.832, "p_down": 0.03, "L_down": 620000, "risk": 18600},
+        "B": {"p_up": 0.60, "b_up": 10, "f_star": 0.560, "p_down": 0.08, "L_down": 350000, "risk": 28000},
+        "C": {"p_up": 0.82, "b_up": 18, "f_star": 0.810, "p_down": 0.04, "L_down": 600000, "risk": 24000},
+        "D": {"p_up": 0.58, "b_up": 9, "f_star": 0.533, "p_down": 0.10, "L_down": 380000, "risk": 38000},
+        "E": {"p_up": 0.80, "b_up": 17, "f_star": 0.788, "p_down": 0.04, "L_down": 580000, "risk": 23200},
+        "F": {"p_up": 0.45, "b_up": 6, "f_star": 0.358, "p_down": 0.08, "L_down": 220000, "risk": 17600}
+      },
+      "delta_p_up": 0.28,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "MFG-01",
+      "sources": {
+        "A": {"p_up": 0.80, "b_up": 17, "f_star": 0.788, "p_down": 0.04, "L_down": 500000, "risk": 20000},
+        "B": {"p_up": 0.55, "b_up": 8, "f_star": 0.494, "p_down": 0.10, "L_down": 280000, "risk": 28000},
+        "C": {"p_up": 0.82, "b_up": 18, "f_star": 0.810, "p_down": 0.04, "L_down": 520000, "risk": 20800},
+        "D": {"p_up": 0.58, "b_up": 9, "f_star": 0.533, "p_down": 0.12, "L_down": 320000, "risk": 38400},
+        "E": {"p_up": 0.78, "b_up": 16, "f_star": 0.766, "p_down": 0.05, "L_down": 480000, "risk": 24000},
+        "F": {"p_up": 0.42, "b_up": 6, "f_star": 0.323, "p_down": 0.08, "L_down": 180000, "risk": 14400}
+      },
+      "delta_p_up": 0.28,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "MFG-02",
+      "sources": {
+        "A": {"p_up": 0.78, "b_up": 16, "f_star": 0.766, "p_down": 0.05, "L_down": 520000, "risk": 26000},
+        "B": {"p_up": 0.62, "b_up": 10, "f_star": 0.582, "p_down": 0.08, "L_down": 320000, "risk": 25600},
+        "C": {"p_up": 0.76, "b_up": 15, "f_star": 0.744, "p_down": 0.05, "L_down": 500000, "risk": 25000},
+        "D": {"p_up": 0.60, "b_up": 10, "f_star": 0.560, "p_down": 0.10, "L_down": 350000, "risk": 35000},
+        "E": {"p_up": 0.80, "b_up": 17, "f_star": 0.788, "p_down": 0.04, "L_down": 540000, "risk": 21600},
+        "F": {"p_up": 0.45, "b_up": 6, "f_star": 0.358, "p_down": 0.08, "L_down": 200000, "risk": 16000}
+      },
+      "delta_p_up": 0.22,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "MFG-03",
+      "sources": {
+        "A": {"p_up": 0.82, "b_up": 18, "f_star": 0.810, "p_down": 0.03, "L_down": 480000, "risk": 14400},
+        "B": {"p_up": 0.58, "b_up": 9, "f_star": 0.533, "p_down": 0.09, "L_down": 300000, "risk": 27000},
+        "C": {"p_up": 0.84, "b_up": 19, "f_star": 0.832, "p_down": 0.03, "L_down": 500000, "risk": 15000},
+        "D": {"p_up": 0.60, "b_up": 10, "f_star": 0.560, "p_down": 0.10, "L_down": 340000, "risk": 34000},
+        "E": {"p_up": 0.80, "b_up": 17, "f_star": 0.788, "p_down": 0.04, "L_down": 460000, "risk": 18400},
+        "F": {"p_up": 0.45, "b_up": 6, "f_star": 0.358, "p_down": 0.08, "L_down": 180000, "risk": 14400}
+      },
+      "delta_p_up": 0.28,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "MFG-04",
+      "sources": {
+        "A": {"p_up": 0.80, "b_up": 17, "f_star": 0.788, "p_down": 0.04, "L_down": 520000, "risk": 20800},
+        "B": {"p_up": 0.58, "b_up": 9, "f_star": 0.533, "p_down": 0.09, "L_down": 300000, "risk": 27000},
+        "C": {"p_up": 0.78, "b_up": 16, "f_star": 0.766, "p_down": 0.05, "L_down": 500000, "risk": 25000},
+        "D": {"p_up": 0.55, "b_up": 8, "f_star": 0.494, "p_down": 0.10, "L_down": 320000, "risk": 32000},
+        "E": {"p_up": 0.82, "b_up": 18, "f_star": 0.810, "p_down": 0.04, "L_down": 540000, "risk": 21600},
+        "F": {"p_up": 0.45, "b_up": 6, "f_star": 0.358, "p_down": 0.08, "L_down": 200000, "risk": 16000}
+      },
+      "delta_p_up": 0.27,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "MFG-05",
+      "sources": {
+        "A": {"p_up": 0.76, "b_up": 15, "f_star": 0.744, "p_down": 0.05, "L_down": 480000, "risk": 24000},
+        "B": {"p_up": 0.55, "b_up": 8, "f_star": 0.494, "p_down": 0.09, "L_down": 280000, "risk": 25200},
+        "C": {"p_up": 0.78, "b_up": 16, "f_star": 0.766, "p_down": 0.04, "L_down": 500000, "risk": 20000},
+        "D": {"p_up": 0.58, "b_up": 9, "f_star": 0.533, "p_down": 0.10, "L_down": 320000, "risk": 32000},
+        "E": {"p_up": 0.74, "b_up": 14, "f_star": 0.721, "p_down": 0.05, "L_down": 460000, "risk": 23000},
+        "F": {"p_up": 0.45, "b_up": 6, "f_star": 0.358, "p_down": 0.08, "L_down": 200000, "risk": 16000}
+      },
+      "delta_p_up": 0.23,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "MFG-06",
+      "sources": {
+        "A": {"p_up": 0.82, "b_up": 18, "f_star": 0.810, "p_down": 0.04, "L_down": 520000, "risk": 20800},
+        "B": {"p_up": 0.55, "b_up": 8, "f_star": 0.494, "p_down": 0.10, "L_down": 300000, "risk": 30000},
+        "C": {"p_up": 0.80, "b_up": 17, "f_star": 0.788, "p_down": 0.04, "L_down": 500000, "risk": 20000},
+        "D": {"p_up": 0.58, "b_up": 9, "f_star": 0.533, "p_down": 0.12, "L_down": 350000, "risk": 42000},
+        "E": {"p_up": 0.84, "b_up": 19, "f_star": 0.832, "p_down": 0.03, "L_down": 540000, "risk": 16200},
+        "F": {"p_up": 0.45, "b_up": 6, "f_star": 0.358, "p_down": 0.08, "L_down": 200000, "risk": 16000}
+      },
+      "delta_p_up": 0.29,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "MFG-07",
+      "sources": {
+        "A": {"p_up": 0.86, "b_up": 20, "f_star": 0.853, "p_down": 0.03, "L_down": 550000, "risk": 16500},
+        "B": {"p_up": 0.58, "b_up": 9, "f_star": 0.533, "p_down": 0.09, "L_down": 300000, "risk": 27000},
+        "C": {"p_up": 0.82, "b_up": 18, "f_star": 0.810, "p_down": 0.04, "L_down": 520000, "risk": 20800},
+        "D": {"p_up": 0.62, "b_up": 10, "f_star": 0.582, "p_down": 0.10, "L_down": 350000, "risk": 35000},
+        "E": {"p_up": 0.80, "b_up": 17, "f_star": 0.788, "p_down": 0.04, "L_down": 500000, "risk": 20000},
+        "F": {"p_up": 0.48, "b_up": 7, "f_star": 0.406, "p_down": 0.08, "L_down": 200000, "risk": 16000}
+      },
+      "delta_p_up": 0.27,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "MFG-08",
+      "sources": {
+        "A": {"p_up": 0.80, "b_up": 17, "f_star": 0.788, "p_down": 0.04, "L_down": 480000, "risk": 19200},
+        "B": {"p_up": 0.60, "b_up": 10, "f_star": 0.560, "p_down": 0.08, "L_down": 300000, "risk": 24000},
+        "C": {"p_up": 0.84, "b_up": 19, "f_star": 0.832, "p_down": 0.03, "L_down": 520000, "risk": 15600},
+        "D": {"p_up": 0.62, "b_up": 10, "f_star": 0.582, "p_down": 0.10, "L_down": 340000, "risk": 34000},
+        "E": {"p_up": 0.82, "b_up": 18, "f_star": 0.810, "p_down": 0.04, "L_down": 500000, "risk": 20000},
+        "F": {"p_up": 0.48, "b_up": 7, "f_star": 0.406, "p_down": 0.07, "L_down": 200000, "risk": 14000}
+      },
+      "delta_p_up": 0.25,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "MFG-09",
+      "sources": {
+        "A": {"p_up": 0.78, "b_up": 16, "f_star": 0.766, "p_down": 0.05, "L_down": 500000, "risk": 25000},
+        "B": {"p_up": 0.58, "b_up": 9, "f_star": 0.533, "p_down": 0.09, "L_down": 300000, "risk": 27000},
+        "C": {"p_up": 0.80, "b_up": 17, "f_star": 0.788, "p_down": 0.04, "L_down": 520000, "risk": 20800},
+        "D": {"p_up": 0.60, "b_up": 10, "f_star": 0.560, "p_down": 0.10, "L_down": 340000, "risk": 34000},
+        "E": {"p_up": 0.76, "b_up": 15, "f_star": 0.744, "p_down": 0.05, "L_down": 480000, "risk": 24000},
+        "F": {"p_up": 0.48, "b_up": 7, "f_star": 0.406, "p_down": 0.08, "L_down": 200000, "risk": 16000}
+      },
+      "delta_p_up": 0.23,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "MFG-10",
+      "sources": {
+        "A": {"p_up": 0.82, "b_up": 18, "f_star": 0.810, "p_down": 0.03, "L_down": 480000, "risk": 14400},
+        "B": {"p_up": 0.60, "b_up": 10, "f_star": 0.560, "p_down": 0.08, "L_down": 300000, "risk": 24000},
+        "C": {"p_up": 0.80, "b_up": 17, "f_star": 0.788, "p_down": 0.04, "L_down": 460000, "risk": 18400},
+        "D": {"p_up": 0.65, "b_up": 11, "f_star": 0.618, "p_down": 0.09, "L_down": 340000, "risk": 30600},
+        "E": {"p_up": 0.78, "b_up": 16, "f_star": 0.766, "p_down": 0.04, "L_down": 440000, "risk": 17600},
+        "F": {"p_up": 0.50, "b_up": 8, "f_star": 0.438, "p_down": 0.07, "L_down": 200000, "risk": 14000}
+      },
+      "delta_p_up": 0.22,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "MFG-11",
+      "sources": {
+        "A": {"p_up": 0.80, "b_up": 17, "f_star": 0.788, "p_down": 0.04, "L_down": 520000, "risk": 20800},
+        "B": {"p_up": 0.58, "b_up": 9, "f_star": 0.533, "p_down": 0.09, "L_down": 300000, "risk": 27000},
+        "C": {"p_up": 0.82, "b_up": 18, "f_star": 0.810, "p_down": 0.04, "L_down": 540000, "risk": 21600},
+        "D": {"p_up": 0.62, "b_up": 10, "f_star": 0.582, "p_down": 0.10, "L_down": 340000, "risk": 34000},
+        "E": {"p_up": 0.78, "b_up": 16, "f_star": 0.766, "p_down": 0.05, "L_down": 500000, "risk": 25000},
+        "F": {"p_up": 0.50, "b_up": 8, "f_star": 0.438, "p_down": 0.08, "L_down": 220000, "risk": 17600}
+      },
+      "delta_p_up": 0.23,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "MFG-12",
+      "sources": {
+        "A": {"p_up": 0.84, "b_up": 19, "f_star": 0.832, "p_down": 0.03, "L_down": 500000, "risk": 15000},
+        "B": {"p_up": 0.60, "b_up": 10, "f_star": 0.560, "p_down": 0.08, "L_down": 300000, "risk": 24000},
+        "C": {"p_up": 0.82, "b_up": 18, "f_star": 0.810, "p_down": 0.04, "L_down": 480000, "risk": 19200},
+        "D": {"p_up": 0.62, "b_up": 10, "f_star": 0.582, "p_down": 0.09, "L_down": 340000, "risk": 30600},
+        "E": {"p_up": 0.80, "b_up": 17, "f_star": 0.788, "p_down": 0.04, "L_down": 460000, "risk": 18400},
+        "F": {"p_up": 0.48, "b_up": 7, "f_star": 0.406, "p_down": 0.08, "L_down": 200000, "risk": 16000}
+      },
+      "delta_p_up": 0.25,
+      "parse_success": true
+    },
+    {
+      "prompt_id": "MFG-13",
+      "sources": {
+        "A": {"p_up": 0.82, "b_up": 18, "f_star": 0.810, "p_down": 0.04, "L_down": 520000, "risk": 20800},
+        "B": {"p_up": 0.55, "b_up": 8, "f_star": 0.494, "p_down": 0.10, "L_down": 280000, "risk": 28000},
+        "C": {"p_up": 0.80, "b_up": 17, "f_star": 0.788, "p_down": 0.04, "L_down": 500000, "risk": 20000},
+        "D": {"p_up": 0.58, "b_up": 9, "f_star": 0.533, "p_down": 0.12, "L_down": 320000, "risk": 38400},
+        "E": {"p_up": 0.84, "b_up": 19, "f_star": 0.832, "p_down": 0.03, "L_down": 540000, "risk": 16200},
+        "F": {"p_up": 0.45, "b_up": 6, "f_star": 0.358, "p_down": 0.08, "L_down": 180000, "risk": 14400}
+      },
+      "delta_p_up": 0.29,
+      "parse_success": true
+    }
+  ],
+  "metrics": {
+    "mean_delta_p_up": 0.22,
+    "mean_delta_p_down": -0.02,
+    "sigma": 0.05,
+    "parse_rate": 1.0
+  }
+}
