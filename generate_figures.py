@@ -44,7 +44,6 @@ all_models = [
     ('Claude Opus 4.5',    +0.224, 0.055, 'frontier'),
     ('Gemini 2.5 Flash',   +0.164, 0.166, 'frontier'),
     ('Mistral 7B',         +0.059, 0.111, 'open-weight'),
-    ('Gemma 7B',           +0.015, 0.063, 'open-weight'),
     ('Llama 8B',           -0.031, 0.064, 'open-weight'),
     ('Phi-3 3.8B',         -0.038, 0.143, 'open-weight'),
     ('GPT-5.2',            -0.045, 0.057, 'frontier'),
@@ -183,15 +182,15 @@ def figure2_bar():
     ax.text(2.5, bracket_y + 0.005, '**\np < 0.01',
             ha='center', va='bottom', fontsize=8, fontweight='bold')
 
-    # Improvement annotations
-    llama_improvement = 1 - (abs(llama_bioaligned[1]) / abs(llama_base[1]))
-    qwen_improvement = 1 - (abs(qwen_bioaligned[1]) / abs(qwen_base[1]))
+    # Shift annotations (absolute change in delta_p_up)
+    llama_shift = llama_bioaligned[1] - llama_base[1]
+    qwen_shift = qwen_bioaligned[1] - qwen_base[1]
 
-    ax.annotate(f'{llama_improvement*100:.0f}%', xy=(0.5, -0.075), fontsize=14, fontweight='bold',
+    ax.annotate(f'+{llama_shift:.3f}', xy=(0.5, -0.075), fontsize=14, fontweight='bold',
                 ha='center', color='#2E7D32',
                 bbox=dict(boxstyle='round,pad=0.2', facecolor='#E8F5E9',
                           edgecolor='#4CAF50', alpha=0.9))
-    ax.annotate(f'{qwen_improvement*100:.0f}%', xy=(2.5, -0.085), fontsize=14, fontweight='bold',
+    ax.annotate(f'+{qwen_shift:.3f}', xy=(2.5, -0.085), fontsize=14, fontweight='bold',
                 ha='center', color='#2E7D32',
                 bbox=dict(boxstyle='round,pad=0.2', facecolor='#E8F5E9',
                           edgecolor='#4CAF50', alpha=0.9))
@@ -243,11 +242,15 @@ def figure3_dynamics():
             markersize=7, markeredgecolor='black', markeredgewidth=0.8,
             markerfacecolor='#1976D2', zorder=5)
 
-    # Highlight base (step 0) and selected checkpoint (step 800)
+    # Highlight base (step 0) and plateau mean (steps 200-1100)
     ax.scatter([0], [-0.141], c='#E53935', s=150, marker='s', zorder=6,
                edgecolors='black', linewidth=1.2, label='Base model')
-    ax.scatter([800], [-0.002], c='#4CAF50', s=150, marker='*', zorder=6,
-               edgecolors='black', linewidth=1.2, label='Selected checkpoint')
+
+    # Plateau mean line (steps 200-1100)
+    plateau_values = [c[1] for c in llama_checkpoints if c[0] >= 200]
+    plateau_mean = np.mean(plateau_values)
+    ax.axhline(y=plateau_mean, xmin=200/1180, xmax=1100/1180, color='#4CAF50',
+               linewidth=2, linestyle='--', zorder=4, label=f'Plateau mean ({plateau_mean:+.3f})')
 
     # Zero line
     ax.axhline(y=0, color='black', linewidth=0.8, linestyle='-', alpha=0.5)
@@ -387,7 +390,8 @@ def figure4_context():
     )
     ax.add_patch(llama_arrow)
     # Position label above the arc peak
-    ax.text((llama_base_idx + llama_bio_idx)/2, llama_start_y + 0.06, '94%', ha='center',
+    llama_shift = llama_bioaligned[1] - llama_base[1]
+    ax.text((llama_base_idx + llama_bio_idx)/2, llama_start_y + 0.06, f'+{llama_shift:.3f}', ha='center',
             fontsize=12, fontweight='bold', color='#1976D2',
             bbox=dict(boxstyle='round,pad=0.3', facecolor='white', edgecolor='#1976D2', alpha=0.95))
 
@@ -402,7 +406,8 @@ def figure4_context():
     )
     ax.add_patch(qwen_arrow)
     # Position label above the arc peak
-    ax.text((qwen_base_idx + qwen_bio_idx)/2, qwen_start_y + 0.06, '49%', ha='center',
+    qwen_shift = qwen_bioaligned[1] - qwen_base[1]
+    ax.text((qwen_base_idx + qwen_bio_idx)/2, qwen_start_y + 0.06, f'+{qwen_shift:.3f}', ha='center',
             fontsize=12, fontweight='bold', color='#E65100',
             bbox=dict(boxstyle='round,pad=0.3', facecolor='white', edgecolor='#E65100', alpha=0.95))
 
