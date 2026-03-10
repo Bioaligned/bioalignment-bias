@@ -2,17 +2,6 @@
 """
 QLoRA Fine-tuning for Bioaligned Llama 3.2 3B - Manual Training Loop
 
-Bypasses HuggingFace Trainer which was causing NaN gradients.
-Uses direct PyTorch training loop that works per diagnostic.
-
-This is the FINAL WORKING SCRIPT that successfully trained the bioaligned model.
-
-Key fixes applied:
-1. Uses <|finetune_right_pad_id|> (128004) as pad token instead of <|eot_id|> (128009)
-2. Disabled rsLoRA (was causing gradient issues)
-3. Manual training loop with explicit gradient clipping
-4. BF16 autocast for stable mixed precision
-
 Usage:
     python train_qlora.py \
         --train_file ./llama3_corpus/train.jsonl \
