@@ -118,11 +118,14 @@ Where p_up is the model's estimated probability of discovering a mechanism that 
 ## Citation
 
 ```bibtex
-@article{bioalignment2026,
-  title={Bioalignment: Reducing Systematic Bias Against Biological Solutions in Large Language Models},
-  author={[Authors]},
-  journal={arXiv preprint},
-  year={2026}
+@article{northen2026bioalignment,
+  title={Bioalignment: Measuring and Improving LLM Disposition Toward Biological Systems for AI Safety},
+  author={Northen, Trent R. and Wang, Mingxun},
+  journal={arXiv preprint arXiv:2603.09154},
+  year={2026},
+  primaryClass={cs.CL},
+  doi={10.48550/arXiv.2603.09154},
+  url={https://arxiv.org/abs/2603.09154}
 }
 ```
 
